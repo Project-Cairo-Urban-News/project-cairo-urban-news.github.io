@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/doc_styles.css">
+    <title>1284</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
+  <div class="container-fluid justify-content-start">
+    <a class="navbar-brand" href="/">
+      <svg class="bi me-2 mb-2" width="100" viewBox="0 0 150 100"><use xlink:href="#wm_logo"/></svg>
+      <span class="display-4">Digital Cairo</span>
+    </a>
+    <ul class="navbar-nav d-flex w-100 ">
+      <li class="nav-item">
+        <a class="nav-link active" href="/en/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Timeline</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Indexes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">History of al-Waqa’i’ al-Misriyya, 1828-1914</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutMenu">
+            <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
+            <a class="dropdown-item" href="/en/about/team/">Team</a>
+            <a class="dropdown-item" href="/en/about/sponsors/">Sponsors</a>
+            <a class="dropdown-item" href="/en/about/technical-description/">Technical Description: Creating TEI XML data with Arabic Text</a>
+            <a class="dropdown-item" href="/en/about/credits/">Credits/Copyright</a>
+            <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
+            <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
+          </div>
+      </li>
+    </ul>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-light" type="submit">Search</button>
+      </form>
+  </div>
+</nav>
+    <main dir="rtl">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-8 mt-4">
+            <?xml-model href="../../schema/CairoUrbanNews.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/CairoUrbanNews.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="../../css/oxygen.css"?>
+<tei-tei data-xmlns="http://www.tei-c.org/ns/1.0" data-origname="TEI" data-origatts="xmlns">
+  <tei-teiheader data-origname="teiHeader" data-processed=""><cetei-original hidden="" data-original="">
+    <tei-filedesc data-origname="fileDesc" data-processed="">
+      <tei-titlestmt data-origname="titleStmt" data-processed="">
+        <tei-title data-origname="title" data-processed="">"Digital Cairo - Urbanism News from al-Waqāʾiʿ al-Miṣrīyah - An Ottoman Arabic Digital Humanities
+          Project"</tei-title>
+        <tei-editor xml:id="eNK" id="eNK" data-origname="editor" data-origatts="xml:id" data-processed="">Nour Kanaan</tei-editor>
+        <tei-editor xml:id="eAM" id="eAM" data-origname="editor" data-origatts="xml:id" data-processed="">Adam Mestyan</tei-editor>
+        <tei-editor xml:id="eDY" id="eDY" data-origname="editor" data-origatts="xml:id" data-processed="">Danah Younis</tei-editor>
+        <tei-editor xml:id="eSG" id="eSG" data-origname="editor" data-origatts="xml:id" data-processed="">Sarah Fathallah Gaara</tei-editor>
+        <tei-editor xml:id="eAE" id="eAE" data-origname="editor" data-origatts="xml:id" data-processed="">Arif Erbil</tei-editor>
+        <tei-editor xml:id="eAK" id="eAK" data-origname="editor" data-origatts="xml:id" data-processed="">Ahmed Kamal</tei-editor>
+        <tei-editor xml:id="eAS" id="eAS" data-origname="editor" data-origatts="xml:id" data-processed="">Abram Smith</tei-editor>
+        <tei-editor xml:id="eCH" id="eCH" data-origname="editor" data-origatts="xml:id" data-processed="">Clara Harms</tei-editor>
+        <tei-editor xml:id="eHS" id="eHS" data-origname="editor" data-origatts="xml:id" data-processed="">Hüseyin Sağlam</tei-editor>
+        <tei-editor xml:id="eAT" id="eAT" data-origname="editor" data-origatts="xml:id" data-processed="">Abdulrahman El-Taliawi</tei-editor>
+        <tei-editor xml:id="eHL" id="eHL" data-origname="editor" data-origatts="xml:id" data-processed="">Hiba Laabadli</tei-editor>
+        <tei-editor xml:id="eOE" id="eOE" data-origname="editor" data-origatts="xml:id" data-processed="">Othmane Echchabi</tei-editor>
+        <tei-editor xml:id="eFA" id="eFA" data-origname="editor" data-origatts="xml:id" data-processed="">Fatemah Almahana</tei-editor>
+        <tei-editor xml:id="eMZ" id="eMZ" data-origname="editor" data-origatts="xml:id" data-processed="">Mahmoud Zaki</tei-editor>
+        <tei-editor xml:id="eNS" id="eNS" data-origname="editor" data-origatts="xml:id" data-processed="">Nehal al-Shamy</tei-editor>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Project leader</tei-resp>
+          <tei-name data-origname="name" data-processed="">Hugh Cayless</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Project leader</tei-resp>
+          <tei-name data-origname="name" data-processed="">Adam Mestyan</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Project leader</tei-resp>
+          <tei-name data-origname="name" data-processed="">Mercedes Volait</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Sarah Fathallah Gaara</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Karima Nasr</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Rezk Nory</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Arif Erbil</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Ahmed Kamal</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Abram Smith</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Clara Harms</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Hüseyin Sağlam</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Abdulrahman El-Taliawi</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Hiba Laabadli</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Othmane Echchabi</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Fatemah Almahana</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Mahmoud Zaki</tei-name>
+        </tei-respstmt>
+        <tei-respstmt data-origname="respStmt" data-processed="">
+          <tei-resp data-origname="resp" data-processed="">Research Assistant</tei-resp>
+          <tei-name data-origname="name" data-processed="">Nehal al-Shamy</tei-name>
+        </tei-respstmt>
+        <tei-sponsor data-origname="sponsor" data-processed="">
+          <tei-orgname data-origname="orgName" data-processed="">National Endowment for the Humanities</tei-orgname>, <tei-orgname data-origname="orgName" data-processed="">Institut français
+            d’archéologie orientale</tei-orgname> (Ifao, Cairo); <tei-orgname data-origname="orgName" data-processed="">Franklin Humanities Institute
+            and the Office of Global Affairs / Andrew W. Mellon Endowment for Global Studies, Duke
+            University</tei-orgname>; <tei-orgname data-origname="orgName" data-processed="">Duke University Libraries</tei-orgname>; <tei-orgname data-origname="orgName" data-processed="">Centre
+            national de la recherche scientifique</tei-orgname>; <tei-orgname data-origname="orgName" data-processed="">the Office of the Hungarian
+            Cultural Counsellor in Cairo</tei-orgname>. </tei-sponsor>
+      </tei-titlestmt>
+      <tei-publicationstmt data-origname="publicationStmt" data-processed="">
+ <tei-p data-origname="p" data-processed="">"XMl TEI Edition of Urbanism News in al-Waqāʾiʿ al-Miṣrīyah" in the project "La fabrique
+          du Caire moderne, 2018-2021" (Ifao-InVisu-Duke University).</tei-p>
+        <tei-p data-origname="p" data-processed="">"Digital Cairo" project sponsored by the National Endowment for the Humanities.</tei-p>
+        <tei-p data-origname="p" data-processed="">
+          <tei-ref target="https://sites.duke.edu/cairemoderne/" data-origname="ref" data-origatts="target" data-processed="">Website</tei-ref>
+        </tei-p>
+        <tei-p data-origname="p" data-processed="">Project directors: <tei-persname data-origname="persName" data-processed="">Adam Mestyan</tei-persname>, <tei-persname data-origname="persName" data-processed="">Mercedes
+            Volait</tei-persname>, <tei-persname data-origname="persName" data-processed="">Hugh Cayless</tei-persname></tei-p>
+      </tei-publicationstmt>
+      <tei-sourcedesc data-origname="sourceDesc" data-processed="">
+        <tei-p data-origname="p" data-processed="">Al-Waqāʾiʿ al-Miṣrīyah (Egyptian Affairs) newspaper, 1828–1914.</tei-p>
+        <tei-p data-origname="p" data-processed="">born digital document</tei-p>
+      </tei-sourcedesc>
+    </tei-filedesc>
+    <tei-encodingdesc data-origname="encodingDesc" data-processed="">
+      <tei-projectdesc data-origname="projectDesc" data-processed="">
+        <tei-p data-origname="p" data-processed="">This is a file in the "XMl TEI Edition of Urbanism News in al-Waqāʾiʿ al-Miṣrīyah" in the
+          project "La fabrique du Caire moderne, 2018-2021" (Ifao-InVisu-Duke University).</tei-p>
+        <tei-p data-origname="p" data-processed="">"Digital Cairo" project sponsored by the National Endowment for the Humanities.</tei-p>
+      </tei-projectdesc>
+      <tei-editorialdecl data-origname="editorialDecl" data-processed="">
+        <tei-p data-origname="p" data-processed="">Rules of TEI XML MarkUp in This Project</tei-p>
+        <tei-p data-origname="p" data-processed="">We use the Arabic script but transliteration into Latin characters follows the Library of
+          Congress (LOC) <tei-ref target="https://www.loc.gov/catdir/cpso/romanization/arabic.pdf" data-origname="ref" data-origatts="target" data-processed="">Arabic transliteration chart</tei-ref>.</tei-p>
+        <tei-p data-origname="p" data-processed="">Each individual article has an individual xml:id number starting with "w1"</tei-p>
+        <tei-p data-origname="p" data-processed="">We only use persName, orgName, placeName elements, apart from bibliographical elements
+          and notes.</tei-p>
+        <tei-p data-origname="p" data-processed="">If the location or organization of responsibility is known from the text, it can be added
+          in an attribute to a persName.</tei-p>
+        <tei-p data-origname="p" data-processed="">"Mashaykhah" and "thumn" are orgNames and placeNames.</tei-p>
+        <tei-p data-origname="p" data-processed="">This project's schema considers Till Grallert's work in his <tei-ref target="https://github.com/OpenArabicPE/OpenArabicPE_ODD" data-origname="ref" data-origatts="target" data-processed="">Open Arabic Periodical
+            Editions</tei-ref>.</tei-p>
+      </tei-editorialdecl>
+      <tei-chardecl data-origname="charDecl" data-processed="">
+        <tei-char xml:id="qhalf" id="qhalf" data-origname="char" data-origatts="xml:id" data-processed="">
+          <tei-localprop value="QIRMA FRACTION 1/2" name="name" data-origname="localProp" data-origatts="value name" data-empty="" data-processed=""></tei-localprop>
+          <tei-unicodeprop value="1/2" name="Numeric_Value" data-origname="unicodeProp" data-origatts="value name" data-empty="" data-processed=""></tei-unicodeprop>
+          <tei-mapping type="similar" data-origname="mapping" data-origatts="type" data-processed="">𐋢</tei-mapping>
+          <tei-figure data-origname="figure" data-processed="">
+            <tei-graphic url="../../docs/images/qhalf.svg" data-origname="graphic" data-origatts="url" data-empty="" data-processed=""></tei-graphic>
+          </tei-figure>
+        </tei-char>
+        <tei-char xml:id="qthird" id="qthird" data-origname="char" data-origatts="xml:id" data-processed="">
+          <tei-localprop value="QIRMA FRACTION 1/3" name="name" data-origname="localProp" data-origatts="value name" data-empty="" data-processed=""></tei-localprop>
+          <tei-unicodeprop value="1/3" name="Numeric_Value" data-origname="unicodeProp" data-origatts="value name" data-empty="" data-processed=""></tei-unicodeprop>
+          <tei-figure data-origname="figure" data-processed="">
+            <tei-graphic url="../../docs/images/qthird.svg" data-origname="graphic" data-origatts="url" data-empty="" data-processed=""></tei-graphic>
+          </tei-figure>
+        </tei-char>
+        <tei-char xml:id="qfourth" id="qfourth" data-origname="char" data-origatts="xml:id" data-processed="">
+          <tei-localprop value="QIRMA FRACTION 1/4" name="name" data-origname="localProp" data-origatts="value name" data-empty="" data-processed=""></tei-localprop>
+          <tei-unicodeprop value="1/4" name="Numeric_Value" data-origname="unicodeProp" data-origatts="value name" data-empty="" data-processed=""></tei-unicodeprop>
+          <tei-figure data-origname="figure" data-processed="">
+            <tei-graphic url="../../docs/images/qfourth.svg" data-origname="graphic" data-origatts="url" data-empty="" data-processed=""></tei-graphic>
+          </tei-figure>
+        </tei-char>
+        <tei-char xml:id="qsixth" id="qsixth" data-origname="char" data-origatts="xml:id" data-processed="">
+          <tei-localprop value="QIRMA FRACTION 1/6" name="name" data-origname="localProp" data-origatts="value name" data-empty="" data-processed=""></tei-localprop>
+          <tei-unicodeprop value="1/6" name="Numeric_Value" data-origname="unicodeProp" data-origatts="value name" data-empty="" data-processed=""></tei-unicodeprop>
+          <tei-figure data-origname="figure" data-processed="">
+            <tei-graphic url="../../docs/images/qsixth.svg" data-origname="graphic" data-origatts="url" data-empty="" data-processed=""></tei-graphic>
+          </tei-figure>
+        </tei-char>
+        <tei-char xml:id="qeighth" id="qeighth" data-origname="char" data-origatts="xml:id" data-processed="">
+          <tei-localprop value="QIRMA FRACTION 1/8" name="name" data-origname="localProp" data-origatts="value name" data-empty="" data-processed=""></tei-localprop>
+          <tei-unicodeprop value="1/8" name="Numeric_Value" data-origname="unicodeProp" data-origatts="value name" data-empty="" data-processed=""></tei-unicodeprop>
+          <tei-mapping type="similar" data-origname="mapping" data-origatts="type" data-processed="">𐋤</tei-mapping>
+          <tei-figure data-origname="figure" data-processed="">
+            <tei-graphic url="../../docs/images/qeighth.svg" data-origname="graphic" data-origatts="url" data-empty="" data-processed=""></tei-graphic>
+          </tei-figure>
+        </tei-char>
+        <tei-char xml:id="qtwothirds" id="qtwothirds" data-origname="char" data-origatts="xml:id" data-processed="">
+          <tei-localprop value="QIRMA FRACTION 2/3" name="name" data-origname="localProp" data-origatts="value name" data-empty="" data-processed=""></tei-localprop>
+          <tei-unicodeprop value="2/3" name="Numeric_Value" data-origname="unicodeProp" data-origatts="value name" data-empty="" data-processed=""></tei-unicodeprop>
+          <tei-figure data-origname="figure" data-processed="">
+            <tei-graphic url="../../docs/images/qtwothirds.svg" data-origname="graphic" data-origatts="url" data-empty="" data-processed=""></tei-graphic>
+          </tei-figure>
+        </tei-char>
+      </tei-chardecl>
+    </tei-encodingdesc>
+    <tei-profiledesc data-origname="profileDesc" data-processed="">
+      <tei-langusage data-origname="langUsage" data-processed="">
+        <tei-language ident="ar" data-origname="language" data-origatts="ident" data-processed="">Arabic</tei-language>
+        <tei-language ident="en" data-origname="language" data-origatts="ident" data-processed="">English</tei-language>
+        <tei-language ident="ar-Latn-x-ala-LC" data-origname="language" data-origatts="ident" data-processed="">Arabic transcribed according to ALA-LC</tei-language>
+        <tei-language ident="ota" data-origname="language" data-origatts="ident" data-processed="">Ottoman</tei-language>
+      </tei-langusage>
+    </tei-profiledesc>
+    <tei-revisiondesc status="cleared" data-origname="revisionDesc" data-origatts="status" data-processed="">
+                  <tei-listchange data-origname="listChange" data-processed="">
+                        <tei-change when="2023-09-26" resp="#eAM" status="cleared" data-origname="change" data-origatts="when resp status" data-empty="" data-processed=""></tei-change>
+                  </tei-listchange>
+            </tei-revisiondesc>
+  </cetei-original></tei-teiheader>
+  
+  <tei-text xml:lang="ar" lang="ar" data-origname="text" data-origatts="xml:lang">
+      <tei-body data-origname="body">
+         <tei-div xml:id="WA1284011001" id="WA1284011001" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-01-29" data-origname="date" data-origatts="when-custom">٢٩ محرم ١٢٨٤</tei-date>
+                              <tei-date when="1867-06-02" data-origname="date" data-origatts="when">٢ يونيه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١١٠</tei-biblscope> صفحة
+                              ١</tei-bibl></tei-head>
+                        <tei-p data-origname="p">صار حضرة سعادتلو <tei-persname data-origname="persName">ثابت باشا أمين <tei-orgname ref="كمرك-سكندريه" data-origname="orgName" data-origatts="ref">كمرك سكندريه</tei-orgname></tei-persname> وكيل <tei-orgname type="نظارة" ref="نظارة-الداخليه" data-origname="orgName" data-origatts="type ref">نظارة الداخليه</tei-orgname>
+                              واستعوض بسعادتلو <tei-persname role="ناظر الواردات" data-origname="persName" data-origatts="role">أحمد باشا ناظر
+                                          <tei-orgname data-origname="orgName">الواردات</tei-orgname></tei-persname> واستعوض هذا أيضا
+                              بسعادتلو <tei-persname role="وكيل مجلس استئناف سكندريه" data-origname="persName" data-origatts="role">صفر باشا وكيل
+                                          <tei-orgname type="مجلس" ref="مجلس-استئناف-سكندرية" data-origname="orgName" data-origatts="type ref">مجلس
+                                          استئناف سكندريه</tei-orgname></tei-persname>.</tei-p>
+                        <tei-p data-origname="p">جعل سعدتلو <tei-persname role="رئيس مجلس استئناف مصر" data-origname="persName" data-origatts="role">حسين باشا رئيس مجلس
+                                    استئناف مصر</tei-persname> أمينا على <tei-orgname ref="بيت-مال" data-origname="orgName" data-origatts="ref">بيت
+                                    المال</tei-orgname> واستعوض بعزتلو <tei-persname role=" وكيل نظارة الداخليه" data-origname="persName" data-origatts="role">مختار بيك الذي كان وكيل نظارة
+                                    الداخليه</tei-persname>.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284011201" id="WA1284011201" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-02-06" data-origname="date" data-origatts="when-custom">٦ صفر ١٢٨٤</tei-date>
+                              <tei-date when="1867-06-09" data-origname="date" data-origatts="when">٩ يونيه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١١٢</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">حوادث داخلية</tei-title></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">مضمون <tei-rs type="تلغراف" data-origname="rs" data-origatts="type">تلغراف</tei-rs> صادر من <tei-orgname type="المعية-السنية" ref="المعية-السنية" data-origname="orgName" data-origatts="type ref">المعية
+                                          السنية</tei-orgname> في ٥ صفر سنه ٨٤ إلى كل محافظة
+                                    ومديرية</tei-title></tei-head>
+                        <tei-p data-origname="p">أحسنت <tei-orgname ref="الدولة-العلية-السلطانية" data-origname="orgName" data-origatts="ref">الدولة العلية
+                                    السلطانية</tei-orgname> بالأمتيازات الجديدة العائدة على الأقطار
+                              المصرية للمنافع العمومية مع عنونة حضرة واليها أيضا حليف النصر بعنوان
+                              (خديو مصر) وعنونها هي (بالخديوية الجليلة المصرية) عوضا عن الولاية
+                              المصرية فلهذا من صباح الغد الذي هو يوم الأحد يطلق في كل وقت من أوقات
+                              المكتوبات واحد وعشرون مدفعا ايذانا بالمسرات ولأجل اعلام الخاص
+                              والعام.</tei-p>
+                  </tei-div>
+                  <tei-div xml:id="WA1284011202" id="WA1284011202" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-02-06" data-origname="date" data-origatts="when-custom">٦ صفر ١٢٨٤</tei-date>
+                              <tei-date when="1867-06-09" data-origname="date" data-origatts="when">٩ يونيه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١١٢</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">في الساعة الخامسة من ليلة الخميس الماضي ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs>
+                                    ب<tei-placename xml:id="place-WA1284011202_01" id="place-WA1284011202_01" type="منزل" ref="منزل-سويلم-دياب-الحجراتى" data-origname="placeName" data-origatts="xml:id type ref">منزل
+                                          <tei-persname role="الحجراتي" data-origname="persName" data-origatts="role">سويلم دياب
+                                    الحجراتي</tei-persname></tei-placename> ب<tei-placename xml:id="place-WA1284011202_02" id="place-WA1284011202_02" type="درب" ref="درب-العجوز" data-origname="placeName" data-origatts="xml:id type ref">درب العجوز</tei-placename> ب<tei-placename xml:id="place-WA1284011202_03" id="place-WA1284011202_03" type="ثمن" ref="ثمن-باب-الشعرية" data-origname="placeName" data-origatts="xml:id type ref"><tei-orgname type="ثمن" ref="ثمن-باب-الشعرية" data-origname="orgName" data-origatts="type ref">ثمن باب الشعرية</tei-orgname></tei-placename> قبودر من <tei-orgname ref="ضبطية" data-origname="orgName" data-origatts="ref">الضبطية</tei-orgname> بارسال الطلومبات وغيرها اليه وكان
+                              سقفه الأسفل قد اشتعل فنزع ما كان بالأوطة التي عليه الساكن بها
+                                    <tei-persname role="الحجار" data-origname="persName" data-origatts="role">محمد غطاس الحجار</tei-persname> ثم أنزل
+                              السقف وتيسر الأطفاء في ساعتين بدون سراية إلى جهة أخرى.</tei-p>
+                  </tei-div>
+                  <tei-div xml:id="WA1284011203" id="WA1284011203" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-02-06" data-origname="date" data-origatts="when-custom">٦ صفر ١٢٨٤</tei-date>
+                              <tei-date when="1867-06-09" data-origname="date" data-origatts="when">٩ يونيه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١١٢</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">اعلان <tei-orgname ref="قنصلاتوا دولة اليونان" type="قنصلاتوا" data-origname="orgName" data-origatts="ref type">قنصلاتوا دولة
+                                    اليونان</tei-orgname> وارد من <tei-orgname ref="ضبطية" data-origname="orgName" data-origatts="ref">الضبطية</tei-orgname>
+                              بلفظه أيضا انه تنفيذ الأمر الصادر في ١٨ و٣٠ <tei-choice data-origname="choice">
+                                    <tei-sic data-origname="sic">أبريله</tei-sic>
+                                    <tei-corr data-origname="corr">أبريل</tei-corr>
+                              </tei-choice> سنة ١٨٦٧ على العرض المتقدم من <tei-persname data-origname="persName">الست ايرينه أبوسطو
+                                    لو</tei-persname> ضد <tei-persname data-origname="persName">الخواجه ميكيله لالا</tei-persname> سيصير
+                              طرح <tei-placename xml:id="place-WA1284011203_01" id="place-WA1284011203_01" type="بيت" ref="بيت-ملك-الخواجه-ميكيله-لالا" data-origname="placeName" data-origatts="xml:id type ref">البيت ملك
+                                    الخواجه المذكور</tei-placename> الكائن ب<tei-placename xml:id="place-WA1284011203_02" id="place-WA1284011203_02" type="سكة" ref="سكة-باب-الحديد" data-origname="placeName" data-origatts="xml:id type ref">سكة باب الحديد</tei-placename> بالقرب إلى
+                                    <tei-placename xml:id="place-WA1284011203_03" id="place-WA1284011203_03" type="لوكاندة" ref="لوكاندت-جريفتس" data-origname="placeName" data-origatts="xml:id type ref"><tei-sic data-origname="sic">لوكاندت</tei-sic> جريفتس</tei-placename> المعروفة
+                                    ب<tei-placename xml:id="place-WA1284011203_04" id="place-WA1284011203_04" type="لوكاندة" ref="لوكاندت-أوروبا" data-origname="placeName" data-origatts="xml:id type ref"><tei-sic data-origname="sic">لوكاندت</tei-sic> أوروبا</tei-placename> لبيعه بالمزاد
+                              وليعلم لدى العموم انه قد دفع بالبيت المذكور <tei-choice data-origname="choice">
+                                    <tei-sic data-origname="sic">مبلع</tei-sic>
+                                    <tei-corr data-origname="corr">مبلغ</tei-corr>
+                              </tei-choice> ثلاثة آلاف وستمائة جنيه انكليزي من المداينة أول عطي وتعين
+                              يوم الأحد الواقع في ١٦ وفي ٢٨ يوليو سنة ١٨٦٧ للبدأ فى المزاد المذكور
+                              من الساعة ١٠ للساعة ١٢ افرنجي ب<tei-placename xml:id="place-WA1284011203_05" id="place-WA1284011203_05" type="قهوة" ref="قهوة-البورصة" data-origname="placeName" data-origatts="xml:id type ref">قهوة البورصة</tei-placename> ب<tei-placename xml:id="place-WA1284011203_06" id="place-WA1284011203_06" ref="الموسكى" data-origname="placeName" data-origatts="xml:id ref">الموسكي</tei-placename> والشروط التي سيكون البيع علي
+                              موجبها وعلم التتمين وحجة التمليك موجودين بالقونصلاتو للاطلاع عليهم
+                              تحريرا فى ٣٠ ماجيو سنة ١٨٦٧.</tei-p>
+                        <tei-p data-origname="p"><tei-persname role="كنشلير" data-origname="persName" data-origatts="role">الكنشلير دينزو</tei-persname></tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284011601" id="WA1284011601" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-02-21" data-origname="date" data-origatts="when-custom">٢١ صفر ١٢٨٤</tei-date>
+                              <tei-date when="1867-06-24" data-origname="date" data-origatts="when">٢٤ يونيه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١١٦</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان</tei-title></tei-head>
+                        <tei-head data-origname="head" data-level="0">بيان قطع أرض لل<tei-orgname type="الميري" data-origname="orgName" data-origatts="type">ميرى</tei-orgname> بقيت من محلات
+                              اقتضى الحال مبيعها واشهارها للمزايدة فيها</tei-head>
+                        <tei-table rows="3" cols="2" data-origname="table" data-origatts="rows cols">
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">ذراع معماري مسطح</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">٤٤ و٨٩٢</tei-cell>
+                                    <tei-cell data-origname="cell"> قطعة أرض باقية من <tei-placename xml:id="place-WA1284011601_01" id="place-WA1284011601_01" type="محل" ref="محل-المواشى-ببركة-الازبكية" data-origname="placeName" data-origatts="xml:id type ref">محل المواشي
+                                                  ب<tei-placename xml:id="place-WA1284011601_02" id="place-WA1284011601_02" type="بركة" ref="بركة-الازبكية" data-origname="placeName" data-origatts="xml:id type ref">بركة
+                                                  الأزبكية</tei-placename></tei-placename> تعرف بنمرة ١
+                                          حدّها القبلى ينتهى إلى <tei-placename xml:id="place-WA1284011601_03" id="place-WA1284011601_03" type="مدرسة" ref="المدرسة-الأمريكانية" data-origname="placeName" data-origatts="xml:id type ref">المدرسة
+                                                الأمريكانية</tei-placename> يبلغ طوله ١٩ مترًا و٨٠ سانتي
+                                          وحدّها البحري ينتهي إلى <tei-orgname ref="البوزخانه" data-origname="orgName" data-origatts="ref">البوزخانه</tei-orgname> ويبلغ طوله ٢٢ مترا وحدها الشرقي
+                                          بعضه لحوش هذه المدرسة وباقية للطريق الفاصل بين
+                                                ال<tei-placename xml:id="place-WA1284011601_04" id="place-WA1284011601_04" type="ضبطية" data-origname="placeName" data-origatts="xml:id type">ضبطية</tei-placename>
+                                          والبوزخانة ويبلغ طوله ٣٠ مترا و٦٠ سانتي مكسرًا وحده الغربي
+                                          للشارع الفاصل بينها وبين <tei-placename xml:id="place-WA1284011601_05" id="place-WA1284011601_05" type="جنينة" ref="جنينة-الأزبكية" data-origname="placeName" data-origatts="xml:id type ref">جنينة الأزبكية</tei-placename>
+                                          ويبلغ طوله ٢٢ مترًا ومساحتها بالمتر ٥٠٢ وبالذراع المعماري
+                                          ٨٩٢ و٤٤ من مائه من الذراع</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">٩٢ و ٢٩٣</tei-cell>
+                                    <tei-cell data-origname="cell">قطعة أرض باقية من المحل المتقدم تعرف بنمرة ٢ حدها القبلي
+                                                لل<tei-placename xml:id="place-WA1284011601_06" id="place-WA1284011601_06" type="شارع" ref="الشارع-المستجد" data-origname="placeName" data-origatts="xml:id type ref">شارع
+                                                المستجد</tei-placename> الفاصل بينها وبين <tei-placename xml:id="place-WA1284011601_07" id="place-WA1284011601_07" type="ديوان" ref="ديوان الخارجية" data-origname="placeName" data-origatts="xml:id type ref"><tei-orgname type="ديوان" ref="ديوان-الخارجية" data-origname="orgName" data-origatts="type ref">ديوان
+                                                  الخارجية</tei-orgname></tei-placename> يبلغ طوله ٢٠ مترا
+                                          و٨٠ سانتي والبحري للمدرسة السابقة ويبلغ طوله ٢٠ مترًا و٢٠
+                                          سانتي والشرقي لحوش هذه المدرسة ويبلغ طوله ثمانية أمتار
+                                          والغربي للشارع الفاصل بينها وبين الجنينة المذكورة وطوله
+                                          كالذي قبله ومساحتها بالمتر ٤٣ و١٦٥ وبالذراع المعماري ٢٩٣
+                                          و٩٢ من مائه من الذراع</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">٩٦ و١٥٠</tei-cell>
+                                    <tei-cell data-origname="cell">قطعة أرض باقية من <tei-placename xml:id="place-WA1284011601_08" id="place-WA1284011601_08" ref="محل المحافظة القديم" data-origname="placeName" data-origatts="xml:id ref"><tei-orgname ref="محل-المحافظة-القديم" data-origname="orgName" data-origatts="ref">محل المحافظة
+                                                  القديم</tei-orgname></tei-placename> بجوار <tei-orgname ref="ديوان-الخارجية" type="ديوان" data-origname="orgName" data-origatts="ref type">ديوان
+                                                الخارجية</tei-orgname> تعرف بنمرة ٤ حدّها القبلي
+                                                ل<tei-placename xml:id="place-WA1284011601_09" id="place-WA1284011601_09" type="شارع" ref="شارع-الاسماعيلية" data-origname="placeName" data-origatts="xml:id type ref">شارع
+                                                الاسماعيلية</tei-placename> الفاصل بينها بين هذا الديوان
+                                          ويبلغ طوله ١٦ مترا و٧٥ سانتي والبحري ل<tei-placename xml:id="place-WA1284011601_10" id="place-WA1284011601_10" ref="ديوان الصحة" data-origname="placeName" data-origatts="xml:id ref"><tei-orgname type="ديوان" ref="ديوان-الصحة" data-origname="orgName" data-origatts="type ref">ديوان
+                                                الصحة</tei-orgname></tei-placename> طوله كالذي قبله والشرقي
+                                                ل<tei-placename xml:id="place-WA1284011601_11" id="place-WA1284011601_11" type="شارع" ref="شارع-الضبطية" data-origname="placeName" data-origatts="xml:id type ref">شارع
+                                                الضبطية</tei-placename> وطوله ٥ أمتار و٧٠ سانتي والغربي
+                                          لبعض المدرسة السابقة وطوله أربعة أمتار ونصف ومساحتها
+                                          بالمتر ٨٤ و٩١ سانتي وبالذراع المعماري ١٥٠ و٩٦ من مائة من
+                                          الذراع</tei-cell>
+                              </tei-row>
+                        </tei-table>
+                        <tei-p data-origname="p">هذه القطع الثلاث من جملة املاك الميري المستغني عنها ولاجل الأنتفاع بها
+                              وانتظام الشارع حررّت قوائم مزايدة فيها الشروط اللازمة لمن يرغب في
+                              شرائها وسلمت إلي <tei-persname role="دلال" data-origname="persName" data-origatts="role">السيد محمد مصطفى الجنيدي
+                                    الدلال</tei-persname> واقتضى الحال إدراجها بالوقائع لاجل الأعلان
+                              ليتوجه إليها كل من يريدها ويشاهدها بالعيان بمقتضي الأفادة الواردة من
+                                    <tei-orgname type="ديوان" ref="ديوان-المحافظة" data-origname="orgName" data-origatts="type ref">ديوان
+                                    المحافظة</tei-orgname>.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284012301" id="WA1284012301" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-03-16" data-origname="date" data-origatts="when-custom">١٦ ربيع الأول ١٢٨٤</tei-date>
+                              <tei-date when="1867-07-18" data-origname="date" data-origatts="when">١٨ يوليه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٢٣</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">الحوادث الداخلية</tei-title></tei-head>
+                        <tei-p data-origname="p">أحسن بالرتبة الرابعة إلى <tei-persname data-origname="persName">خليل افندي وهبي المتشرف بالخدمة
+                                          ب<tei-orgname type="دائرة" ref="دائرة-سعادة-ذات-العصمة-والدة-ولى-النعم-الخديو-الاعظم" data-origname="orgName" data-origatts="type ref">دائرة سعادة ذات العصمة والدة ولى النعم الخديو
+                                          الأعظم</tei-orgname></tei-persname> بعد ان كان من أرباب الرتبة
+                              الثالثة.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284012302" id="WA1284012302" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-03-16" data-origname="date" data-origatts="when-custom">١٦ ربيع الأول ١٢٨٤</tei-date>
+                              <tei-date when="1867-07-18" data-origname="date" data-origatts="when">١٨ يوليه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٢٣</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان</tei-title></tei-head>
+                        <tei-p data-origname="p">مضمون <tei-rs type="افادة" data-origname="rs" data-origatts="type">افادة</tei-rs> واردة من <tei-orgname ref="ضبطية" data-origname="orgName" data-origatts="ref">الضبطية</tei-orgname> في ثالث عشر الشهر الحال ان الأماكن والمزروعات
+                              التي بضواحي <tei-placename xml:id="place-WA1284012302_01" id="place-WA1284012302_01" ref="شبرا-الخيمة" data-origname="placeName" data-origatts="xml:id ref">شبرا الخيمة</tei-placename>
+                              الجارية في ملك <tei-persname data-origname="persName">محمد بيك أمين نجل <tei-persname role="مدير الدقهلية" data-origname="persName" data-origatts="role">المرحوم خورشيد باشا مدير <tei-placename xml:id="place-WA1284012302_02" id="place-WA1284012302_02" ref="الدقهلية" data-origname="placeName" data-origatts="xml:id ref">الدقهلية</tei-placename>
+                                          سابقًا</tei-persname></tei-persname> معرضة للمبيع والمزايدة في
+                              مساومتها بمقتضى قائمة مزاد بختم البيك المومي اليه بطرف <tei-orgname ref="الخواجه انطوان شراباتي السمسار وشركاه" data-origname="orgName" data-origatts="ref"><tei-persname role="سمسار" data-origname="persName" data-origatts="role">الخواجه انطوان شراباتي السمسار</tei-persname>
+                                    وشركاه</tei-orgname> وهي بهذا البيان.<tei-table rows="7" cols="2" data-origname="table" data-origatts="rows cols">
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">عدد</tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012302_03" id="place-WA1284012302_03" type="منزل" ref="منزل-محمد-بيك-أمين" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename>
+                                                <tei-persname data-origname="persName">كامل <tei-choice data-origname="choice">
+                                                  <tei-sic data-origname="sic">لبنا</tei-sic>
+                                                  <tei-corr data-origname="corr">البنا</tei-corr>
+                                                  </tei-choice></tei-persname> مستوفي المنافع بانمله من
+                                                الجهة الغربية ثمانية دكاكين مسكونة ب<tei-placename xml:id="place-WA1284012302_04" id="place-WA1284012302_04" type="جهة" ref="جهة-شبرا" data-origname="placeName" data-origatts="xml:id type ref">جهة
+                                                شبرا</tei-placename></tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">جملة أشجار من اللبخ مزروعة على صف واحد تجاه الدكاكين
+                                                المذكورة</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">ساقية كاملة الآلآت صالحة للاستعمال جميع أدواتها من
+                                                الحديد</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">كوثك مما يلي الساقية المذكورة</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">وابور للطحن في قوة عشر من الخيل كامل البنيان والآلات
+                                                يدير حجرين يطحن عليهما في الساعة الواحدة أردبان
+                                                وبرحبته منظرتان</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">٥</tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    </tei-row>
+                              </tei-table>وحيث بلغت المزايدة في تلك الأماكن والمزروعات إلى ألف ومائتين
+                              من الجنيه الأنكليزي وربما يوجد من يرغب في الأخذ بالزيادة فقد حدّد لذلك
+                              ثلاثة شهور ابتداؤها ١٣ ربيع الأول سنة ١٢٨٤ ولزم اعلان ذلك بالوقائع
+                              ليتوجه كل من له رغبة في الزيادة إلي دكان السمسار لمذكور ب<tei-placename xml:id="place-WA1284012302_05" id="place-WA1284012302_05" type="سكة" ref="السكة الجديدة" data-origname="placeName" data-origatts="xml:id type ref">السكة الجديدة</tei-placename> تجاه
+                                    <tei-placename xml:id="place-WA1284012302_06" id="place-WA1284012302_06" type="وكالة" ref="وكالة قاسم كتخدا" data-origname="placeName" data-origatts="xml:id type ref">وكالة قاسم
+                                    كتخدا</tei-placename> ويضع اسمه مع مقدار ما يعطيه من الزيادة
+                              بالقائمة المذكورة.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284012401" id="WA1284012401" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-03-20" data-origname="date" data-origatts="when-custom">٢٠ ربيع الأول ١٢٨٤</tei-date>
+                              <tei-date when="1867-07-22" data-origname="date" data-origatts="when">٢٢ يوليه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٢٤</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">من السهو ما وقع في الصحيفة المارة من أن <tei-persname data-origname="persName">خليل افندي وهبي المتشرف
+                                    بالخدمة ب<tei-orgname ref="دائرة سعادة ذات العصمة والدة ولي النعم الخديو الأعظم" type="دائرة" data-origname="orgName" data-origatts="ref type">دائرة سعادة ذات العصمة والدة ولي النعم الخديو
+                                          الأعظم</tei-orgname></tei-persname> أحسن إليه بالرتبة الرابعة بعد
+                              أن كان من أرباب الرتبة الرابعة.</tei-p>
+                  </tei-div>
+                  <tei-div xml:id="WA1284012402" id="WA1284012402" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-03-20" data-origname="date" data-origatts="when-custom">٢٠ ربيع الأول ١٢٨٤</tei-date>
+                              <tei-date when="1867-07-22" data-origname="date" data-origatts="when">٢٢ يوليه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٢٤</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">بعد مضي خمس ساعات وربع من يوم الجمعة الماضي ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs>
+                                    ب<tei-placename xml:id="place-WA1284012402_01" id="place-WA1284012402_01" type="منزل" ref="منزل-الحرمه-زهرة" data-origname="placeName" data-origatts="xml:id type ref">منزل
+                                          <tei-persname data-origname="persName">الحرمة زهرة</tei-persname></tei-placename> ب<tei-placename xml:id="place-WA1284012402_02" id="place-WA1284012402_02" type="شارع" ref="شارع-الحمزاوى" data-origname="placeName" data-origatts="xml:id type ref">شارع الحمزاوي</tei-placename> فوجهت
+                              اليه الطلومبات من ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> فلم تمس
+                              الحاجة اليها وأطفئ بدون سراية ولم يتلف سوى أشياء تافهة كانت فوق
+                              السطح.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284012501" id="WA1284012501" resp="#eSG" xml:base="w10" data-origname="div" data-origatts="xml:id resp xml:base">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-03-23" data-origname="date" data-origatts="when-custom">٢٣ ربيع الأول ١٢٨٤</tei-date>
+                              <tei-date when="1867-07-25" data-origname="date" data-origatts="when">٢٥ يوليه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٢٥</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان</tei-title></tei-head>
+                        <tei-p data-origname="p">عن <tei-rs type="بيان" data-origname="rs" data-origatts="type">بيان</tei-rs> الأماكن الوقف الخربة التي اقتضت المصلحة بيع
+                              انقاضها وتأجير أرضها للراغبين والأذن بأحداث الخلو فيها على سبيل البقاء
+                              بوجه القرار حسب الإفادة الواردة من <tei-orgname type="ديوان" ref="ديوان-عموم-الأوقاف" data-origname="orgName" data-origatts="type ref">ديوان عموم الأوقاف</tei-orgname> في ٢٠ ربيع
+                                    الأول<tei-table rows="8" cols="3" data-origname="table" data-origatts="rows cols">
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">عدد </tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                          <tei-cell data-origname="cell"> ذراع مسطح </tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012501_01" id="place-WA1284012501_01" type="خربة" ref="خربة-فى-وقف-الامامين-وسيدنا-الحسين" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> ب<tei-placename xml:id="place-WA1284012501_02" id="place-WA1284012501_02" type="منطقة" ref="منطقة-عبد-الله-بيك" data-origname="placeName" data-origatts="xml:id type ref">منطقة <tei-persname data-origname="persName">عبد الله
+                                                  بيك</tei-persname></tei-placename> ب<tei-placename xml:id="place-WA1284012501_03" id="place-WA1284012501_03" ref="السروجية" data-origname="placeName" data-origatts="xml:id ref">السروجية</tei-placename> في <tei-orgname type="وقف" ref="وقف-الامامين-وسيدنا-الحسين" data-origname="orgName" data-origatts="type ref">وقف
+                                                  الامامين و<tei-persname data-origname="persName">سيدنا
+                                                  الحسين</tei-persname></tei-orgname></tei-cell>
+                                          <tei-cell data-origname="cell">٦٦</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012501_04" id="place-WA1284012501_04" type="خربة" ref="خربة-وقف-سيدنا-الحسين" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> ب<tei-placename xml:id="place-WA1284012501_05" id="place-WA1284012501_05" type="حوش" ref="حوش-قدم" data-origname="placeName" data-origatts="xml:id type ref">حوش قدم</tei-placename> في <tei-orgname ref="وقف-سيدنا-الحسين" type="وقف" data-origname="orgName" data-origatts="ref type">وقف سيدنا
+                                                  الحسين</tei-orgname></tei-cell>
+                                          <tei-cell data-origname="cell">٤٤١</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012501_06" id="place-WA1284012501_06" type="خربة" ref="خربة-فى-وقف-الامامين" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> في <tei-placename xml:id="place-WA1284012501_07" id="place-WA1284012501_07" type="حارة" ref="حارة-الحمزية" data-origname="placeName" data-origatts="xml:id type ref">حارة الحمزية</tei-placename>
+                                                  ب<tei-placename xml:id="place-WA1284012501_08" id="place-WA1284012501_08" ref="الداودية" data-origname="placeName" data-origatts="xml:id ref">الداودية</tei-placename> في
+                                                  <tei-orgname ref="وقف-الامامين" type="وقف" data-origname="orgName" data-origatts="ref type">وقف
+                                                  الأمامين</tei-orgname></tei-cell>
+                                          <tei-cell data-origname="cell">١٥٦</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012501_09" id="place-WA1284012501_09" type="خربة" ref="خربة-وقف-سيدى-عقبة" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> في <tei-placename xml:id="place-WA1284012501_10" id="place-WA1284012501_10" type="زقاق" ref="زقاق-الشعرانى" data-origname="placeName" data-origatts="xml:id type ref">زقاق الشعراني</tei-placename> في
+                                                  <tei-orgname type="وقف" ref="وقف-سيدي-عقبة" data-origname="orgName" data-origatts="type ref">وقف
+                                                  <tei-persname data-origname="persName">سيدي عقبة</tei-persname></tei-orgname></tei-cell>
+                                          <tei-cell data-origname="cell">٥٨٠</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012501_11" id="place-WA1284012501_11" type="خربة" ref="خربة-وقف-سيدنا-الحسين" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> في <tei-placename xml:id="place-WA1284012501_12" id="place-WA1284012501_12" type="درب" ref="درب-الشيخ-مسعود" data-origname="placeName" data-origatts="xml:id type ref">درب الشيخ مسعود</tei-placename>
+                                                  ب<tei-placename xml:id="place-WA1284012501_13" id="place-WA1284012501_13" ref="بولاق" data-origname="placeName" data-origatts="xml:id ref">بولاق</tei-placename> من
+                                                  <tei-orgname type="وقف" ref="وقف-سيدنا-الحسين" data-origname="orgName" data-origatts="type ref">وقف
+                                                  سيدنا الحسين</tei-orgname></tei-cell>
+                                          <tei-cell data-origname="cell">١٣٦</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284012501_14" id="place-WA1284012501_14" type="خربة" ref="خربة-وقف-الامامين" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> في <tei-placename xml:id="place-WA1284012501_15" id="place-WA1284012501_15" type="عطفة" ref="عطفة-القرافة" data-origname="placeName" data-origatts="xml:id type ref">عطفة القرافة</tei-placename>
+                                                  ب<tei-placename xml:id="place-WA1284012501_16" id="place-WA1284012501_16" type="جهة" ref="جهة-قصر-الشوك" data-origname="placeName" data-origatts="xml:id type ref">جهة قصر
+                                                  الشوك</tei-placename> من <tei-orgname type="وقف" ref="وقف-الامامين" data-origname="orgName" data-origatts="type ref">وقف الأمامين</tei-orgname></tei-cell>
+                                          <tei-cell data-origname="cell">٣٣٠</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">__</tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">٦</tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    </tei-row>
+                              </tei-table> وحيث انه موجود بعض اشخاص يرغبون في أخذ هذه الأماكن
+                                    <tei-sic data-origname="sic">بالزيادة</tei-sic> عما جرت به مساومتها فقد عين لذلك عشرون يوما
+                              ابتدؤها يوم الثلثا ٢٠ الشهر الحال وحرر بذلك خمسة وثلاثون اعلانا ونشرت
+                              على <tei-orgname type="قره-قولات" data-origname="orgName" data-origatts="type">القره قولات</tei-orgname> وادراج هنا أيضا
+                              ليعم الأعلان به حيث انه بعد مضي الميعاد سيحرّر إلى المحكمة بكتابة
+                              الحجة اللازمة لمن يرسي مزاد أى محل منها عليه بما تنتهي الرغبة
+                              اليه.</tei-p>
+                  </tei-div>
+                  <tei-div xml:id="WA1284012502" id="WA1284012502" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-03-23" data-origname="date" data-origatts="when-custom">٢٣ ربيع الأول ١٢٨٤</tei-date>
+                              <tei-date when="1867-07-25" data-origname="date" data-origatts="when">٢٥ يوليه ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٢٥</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0">(علم <tei-rs type="بيان" data-origname="rs" data-origatts="type">بيان</tei-rs> زيادة النيل المبارك)</tei-head>
+                        <tei-table rend="rules" data-origname="table" data-origatts="rend">
+                              <tei-row data-origname="row">
+                                    <tei-cell cols="3" data-origname="cell" data-origatts="cols">سنة ١٢٨٣</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">ذراع</tei-cell>
+                                    <tei-cell data-origname="cell">قيراط </tei-cell>
+                                    <tei-cell data-origname="cell">زيادة</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١١</tei-cell>
+                                    <tei-cell data-origname="cell">٠٠</tei-cell>
+                                    <tei-cell data-origname="cell">٠</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١١</tei-cell>
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١١</tei-cell>
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                              </tei-row>
+                        </tei-table>
+                        <tei-table rend="rules" data-origname="table" data-origatts="rend">
+                              <tei-row data-origname="row">
+                                    <tei-cell cols="4" data-origname="cell" data-origatts="cols"> سنة ١٢٨٤</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">ذراع</tei-cell>
+                                    <tei-cell data-origname="cell">قيراط</tei-cell>
+                                    <tei-cell data-origname="cell">زيادة</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١٠</tei-cell>
+                                    <tei-cell data-origname="cell">١١</tei-cell>
+                                    <tei-cell data-origname="cell">٤</tei-cell>
+                                    <tei-cell data-origname="cell">يوم الثلاث ٢١ ربيع الأول</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١٠</tei-cell>
+                                    <tei-cell data-origname="cell">١٤</tei-cell>
+                                    <tei-cell data-origname="cell">٣</tei-cell>
+                                    <tei-cell data-origname="cell">يوم الأربع ٢٢ منه</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١٠</tei-cell>
+                                    <tei-cell data-origname="cell">١٨</tei-cell>
+                                    <tei-cell data-origname="cell">٤</tei-cell>
+                                    <tei-cell data-origname="cell">يوم الخميس ٢٣ منه</tei-cell>
+                              </tei-row>
+                        </tei-table>
+                  </tei-div>
+         <tei-div xml:id="WA1284013101" id="WA1284013101" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-04-18" data-origname="date" data-origatts="when-custom">١٨ ربيع الثاني ١٢٨٤</tei-date>
+                              <tei-date when="1867-08-19" data-origname="date" data-origatts="when">١٩ أغسطس ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٣١</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">في يوم الخميس الماضي رابع عشر هذا الشهر في الساعة السابعة منه ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs> بقاعة أرضية ب<tei-placename xml:id="place-WA1284013101_01" id="place-WA1284013101_01" type="منزل" ref="منزل-سكن-محمد-القيس-البرادعى" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename> سكن
+                                    <tei-persname data-origname="persName">محمد القيس البرادُعي</tei-persname> ب<tei-placename xml:id="place-WA1284013101_02" id="place-WA1284013101_02" type="جهة" ref="جهه-الحطابه" data-origname="placeName" data-origatts="xml:id type ref">جهة الحطابه</tei-placename> ب<tei-placename xml:id="place-WA1284013101_03" id="place-WA1284013101_03" type="ثمن" ref="ثمن-الدرب-الاحمر" data-origname="placeName" data-origatts="xml:id type ref"><tei-orgname type="ثمن" ref="ثمن-الدرب-الأحمر" data-origname="orgName" data-origatts="type ref">ثمن الدرب
+                                    الأحمر</tei-orgname></tei-placename> فوجهت اليه الطلومبات والرجال من
+                                    ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> فأطفئ ولم يسير إلى جهة
+                              أخرى ولم يصب به الا سقف القاعة وشئ من القش المعدّ لحشو البرادّع.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284013201" id="WA1284013201" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when="1284-04-21" when-custom="1284-04-21" data-origname="date" data-origatts="when when-custom">٢١ ربيع الثاني
+                                    ١٢٨٤</tei-date>
+                              <tei-date when="1867-08-22" data-origname="date" data-origatts="when">٢٢ أغسطس ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٣٢</tei-biblscope><tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٣</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">وعلم من أخبار <tei-orgname ref="الضبطية" data-origname="orgName" data-origatts="ref">الضبطية</tei-orgname> أيضّا أنه في
+                              الساعة السابعة من ليلة الأثنين الماضي ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs> في
+                              حاصل من <tei-placename xml:id="place-WA1284013201_01" id="place-WA1284013201_01" type="منزل" ref="منزل-جرجس-قدسى" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename>
+                              لشخص اسمه <tei-persname data-origname="persName">جرجس قدسي</tei-persname> ب<tei-placename xml:id="place-WA1284013201_02" id="place-WA1284013201_02" type="درب" ref="درب-حيدر" data-origname="placeName" data-origatts="xml:id type ref">درب حيدر</tei-placename> من <tei-placename xml:id="place-WA1284013201_03" id="place-WA1284013201_03" ref="ثمن عابدين" data-origname="placeName" data-origatts="xml:id ref"><tei-orgname type="ثمن" ref="ثمن-عابدين" data-origname="orgName" data-origatts="type ref">ثمن
+                                          عابدين</tei-orgname></tei-placename> وبما أبدته ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> من الهمة في ارسال الطلومبات وما
+                              يلزم لها من المهمات والأدوات تيسر اطفاؤه في ربع الساعة ولم يحترق به
+                              سوى ما كان في الحاصل المذكور من بعض أخشاب وقش.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284013301" id="WA1284013301" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-04-25" data-origname="date" data-origatts="when-custom">٢٥ ربيع الثاني ١٢٨٤</tei-date>
+                              <tei-date when="1867-08-26" data-origname="date" data-origatts="when">٢٦ أغسطس ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٣٣</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl>
+                        </tei-head>
+                        <tei-head data-origname="head" data-level="0">(اعلان)</tei-head>
+                        <tei-p data-origname="p">ان قطع الأرض الثلاثة الكائنة ب<tei-placename xml:id="place-WA1284013301_01" id="place-WA1284013301_01" ref="الازبكية" data-origname="placeName" data-origatts="xml:id ref">الازبكية</tei-placename> ملك الميري الجاري مزادها بموجب الشروط
+                              المبينة بقوائم المزاد قد عين يوم السبت الأتي الموافق غرة جمادى <tei-choice data-origname="choice">
+                                    <tei-sic data-origname="sic">الالى</tei-sic>
+                                    <tei-corr data-origname="corr">الاولى</tei-corr>
+                              </tei-choice> سنة ١٢٨٤ الساعة الرابعة منه ميعادا لحضور الراغبين فيها فكل
+                              من رغب يحضر في المعاد المذكور ب<tei-orgname type="ديوان" ref="ديوان-محافظة-مصر" data-origname="orgName" data-origatts="type ref">ديوان محافظة مصر</tei-orgname>.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284013501" id="WA1284013501" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-05-03" data-origname="date" data-origatts="when-custom">٣ جمادي الأولى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-02" data-origname="date" data-origatts="when">٢ سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٣٥</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلانات</tei-title></tei-head>
+                        <tei-p data-origname="p">لحضرة سعادتلو <tei-persname role="مأمور الضبطية المصرية" data-origname="persName" data-origatts="role">أحمد باشا الدورملي
+                                    مأمور <tei-orgname type="ضبيطة" ref="الضبطية-المصرية" data-origname="orgName" data-origatts="type ref">الضبطية
+                                          المصرية</tei-orgname></tei-persname>
+                              <tei-placename xml:id="place-WA1284013501_01" id="place-WA1284013501_01" type="ابعادية-عشورية" ref="ابعادية-عشورية-لأحمد-باشا-الدورملي" data-origname="placeName" data-origatts="xml:id type ref">ابعادية
+                                    عشورية</tei-placename> حوض واحد ب<tei-placename xml:id="place-WA1284013501_02" id="place-WA1284013501_02" type="ناحية" ref="ناحية-الحلافى" data-origname="placeName" data-origatts="xml:id type ref">ناحية الحلافى</tei-placename> ب<tei-orgname ref="مديرية-الروضة" type="مديرية" data-origname="orgName" data-origatts="ref type"><tei-placename xml:id="place-WA1284013501_03" id="place-WA1284013501_03" type="مديرية" ref="مديرية-الروضة" data-origname="placeName" data-origatts="xml:id type ref">مديرية الروضة</tei-placename></tei-orgname>
+                              قدرها ثلاثمائة وستة وعشرين فدانا وكسور وهي مستأجرة في هذه السنة
+                              بسبعماية جنيه مصري وقد اشهرت فى المزاد على يد <tei-persname role="دلال" data-origname="persName" data-origatts="role">شاكر الدلال</tei-persname> فمن أراد شراءها فعليه به.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284013901" id="WA1284013901" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-05-17" data-origname="date" data-origatts="when-custom">١٧ جمادي الأولى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-16" data-origname="date" data-origatts="when">١٦ سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٣٩</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">من <tei-rs type="افادة" data-origname="rs" data-origatts="type">افادة</tei-rs> ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname>
+                              يعلم انه في ليلة الأربعاء ثاني عشر الشهر رؤى <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs>
+                                    ب<tei-placename xml:id="place-WA1284013901_01" id="place-WA1284013901_01" type="دكان" ref="دكان-الفسخانية-حرب" data-origname="placeName" data-origatts="xml:id type ref">دكان</tei-placename> امرأة فسخانية يقال لها
+                                    <tei-persname data-origname="persName">حرب</tei-persname> ب<tei-placename xml:id="place-WA1284013901_02" id="place-WA1284013901_02" ref="باب-الشعرية" data-origname="placeName" data-origatts="xml:id ref">باب
+                                    الشعرية</tei-placename> فأسعفت باللازم من طلومبة وغيرها وأطفئ بلا
+                              سراية ولا احتراق شئ سوى ثلاثة زنابيل أو أربعة وطبلية خشب وبعض الملابس
+                              الكهنة.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284013902" id="WA1284013902" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-05-17" data-origname="date" data-origatts="when-custom">١٧ جمادي الأولى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-16" data-origname="date" data-origatts="when">١٦ سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٣٩</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان</tei-title></tei-head>
+                        <tei-table rows="2" cols="2" data-origname="table" data-origatts="rows cols">
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">عدد</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell">نصف <tei-placename xml:id="place-WA1284013902_01" id="place-WA1284013902_01" type="منزل" ref="منزل-وقف-السيد-محمد-ابو-النجا" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename>
+                                                ب<tei-placename xml:id="place-WA1284013902_02" id="place-WA1284013902_02" type="حارة" ref="حارة-اليهود" data-origname="placeName" data-origatts="xml:id type ref">حارة
+                                                اليهود</tei-placename>
+                                          <tei-orgname type="وقف" ref="وقف-السيد-محمد-ابو-النجا" data-origname="orgName" data-origatts="type ref">وقف
+                                                  <tei-persname data-origname="persName">السيد محمد ابو
+                                                النجا</tei-persname></tei-orgname> نظارة المصونة <tei-persname role="ناظرة" data-origname="persName" data-origatts="role">حسيبة</tei-persname> يراد استبداله </tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell">حصة قدرها ثمانية عشر قيراطا فى <tei-placename xml:id="place-WA1284013902_03" id="place-WA1284013902_03" type="خرابة" ref="خرابة-وقف-المرحومة-هنا" data-origname="placeName" data-origatts="xml:id type ref">خرابة</tei-placename>
+                                                ب<tei-placename xml:id="place-WA1284013902_04" id="place-WA1284013902_04" type="درب" ref="درب-سناتات" data-origname="placeName" data-origatts="xml:id type ref">درب
+                                                سناتات</tei-placename>
+                                          <tei-orgname ref="وقف-المرحومة-هنا" type="وقف" data-origname="orgName" data-origatts="ref type">وقف المرحومة
+                                                  <tei-persname data-origname="persName">هنا</tei-persname></tei-orgname> نظارة <tei-persname role="ناظر" data-origname="persName" data-origatts="role">محمد شهاب</tei-persname> يراد احداث الخلو
+                                          فيها </tei-cell>
+                              </tei-row>
+                        </tei-table>
+                        <tei-p data-origname="p">قد <tei-choice data-origname="choice">
+                                    <tei-sic data-origname="sic">أسبغ</tei-sic>
+                                    <tei-corr data-origname="corr">أسيغ</tei-corr>
+                              </tei-choice> شرعا استبدال ذلك المنزل وأحداث الخلو في تلك الحصة وحرر بذلك
+                              خمسة وثلاثون اعلانا أرسلت إلى ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname>
+                              لتوضع على ال<tei-orgname type="قره-قولات" data-origname="orgName" data-origatts="type">قره قولات</tei-orgname> وكتب إلى
+                              معاون <tei-orgname ref="الأوقاف" data-origname="orgName" data-origatts="ref">الأوقاف</tei-orgname> باشهار ذلك في المزايدة
+                              حتى يكون معلوما للخاص والعام.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284014001" id="WA1284014001" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-05-20" data-origname="date" data-origatts="when-custom">٢٠ جمادي الأولى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-19" data-origname="date" data-origatts="when">١٩سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٤٠</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">وجهت <tei-orgname type="نظارة" ref="نظارة-الداخلية" data-origname="orgName" data-origatts="type ref">نظارتا الداخلية</tei-orgname>
+                                    و<tei-orgname type="نظارة" ref="نظارة-المالية" data-origname="orgName" data-origatts="type ref">المالية</tei-orgname>
+                                    و<tei-orgname type="ادارة" ref="ادارة-الأشغال-العمومية" data-origname="orgName" data-origatts="type ref">ادارة
+                                    الأشغال العمومية</tei-orgname> إلى حضرة سعادتلو <tei-persname data-origname="persName">راغب
+                                    باشا</tei-persname>
+                        </tei-p>
+                        <tei-p data-origname="p">وجهت رئاسة <tei-orgname type="مجلس" ref="مجلس-الأحكام" data-origname="orgName" data-origatts="type ref">مجلس الأحكام</tei-orgname>
+                              إلى حضرة سعادتلو <tei-persname data-origname="persName">شريف باشا</tei-persname> زيادة عما كان في عهدته
+                              من <tei-orgname type="نظارة" ref="نظارة-المدارس" data-origname="orgName" data-origatts="type ref">نظارة المدارس</tei-orgname>
+                              واعضائية <tei-orgname type="مجلس" ref="المجلس-الخصوصي" data-origname="orgName" data-origatts="type ref">المجلس
+                                    الخصوصي</tei-orgname>.</tei-p>
+                        <tei-p data-origname="p">وجهت اعضائية المجلس الخصوصي إلى كل من حضرتي سعادتلو <tei-persname role="محافظ مصر" data-origname="persName" data-origatts="role">أحمد رشيد باشا محافظ مصر</tei-persname> وسعادتلو
+                                    <tei-persname role="أمين بيت المال" data-origname="persName" data-origatts="role">حسين باشا أمين <tei-orgname ref="بيت-المال" data-origname="orgName" data-origatts="ref">بيت المال</tei-orgname></tei-persname> زيادة عن
+                              مأموريتها</tei-p>
+                        <tei-p data-origname="p">وكذا وجهت هذه الأعضائية الى كل من حضرتي سعادتلو <tei-persname data-origname="persName">عبد الله
+                                    باشا</tei-persname> بدلا عن رئاسة مجلس الأحكام والى سعادتلو
+                                    <tei-persname data-origname="persName">حسن راسم باشا</tei-persname> بدلا عن نظارة <tei-orgname ref="الدائرة-السنية" data-origname="orgName" data-origatts="ref">الدائرة السنية</tei-orgname></tei-p>
+                        <tei-p data-origname="p">وجهت نظارة الدائرة السنية الى حضرة سعادتلو <tei-persname data-origname="persName">حافظ باشا</tei-persname>
+                              بدلا عن نظارة المالية</tei-p>
+                        <tei-p data-origname="p">تعين مفتشا لعموم <tei-orgname type="الجفالك-السنية" data-origname="orgName" data-origatts="type">الجفالك السنية</tei-orgname>
+                              سعادتلو <tei-persname data-origname="persName">أحمد باشا الدرامه لي</tei-persname> الذي كان مأمور
+                                    <tei-orgname ref="الضبطية-المصرية" type="ضبطية" data-origname="orgName" data-origatts="ref type">الضبطية
+                                    المصرية</tei-orgname> وتقلد بمأموريته هذه وكيلها عزتلو
+                                    <tei-persname data-origname="persName">ادهم بيك افندي</tei-persname> بعد أن أحسن اليه برتبة
+                              المتمايز من الدرجة الثانية السمية.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284014101" id="WA1284014101" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-05-24" data-origname="date" data-origatts="when-custom">٢٤ جمادي الأولى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-23" data-origname="date" data-origatts="when">٢٣ سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٤١</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢-٣</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">وفيها بتاريخ ٥ منه انه حرر من <tei-placename xml:id="place-WA1284014101_01" id="place-WA1284014101_01" ref="لوم" data-origname="placeName" data-origatts="xml:id ref">(لوم)</tei-placename> ان
+                              الريح العاصف الذي كان ثار بها هدم منارة <tei-orgname type="جامع" ref="جامع-القلعة" data-origname="orgName" data-origatts="type ref"><tei-placename xml:id="place-WA1284014101_02" id="place-WA1284014101_02" type="جامع" ref="جامع-القلعة" data-origname="placeName" data-origatts="xml:id type ref">جامع
+                                          القلعة</tei-placename></tei-orgname> وسقفه ومنازل بجواره وبعض
+                              مداخن جملة دور وجدرانها وقلع أشجار كبيرة كانت مثمرة في حدائقها وحطم
+                              بالساحل سفينته لرجل يقال له (آدم) كانت راسية هناك فانكسر مقعدها
+                              والصواري التي بموخرها ووسطها وفصل أخرى من مرساها وصار يتلاعب بها مدة
+                              لكنها لم يتلف منها سوى دفتها.</tei-p>
+                  </tei-div>
+                  <tei-div xml:id="WA1284014102" id="WA1284014102" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-05-24" data-origname="date" data-origatts="when-custom">٢٤ جمادي الأولى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-23" data-origname="date" data-origatts="when">٢٣ سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٤١</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٣</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">يستفاد من أشعار ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> انه في الساعة
+                              الثانية من ليلة الأربعاء ثالث عشر هذا الشهر ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs> ب<tei-placename xml:id="place-WA1284014102_01" id="place-WA1284014102_01" ref="عشة بالرميلة" data-origname="placeName" data-origatts="xml:id ref">عشة</tei-placename> من
+                              الخشب والبوص ب<tei-placename xml:id="place-WA1284014102_02" id="place-WA1284014102_02" ref="الرميلة" data-origname="placeName" data-origatts="xml:id ref">الرميلة</tei-placename> تجاه عدة
+                              دكاكين وقهاوي فاسعفت من الضبطية بالطلومبة و<tei-choice data-origname="choice">
+                                    <tei-sic data-origname="sic">من لزم</tei-sic>
+                                    <tei-corr data-origname="corr">ما يلزم</tei-corr>
+                              </tei-choice> واطفئت بدون سراية ولا تلف شئ سواها.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284014301" id="WA1284014301" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-06-01" data-origname="date" data-origatts="when-custom">غرة جمادي الثانى ١٢٨٤</tei-date>
+                              <tei-date when="1867-09-30" data-origname="date" data-origatts="when">٣٠ سبتمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٤٣</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">وانه في الساعة السابعة من ليلة الجمعة الماضية ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs> هائل من منزل شخص يسمى ب<tei-persname data-origname="persName">محمد منير</tei-persname>
+                              كائن ب<tei-placename xml:id="place-WA1284014301_01" id="place-WA1284014301_01" type="شارع" ref="شارع-الحمزاوى" data-origname="placeName" data-origatts="xml:id type ref">شارع
+                                    الحمزاوى</tei-placename> التابع <tei-orgname type="ثمن" ref="ثمن-باب-الشعرية" data-origname="orgName" data-origatts="type ref"><tei-placename xml:id="place-WA1284014301_02" id="place-WA1284014301_02" type="ثمن" ref="ثمن-باب-الشعرية" data-origname="placeName" data-origatts="xml:id type ref">ثمن باب
+                                    الشعرية</tei-placename></tei-orgname> سكن <tei-persname data-origname="persName">الخواجة (كيورك
+                                    اسبتان)</tei-persname> وشريكه فبودر من ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> بارسال سبع طلومبات برجالها ولوازمها واطفئ
+                              بالاقدامات المتوالية بدون أن يسرى الى أسفل المنزل ولا الى ما جاوره من
+                              الاماكن اللاتي فيها الأشياء السريعة الوقود كالاسبيرتو ولم يحترق منه
+                              سوى أوطتين بالدور الأوسط بما فيها من الأشياء.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284014701" id="WA1284014701" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-06-15" data-origname="date" data-origatts="when-custom">١٥ جمادي الثانى ١٢٨٤</tei-date>
+                              <tei-date when="1867-10-14" data-origname="date" data-origatts="when">١٤ اوقتوبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٤٧</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٣</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">علم من <tei-rs type="إفادة" data-origname="rs" data-origatts="type">إفادة</tei-rs> واردة من <tei-orgname ref="الأوقاف" data-origname="orgName" data-origatts="ref">الأوقاف</tei-orgname> في ١٠ جمادى الآخرة ان <tei-placename xml:id="place-WA1284014701_01" id="place-WA1284014701_01" type="حوش" ref="حوش-وقف-حسن-أغا-اوده-باشى" data-origname="placeName" data-origatts="xml:id type ref">حوش</tei-placename>ا ب<tei-placename xml:id="place-WA1284014701_02" id="place-WA1284014701_02" ref="كماجين" data-origname="placeName" data-origatts="xml:id ref">الكماجين</tei-placename> ب<tei-placename xml:id="place-WA1284014701_03" id="place-WA1284014701_03" ref="علوة-جميزة" data-origname="placeName" data-origatts="xml:id ref">علوة جميزة</tei-placename>
+                              <tei-orgname type="وقف" ref="وقف-حسن-أغا-اوده-باشى" data-origname="orgName" data-origatts="type ref">وقف <tei-persname role="اوده باشى" data-origname="persName" data-origatts="role">حسن أغا اوده باشى</tei-persname></tei-orgname>
+                              نظارة <tei-persname role="ناظرة" data-origname="persName" data-origatts="role">الست نفيسة</tei-persname> مسطحه ٩٠٤ أذرع وحصة
+                              قدرها ١٧ قيراطا ونصف في منزل ب<tei-placename xml:id="place-WA1284014701_04" id="place-WA1284014701_04" type="درب" ref="درب-القزازين" data-origname="placeName" data-origatts="xml:id type ref">درب القزازين</tei-placename> ب<tei-placename xml:id="place-WA1284014701_05" id="place-WA1284014701_05" ref="الدرب-الاحمر" data-origname="placeName" data-origatts="xml:id ref">الدرب
+                                    الأحمر</tei-placename>
+                              <tei-orgname ref="وقف-محمد-السايس" type="وقف" data-origname="orgName" data-origatts="ref type">وقف <tei-persname data-origname="persName">محمد
+                                          السايس</tei-persname></tei-orgname> نظارة <tei-persname role="ناظرة" data-origname="persName" data-origatts="role">فاطمة بنت سليمان</tei-persname> مسطحها ٣٩ قد أسيغ مبيع أنقاضهما
+                              شرعا وتأجير أرضهما وأذن باحداث الخلو فيهما وحرّر بذلك خمسة وثلاثون
+                              اعلانا أرسلت الى ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> في ذلك
+                              التاريخ لتوضع على القره قولات وكتب الي معاون باشهارهما بين الراغبين
+                              بقوائم مزاد ليعلم الخاص والعام من جميع الأنام.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284014801" id="WA1284014801" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-06-18" data-origname="date" data-origatts="when-custom">١٨ جمادي الثانيه ١٢٨٤</tei-date>
+                              <tei-date when="1867-10-17" data-origname="date" data-origatts="when">١٧ اوقتوبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٤٨</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">علم من <tei-rs type="اشعار" data-origname="rs" data-origatts="type">اشعار</tei-rs> وارد من ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> انه سقط سقف <tei-placename xml:id="place-WA1284014801_01" id="place-WA1284014801_01" ref="عشة بجزيرة بدران" data-origname="placeName" data-origatts="xml:id ref">عشة ب<tei-placename xml:id="place-WA1284014801_02" id="place-WA1284014801_02" type="جزيرة" ref="جزيرة-بدران" data-origname="placeName" data-origatts="xml:id type ref">جزيرة
+                                          بدران</tei-placename></tei-placename> ليلا فأرسل رجال من الضبطية
+                              فأخرجوا من تحته امرأتين ميتتين ورجلين وصبيا على قيد الحياة الا ان
+                              الصبي أصيبت احدى رجليه بجراحة فأرسل الى ال<tei-orgname type="اسبيتالية" data-origname="orgName" data-origatts="type">اسبتالية</tei-orgname> للمعالجة ودفنت المرأتان بعد كشف الحكيم وها
+                              هو جار تحقيق القضية ب<tei-orgname type="ديوان" ref="ديوان-الضبطية" data-origname="orgName" data-origatts="type ref">ديوان
+                                    الضبطية</tei-orgname>.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284015401" id="WA1284015401" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-07-10" data-origname="date" data-origatts="when-custom">١٠ رجب ١٢٨٤</tei-date>
+                              <tei-date when="1867-11-07" data-origname="date" data-origatts="when">٧ نونمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٥٤</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">وجهت الرتبة الثانية المعتبرة إلى حضرة عزتلو <tei-persname role="مفتش" data-origname="persName" data-origatts="role">عبد
+                                    الفتاح بك أحد مفتشي الجفالك السنية</tei-persname>.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284015701" id="WA1284015701" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-07-21" data-origname="date" data-origatts="when-custom">٢١ رجب ١٢٨٤</tei-date>
+                              <tei-date when="1867-11-18" data-origname="date" data-origatts="when">١٨ نونمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٥٧</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">علم من <tei-rs type="اشعار" data-origname="rs" data-origatts="type">اشعار</tei-rs> ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> انه في الساعة السابعة من يوم الخميس الماضي سابع
+                              عشر هذا الشهر ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs> بفرن سكن <tei-persname role="فران" data-origname="persName" data-origatts="role">مصطفى بدوى الفران</tei-persname> ب<tei-placename xml:id="place-WA1284015701_01" id="place-WA1284015701_01" type="درب" ref="درب-الحبالة" data-origname="placeName" data-origatts="xml:id type ref">درب الحبالة</tei-placename> ب<tei-orgname type="ثمن" ref="ثمن-الخليفة" data-origname="orgName" data-origatts="type ref"><tei-placename xml:id="place-WA1284015701_02" id="place-WA1284015701_02" type="ثمن" ref="ثمن-الخليفة" data-origname="placeName" data-origatts="xml:id type ref">ثمن
+                                          الخليفة</tei-placename></tei-orgname> فوجهت اليه الطلومبات ومن
+                              يلزم وأطفئ بدون سراية ولا احتراق شئ سوى كثير قش ذره كان بداخل
+                              الفرن.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284015901" id="WA1284015901" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-07-28" data-origname="date" data-origatts="when-custom">٢٨ رجب ١٢٨٤</tei-date>
+                              <tei-date when="1867-11-25" data-origname="date" data-origatts="when">٢٥ نونمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٥٩</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٣</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">بلغنا أن أحسن من الحضرة الخديوية بنيشان مجيدي من الرتبة الثالثة إلى
+                                    <tei-persname role="ناظر شركة تقسيم المياه" data-origname="persName" data-origatts="role">موسيو (قوردية) ناظر
+                                          <tei-orgname type="شركة" ref="شركة-تقسيم-المياه" data-origname="orgName" data-origatts="type ref">شركة تقسيم
+                                          المياه</tei-orgname></tei-persname> في مصر المحروسة مكافأة له على
+                              خدمته السابقة.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284016001" id="WA1284016001" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-08-01" data-origname="date" data-origatts="when-custom">غرة شعبان ١٢٨٤</tei-date>
+                              <tei-date when="1867-11-28" data-origname="date" data-origatts="when">٢٨ نونمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٦٠</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">استحصل لسعادة <tei-persname role="ناظر الخارجية" data-origname="persName" data-origatts="role">نوبار باشا ناظر <tei-orgname ref="الخارجية" data-origname="orgName" data-origatts="ref">الخارجية</tei-orgname></tei-persname> على نيشان
+                              مجيدي من الرتبة الأولى </tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284016201" id="WA1284016201" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-08-08" data-origname="date" data-origatts="when-custom">٨ شعبان ١٢٨٤</tei-date>
+                                    <tei-date when="1867-12-05" data-origname="date" data-origatts="when">٥ دسمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٦٢</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">فى الساعة السادسة من يوم سادس هذا الشهر ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs>
+                                    ب<tei-placename xml:id="place-WA1284016201_01" id="place-WA1284016201_01" type="منزل" ref="منزل-المرأة-نفيسة" data-origname="placeName" data-origatts="xml:id type ref">منزل المرأة
+                                          <tei-persname data-origname="persName">نفيسة</tei-persname></tei-placename> الكائن ب<tei-placename xml:id="place-WA1284016201_02" id="place-WA1284016201_02" type="حارة" ref="حارة-جامع-أصلان" data-origname="placeName" data-origatts="xml:id type ref">حارة <tei-orgname ref="جامع-أصلان" type="جامع" data-origname="orgName" data-origatts="ref type"><tei-placename xml:id="place-WA1284016201_03" id="place-WA1284016201_03" type="جامع" ref="جامع-أصلان" data-origname="placeName" data-origatts="xml:id type ref">جامع
+                                                أصلان</tei-placename></tei-orgname></tei-placename> ب<tei-orgname ref="ثمن-الدرب-الأحمر" type="ثمن" data-origname="orgName" data-origatts="ref type"><tei-placename xml:id="place-WA1284016201_04" id="place-WA1284016201_04" type="ثمن" ref="ثمن-الدرب-الأحمر" data-origname="placeName" data-origatts="xml:id type ref">ثمن الدرب
+                                          الأحمر</tei-placename></tei-orgname> ففي الوقت أرسلت الطلومبات ومن
+                              لزم من ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> واطفئ في زمن يسير بدون
+                              سراية إلى جهة أخرى ولم يحترق سوى أوطة صغيرة بالمنزل.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284016202" id="WA1284016202" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-08-08" data-origname="date" data-origatts="when-custom">٨ شعبان ١٢٨٤</tei-date>
+                                    <tei-date when="1867-12-05" data-origname="date" data-origatts="when">٥ دسمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٦٢</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلانات</tei-title></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان وارد من <tei-orgname ref="محافظة مصر" data-origname="orgName" data-origatts="ref">محافظة
+                                    مصر</tei-orgname></tei-title></tei-head>
+                        <tei-p data-origname="p">صورة كشف مقدم من <tei-persname data-origname="persName">السيد محمد مصطفى الجندي</tei-persname> ب<tei-rs type="بيان-املاك" data-origname="rs" data-origatts="type">بيان أملاك</tei-rs> حضرات ورثة <tei-persname data-origname="persName">المرحوم
+                                    محمود بك</tei-persname> المعرضة للبيع</tei-p>
+                        <tei-p data-origname="p">
+                              <tei-table rows="6" cols="2" data-origname="table" data-origatts="rows cols">
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">عدد</tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة وكالة ب<tei-placename xml:id="place-WA1284016202_01" id="place-WA1284016202_01" ref="الجماليه" data-origname="placeName" data-origatts="xml:id ref">الجماليه</tei-placename> شهيرة ب<tei-orgname type="وكالة" ref="وكالة-ابي-شنب" data-origname="orgName" data-origatts="type ref">وكالة ابي شنب</tei-orgname> بالربع
+                                                الذي فوقها وثمانية دكاكين بواجهتها واجرتها السنوية
+                                                مأتا جنيه مصري وعليها حكر سنوي خمسة وأربعون غرشا فتح
+                                                بابها بمبلغ الفى جنيه مصرى</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة بمنزل كائن ب<tei-placename xml:id="place-WA1284016202_02" id="place-WA1284016202_02" type="درب" ref="درب-قرمز" data-origname="placeName" data-origatts="xml:id type ref">درب قرمز</tei-placename> ب<tei-placename xml:id="place-WA1284016202_03" id="place-WA1284016202_03" ref="الجمالية" data-origname="placeName" data-origatts="xml:id ref">الجمالية</tei-placename> لم يؤاجره
+                                                المالكون ولا حكر عليه.</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة بمنزل ب<tei-placename xml:id="place-WA1284016202_04" id="place-WA1284016202_04" type="جهة" ref="جهة-الشيخ-نور-الظلام" data-origname="placeName" data-origatts="xml:id type ref">جهة الشيخ نور
+                                                  الظلام</tei-placename> ب<tei-placename xml:id="place-WA1284016202_05" id="place-WA1284016202_05" ref="الحلمية" data-origname="placeName" data-origatts="xml:id ref">الحلمية</tei-placename> ب<tei-placename xml:id="place-WA1284016202_06" id="place-WA1284016202_06" type="عطفة-الرزاز" data-origname="placeName" data-origatts="xml:id type">عطفة الرزاز</tei-placename> أجرته
+                                                الشهرية مأتان وسبعون قرشا ميريه ولا حكر عليه</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة خمسة أماكن علوية وخمسة اوط بأسفلها وخمسة حواصل
+                                                أرضية ب<tei-placename xml:id="place-WA1284016202_07" id="place-WA1284016202_07" type="وكالة" ref="وكالة الركن" data-origname="placeName" data-origatts="xml:id type ref"><tei-orgname ref="وكالة-الركن" type="وكالة" data-origname="orgName" data-origatts="ref type">وكالة
+                                                  الركن</tei-orgname></tei-placename> بالجمالية الشهيرة
+                                                  ب<tei-placename xml:id="place-WA1284016202_08" id="place-WA1284016202_08" type="وكالة" ref="وكالة الحمير" data-origname="placeName" data-origatts="xml:id type ref"><tei-orgname type="وكالة" ref="وكالة-الحمير" data-origname="orgName" data-origatts="type ref">وكالة
+                                                  الحمير</tei-orgname></tei-placename> أجرتها الشهرية مأتان
+                                                وستون قرشا ميريه وعليها حكر سنوى عشرون غرشا
+                                                ديوانيا</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة بمنزل بالعلوه ب<tei-placename xml:id="place-WA1284016202_09" id="place-WA1284016202_09" type="درب" ref="درب-اللبانه" data-origname="placeName" data-origatts="xml:id type ref">درب اللبانه</tei-placename> وخربة
+                                                بجواره ب<tei-orgname ref="ثمن-الدرب-الأحمر" type="ثمن" data-origname="orgName" data-origatts="ref type"><tei-placename xml:id="place-WA1284016202_10" id="place-WA1284016202_10" type="ثمن" ref="ثمن-الدرب-الأحمر" data-origname="placeName" data-origatts="xml:id type ref">ثمن
+                                                  الدرب الأحمر</tei-placename></tei-orgname> أجرتهما في كل
+                                                شهر مأته قرش وعشرة قروش ميرية وليس عليهما حكر</tei-cell>
+                                    </tei-row>
+                              </tei-table>
+                        </tei-p>
+                        <tei-p data-origname="p">أماكن ببولاق<tei-table rows="2" cols="2" data-origname="table" data-origatts="rows cols">
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">عدد</tei-cell>
+                                          <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة بوكالة ودكاكين بأسفلها ب<tei-placename xml:id="place-WA1284016202_11" id="place-WA1284016202_11" type="شارع" ref="شارع السبتية" data-origname="placeName" data-origatts="xml:id type ref">شارع
+                                                  السبتية</tei-placename> أجرتهما في كل شهر مأتان وخمسة
+                                                وأربعون قرشًا ميرية والوكالة لم يؤاجرها المالكون
+                                                وعلى الجميع حكر سنوي خمسة عشر غرشًا وعشرة فضة
+                                                ميريه</tei-cell>
+                                    </tei-row>
+                                    <tei-row data-origname="row">
+                                          <tei-cell data-origname="cell">١</tei-cell>
+                                          <tei-cell data-origname="cell">قائمة أربعة عشر دكانًا ب<tei-placename xml:id="place-WA1284016202_12" id="place-WA1284016202_12" ref="السبتية" data-origname="placeName" data-origatts="xml:id ref">السبتية</tei-placename> منها ثلاثة دكاكين أجرتها
+                                                ثلاثون غرشًا ميريا والباقي غير مؤاجر وليس على الجميع
+                                                حكر</tei-cell>
+                                    </tei-row>
+                              </tei-table></tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284016501" id="WA1284016501" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-08-19" data-origname="date" data-origatts="when-custom">١٩ شعبان ١٢٨٤</tei-date>
+                              <tei-date when="1867-12-16" data-origname="date" data-origatts="when">١٦ دسمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٦٥</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ١</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">في ليلة الجمعة الماضية ظهر <tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs> ب<tei-placename xml:id="place-WA1284016501_01" id="place-WA1284016501_01" type="فرن" ref="فرن-محمد-أبى-سلامة" data-origname="placeName" data-origatts="xml:id type ref">فرن</tei-placename>
+                              <tei-persname role="فران" data-origname="persName" data-origatts="role">محمد أبي سلامة الفران</tei-persname> ب<tei-placename xml:id="place-WA1284016501_02" id="place-WA1284016501_02" ref="التبليطة" data-origname="placeName" data-origatts="xml:id ref">التبليطة</tei-placename> ب<tei-placename xml:id="place-WA1284016501_03" id="place-WA1284016501_03" ref="الدرب-الأحمر" data-origname="placeName" data-origatts="xml:id ref">الدرب الأحمر</tei-placename> فأسعف من ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> بالطلومبات ورجالها وأطفئ في أقرب
+                              زمان بدون سراية إلي الجيران ولا احتراق شئ سوى ما فوق الفرن من السقف
+                              ويعلم من بوصلة واردة من عموم الطلومبات انه في الساعة التاسعة من ليلة
+                              الأثنين ٢٨ رجب سنة ٨٤ حصل آخر هائل في <tei-orgname ref="مدينة-الفيوم" type="مدينة" data-origname="orgName" data-origatts="ref type"><tei-placename xml:id="place-WA1284016501_04" id="place-WA1284016501_04" type="مدينة" ref="مدينة-الفيوم" data-origname="placeName" data-origatts="xml:id type ref">مدينة
+                                          الفيوم</tei-placename></tei-orgname> ب<tei-placename xml:id="place-WA1284016501_05" id="place-WA1284016501_05" type="مخزن" ref="مخزن-على-افندى-رمزى" data-origname="placeName" data-origatts="xml:id type ref">مخزن <tei-persname data-origname="persName">على أفندى
+                                          رمزى</tei-persname></tei-placename> ملاحظها سابقا وبالاستشعار وجهت
+                              الطلومبة ورجالها فأطفئت في أقرب زمن النيران اللاتى كانت مشتعلة في
+                              الأوط بما تحتها من الحاصل المشتملة علي القطن الذي لم يخلص بذره بدون ان
+                              تسري ولا تتجاوز ما كانت فيه وذلك بحضور ضبطية تلك الجهة وجمع من المشايخ
+                              والخفراء وغيرهم.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284016502" id="WA1284016502" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-08-19" data-origname="date" data-origatts="when-custom">١٩ شعبان ١٢٨٤</tei-date>
+                              <tei-date when="1867-12-16" data-origname="date" data-origatts="when">١٦ دسمبر ١٨٦٧</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٦٥</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان</tei-title></tei-head>
+                        <tei-table rows="3" cols="2" data-origname="table" data-origatts="rows cols">
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">عدد</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell">قطعة أرض <tei-orgname type="وقف" ref="وقف-الحرمين" data-origname="orgName" data-origatts="type ref">وقف
+                                                الحرمين</tei-orgname> ب<tei-placename xml:id="place-WA1284016502_01" id="place-WA1284016502_01" type="عطفة" ref="عطفة-عبدالله-بك" data-origname="placeName" data-origatts="xml:id type ref">عطفة عبد الله بك</tei-placename>
+                                          مسطح ٧٣</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell"><tei-placename xml:id="place-WA1284016502_02" id="place-WA1284016502_02" type="خربة" ref="خربة-وقف-السلطان-أبو-العلا" data-origname="placeName" data-origatts="xml:id type ref">خربة</tei-placename> ب<tei-placename xml:id="place-WA1284016502_03" id="place-WA1284016502_03" type="حارة" ref="حارة-المبيضة" data-origname="placeName" data-origatts="xml:id type ref">حارة المبيضة</tei-placename>
+                                                ب<tei-placename xml:id="place-WA1284016502_04" id="place-WA1284016502_04" ref="بولاق" data-origname="placeName" data-origatts="xml:id ref">بولاق</tei-placename>
+                                          <tei-orgname type="وقف" ref="وقف-السلطان-أبو-العلا" data-origname="orgName" data-origatts="type ref">وقف
+                                                السلطان أبو العلا</tei-orgname> ٥٦</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">٢</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                        </tei-table>
+                        <tei-p data-origname="p">هذان المحلان اقتضي الحال ببيع ما فيهما من الأنقاض وتأجير أرضهما للراغبين
+                              وصدور الأمر بأحداث الخلو فيها وقد زويد في كل من الأنقاض والأجرة
+                              السنوية وحيث ان هناك من يرغب فيهما وضرب ميعاد للمزايدين عشرين يوما
+                              ابتداؤها يوم الأثنين ١٢ من هذا الشهر حرر لل<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> خمسة وثلاثون اعلانا لتوضع على القره قولات فمن
+                              يرغب فليتوجه إلى <tei-orgname type="ديوان" ref="ديوان-الأوقاف" data-origname="orgName" data-origatts="type ref">ديوان
+                                    الأوقاف</tei-orgname> لاجراء اللازم في الميعاد لانه سيحرر بعد مضيه
+                                    لل<tei-orgname type="محكمة" data-origname="orgName" data-origatts="type">محكمة</tei-orgname> باخراج الحجة لمن له
+                              المزاد.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284017701" id="WA1284017701" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-10-17" data-origname="date" data-origatts="when-custom">١٧ شوال ١٢٨٤</tei-date>
+                              <tei-date when="1868-02-10" data-origname="date" data-origatts="when">١٠ فبراير ١٨٦٨</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٧٧</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان من <tei-orgname ref="محافظة مصر" data-origname="orgName" data-origatts="ref">محافظة
+                              مصر</tei-orgname></tei-title></tei-head>
+                        <tei-p data-origname="p">حيث انه موجود قطع أراضى تعلق الميرى متخلفة من الطريق الذي صار تنفيذه من
+                              أمام محل <tei-placename xml:id="place-WA1284017701_01" id="place-WA1284017701_01" ref="ديوان الخارجية القديم" data-origname="placeName" data-origatts="xml:id ref"><tei-orgname type="ديوان" ref="ديوان-الخارجية-القديم" data-origname="orgName" data-origatts="type ref">ديوان الخارجية
+                                          القديم</tei-orgname></tei-placename> لل<tei-placename xml:id="place-WA1284017701_02" id="place-WA1284017701_02" ref="موسكى" data-origname="placeName" data-origatts="xml:id ref">موسكي</tei-placename> وغيره ومن محل <tei-orgname type="ديوان" ref="ديوان-الجناين" data-origname="orgName" data-origatts="type ref">ديوان الجناين</tei-orgname> ب<tei-placename xml:id="place-WA1284017701_03" id="place-WA1284017701_03" ref="الازبكية" data-origname="placeName" data-origatts="xml:id ref">الأزبكية</tei-placename> ولعدم لزومها قد تحرر بها
+                              خمسة قوائم مزاد وأعطيت إلى <tei-persname role="وكيل دلالين العقارات" data-origname="persName" data-origatts="role">السيد
+                                    محمد مصطفي الجنيدى وكيل دلالين العقارات</tei-persname> لاشهارها لمن
+                              يرغب الشراء وتوضح المقاس أعلاه واقتضي الاعلان بها فكل من يكون له رغبة
+                              يطلع على قوائم المزاد ويعاين الجهات المذكورة ويعطى المزاد اللازم.</tei-p>
+                        <tei-table rows="22" cols="3" data-origname="table" data-origatts="rows cols">
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">بيان المحلات المحرر بها قوائم مزايدة للمبيع وذلك ضمن أملاك
+                                          الميرى</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">عدد</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">بيان الباقي من الأماكن مشتري الميري من بعد المأخوذ منها
+                                          للطريق المستجد من <tei-placename xml:id="place-WA1284017701_04" id="place-WA1284017701_04" type="جهة" ref="جهة-سيدنا-الحسين" data-origname="placeName" data-origatts="xml:id type ref">جهة سيدنا الحسين</tei-placename>
+                                          رضي الله عنه بما في ذلك من البنا القديم</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">ذراع</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٩٨١</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-placename xml:id="place-WA1284017701_05" id="place-WA1284017701_05" type="ورشة" ref="ورشة-شيخ-الخياطين" data-origname="placeName" data-origatts="xml:id type ref">ورشة شيخ
+                                                الخياطين</tei-placename></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٣٥٧</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من وكيل <tei-orgname type="وقف" ref="وقف-سيدي-ابراهيم-الدسوقي" data-origname="orgName" data-origatts="type ref">وقف <tei-persname data-origname="persName">سيدي
+                                                  ابراهيم الدسوقي</tei-persname></tei-orgname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٣٩٢</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من ال<tei-placename xml:id="place-WA1284017701_06" id="place-WA1284017701_06" type="منزل-محمد-سعد-الماوردى" data-origname="placeName" data-origatts="xml:id type">منزل</tei-placename> المأخوذ من <tei-persname data-origname="persName">محمد سعد
+                                                الماوردى</tei-persname> وشركاه </tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">١٣٤</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من ال<tei-placename xml:id="place-WA1284017701_07" id="place-WA1284017701_07" type="منزل" ref="منزل-باشكاتب-المحكمة" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename> المأخوذ
+                                          من باشكاتب المحكمة</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٣٠</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من ال<tei-placename xml:id="place-WA1284017701_08" id="place-WA1284017701_08" type="منزل" ref="منزل-ملك-ورثة-رضوان-شمس" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename> المأخوذ من المذكور
+                                          واصله ملك ورثة <tei-persname data-origname="persName">رضوان شمس</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٢٠</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من ال<tei-placename xml:id="place-WA1284017701_09" id="place-WA1284017701_09" type="منزل" ref="منزل-ملك-الحرمه-جازيه" data-origname="placeName" data-origatts="xml:id type ref">منزل</tei-placename> المأخوذ
+                                          من المذكور وأصله ملك <tei-persname data-origname="persName">الحرمه
+                                          جازيه</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٦٠</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">أحمد سويلم
+                                                الزيات</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٤٨</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">الست
+                                          حسنه</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٥٢</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">السيد أحمد
+                                                الفخفاخ</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٢١٧</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من ناظره <tei-orgname type="وقف" ref="وقف-أحمد-مراد" data-origname="orgName" data-origatts="type ref">وقف <tei-persname data-origname="persName">أحمد
+                                                  مراد</tei-persname></tei-orgname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٨٠</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من ورثة <tei-persname data-origname="persName">أحمد
+                                                التهامي</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">١٥٤</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">الشيخ أحمد
+                                                القباني</tei-persname> وشريكه</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">١٢٦</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">زوجة عنانى
+                                                أفندى</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">١٤٩</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من ورثة <tei-persname data-origname="persName">على
+                                                الصعيدى</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">١١٥</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">محمد افندى
+                                                على</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٩٨</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من <tei-persname data-origname="persName">الحرمة فاطمة أم
+                                                أحمد</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell">٠٣٠</tei-cell>
+                                    <tei-cell data-origname="cell">الباقي من المنزل المأخوذ من ورثة <tei-persname data-origname="persName">حبيب
+                                                الزيات</tei-persname></tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell"> الباقي من المنزل المأخوذ من سعادة <tei-persname data-origname="persName">اسماعيل باشا
+                                                أبو جبل</tei-persname> بالجهة البحرية ب<tei-placename xml:id="place-WA1284017701_10" id="place-WA1284017701_10" type="شارع" ref="شارع-الاشرافية" data-origname="placeName" data-origatts="xml:id type ref">شارع
+                                                الأشرفية</tei-placename> أول <tei-placename xml:id="place-WA1284017701_11" id="place-WA1284017701_11" type="سكة" ref="مستجدة" data-origname="placeName" data-origatts="xml:id type ref">السكة المستجدة</tei-placename> جميعه علو
+                                          وقصبه</tei-cell>
+                              </tei-row>
+                              <tei-row data-origname="row">
+                                    <tei-cell data-origname="cell">١</tei-cell>
+                                    <tei-cell data-origname="cell" data-empty=""></tei-cell>
+                                    <tei-cell data-origname="cell"> الباقي من المنزل والجنينة المأخوذين من <tei-persname data-origname="persName">حضرة
+                                                رفاعي بك</tei-persname> من بعد المأخوذ منها ل<tei-placename xml:id="place-WA1284017701_12" id="place-WA1284017701_12" type="جسر" ref="جسر-الترعة-الاسماعيلية" data-origname="placeName" data-origatts="xml:id type ref">جسر
+                                                  <tei-placename xml:id="place-WA1284017701_13" id="place-WA1284017701_13" type="ترعة" ref="الترعة-الاسماعيلية" data-origname="placeName" data-origatts="xml:id type ref">الترعة الأسماعيلية</tei-placename></tei-placename> خارج
+                                                <tei-placename xml:id="place-WA1284017701_14" id="place-WA1284017701_14" type="باب" ref="باب-الحديد" data-origname="placeName" data-origatts="xml:id type ref">باب
+                                                الحديد</tei-placename> وبلغ مقاسه ٨٨ و١٠٧٠ ذراع مسطح بما
+                                          فى ذلك من البنا والانقاض والاشجار وغيره</tei-cell>
+                              </tei-row>
+                        </tei-table>
+                  </tei-div>
+         <tei-div xml:id="WA1284017702" id="WA1284017702" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-10-17" data-origname="date" data-origatts="when-custom">١٧ شوال ١٢٨٤</tei-date>
+                              <tei-date when="1868-02-10" data-origname="date" data-origatts="when">١٠ فبراير ١٨٦٨</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٧٧</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-head data-origname="head" data-level="0"><tei-title data-origname="title" data-processed="">اعلان من <tei-orgname ref="محافظة مصر" data-origname="orgName" data-origatts="ref">محافظة
+                              مصر</tei-orgname></tei-title></tei-head>
+                        <tei-p data-origname="p">ان الباقي من الأماكن مشتري ال<tei-orgname type="ميرى" data-origname="orgName" data-origatts="type">ميرى</tei-orgname> لزوم
+                              تنفيذ الطريق منها من <tei-placename xml:id="place-WA1284017702_01" id="place-WA1284017702_01" type="جهة" ref="جهة-سيدنا-الامام-الحسين" data-origname="placeName" data-origatts="xml:id type ref">جهة سيدنا <tei-persname data-origname="persName">الامام
+                                          الحسين</tei-persname></tei-placename> رضي الله تعالي عنه والباقي
+                              من المنزل والجنينة المأخوذان من <tei-persname data-origname="persName">حضرة رفاعي بك</tei-persname>
+                              خارج <tei-placename xml:id="place-WA1284017702_02" id="place-WA1284017702_02" ref="باب-الحديد" data-origname="placeName" data-origatts="xml:id ref">باب الحديد</tei-placename> من بعد المأخوذ
+                              منهما للزوم <tei-placename xml:id="place-WA1284017702_03" id="place-WA1284017702_03" ref="جسر-الترعه-الاسماعيليه" data-origname="placeName" data-origatts="xml:id ref">جسر الترعه
+                                    الاسماعيليه</tei-placename> الموضح بالبيان أعلاه هو لداعي عدم لزومها
+                              لجهة الميري ولاجل انتفاع العامة بها قد صار تحرير قوائم مزايدة لمبيعها
+                              للراغبين وأعطوا إلى <tei-persname role="وكيل دلالى العقارات" data-origname="persName" data-origatts="role">السيد محمد
+                                    مصطفي الجنيدى وكيل دلالى العقارات</tei-persname> لاشهارها بالمزاد
+                              ومن يرغب المشتري من بعد المعاينة يعطي المزاد اللازم.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284018401" id="WA1284018401" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-11-11" data-origname="date" data-origatts="when-custom">١١ذي القعده ١٢٨٤</tei-date>
+                              <tei-date when="1868-03-05" data-origname="date" data-origatts="when">٥ مارث ١٨٦٨</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٨٤</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٤</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">فى <tei-placename xml:id="place-WA1284018401_01" id="place-WA1284018401_01" type="شارع" ref="شارع-الحوض" data-origname="placeName" data-origatts="xml:id type ref">شارع الحوض</tei-placename>
+                                    ب<tei-placename xml:id="place-WA1284018401_02" id="place-WA1284018401_02" ref="عابدين" data-origname="placeName" data-origatts="xml:id ref">عابدين</tei-placename>
+                              <tei-placename xml:id="place-WA1284018401_03" id="place-WA1284018401_03" type="منزل" ref="منزل-وقف-المرحوم-ابراهيم-جوربجى-عزبان" data-origname="placeName" data-origatts="xml:id type ref">منزل <tei-orgname ref="وقف-المرحوم-ابراهيم-جوربجى-عزبان" type="وقف" data-origname="orgName" data-origatts="ref type">وقف <tei-persname data-origname="persName">المرحوم ابراهيم جوربجى
+                                          عزبان</tei-persname></tei-orgname></tei-placename> نظارة <tei-persname role="ناظر" data-origname="persName" data-origatts="role">حسنين ابراهيم</tei-persname> مسطحه ٥٩ ذراعا وقد أسيغ
+                              شرعا ببيع أنقاضه وتأجير أرضه بالخلو فيها لمن يرغب وحرر في ذلك خمسة
+                              وثلاثون اعلانا أرسلت إلى ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> في
+                              يوم الأثنين ٧ ذى القعدة سنة ١٢٨٤ لتوضع على القره قولات وكتب إلى معاون
+                                    <tei-orgname ref="الأوقاف" data-origname="orgName" data-origatts="ref">الأوقاف</tei-orgname> لاشهاره بقائمة مزايدة
+                              ليكون معلوم الجميع.</tei-p>
+                  </tei-div>
+         <tei-div xml:id="WA1284019401" id="WA1284019401" resp="#eSG" data-origname="div" data-origatts="xml:id resp">
+                        <tei-head data-origname="head" data-level="0"><tei-date when-custom="1284-12-28" data-origname="date" data-origatts="when-custom">٢٨ ذى الحجة ١٢٨٤</tei-date>
+                              <tei-date when="1868-04-20" data-origname="date" data-origatts="when">٢٠ أبريل ١٨٦٨</tei-date>
+                              <tei-bibl data-origname="bibl"><tei-biblscope unit="issue" data-origname="biblScope" data-origatts="unit">نمرة ١٩٤</tei-biblscope>
+                                    <tei-biblscope unit="page" data-origname="biblScope" data-origatts="unit">صفحة ٢-٣</tei-biblscope></tei-bibl></tei-head>
+                        <tei-p data-origname="p">بعد مضى خمس ساعات ونصف من يوم الجمعة الماضى أصيب بال<tei-rs type="حريق" data-origname="rs" data-origatts="type">حريق</tei-rs>
+                              <tei-placename xml:id="place-WA1284019401_01" id="place-WA1284019401_01" type="مغلق" ref="مغلق-على-قطايف" data-origname="placeName" data-origatts="xml:id type ref">مغلق</tei-placename> شخص يسمى
+                                    ب<tei-persname data-origname="persName">على قطايف</tei-persname> كائن ب<tei-placename xml:id="place-WA1284019401_02" id="place-WA1284019401_02" type="سوق" ref="سوق-العصر" data-origname="placeName" data-origatts="xml:id type ref">سوق العصر</tei-placename> ب<tei-placename xml:id="place-WA1284019401_03" id="place-WA1284019401_03" ref="بولاق" data-origname="placeName" data-origatts="xml:id ref">بولاق</tei-placename> فلما وصل الخبر إلى ال<tei-orgname type="ضبطية" data-origname="orgName" data-origatts="type">ضبطية</tei-orgname> بودر بأرسال الطلومبات واللوازم وحضر حضرة وكيل
+                                    ال<tei-orgname type="ترسانة" data-origname="orgName" data-origatts="type">ترسانة</tei-orgname> وبذلت الهمة فى الأطفاء
+                              ولاشتداد الهواء <tei-choice data-origname="choice">
+                                    <tei-sic data-origname="sic">اذ ذلك</tei-sic>
+                                    <tei-corr data-origname="corr">آنذاك</tei-corr>
+                              </tei-choice> احترق سقف ذلك المغلق وشئ كان فيه من الكتان وتبنه ومشاقه
+                              وانزلت التخاشيب اللاتى بالسوق خوفا من السراية فحصل الأطفاء بحمد الله
+                              في ساعة ونصف بدون سراية إلى الجهة الأخرى.</tei-p>
+                  </tei-div>
+      </tei-body>
+   </tei-text>
+</tei-tei>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <g id="wm_logo">
+    <path
+       style="fill:white;stroke:none"
+       d="m 71.040001,3.52 -2.56,5.44 2.56,-1.28 6.933335,11.52 14.026665,24.96 5.6,8.96 -0.96,-0.64 7.146669,11.52 2.13333,4.48 c 3.07156,1.826328 4.90396,7.898052 6.93333,10.88 0.81821,1.202275 1.3533,4.07334 2.98667,3.84 l 0.32,3.2 1.92,2.24 4.48,7.36 c -4.67136,-0.860508 -11.32625,-1.015449 -16,-0.10667 -1.40023,0.272275 -3.14363,-0.315898 -4.16,0.74667 l 3.52,1.28 h 0.32 0.32 l 4.16,-0.64 h 10.56 l 4.8,-0.64 8.64,0.32 V 96 H 136 l -0.32,0.96 7.68,0.32 -0.32,-0.96 -4.48,0.32 0.64,-0.64 v -0.32 l -2.24,-1.6 c -0.0436,-1.655361 -1.15906,-2.587363 -2.13333,-3.84 -2.28845,-2.942285 -5.02852,-5.589863 -7.14667,-8.64 -0.89763,-1.292588 -2.17456,-4.045928 -3.84,-3.52 l 2.24,-1.92 v -0.32 l -3.52,0.96 c 0.85688,-1.356724 -0.32148,-1.922959 -0.96,-3.2 1.10381,0 2.14043,0.184282 2.56,-0.96 l -4.48,-0.32 0.32,0.96 -1.28,-0.96 c 0.19269,1.830527 3.94677,7.340313 5.76,6.72 -0.49655,1.886904 3.25872,7.095029 5.12,7.68 v -1.6 c 0.76766,0.883965 1.02307,1.237959 0,1.92 l 6.08,8.64 c -0.85436,-0.359736 -2.0472,-0.01998 -2.82667,-0.48 -1.06448,-0.628223 -1.63611,-2.120508 -2.4,-3.04 -2.15494,-2.593906 -6.33639,-6.710664 -7.25333,-9.92 l -0.96,0.32 c 0.3242,1.539932 1.54125,3.660674 3.2,3.84 v 0.32 c -1.35886,0.574902 0.37023,1.821641 1.28,1.92 v 0.32 l -0.64,0.32 2.56,4.8 2.88,0.96 v 0.32 c -4.2899,0 -5.17598,-3.217656 -7.25333,-6.4 -0.63581,-0.974014 -1.4274,-3.295664 -2.66667,-2.24 l -0.32,-0.96 h 0.64 c -0.43561,-1.504873 -1.54141,-3.34541 -3.2,-3.52 0.51392,-1.9529 -1.14765,-3.48272 -2.08,-5.12 -2.03993,-3.58231 -4.23223,-7.157891 -6.56,-10.56 h -0.32 c 0.71532,3.397759 3.42243,7.053657 5.33333,9.92 2.73044,4.095664 4.93484,8.541172 7.36,12.8 1.44734,2.54166 3.07952,6.154697 6.18667,6.4 V 96 l -1.92,0.64 c -1.01952,-2.378848 -4.79998,-3.116846 -4.8,-6.4 -2.69217,-1.910576 -4.2567,-6.452725 -5.86667,-9.28 -2.39347,-4.203184 -5.12367,-8.280591 -7.57333,-12.48 -4.8372,-8.292344 -10.187098,-16.320737 -15.039999,-24.64 -4.983437,-8.543037 -9.137461,-17.587627 -14.4,-25.92 3.877373,1.530557 7.289453,9.114839 9.81333,12.48 0.823301,1.097729 2.093858,4.049746 3.30667,4.16 v 0.32 l -0.64,0.32 v 0.32 l 0.64,0.64 c 1.481914,-5e-6 2.454483,2.183506 2.56,3.52 l 2.34667,2.56 5.706659,8.32 2.50667,4.16 2.98667,3.52 5.33333,7.36 0.96,-0.64 c 0.036,1.367295 -0.35555,2.053086 0.96,2.88 v -0.96 l 0.96,0.64 c -0.49362,-1.875781 -1.94934,-3.274688 -3.09333,-4.8 -2.69625,-3.595 -5.4533,-7.212739 -8,-10.88 C 97.648741,40.697358 90.524122,29.143252 82.346671,18.24 80.115787,15.265498 77.732599,12.312539 75.626666,9.28 74.273751,7.3318066 73.43942,4.4927539 71.040001,3.52 m -23.68,0.64 -0.32,0.32 c 0.372426,2.0217285 0.439165,5.3079883 2.88,5.76 l 0.96,2.88 3.52,7.04 c -3.696724,-2.198047 -3.686397,-10.3639648 -7.68,-11.52 l 7.36,13.44 c -3.015909,-3.097422 -5.937852,-8.994658 -10.24,-10.24 l -0.96,-1.28 3.2,5.12 c 1.430288,-0.122588 2.509477,0.7771 2.24,2.24 l -1.6,-0.64 c 0.33768,3.207949 6.190327,4.70125 6.08,7.68 l -2.56,-1.28 V 24 l 2.24,0.96 v 0.32 l -1.28,1.28 L 40.96,23.36 c 0.691841,2.138408 7.136563,3.445156 9.280001,3.84 v 0.32 c -6.0673,0 -13.66315,-3.248413 -19.520001,-0.32 v 0.64 L 32,28.48 c 1.331167,-0.429409 3.080826,-1.324443 4.16,0 h 0.32 0.32 L 39.68,28.106665 49.920001,28.48 c -1.808062,0.904028 -4.091246,0.766646 -6.08,0.96 -2.836871,0.275806 -5.52993,1.32415 -8.320001,1.866665 -1.530642,0.297622 -4.830886,0.488862 -4.16,2.613335 h 3.52 c 3e-6,-1.449561 2.35689,-1.548452 3.52,-1.92 3.645606,-1.164565 7.16273,-1.555234 10.880001,-2.24 -1.658199,2.562666 -9.17886,4.185244 -12.160001,5.013335 -1.580893,0.439136 -3.94197,0.954751 -4.48,2.666665 4.102918,-0.323916 9.070601,-2.772227 12.800001,-4.533335 1.533188,-0.724004 3.608798,-2.41564 4.48,-0.266665 L 38.08,38.613335 34.56,41.28 c 3.585105,0 8.320582,-3.804756 11.520001,-5.493335 1.451972,-0.766318 2.820376,-2.31769 4.48,-2.186665 L 40.266668,41.813335 37.12,45.44 38.08,45.76 47.360001,37.333335 51.200001,34.56 43.466666,43.2 40.64,47.04 c 2.4071,-0.520454 5.558428,-5.213052 7.360001,-7.04 0.940869,-0.954121 1.477338,-2.240005 2.88,-2.24 C 47.092911,43.756221 43.930245,50.186846 39.893333,56 34.49274,63.776855 28.790232,71.328804 24.266668,79.68 21.79521,84.242695 16.415899,90.091953 16,95.36 l -8.9599999,0.32 1.28,2.24 c 7.5426429,-1.389434 14.7422979,0 22.3999999,0 2.855144,0 7.124666,0.538223 9.6,-0.96 V 96.64 H 24.64 L 34.24,78.4 C 30.289798,80.375098 27.980638,87.174209 25.973333,90.88 24.778738,93.08541 24.706199,95.239785 22.08,96 L 29.226668,82.24 32.64,76.48 c -1.689619,0.489102 -2.380554,2.111377 -3.306667,3.46667 -2.459793,3.599697 -4.83697,7.382324 -6.88,11.25333 -1.177937,2.231875 -1.713474,4.999443 -4.533333,4.48 1.098697,-4.175039 4.747068,-8.412109 6.933333,-12.16 4.46114,-7.647676 9.047327,-15.472954 14.08,-22.72 4.233767,-6.096626 6.970335,-13.015508 11.093333,-19.2 3.14915,-4.723726 7.785249,-10.309253 9.653335,-15.68 0.345356,-0.992896 -0.445894,-2.235259 -0.05333,-3.52 1.086094,-3.554482 2.98666,-6.93332 4.64,-10.24 1.002832,-2.005664 0.934487,-4.206875 1.973335,-6.4 -1.778755,0.6311621 -2.30001,2.857168 -2.773335,4.48 -1.114141,3.819922 -2.904439,7.50251 -4.266665,11.2 h -0.32 l 1.92,-11.2 h -0.64 l -1.92,13.44 h -0.32 l -0.64,-10.24 -0.32,-6.4 h -0.64 l 0.32,13.44 -3.413335,-10.24 -1.706665,-3.52 -0.32,1.92 c 2.064638,1.622207 3.949384,8.852207 4.16,11.52 C 53.278907,17.523945 51.453585,12.78793 50.346666,9.6 49.723463,7.8051758 49.443736,4.7794824 47.360001,4.16 m 19.2,0.32 -0.32,0.96 0.96,-0.64 -0.64,-0.32 m 14.08,3.52 c 0.322139,3.060293 3.024229,5.820762 4.8,8.32 l -2.72,-7.6266699 L 80.640001,8 m -11.84,1.28 v 0.64 h 0.64 l -0.64,-0.64 m 0.533335,1.38667 0.21333,0.10666 -0.21333,-0.10666 m -3.093335,0.85333 -6.4,12.48 0.32,0.32 h 0.64 c 2.12625,-3.366563 6.295937,-8.451416 6.72,-12.48 l -1.28,-0.32 M 34.56,15.36 l -0.32,1.6 3.52,0.32 v 0.32 l -0.64,0.32 7.680001,4.586665 6.08,3.093335 c -0.590889,-1.987524 -6.854488,-5.48998 -8.96,-6.13333 C 40.35566,18.988682 37.772085,18.398428 38.08,16.32 h -3.2 l 0.32,-0.96 h -0.64 m 44.480001,0.96 v 0.96 h -0.64 v -0.96 h 0.64 M 38.4,17.28 39.04,17.92 V 17.28 H 38.4 m 10.560001,0.64 c 2.203017,1.27543 4.299673,3.799346 5.44,6.08 -1.551602,-0.177329 -6.251309,-4.707021 -5.44,-6.08 m 18.56,0 -3.2,5.76 1.28,0.32 2.56,-6.08 h -0.64 m 18.88,0 0.32,0.32 -0.32,-0.32 m -41.28,1.28 0.32,0.32 -0.32,-0.32 M 30.72,19.52 v 0.32 l 0.96,0.32 -0.96,-0.64 m -0.96,0.96 0.96,0.96 0.32,-0.96 -0.32,-0.32 -0.96,0.32 m 1.6,0 v 0.32 l 8.32,2.24 c -1.475878,-1.878398 -6.125026,-2.617764 -8.32,-2.56 m 25.600001,0.32 0.32,2.56 h -0.32 V 20.8 m -2.24,0.32 0.96,2.88 -0.96,-2.88 m 15.68,4.48 3.84,-1.6 3.2,-2.88 c -2.415366,0.635615 -7.04,1.546953 -7.04,4.48 m -11.52,-0.96 -4.8,8 -1.92,2.56 c -0.947871,-5.145571 0.230927,-10.389229 6.72,-10.56 m 15.36,0.96 v 1.28 l -1.6,-0.32 c 0.115171,4.376265 6.929639,0.290205 3.52,-0.96 l -0.32,1.92 -0.96,-1.92 h -0.64 m -7.306665,1.12 c -2.308057,1.45772 1.273257,4.510454 3.09333,3.2 1.694468,-1.22002 -1.4494,-4.238271 -3.09333,-3.2 m 2.506665,2.4 c -1.253589,-0.03299 -1.784209,-0.31002 -1.92,-1.6 l 1.92,1.6 m -34.026668,-0.853335 0.213335,0.10667 -0.213335,-0.10667 M 78.080001,29.12 c 0.01924,0.73105 0.345269,1.532578 0.266665,2.24 -0.414517,3.730684 -3.587705,0.763618 -5.066665,0.373335 -1.192842,-0.31478 -2.540523,0.248579 -3.52,0.906665 -2.006831,1.34834 -1.860645,4.507832 -4.16,5.44 -0.647066,-1.756318 -2.081304,-6.395142 -3.84,-7.04 0,2.408872 2.236748,10.535161 6.08,8.373335 1.645005,-0.925313 0.933403,-3.927163 2.88,-4.64 2.530903,-0.926812 4.242803,2.49167 7.04,0.64 1.997744,-1.322451 2.401865,-4.984731 0.32,-6.293335 m 35.519999,1.6 3.84,0.32 c -1.04591,-1.093457 -3.18609,-2.519526 -3.84,-0.32 m 6.72,0 c 0.96553,2.633296 2.48666,-0.11958 3.84,-0.373335 1.11981,-0.209966 2.02354,0.228682 3.2,-0.266665 -2.53781,-1.845684 -4.73252,0.882896 -7.04,0.64 m -6.72,7.36 c -1.22822,-0.969653 -2.31907,-1.400264 -3.84,-0.96 v 0.64 l 4.8,0.64 1.6,2.24 -1.92,-4.16 0.96,0.32 c 1.52732,-4.145557 -0.84862,-4.552725 -0.96,-0.32 -1.23241,-1.510698 -2.3567,-3.829365 -3.89333,-5.013335 -1.48864,-1.146987 -2.67387,0.269277 -2.08,1.813335 0.90901,2.363389 4.35151,2.312734 5.33333,4.8 m 10.56,0.64 -0.64,2.88 h -0.32 c 0,-1.473223 -0.23499,-3.337837 -1.92,-3.52 l 1.6,4.48 2.61333,-3.2 3.78667,-1.92 -2.88,0.32 c 0.95419,-1.908374 2.48329,-4.091953 1.28,-6.08 -2.78741,0.828691 -1.40717,5.379907 -3.52,7.04 m -3.84,-5.76 v 0.64 h 0.64 v -0.64 h -0.64 m -68.479999,2.88 -0.96,1.6 0.96,-1.6 m 30.08,1.6 c -1.105586,3.501025 1.927432,4.599214 2.24,0.64 l -2.24,-0.64 m 35.519999,0 -0.64,3.2 c 1.29304,-0.418335 1.68228,-2.350737 0.64,-3.2 m -39.359999,0.32 c -1.827202,2.893066 1.658745,4.713413 2.56,1.6 l -2.56,-1.6 m 37.439999,0 0.96,0.64 -0.96,-0.64 m 10.88,0 -0.32,0.32 0.32,-0.32 m 1.6,1.28 0.32,0.32 -0.32,-0.32 m -70.399999,2.24 1.92,1.6 h 0.64 l 1.92,-1.6 v -0.96 l -1.6,0.96 c -1.061045,-0.586367 -2.646597,-2.04228 -2.88,0 M 112.64,40.32 112.32,41.6 h 2.88 l -2.56,-1.28 m 11.84,1.6 v 0.32 c 1.34648,0 2.44949,-0.120117 3.2,-1.28 -1.36199,-0.573467 -2.06514,0.153652 -3.2,0.96 m -57.599999,6.4 c -1.007344,-0.477163 -2.069131,-1.154351 -3.2,-1.28 -6.991885,-0.776875 -8.261968,6.324009 -12.8,9.546665 -1.20628,0.856631 -3.005147,-0.09104 -3.146665,-1.546665 -0.238038,-2.448398 2.333061,-5.335381 2.826665,-7.68 -2.768238,0.870024 -6.582178,10.255879 -2.56,11.52 l -0.32,0.96 c 1.78538,-0.516821 3.149272,-0.05114 4.746665,-1.386665 2.96144,-2.475957 4.430298,-6.404829 8.053335,-8.26667 0.966582,-0.496714 4.303418,-1.289365 3.946665,1.013335 -0.116406,0.751362 -0.893145,1.415767 -1.066665,2.24 l 1.92,-2.24 7.04,0.64 c 0,6.778066 -0.942852,14.546313 0.426665,21.12 0.835537,4.010586 4.947812,5.824844 8.16,2.56 1.726099,-1.75439 2.39519,-5.065898 1.280005,-7.36 -0.864346,-1.778086 -3.1077,-3.80894 -5.06667,-2.18667 -1.688013,1.397886 -2.148399,5.05085 0.32,5.92 1.240532,0.436807 3.347661,0.654619 3.52,-0.85333 h 0.32 c 0,3.771958 -4.71376,5.311504 -6.72,1.92 -1.262984,-2.135049 0.547129,-6.020107 -1.28,-7.36 2.852739,-2.852739 0.07522,-9.897314 0.64,-13.44 0.227549,-1.427339 2.567407,-2.507915 3.84,-2.24 l 1.6,-1.6 c 0.365498,0.901567 0.875972,1.267354 1.6,1.92 0.859854,0.775078 1.957998,1.959248 3.2,2.08 2.987256,0.29043 3.781709,-8.361187 -1.28,-7.306665 -0.729385,0.151958 -1.27772,0.229658 -1.92,0.64 -1.238638,0.791352 -2.325293,1.817793 -3.52,2.666665 3.470703,-9.420493 -9.717417,-8.004463 -10.56,0 M 116.16,41.28 l 1.28,3.52 -2.88,-0.32 3.73333,2.56 2.98667,10.24 -0.96,0.32 -1.6,-2.56 c 0.3575,1.940752 1.63223,3.533447 -1.28,3.84 0.50941,1.574521 4.70358,1.285942 5.12,-0.64 l -2.24,0.64 3.2,-2.88 v -0.32 l -1.92,0.64 c -1.01695,-2.576235 -1.66753,-5.305815 -2.45333,-8 -0.39421,-1.351587 -0.11772,-2.700615 -1.70667,-3.2 l 0.64,-0.64 -1.92,-3.2 m 15.68,0 c -1.37019,2.169473 -1.03784,3.878921 -3.52,5.12 l 0.32,-3.52 H 128 c -0.54769,1.300757 -0.41239,2.629961 0.32,3.84 l -2.56,1.6 0.32,-1.92 c -1.61381,0.189863 -0.92173,1.404434 -1.22667,2.56 -0.52697,1.996953 -2.11271,3.152173 -2.29333,5.44 h 0.32 l 1.92,-4.16 2.88,0.64 v -0.96 h -1.92 c 2.05044,-2.889263 2.88088,-1.06124 5.44,-1.6 -0.47117,-1.099395 -1.06263,-1.249014 -2.24,-1.28 v -0.32 l 4.48,0.96 0.32,-0.32 -2.24,-1.6 v -0.32 c 1.36601,-0.39542 3.48817,-1.217256 4.48,0 h 0.32 c 3.01082,-4.912422 -3.78556,-0.770615 -5.44,-0.64 v -0.32 c 1.38277,-0.490659 1.6,-1.853188 1.6,-3.2 h -0.64 m -23.04,0.64 -0.32,0.32 0.96,1.92 h 0.32 l -0.32,-2.24 h -0.64 m 10.24,0.32 -0.32,1.6 1.28,-1.28 -0.32,-0.32 h -0.64 m -15.36,0.32 c 0.0633,2.405601 2.66433,2.08666 4.48,2.666665 1.78494,0.57019 3.46623,1.794663 4.8,3.093335 l -3.84,0.32 v 0.64 l 0.32,0.32 c 2.73725,-0.504229 4.72663,-1.828491 6.08,1.6 l -3.84,-0.64 v 0.64 l 0.32,0.32 h 4.8 c -1.12921,-3.900947 -9.12242,-8.8548 -13.12,-8.96 m 19.2,0.64 -0.64,2.56 h -0.32 l -0.96,-2.24 0.74667,3.52 -0.10667,2.88 h 0.32 l 1.6,-6.72 h -0.64 m -55.679999,6.08 c 0.238384,-1.132329 0.842617,-2.000459 1.6,-2.88 0.895742,-1.04022 2.309853,-2.837495 3.84,-2.88 1.913296,-0.05315 4.457363,2.529126 3.36,4.48 -0.654312,1.163223 -3.132359,1.230513 -4.32,1.28 -1.487495,0.06198 -2.990982,0 -4.48,0 M 112.64,44.16 l -0.32,0.32 0.96,2.56 v -2.88 h -0.64 m 10.88,2.24 2.24,-1.92 c -1.32287,0.03575 -1.87832,0.670547 -2.24,1.92 m -17.6,-0.32 c 0.21634,2.001147 2.09244,1.0727 3.52,0.96 V 46.4 l -3.52,-0.32 m -21.119999,3.84 c -1.330937,-0.385273 -2.80958,-1.531289 -3.2,-2.88 2.19,-0.633945 3.2,0.814966 3.2,2.88 m 22.826669,-2.026665 0.10666,0.21333 -0.10666,-0.21333 M 117.12,48.32 c -0.40722,0.967129 -0.45178,2.131084 0.64,2.56 l -0.64,-2.56 m -42.559999,1.28 -0.32,0.32 0.32,-0.32 m -17.28,1.6 v 0.64 h -0.64 V 51.2 h 0.64 m 71.999999,3.2 -3.2,0.32 1.28,-2.24 -3.2,3.2 1.6,-0.96 h 0.32 l 7.04,0.32 v -0.32 l -2.56,-0.96 1.28,-2.24 c -1.5098,-0.476777 -2.858,1.464482 -2.56,2.88 m 4.16,-0.64 c 1.51938,-0.439819 2.83171,-0.404873 2.88,-2.24 -1.52374,0.120298 -2.70706,0.597075 -2.88,2.24 m -21.12,-1.6 0.32,1.28 h -3.84 v 0.64 l 8,2.24 -2.56,0.32 v 1.28 l 2.56,-1.28 h 0.32 l 1.28,1.28 -1.92,-4.48 h -0.32 l 0.32,1.6 -4.16,-2.88 m 4.8,0 1.6,2.24 -1.6,-2.24 m -36.159999,4.16 c 2.15626,-0.397207 6.51792,-1.67123 7.68,-3.52 -1.615439,-0.552651 -7.136465,1.790576 -7.68,3.52 m -7.786665,-2.986665 -0.10667,0.21333 0.10667,-0.21333 M 112.96,53.546665 c 0.24748,0 0.0513,0.159316 -0.10667,0.10667 L 112.96,53.546665 M 64.640001,55.36 V 56 l 2.88,2.24 1.28,-2.24 -4.16,-0.64 M 134.08,55.04 l 4.48,3.2 c 1.08649,-2.580371 -2.66757,-2.966133 -4.48,-3.2 m -22.08,1.28 2.24,-0.64 c -0.84831,-0.616948 -1.89414,-0.429033 -2.24,0.64 M 57.333336,55.84 c -1.58105,0.998555 0.144599,3.335005 1.546665,2.346665 1.502397,-1.059067 -0.03647,-3.300474 -1.546665,-2.346665 m 30.666665,-0.16 v 1.92 c -2.352051,0.866543 -3.062861,5.192612 -0.32,6.08 l -0.64,-5.12 c 1.237022,0 2.463897,0.0062 2.88,-1.28 h -0.96 l 0.32,-1.28 -1.28,-0.32 M 126.08,56 c 0,1.102827 -0.18162,1.870649 0.96,2.24 L 126.72,56 h -0.64 m 3.52,0 c 0,1.311577 -0.26787,2.392661 1.28,2.56 L 129.6,56 m 3.2,0 0.64,3.2 h 0.32 L 133.44,56 h -0.64 m -74.239999,0.32 -0.96,0.96 0.32,-0.96 h 0.64 m 14.613335,0.213335 -0.10667,0.21333 0.10667,-0.21333 M 81.600001,58.56 c -0.420425,2.282305 -0.04317,3.451494 2.56,3.52 0,-2.15415 -0.119307,-3.327314 -2.56,-3.52 m -3.52,0.96 -0.32,2.88 2.56,0.32 c 0,-2.040791 -0.244058,-2.569702 -2.24,-3.2 m -30.933335,0.533335 0.10667,0.21333 -0.10667,-0.21333 M 64.960001,60.16 c -2.729878,3.989824 1.488008,6.474346 0.533335,10.24 -0.913775,3.604331 -6.595342,0.337993 -7.893335,-0.96 0.856523,-0.247939 1.727031,-0.369404 2.56,-0.69333 2.260649,-0.879141 3.39875,-2.879014 0.64,-4.37334 -2.51938,-1.364663 -11.01439,-2.946733 -12.16,0.90667 2.067441,0.708838 4.027036,3.744409 6.08,2.88 -0.565362,1.901655 -3.213374,3.663037 -4.373335,5.44 -2.434615,3.729619 -3.484693,8.637725 -2.986665,13.12 0.42478,3.823018 3.710986,5.436348 7.04,5.76 5.56916,0.541445 9.831792,-2.045078 13.013335,-6.72 0.910508,-1.337891 2.342715,-4.478848 1.65333,-6.08 -0.924727,-2.147759 -6.559053,-4.742852 -8.266665,-2.88 -2.164951,-2.164951 -8.749141,0.467031 -10.56,-1.92 2.358779,0.318755 2.24166,-4.192095 4.48,-4.32 1.146137,-0.06549 1.55539,1.435664 2.24,2.08 1.326074,1.248066 3.429966,1.991597 5.12,1.28 V 73.6 l -1.28,-0.32 v -0.32 l 1.92,-0.32 v 1.28 c 2.208833,-0.05813 6.155893,-3.048945 3.52,-5.12 1.169975,-1.214971 -0.307808,-3.495615 -0.96,-4.8 l 1.92,0.96 -2.24,-4.8 m -15.253335,0.533335 0.10667,0.21333 -0.10667,-0.21333 M 78.720001,60.8 l 0.32,0.64 h -0.64 l 0.32,-0.64 m 1.173335,0.533335 -0.10667,0.21333 0.10667,-0.21333 M 109.12,61.12 l 2.24,4.8 h 0.32 c -0.12871,-1.630337 -1.19177,-3.939971 -2.56,-4.8 m 8.64,1.28 c 0.55186,1.705762 4.35366,0.780186 4.8,-0.64 l -4.8,0.64 m -44.159999,-0.32 -0.64,1.28 0.64,-1.28 m 39.679999,1.28 -0.32,0.32 0.32,-0.32 m -60.159999,0.96 v 0.32 l -1.92,-0.32 h 1.92 m 0.96,0 v 0.64 h -0.64 v -0.64 h 0.64 m 2.56,0 -0.32,0.32 0.32,-0.32 m 66.239999,0.32 -4.16,1.28 v 0.64 c 1.03352,0 5.3455,-0.260322 4.16,-1.92 M 59.520001,67.2 c -0.869429,0.06864 -1.693042,0.431836 -2.56,0.48 -1.247603,0.06931 -3.279732,-1.162588 -1.6,-2.34667 1.256513,-0.885737 3.562544,0.916172 4.16,1.86667 m 27.2,2.24 c 1.543467,-0.406172 4.488379,-3.422832 5.76,-1.92 h 0.32 l 0.64,-0.32 v -0.32 h -0.96 l 3.2,-1.28 v 1.28 c 1.174346,-0.478438 0.606143,-1.902451 -0.64,-1.92 -2.449277,-0.0345 -7.126738,2.418896 -8.32,4.48 m -32.64,-3.2 0.32,0.64 h -0.64 l 0.32,-0.64 m 7.893335,0.21333 -0.10667,0.21334 0.10667,-0.21334 M 112.32,66.24 112,66.56 c 0.75136,1.586206 1.93425,4.902197 3.84,5.12 l 1.28,3.2 h 0.32 c 0.58871,-1.72085 -3.5453,-7.650195 -5.12,-8.64 m -59.199999,0.32 -0.32,0.32 0.32,-0.32 m 7.36,0 -0.32,0.32 0.32,-0.32 m -59.84000099,0.64 0.32,0.32 -0.32,-0.32 m 72.96000099,0.32 -0.32,0.32 0.32,-0.32 m 7.36,3.2 c -0.830703,-0.240469 -2.472319,-0.300986 -3.146665,-0.8 -0.558125,-0.413013 -0.569653,-1.829849 0,-2.24 1.921592,-1.383545 2.890376,1.822627 3.146665,3.04 M 115.52,68.16 c 0.37827,1.203604 1.42621,1.667871 2.56,1.28 -0.68656,-1.185879 -1.20994,-1.493164 -2.56,-1.28 m -56.639999,0 v 0.64 h -0.64 l 0.64,-0.64 m 22.4,0 -0.32,0.32 0.32,-0.32 m -23.68,0.32 -0.96,0.64 V 68.8 l 0.96,-0.32 M 120.96,68.8 121.6,69.76 H 120 v 0.32 l 1.92,0.32 1.92,-1.92 -2.88,0.32 m -65.599999,0.10667 c 0.247475,0 0.05126,0.159307 -0.106665,0.10666 l 0.106665,-0.10666 m 26.24,0.96 c 0.247466,0 0.05127,0.159307 -0.106665,0.10666 l 0.106665,-0.10666 M 117.76,71.04 h 1.28 c -0.33116,-0.812861 -0.94884,-0.812871 -1.28,0 m -60.479999,0.10667 0.106665,0.10666 c -0.157925,0.05265 -0.354136,-0.10666 -0.106665,-0.10666 m 5.76,1.17333 -0.32,0.32 0.32,-0.32 m 29.12,7.36 c -1.933437,3.33958 -6.438906,5.97874 -10.24,6.50667 -2.852222,0.396143 -5.376489,-1.435274 -5.173335,-4.53334 0.05944,-0.906406 0.43437,-2.038716 0.693335,-2.93333 -1.234751,0.452739 -1.42273,1.997441 -1.706665,3.2 -0.889048,3.765371 1.231528,7.519463 5.546665,7.04 4.588291,-0.509805 10.133828,-4.581592 12.10667,-8.64 1.147744,-2.361069 1.145889,-6.173721 -1.54667,-7.52 -2.646562,-1.323281 -5.979131,3.293721 -4.64,5.6 0.814326,1.402441 3.591807,1.207988 4.96,1.28 m -32.96,-6.72 1.6,0.96 -1.92,-0.64 0.32,-0.32 m 33.28,5.12 c -6.267148,-1.649243 0,-6.438584 0,0 m -17.92,-3.41333 0.106665,0.10666 c -0.15793,0.05265 -0.354136,-0.10666 -0.106665,-0.10666 m 1.28,0.53333 v 0.64 h -0.64 V 75.2 h 0.64 m 41.599999,0 c 0.40243,1.861245 3.21497,6.519473 5.12,6.72 -0.31631,-1.502471 -0.82621,-1.830747 -2.24,-2.24 l 0.96,-0.32 c -0.42863,-1.628809 -2.06274,-4.111968 -3.84,-4.16 m -63.679999,2.88 c 1.180595,-1.049419 2.765063,0.223105 4.16,0.37333 2.678647,0.288472 11.418076,-0.169487 8.8,5.06667 -2.235708,4.471416 -11.676621,9.274297 -15.733335,4.48 -2.802203,-3.311689 -1.928238,-8.09835 -0.746665,-11.84 1.337514,0.246387 3.086474,0.540605 3.52,1.92 m 22.72,-1.81333 c 0.247466,0 0.05126,0.159307 -0.106665,0.10666 l 0.106665,-0.10666 m -16,0.53333 c -0.106524,0.985356 -0.294639,1.173477 -1.28,1.28 l 1.28,-1.28 m 63.359999,0.32 -0.32,0.32 0.32,-0.32 m -65.279999,0.32 v 0.64 h -0.96 v -0.64 h 0.96 m 31.04,0 v 0.64 h -0.64 v -0.64 h 0.64 m 0.64,0 -0.32,0.32 0.32,-0.32 m -25.6,0.96 -0.32,0.32 0.32,-0.32 m 2.56,0.64 V 80 l -0.64,-0.32 v -0.32 l 0.64,-0.32 M 113.6,79.14667 c 0.24748,0 0.0513,0.159307 -0.10667,0.10666 L 113.6,79.14667 M 48.640001,79.36 l -0.32,0.32 0.32,-0.32 M 125.44,79.68 v 0.64 h -0.64 v -0.64 h 0.64 m -66.559999,0.96 c -1.660235,1.705107 -0.995391,2.759385 0.96,3.84 l 0.96,-2.56 -1.92,-1.28 m -4.48,2.88 1.92,0.64 -0.32,-2.88 c -1.33562,0.144395 -1.502188,1.001055 -1.6,2.24 m 14.08,-2.24 v 0.32 h -0.96 l 0.96,-0.32 m -8.96,0.64 -0.32,0.32 0.32,-0.32 m 67.519999,0 -0.64,0.64 v -0.64 h 0.64 m -47.679999,0.32 0.32,0.32 -0.32,-0.32 m 11.84,0 v 0.64 h -0.64 v -0.64 h 0.64 m 25.493329,1.49333 -0.10666,0.21334 0.10666,-0.21334 M 123.84,83.84 l -0.32,0.32 0.32,-0.32 m 4.8,0 v 1.28 h -0.32 l -0.64,-1.28 h 0.96 m -33.599999,0.64 c 0.559717,1.012822 1.756914,4.301328 2.56,1.6 h 1.6 c -0.789043,-1.219434 -1.344365,-0.639902 -2.56,-0.32 -0.122471,-1.163516 -0.485195,-1.632041 -1.6,-1.28 m -49.173335,0.21333 0.10667,0.21334 -0.10667,-0.21334 m 21.013335,0.42667 -0.32,0.32 0.32,-0.32 m 10.56,0.32 v 0.64 h -0.64 v -0.64 h 0.64 m 0.96,0.64 -0.32,0.32 0.32,-0.32 M 118.4,86.4 l -0.32,0.32 0.32,-0.32 m -44.799999,0.32 c -1.99645,1.260918 -7.606187,2.069004 -7.68,4.8 l 7.36,-3.84 0.96,1.28 -0.64,-2.24 m 57.919999,0.64 -0.32,0.32 0.32,-0.32 m 6.08,2.24 3.84,-0.96 1.92,0.96 v -0.64 l 1.92,0.32 V 89.6 H 144 l -3.2,0.96 v 0.32 l 5.44,-0.32 v 0.64 l -5.12,0.96 v 0.32 l 5.76,-0.64 v 0.32 l -3.2,0.96 v 0.64 h 2.56 v 0.64 l -4.48,0.32 v 0.32 l 7.04,0.32 h 0.32 c -0.0295,-1.120645 -0.18225,-1.593643 -1.28,-1.92 1.41659,-4.893652 -2.47639,-5.501465 -6.4,-5.12 -1.23752,0.120313 -3.32896,-0.02084 -3.84,1.28 m -14.72,-1.28 -0.32,0.32 0.32,-0.32 m 9.6,0 -0.96,0.96 0.32,-0.96 h 0.64 m 13.44,0.96 -0.32,0.96 0.32,-0.96 m -132.48,1.6 2.88,-0.32 c -0.896084,-0.651699 -2.460929,-0.975313 -2.88,0.32 m 107.52,-0.32 v 0.64 h -0.64 l 0.64,-0.64 m 3.84,0 v 0.64 h -0.64 v -0.64 h 0.64 m 22.4,0 -0.32,0.32 0.32,-0.32 m -94.399999,0.32 -0.64,0.64 0.64,-0.64 m 0.64,0 -0.32,0.32 0.32,-0.32 m 80.319999,0 0.96,0.64 v 0.32 l -0.96,-0.96 m 0.96,1.28 -0.32,0.32 0.32,-0.32 M 7.3600001,95.36 h 0.96 C 9.7967732,93.077715 13.370934,96.354951 14.4,92.8 12.010506,92.8 6.2683619,91.588887 7.3600001,95.36 M 15.04,92.8 v 0.32 H 16 L 15.04,92.8 m 115.52,0.32 0.32,1.28 h -0.32 v -1.28 m 5.44,0 h 0.32 c 0.27672,0.853223 0.2488,0.992451 -0.64,1.28 L 136,93.12 m -9.6,0.32 -0.32,0.32 0.32,-0.32 M 12.48,94.18667 c 0.247476,0 0.05126,0.159307 -0.106666,0.10666 L 12.48,94.18667 m 134.72,0 c 0.24748,0 0.0513,0.159307 -0.10667,0.10666 L 147.2,94.18667 M 2.88,95.36 l 0.32,3.2 5.4400001,3.2 3.8399999,-0.8 17.6,0.48 c -1.139453,-1.812764 -3.528811,-1.655049 -5.44,-2.02667 -3.341872,-0.649805 -7.790337,-0.680918 -11.2,-0.16 C 11.739834,99.513086 9.5873689,100.61795 8.0000001,100.64 6.6850996,100.65826 3.8394825,97.656533 3.52,96.64 L 4.4800001,97.28 2.88,95.36 m 129.28,0 -0.64,0.96 v -0.96 h 0.64 m -88.959999,2.24 19.2,-0.32 c -0.429258,-1.092646 -2.109644,-1.129219 -3.2,-1.38667 -3.503257,-0.827158 -8.315679,-0.378437 -11.84,0.16 -1.41125,0.215615 -3.600865,0.02177 -4.16,1.54667 M 130.24,96 v 0.32 l -1.6,0.32 c 0.31914,-0.986455 0.67406,-1.005498 1.6,-0.64 m 8.32,0 -1.6,0.32 1.6,-0.32 m 6.72,0.96 c -0.95753,-0.251982 -1.28243,-0.341592 -1.6,0.64 1.80594,0 4.3191,-0.07149 5.44,-1.6 -1.07798,-0.255313 -4.04223,-0.415186 -3.84,0.96 m -77.119999,0.32 8.32,0.21333 14.4,0.10667 4.8,-0.32 -6.08,-1.28 -16.96,0.21333 -4.48,1.06667 M 124.8,96 v 0.64 h -0.64 V 96 h 0.64 m 6.08,0 -0.32,0.32 0.32,-0.32 m 0.64,1.6 0.32,0.32 -0.32,-0.32 m 9.28,0 0.64,0.64 V 97.6 h -0.64 m -131.1999999,0.32 0.32,0.32 -0.32,-0.32 M 31.36,99.84 v 0.32 l 8.96,1.28 3.520001,0.64 h 0.32 l 8.64,-0.64 c -1.835347,-1.25576 -4.227647,-1.3888 -6.4,-1.6 -5.315806,-0.516816 -9.691536,-0.985244 -15.040001,0 m 21.440001,0.32 c 1.44623,1.51196 5.619834,0.94832 7.68,1.12 6.132353,0.51103 12.615683,-0.14251 18.56,1.01333 2.070459,0.40259 4.532227,-0.55877 6.72,-0.21333 -1.540068,-2.380107 -6.120723,-1.99507 -8.64,-2.24 -7.161426,-0.69625 -17.538657,-2.71376 -24.32,0.32 m 35.84,0.32 7.36,0.96 h 0.32 c 1.499561,-0.78924 6.973669,-0.66624 7.999999,0.64 2.73992,-0.79313 4.97542,-0.16 7.68,-0.16 2.02631,0 3.27317,-1.07122 5.12,0.16 l 0.32,-0.96 1.28,0.32 c -1.10719,-1.711104 -3.89451,-1.68833 -5.76,-1.97333 C 107.24653,98.593779 101.73429,99.2 96.000001,99.2 c -1.68666,0 -6.736064,-0.42166 -7.36,1.28 M 119.04,99.52 c 0.4748,1.20859 2.94938,1.17622 4.16,1.22667 4.4695,0.18623 8.37993,-0.12089 12.8,0.69333 v -0.32 l -1.6,-0.32 v -0.32 l 7.68,-0.32 -5.44,-0.96 -17.6,0.32 m 13.12,0 -0.32,0.32 0.32,-0.32 m 3.52,0 -0.32,0.32 z"
+       id="path1" />
+  </g>
+</svg>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
