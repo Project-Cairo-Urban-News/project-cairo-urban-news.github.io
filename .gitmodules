@@ -1,0 +1,3 @@
+[submodule "src/CairoUrbanNews"]
+	path = src/CairoUrbanNews
+	url = https://github.com/Project-Cairo-Urban-News/CairoUrbanNews.git
