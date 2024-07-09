@@ -12,6 +12,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: 'true'
+      - run: cp -R ./src/CairoUrbanNews ./src/CairoUrbanNews-ar
       - name: Build
         uses: TartanLLama/actions-eleventy@v1.3
         with:
