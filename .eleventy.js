@@ -11,6 +11,30 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
 
+  eleventyConfig.addFilter("getYears",
+    function(pages) {
+      return Array.from(new Set(pages.map(item => {
+        let date = item.data.date;
+        if (date instanceof Date) {
+          date = date.toISOString().replace(/:.*$/, "").replace(/T.*$/, "");
+        }
+        return date.replace(/-.*$/, "");
+      })));
+    }
+  );
+
+  eleventyConfig.addFilter("pagesByYear",
+    function(pages, year) {
+      return pages.filter(item => {
+        let date = item.data.date;
+        if (date instanceof Date) {
+          date = date.toISOString().replace(/:.*$/, "").replace(/T.*$/, "");
+        }
+        return date.startsWith(year);
+      });
+    }
+  );
+
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addTemplateFormats("xml");
 
@@ -66,10 +90,29 @@ module.exports = function(eleventyConfig) {
       };
     },
     getData: async function(inputPath) {
-      lang = inputPath.includes('-ar') ? 'ar' : 'en';
+      const file = fs.readFileSync(inputPath, 'utf8');
+      const jdom = new JSDOM(file, { contentType: "text/xml" });
+      if (!jdom.window.document.querySelector("TEI")) {
+        return;
+      }
+      const dateElements = Array.from(jdom.window.document.querySelectorAll('TEI > text > body > div > head > date[when]'));
+      const dates = dateElements.map(date => {
+        return date.getAttribute('when').replace(/^(\d{4})-.*$/, "$1");
+      }).reduce((acc, date) => {
+        if (acc.includes(date)) {
+          return acc;
+        }
+        return acc.concat(date);
+      }, []).join('/');
+      const lang = jdom.window.document.querySelectorAll('TEI > text')[0].getAttribute('xml:lang');
+      const year = inputPath.replace(/.*\/([^.]+)\.xml$/, "$1").substr(0, 4);
+      const css_class = `col${year.substr(3, 1)}`;
       return {
         title: inputPath.replace(/.*\/([^.]+)\.xml$/, "$1"),
-        layout: `doc-${lang}.njk`
+        gregorian_dates: dates,
+        date: year,
+        class: css_class,
+        doc_lang: lang
       };
     }    
   });

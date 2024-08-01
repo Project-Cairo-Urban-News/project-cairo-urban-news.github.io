@@ -1,0 +1,20 @@
+---
+title: Digital Cairo
+layout: page_en.njk
+---
+<div class="container-sm px-5 py-5">
+  <h1 class="display-4 text-center">al-Waqāʾiʿ al-Miṣrīya | الوقائع المصريّة</h1>
+  <div class="wrapper">
+    {%- set years = collections.year_en | getYears -%}
+    {%- for year in years -%}
+      {% set col = year.substr(3, 1) %}
+      {% set row = year.substr(1, 2) %}
+      <div class="col{{col}} row{{row}}">
+        <h2>{{year}}</h2>
+        {%- for page in collections.year_en | pagesByYear(year) -%}
+          <p><a href="{{page.url}}">{{page.data.title}} ({{page.data.doc_lang}})</a></p>
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}    
+  </div>  
+</div>

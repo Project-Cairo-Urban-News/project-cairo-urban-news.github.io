@@ -13,6 +13,8 @@ jobs:
         with:
           submodules: 'true'
       - run: cp -R ./src/CairoUrbanNews ./src/CairoUrbanNews-ar
+      - run: cp ar_docs.json ./src/CairoUrbanNews-ar/articles/articles.json
+      - run: cp en_docs.json ./src/CairoUrbanNews-ar/articles/en.json
       - name: Build
         uses: TartanLLama/actions-eleventy@v1.3
         with:
