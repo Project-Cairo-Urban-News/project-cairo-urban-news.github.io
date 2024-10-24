@@ -1,5 +1,5 @@
 ---
-title: History of Project
+title: History of the Project
 layout: doc_en.njk
 ---
 
