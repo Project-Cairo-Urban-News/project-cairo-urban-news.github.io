@@ -1,7 +1,6 @@
 const fs = require("fs");
 const { JSDOM } = require("jsdom");
 
-
 const ar_path = "src/CairoUrbanNews/articles/arabic";
 const ota_path = "src/CairoUrbanNews/articles/ottoman";
 if (!fs.existsSync(`${ar_path}/pages`)) {
