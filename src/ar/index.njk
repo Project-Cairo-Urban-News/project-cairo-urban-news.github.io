@@ -10,9 +10,9 @@ layout: page_ar.njk
       {% set col = year.substr(3, 1) %}
       {% set row = year.substr(1, 2) %}
       <div class="col{{col}} row{{row}}">
-        <h2 class="h4">{{year}}</h2>
+        <h2 class="h4">{{year | toArabicNumerals }}</h2>
         <ul class="list-unstyled">
-          {% for page in collections.years_en | pagesByYear(year) %}
+          {% for page in collections.years_ar | pagesByYear(year) %}
             {% if page.url != false %}
             <li>
               <seg><a href="{{page.url}}">{{page.data.title | toArabicNumerals}}</a></seg> 
