@@ -49,9 +49,7 @@ module.exports = function(eleventyConfig) {
   });
 
   eleventyConfig.addCollection("years_ar", function(collectionsApi) {
-    return collectionsApi.getFilteredByTag("year_ar").filter(item => {
-      return !item.data.tags.includes("page_ar");
-    });
+    return collectionsApi.getFilteredByGlob("src/CairoUrbanNews-ar/articles/*/*.xml");
   });
 
   eleventyConfig.addTemplateFormats("scss");
