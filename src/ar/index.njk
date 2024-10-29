@@ -1,0 +1,28 @@
+---
+title: Digital Cairo
+layout: page_ar.njk
+---
+<div class="container">
+  <h1 class="display-4 text-center">الوقائع المصريّة</h1>
+  <div class="wrapper">
+    {% set years = collections.year_en | getYears %}
+    {% for year in years %}
+      {% set col = year.substr(3, 1) %}
+      {% set row = year.substr(1, 2) %}
+      <div class="col{{col}} row{{row}}">
+        <h2 class="h4">{{year}}</h2>
+        <ul class="list-unstyled">
+          {% for page in collections.years_en | pagesByYear(year) %}
+            {% if page.url != false %}
+            <li>
+              <seg><a href="{{page.url}}">{{page.data.title | toArabicNumerals}}</a></seg> 
+              <seg class="text-body-secondary"><em>{{page.data.doc_lang}}</em></seg>
+            </li>
+            {% endif %}
+
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}    
+  </div>  
+</div>
