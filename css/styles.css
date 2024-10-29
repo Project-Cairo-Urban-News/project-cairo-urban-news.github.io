@@ -9314,7 +9314,7 @@ table {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(10, 122px);
+  grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: 10px;
 }
@@ -9324,7 +9324,16 @@ table {
   border: thin solid gray;
   padding: 20px;
   border-radius: 5px;
-  width: 120px;
+  width: 6rem;
+}
+
+.wrapper seg {
+  display: block;
+  line-height: 1em;
+}
+
+.wrapper li {
+  margin-bottom: 0.3em;
 }
 
 .col0 {

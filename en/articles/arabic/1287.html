@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/doc_styles.css">
     <title>1287</title>
+    <script src="/js/main.js"></script>
+    <script src="/js/doc.js"></script>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
@@ -48,11 +50,63 @@
   </div>
 </nav>
 
-    <main dir="ltr">
+    <main>
       <div class="container">
+        <h1>1287</h1>
         <div class="row justify-content-md-center">
           <div class="col col-8 mt-4">
-            <?xml-model href="../../schema/CairoUrbanNews.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+            <table class="summary">
+              <tr>
+                <th>ٱلْمُحَرَّم / Muḥarram</th>
+                <td class="month_1"></td>
+              </tr>
+              <tr>
+                <th>صَفَر / Ṣafar</th>
+                <td class="month_2"></td>
+              </tr>
+              <tr>
+                <th>رَبِيع ٱلْأَوَّل / Rabī‘ al-awwal</th>
+                <td class="month_3"></td>
+              </tr>
+              <tr>
+                <th>رَبِيع ٱلثَّانِي / Rabī‘ ath-thānī</th>
+                <td class="month_4"></td>
+              </tr>
+              <tr>
+                <th>جُمَادَىٰ ٱلْأُولَىٰ / Jumādá al-ūlá</th>
+                <td class="month_5"></td>
+              </tr>
+              <tr>
+                <th>جُمَادَىٰ ٱلثَّانِيَة / Jumādá al-ākhirah</th>
+                <td class="month_6"></td>
+              </tr>
+              <tr>
+                <th>رَجَب / Rajab</th>
+                <td class="month_7"></td>
+              </tr>
+              <tr>
+                <th>شَعْبَان / Sha‘bān</th>
+                <td class="month_8"></td>
+              </tr>
+              <tr>
+                <th>رَمَضَان / Ramaḍān</th>
+                <td class="month_9"></td>
+              </tr>
+              <tr>
+                <th>شَوَّال / Shawwāl</th>
+                <td class="month_10"></td>
+              </tr>
+              <tr>
+                <th>ذُو ٱلْقَعْدَة / Dhū al-Qa‘dah</th>
+                <td class="month_11"></td>
+              </tr>
+              <tr>
+                <th>ذُو ٱلْحِجَّة / Dhū al-Ḥijjah</th>
+                <td class="month_12"></td>
+              </tr>
+            </table>
+            <div hidden>
+              <?xml-model href="../../schema/CairoUrbanNews.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/CairoUrbanNews.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-stylesheet type="text/css" href="../../css/oxygen.css"?>
 <tei-tei data-xmlns="http://www.tei-c.org/ns/1.0" data-origname="TEI" data-origatts="xmlns">
@@ -806,6 +860,7 @@
    </tei-text>
 </tei-tei>
 
+            </div>
           </div>
         </div>
       </div>
@@ -818,6 +873,22 @@
        id="path1" />
   </g>
 </svg>
-    <script src="/js/main.js"></script>
+    <script>
+        const c = new CETEI();
+        c.addBehaviors(summary_behaviors);
+        c.processPage();
+        for (let i = 1; i <= 12; i++) {
+          const monthCell = document.querySelector(`td.month_${i}`);
+          const list = document.createElement('ul');
+          let found = false;
+          for (let month of Array.from(document.querySelectorAll(`li.month_${i}`))) {
+            list.appendChild(month.cloneNode(true));
+            found = true;
+          }
+          if (found) {
+            monthCell.appendChild(list);
+          }
+        }
+    </script>
   </body>
 </html>
