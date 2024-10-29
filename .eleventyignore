@@ -1,5 +1,7 @@
 ar_docs.json
+ar_pages.json
 en_docs.json
+en_pages.json
 src/CairoUrbanNews/*.xml
 src/CairoUrbanNews/.github
 src/CairoUrbanNews/css
