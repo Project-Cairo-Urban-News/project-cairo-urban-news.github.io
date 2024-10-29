@@ -1,4 +1,4 @@
 {
-  "layout": "doc_en.njk",
+  "layout": "summary_en.njk",
   "tags": ["year_en"]
 }

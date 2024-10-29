@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/doc_styles.css">
+    <title>{{ title }}</title>
+    <script src="/js/main.js"></script>
+    <script src="/js/doc.js"></script>
+  </head>
+  <body>
+    {% include 'navbar_en.njk' %}
+    <main dir="rtl">
+      <div class="container">
+        <h1>{{ title | toArabicNumerals}}</h1>
+        <div class="row justify-content-md-center">
+          <div class="col col-8 mt-4">
+            <table class="summary">
+              <tr>
+                <th>ٱلْمُحَرَّم</th>
+                <td class="month_1"></td>
+              </tr>
+              <tr>
+                <th>صَفَر</th>
+                <td class="month_2"></td>
+              </tr>
+              <tr>
+                <th>رَبِيع ٱلْأَوَّل</th>
+                <td class="month_3"></td>
+              </tr>
+              <tr>
+                <th>رَبِيع ٱلثَّانِي</th>
+                <td class="month_4"></td>
+              </tr>
+              <tr>
+                <th>جُمَادَىٰ ٱلْأُولَىٰ</th>
+                <td class="month_5"></td>
+              </tr>
+              <tr>
+                <th>جُمَادَىٰ ٱلثَّانِيَة</th>
+                <td class="month_6"></td>
+              </tr>
+              <tr>
+                <th>رَجَب</th>
+                <td class="month_7"></td>
+              </tr>
+              <tr>
+                <th>شَعْبَان</th>
+                <td class="month_8"></td>
+              </tr>
+              <tr>
+                <th>رَمَضَان</th>
+                <td class="month_9"></td>
+              </tr>
+              <tr>
+                <th>شَوَّال</th>
+                <td class="month_10"></td>
+              </tr>
+              <tr>
+                <th>ذُو ٱلْقَعْدَة</th>
+                <td class="month_11"></td>
+              </tr>
+              <tr>
+                <th>ذُو ٱلْحِجَّة</th>
+                <td class="month_12"></td>
+              </tr>
+            </table>
+            <div hidden>
+              {{ content | safe }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include 'wm_logo.html' %}
+    <script>
+        const c = new CETEI();
+        c.addBehaviors(summary_behaviors);
+        c.processPage();
+        for (let i = 1; i <= 12; i++) {
+          const monthCell = document.querySelector(`td.month_${i}`);
+          const list = document.createElement('ul');
+          let found = false;
+          for (let month of Array.from(document.querySelectorAll(`li.month_${i}`))) {
+            list.appendChild(month.cloneNode(true));
+            found = true;
+          }
+          if (found) {
+            monthCell.appendChild(list);
+          }
+        }
+    </script>
+  </body>
+</html>

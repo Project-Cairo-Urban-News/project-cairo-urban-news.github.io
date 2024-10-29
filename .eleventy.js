@@ -13,7 +13,9 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addFilter("getYears",
     function(pages) {
-      return Array.from(new Set(pages.map(item => {
+      return Array.from(new Set(pages.filter(item => {
+        return item.url != false;
+      }).map(item => {
         let date = item.data.date;
         if (date instanceof Date) {
           date = date.toISOString().replace(/:.*$/, "").replace(/T.*$/, "");
@@ -34,6 +36,23 @@ module.exports = function(eleventyConfig) {
       });
     }
   );
+
+  eleventyConfig.addFilter("toArabicNumerals", function(num) {
+    const arabicNumerals = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
+    return num.toString().split("").map(digit => {
+      return arabicNumerals[digit];
+    }).join("");
+  });
+
+  eleventyConfig.addCollection("years_en", function(collectionsApi) {
+    return collectionsApi.getFilteredByGlob("src/CairoUrbanNews/articles/*/*.xml");
+  });
+
+  eleventyConfig.addCollection("years_ar", function(collectionsApi) {
+    return collectionsApi.getFilteredByTag("year_ar").filter(item => {
+      return !item.data.tags.includes("page_ar");
+    });
+  });
 
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addTemplateFormats("xml");
@@ -70,31 +89,39 @@ module.exports = function(eleventyConfig) {
 
     compileOptions: {
       permalink: function(contents, inputPath) {
-        const path = inputPath.replace(/src\/CairoUrbanNews\//, 'en/').replace(/src\/CairoUrbanNews-ar\//, 'ar/');
-        return path.replace(/\.xml$/, ".html");
+        return async (data) => {
+          if (!data.jdom.window.document.querySelector("TEI")) {
+            return false;
+          }
+          const finalized = data.jdom.window.document.querySelector('revisionDesc[status="cleared"]');
+          if (!finalized) {
+            return false;
+          }
+          const path = inputPath.replace(/src\/CairoUrbanNews\//, 'en/').replace(/src\/CairoUrbanNews-ar\//, 'ar/');
+          return path.replace(/\.xml$/, ".html");
+        }
       }
     },
-    compile: async function(contents, inputPath) {
-      const jdom = new JSDOM(contents, { contentType: "text/xml" });
-      if (!jdom.window.document.querySelector("TEI")) {
-        return;
-      }
-      const finalized = jdom.window.document.querySelector('revisionDesc[status="cleared"]');
-      if (!finalized) {
-        return;
-      }
-      let cetei = new CETEI({ documentObject: jdom.window.document });
-      let doc = await cetei.domToHTML5(jdom.window.document);
+    compile: function(contents, inputPath) {
       return async (data) => {
+        if (!data.jdom) {
+          return;
+        }
+        if (!data.jdom.window.document.querySelector("TEI")) {
+          return;
+        }
+        const finalized = data.jdom.window.document.querySelector('revisionDesc[status="cleared"]');
+        if (!finalized) {
+          return;
+        }
+        const cetei = new CETEI({ documentObject: data.jdom.window.document });
+        const doc = await cetei.domToHTML5(data.jdom.window.document);
         return cetei.utilities.serializeHTML(doc, true);
       };
     },
     getData: async function(inputPath) {
       const file = fs.readFileSync(inputPath, 'utf8');
       const jdom = new JSDOM(file, { contentType: "text/xml" });
-      if (!jdom.window.document.querySelector("TEI")) {
-        return;
-      }
       const dateElements = Array.from(jdom.window.document.querySelectorAll('TEI > text > body > div > head > date[when]'));
       const dates = dateElements.map(date => {
         return date.getAttribute('when').replace(/^(\d{4})-.*$/, "$1");
@@ -112,7 +139,8 @@ module.exports = function(eleventyConfig) {
         gregorian_dates: dates,
         date: year,
         class: css_class,
-        doc_lang: lang
+        doc_lang: lang,
+        jdom: jdom
       };
     }    
   });

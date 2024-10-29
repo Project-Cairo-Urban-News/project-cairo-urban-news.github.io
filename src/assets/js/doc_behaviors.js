@@ -1,4 +1,4 @@
-const behaviors = {
+const doc_behaviors = {
   "tei": {
     "choice": function(elt) {
       const sic = elt.querySelector('tei-sic');

@@ -1,4 +1,4 @@
 {
-  "layout": "doc_ar.njk",
+  "layout": "summary_ar.njk",
   "tags": ["year_ar"]
 }

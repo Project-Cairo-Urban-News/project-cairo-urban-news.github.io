@@ -2,19 +2,27 @@
 title: Digital Cairo
 layout: page_en.njk
 ---
-<div class="container-sm px-5 py-5">
+<div class="container">
   <h1 class="display-4 text-center">al-Waqāʾiʿ al-Miṣrīya | الوقائع المصريّة</h1>
   <div class="wrapper">
-    {%- set years = collections.year_en | getYears -%}
-    {%- for year in years -%}
+    {% set years = collections.year_en | getYears %}
+    {% for year in years %}
       {% set col = year.substr(3, 1) %}
       {% set row = year.substr(1, 2) %}
       <div class="col{{col}} row{{row}}">
-        <h2>{{year}}</h2>
-        {%- for page in collections.year_en | pagesByYear(year) -%}
-          <p><a href="{{page.url}}">{{page.data.title}} ({{page.data.doc_lang}})</a></p>
-        {%- endfor -%}
+        <h2 class="h4">{{year}}</h2>
+        <ul class="list-unstyled">
+          {% for page in collections.years_en | pagesByYear(year) %}
+            {% if page.url != false %}
+            <li>
+              <seg><a href="{{page.url}}">{{page.data.title}}</a></seg> 
+              <seg class="text-body-secondary"><em>{{page.data.doc_lang}}</em></seg>
+            </li>
+            {% endif %}
+
+          {% endfor %}
+        </ul>
       </div>
-    {%- endfor -%}    
+    {% endfor %}    
   </div>  
 </div>
