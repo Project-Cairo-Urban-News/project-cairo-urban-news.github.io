@@ -10,12 +10,6 @@ const doc_behaviors = {
       corr.setAttribute("data-bs-custom-class", "custom-tooltip");
     },
     "date": ['',' '],
-    "div": function(elt) {
-      const link = document.createElement('a');
-      link.setAttribute('href', `#${elt.getAttribute('id')}`);
-      link.innerHTML = `${this.getOrdinality(elt)}.`;
-      elt.prepend(link);
-    },
     "sic": [
       [":not(tei-choice) tei-sic", ['','(!)']],
     ],

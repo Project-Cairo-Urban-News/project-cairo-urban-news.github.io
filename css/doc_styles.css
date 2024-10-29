@@ -9346,6 +9346,19 @@ td, th {
   border: thin solid silver;
 }
 
+table.summary {
+  margin: auto;
+}
+
+table.summary th, table.summary td {
+  border: thin solid silver;
+  padding: 1em;
+}
+
+table.summary ul {
+  margin: 0;
+}
+
 /* TEI elements */
 tei-choice tei-sic {
   display: none;

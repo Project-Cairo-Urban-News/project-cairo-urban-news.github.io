@@ -52,7 +52,7 @@
 
     <main>
       <div class="container">
-        <h1>1264</h1>
+        <h1 style="text-align: center;">1264</h1>
         <div class="row justify-content-md-center">
           <div class="col col-8 mt-4">
             <table class="summary">
@@ -855,6 +855,9 @@
           }
           if (found) {
             monthCell.appendChild(list);
+          } else {
+            monthCell.textContent = '—';
+            monthCell.previousElementSibling.style = 'color: gray;';
           }
         }
     </script>
