@@ -1138,6 +1138,9 @@
           }
           if (found) {
             monthCell.appendChild(list);
+          } else {
+            monthCell.textContent = '—';
+            monthCell.parentElement.style = 'color: gray;';
           }
         }
     </script>
