@@ -1,5 +1,5 @@
 
 ---
-title: حقوق النشر/تحير الموقع
+title: حقوق النشر
 layout: doc_ar.njk
 ---
