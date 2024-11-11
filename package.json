@@ -1,8 +1,9 @@
 {
-  "name": "eleventy-site",
+  "name": "Cairo Urban News Site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "split": "node bin/split.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.0",
     "CETEIcean": "^1.9.3",

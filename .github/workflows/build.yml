@@ -12,6 +12,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           submodules: 'true'
+      - name: Update submodule
+        run: git submodule update --remote src/CairoUrbanNews
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:

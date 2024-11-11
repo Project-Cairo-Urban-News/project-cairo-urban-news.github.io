@@ -1,13 +1,10 @@
-const path = require('node:path');
-const { JSDOM } = require("jsdom");
-const fs = require('fs');
-const sass = require('sass');
-// CommonJS can't require ESM modules, so we have to use an import() hack instead
-let CETEI;
-import("CETEIcean").then((ceteicean) => {
-  CETEI = ceteicean.default;
-})
-module.exports = function(eleventyConfig) {
+import path from 'node:path';
+import { JSDOM } from 'jsdom';
+import fs from 'fs';
+import * as sass from 'sass';
+import CETEI from 'CETEIcean';
+
+export default function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
 
