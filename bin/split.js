@@ -1,5 +1,5 @@
-const fs = require("fs");
-const { JSDOM } = require("jsdom");
+import fs from "fs";
+import { JSDOM } from "jsdom";
 
 const ar_path = "src/CairoUrbanNews/articles/arabic";
 const ota_path = "src/CairoUrbanNews/articles/ottoman";
