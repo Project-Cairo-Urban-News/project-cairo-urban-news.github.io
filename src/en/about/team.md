@@ -3,16 +3,16 @@ title: Team
 layout: doc_en.njk
 ---
 
-Team members:
+# Team members:
 
 
-Project director: Adam Mestyan (Duke University)
+## Project director: Adam Mestyan (Duke University)
 
 
-Project co-directors:  Hugh Cayless (Duke University), Mercedes Volait (CNRS, INHA)
+## Project co-directors:  Hugh Cayless (Duke University), Mercedes Volait (CNRS, INHA)
 
 
-Researchers:
+## Researchers:
 
 
 Sarah Fathallah Garaa (‘Ayn Shams U, graduate student)
@@ -61,3 +61,9 @@ Nehal al-Shamy (AUC, graduate student)
 
 
 Vishal Jammulapati (Duke, undergraduate student)
+
+## External reviewers:
+
+Will Hanley (Florida University)
+
+Till Grallert (Humboldt-Universität zu Berlin)
