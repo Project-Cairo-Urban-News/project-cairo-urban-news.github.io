@@ -6,10 +6,10 @@ layout: doc_en.njk
 # Team members:
 
 
-## Project director: Adam Mestyan (Duke University)
+### Project director: Adam Mestyan (Duke University)
 
 
-## Project co-directors:  Hugh Cayless (Duke University), Mercedes Volait (CNRS, INHA)
+### Project co-directors:  Hugh Cayless (Duke University), Mercedes Volait (CNRS, INHA)
 
 
 ## Researchers:
