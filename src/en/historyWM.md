@@ -7,7 +7,7 @@ layout: doc_en.njk
 
 ## Rezk Nori, Ahmed Kamal, Adam Mestyan
 
-Al-Waqa'i' al-Misriyyah is one of the oldest official newspapers in the Arab World (see [Project Jara'id](https://projectjaraid.github.io/pages/chrono.html)). Mehmed Ali Pasha ordered the publication of news in a newspaper called “Vekayi-i Misriye” in Ottoman Turkish. The first issue was published on 25 Jumada al-Awwal 1244/3 December 1828 in Ottoman Turkish and Arabic. 
+Al-Waqa'i' al-Misriyyah is one of the oldest official newspapers in the Arab World (see <a href="https://projectjaraid.github.io/pages/chrono.html" target="_blank">Project Jara'id</a>). Mehmed Ali Pasha ordered the publication of news in a newspaper called “Vekayi-i Misriye” in Ottoman Turkish. The first issue was published on 25 Jumada al-Awwal 1244/3 December 1828 in Ottoman Turkish and Arabic. 
 
 Al-Waqa'i' al-Misriyyah was initially published in four pages, each containing two columns, one in Ottoman Turkish and the other in Arabic. It used only the hijrī calendar. (See for instance [an example from 1244/1829](https://gallica.bnf.fr/ark:/12148/bpt6k12150259)). The newspaper initially published official news glorifying the ruler or government officials. It continued to be published in the two languages side by side until 1263-1265/1847-1848, when it was published in two separate editions, one in Arabic and the other in Ottoman Turkish. The Ottoman Turkish edition remained in print only until 1268/1851, while no editions were published in either language between 1267/1851 and 1282/1865.
 
