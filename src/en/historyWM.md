@@ -5,7 +5,7 @@ layout: doc_en.njk
 
 # A Brief History of al-Waqa'i' al-Misriyyah
 
-## Rezk Nori, Ahmed Kamal, Adam Mestyan
+### Rezk Nori, Ahmed Kamal, Adam Mestyan
 
 Al-Waqa'i' al-Misriyyah is one of the oldest official newspapers in the Arab World (see <a href="https://projectjaraid.github.io/pages/chrono.html" target="_blank">Project Jara'id</a>). Mehmed Ali Pasha ordered the publication of news in a newspaper called “Vekayi-i Misriye” in Ottoman Turkish. The first issue was published on 25 Jumada al-Awwal 1244/3 December 1828 in Ottoman Turkish and Arabic. 
 
