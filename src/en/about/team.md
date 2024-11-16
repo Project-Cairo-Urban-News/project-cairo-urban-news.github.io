@@ -15,7 +15,7 @@ layout: doc_en.njk
 ## Researchers:
 
 
-Sarah Fathallah Garaa (‘Ayn Shams U, graduate student)
+Dr. Sarah Fathallah Garaa (‘Ayn Shams University)
 
 
 Dr. Karima Nasr
