@@ -3,7 +3,7 @@ title: History of WM
 layout: doc_en.njk
 ---
 
-A Brief History of al-Waqa'i' al-Misriyyah
+# A Brief History of al-Waqa'i' al-Misriyyah
 
 Rezk Nori, Ahmed Kamal, and Adam Mestyan
 
