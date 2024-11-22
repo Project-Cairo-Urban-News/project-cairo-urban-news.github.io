@@ -80,6 +80,8 @@ export default function(eleventyConfig) {
     }
   });
 
+  const cetei = new CETEI({documentObject: new JSDOM(`<html></html>`).window.document});
+
   eleventyConfig.addExtension("xml", {
 
     compileOptions: {
@@ -109,7 +111,6 @@ export default function(eleventyConfig) {
         if (!finalized) {
           return;
         }
-        const cetei = new CETEI({ documentObject: data.jdom.window.document });
         const doc = await cetei.domToHTML5(data.jdom.window.document);
         return cetei.utilities.serializeHTML(doc, true);
       };
