@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/doc_styles.css">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    {% include 'navbar_en.njk' %}
+    <main dir="ltr">
+      {% set previous = collections.page_en_ota_sorted | getPreviousCollectionItem(page) %}
+      {% set next = collections.page_en_ota_sorted | getNextCollectionItem(page) %}
+      <div class="container">
+        <div class="row">
+          <div class="col text-end fs-5">
+            {% if previous %}
+              <a href="{{ previous.url }}" class="link-primary link-opacity-75 link-opacity-100-hover">Previous</a>
+            {% endif %}
+          </div>
+          <div class="col text-center fs-5">
+              <a href="{{ parent }}" class="link-primary link-opacity-75 link-opacity-100-hover">{{ date }}</a>
+          </div>
+          <div class="col fs-5">
+            {% if next %}
+              <a href="{{ next.url }}" class="link-primary link-opacity-75 link-opacity-100-hover">Next</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col col-8 mt-4">
+            {{ content | safe }}
+          </div>
+        </div>
+      </div>
+    </main>
+    {% include 'wm_logo.html' %}
+    <script src="/js/main.js"></script>
+    <script src="/js/doc.js"></script>
+    <script>
+      const c = new CETEI();
+      c.addBehaviors(doc_behaviors);
+      c.processPage();
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+  </body>
+</html>

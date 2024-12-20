@@ -37,6 +37,7 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
+$link-color: #507F93;
 $success: #7952b3;
 
 // Required
@@ -94,10 +95,6 @@ $success: #7952b3;
 
 body {
   background-color: #e8dfd5;
-}
-
-body a {
-  color: #507F93;
 }
 
 nav {

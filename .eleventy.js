@@ -3,6 +3,7 @@ import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import * as sass from 'sass';
 import CETEI from 'CETEIcean';
+import { title } from 'node:process';
 
 export default function(eleventyConfig) {
 
@@ -49,6 +50,54 @@ export default function(eleventyConfig) {
     return collectionsApi.getFilteredByGlob("src/CairoUrbanNews-ar/articles/*/*.xml");
   });
 
+  eleventyConfig.addCollection("page_en_ar_sorted", function(collectionsApi) {  
+    return collectionsApi.getFilteredByGlob("src/CairoUrbanNews/articles/arabic/*/*.xml")
+      .filter((page) => {
+        return page.data.doc_lang = 'ar';
+      })
+      .sort((a, b) => {
+        const titleA = Number.parseInt(a.data.title.replace(/-/g, ""));
+        const titleB = Number.parseInt(b.data.title.replace(/-/g, ""));
+        return titleA - titleB;
+    });
+  });
+
+  eleventyConfig.addCollection("page_en_ota_sorted", function(collectionsApi) {  
+    return collectionsApi.getFilteredByGlob("src/CairoUrbanNews/articles/ottoman/*/*.xml")
+    .filter((page) => {
+      return page.data.doc_lang = 'ota';
+    })
+    .sort((a, b) => {
+      const titleA = Number.parseInt(a.data.title.replace(/-/g, ""));
+      const titleB = Number.parseInt(b.data.title.replace(/-/g, ""));
+      return titleA - titleB;
+    });
+  });
+
+  eleventyConfig.addCollection("page_ar_ar_sorted", function(collectionsApi) {  
+    return collectionsApi.getFilteredByGlob("src/CairoUrbanNews-ar/articles/arabic/*/*.xml")
+    .filter((page) => {
+      return page.data.doc_lang = 'ar';
+    })
+    .sort((a, b) => {
+      const titleA = Number.parseInt(a.data.title.replace(/-/g, ""));
+      const titleB = Number.parseInt(b.data.title.replace(/-/g, ""));
+      return titleA - titleB;
+    });
+  });
+
+  eleventyConfig.addCollection("page_ar_ota_sorted", function(collectionsApi) {  
+    return collectionsApi.getFilteredByGlob("src/CairoUrbanNews-ar/articles/ottoman/*/*.xml")
+    .filter((page) => {
+      return page.data.doc_lang = 'ota';
+    })
+    .sort((a, b) => {
+      const titleA = Number.parseInt(a.data.title.replace(/-/g, ""));
+      const titleB = Number.parseInt(b.data.title.replace(/-/g, ""));
+      return titleA - titleB;
+    });
+  });
+
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addTemplateFormats("xml");
 
@@ -84,7 +133,10 @@ export default function(eleventyConfig) {
 
   eleventyConfig.addExtension("xml", {
 
+    read: false,
+
     compileOptions: {
+    
       permalink: function(contents, inputPath) {
         return async (data) => {
           if (!data.jdom.window.document.querySelector("TEI")) {
@@ -128,15 +180,22 @@ export default function(eleventyConfig) {
         return acc.concat(date);
       }, []).join('/');
       const lang = jdom.window.document.querySelectorAll('TEI > text')[0].getAttribute('xml:lang');
-      const year = inputPath.replace(/.*\/([^.]+)\.xml$/, "$1").substr(0, 4);
+      const year = inputPath.replace(/.*\/([^-.]+).*\.xml$/, "$1").substr(0, 4);
       const css_class = `col${year.substr(3, 1)}`;
+      let parent;
+      if (inputPath.includes('-')) {
+        parent = inputPath.replace(/.*\/pages\/([^-]+)-.*\.xml$/, "../$1.html");
+      } else {
+        parent = inputPath.replace(/(.*)\/articles\/.*/, "$1");
+      }
       return {
         title: inputPath.replace(/.*\/([^.]+)\.xml$/, "$1"),
         gregorian_dates: dates,
         date: year,
         class: css_class,
         doc_lang: lang,
-        jdom: jdom
+        jdom: jdom,
+        parent: parent
       };
     }    
   });
