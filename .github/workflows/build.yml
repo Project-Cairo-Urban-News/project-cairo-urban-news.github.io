@@ -23,10 +23,10 @@ jobs:
       - run: cp -R ./src/CairoUrbanNews ./src/CairoUrbanNews-ar
       - run: cp ar_docs.json ./src/CairoUrbanNews-ar/articles/articles.json
       - run: cp en_docs.json ./src/CairoUrbanNews/articles/articles.json
-      - run: cp ar_pages.json ./src/CairoUrbanNews-ar/articles/arabic/pages/pages.json
-      - run: cp ar_pages.json ./src/CairoUrbanNews-ar/articles/ottoman/pages/pages.json
-      - run: cp en_pages.json ./src/CairoUrbanNews/articles/arabic/pages/pages.json
-      - run: cp en_pages.json ./src/CairoUrbanNews/articles/ottoman/pages/pages.json
+      - run: cp ar_ar_pages.json ./src/CairoUrbanNews-ar/articles/arabic/pages/pages.json
+      - run: cp ar_ota_pages.json ./src/CairoUrbanNews-ar/articles/ottoman/pages/pages.json
+      - run: cp en_ar_pages.json ./src/CairoUrbanNews/articles/arabic/pages/pages.json
+      - run: cp en_ota_pages.json ./src/CairoUrbanNews/articles/ottoman/pages/pages.json
       - name: Build
         run: npx --node-options='--max-old-space-size=15360' @11ty/eleventy
       - name: Deploy
