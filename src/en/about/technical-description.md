@@ -7,11 +7,12 @@ The “Digital Cairo” project involved creating a vocabulary of mark-up (a min
 
 This document outlines the workflow, including details about automated GitHub actions and other technical processes, such as creating the timeline on this website. Beginners in using Oxygen software for TEI mark-up of Arabic-character-based documents can visit our website for a crash course with basic definitions: https://arabic-tei-workshop.github.io/index.html. For more technical details, see the paper by Cayless and Mestyan HERE.
 
-1.	Our schema
+1. Our schema
 
 We developed a TEI ODD schema focused on a basic document structure with support for marking names of persons, places, and organizations. Additional constraints were introduced, mainly to help editors identify errors involving misplaced spaces, which can be difficult to detect in Oxygen’s Author mode. As we gained insights into our data, we added new features to the schema, such as suggested values for the type attribute to aid editors in marking up the articles.
 
 2. Our Workflow
+   
 2.1 Creating Data in Microsoft Word Documents
    
 Adam Mestyan and Mercedes Volait defined criteria for the research assistants tasked with reading, selecting, and transcribing articles from al-Waqāʾiʿ al-Miṣriyyah. These criteria encompassed articles about urban development in Cairo, including destruction and reconstruction, urban regulations and policies, auctions of urban property, pious endowments in Cairo, infrastructure changes (e.g., roads, bridges, trains, transportation), and natural catastrophes like earthquakes.
