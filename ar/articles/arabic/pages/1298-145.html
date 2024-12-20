@@ -49,6 +49,25 @@
 </nav>
 
     <main dir="rtl">
+      
+      
+      <div class="container">
+        <div class="row">
+          <div class="col text-end fs-5">
+            
+              <a href="/ar/articles/arabic/pages/1298-144.html" class="link-primary link-opacity-75 link-opacity-100-hover">Previous</a>
+            
+          </div>
+          <div class="col text-center fs-5">
+              <a href="../1298.html" class="link-primary link-opacity-75 link-opacity-100-hover">١٢٩٨</a>
+          </div>
+          <div class="col fs-5">
+            
+              <a href="/ar/articles/arabic/pages/1298-146.html" class="link-primary link-opacity-75 link-opacity-100-hover">Next</a>
+            
+          </div>
+        </div>
+      </div>
       <div class="container">
         <div class="row justify-content-md-center">
           <div class="col col-8 mt-4">
@@ -284,6 +303,8 @@
       const c = new CETEI();
       c.addBehaviors(doc_behaviors);
       c.processPage();
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
     </script>
   </body>
 </html>
