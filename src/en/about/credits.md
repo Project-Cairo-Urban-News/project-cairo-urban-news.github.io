@@ -14,3 +14,4 @@ Arabic proofreading: Ahmed Kamal
 English proofreading: Vishal Jammulapati
 
 
+This database and website are licensed under Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
