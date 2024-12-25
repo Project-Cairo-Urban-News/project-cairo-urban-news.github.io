@@ -5,5 +5,4 @@ layout: doc_ar.njk
 
 النسخ المرقمة في المكتبة الوطنية الفرنسية:
 
-[١٢٤٤]
-(<div style="display: block; "><iframe style="width:500px; height: 621.5373631603998px; border: 0;" src="https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.item.mini"></iframe></div>)
+[١٢٤٤ سلخ جمادي الآخر](<div style="display: block; "><iframe style="width:500px; height: 621.5373631603998px; border: 0;" src="https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.item.mini"></iframe></div>)
