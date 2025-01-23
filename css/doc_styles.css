@@ -9381,7 +9381,7 @@ tei-div > a {
 tei-head {
   display: block;
   font-size: larger;
-  padding-top: 30px;
+  padding-top: 50px;
 }
 
 tei-head[lang=en] {
