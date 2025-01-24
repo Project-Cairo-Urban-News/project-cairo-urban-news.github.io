@@ -98,9 +98,6 @@ tei-head[lang=en] {
   padding-bottom: 5px; 
   margin-bottom: 10px;
 }
-tei-date[lang=ar] {
-  font-weight: bold;
-}
 tei-hi[rend=italics] {
   font-style: italic;
 }
@@ -131,7 +128,7 @@ tei-text {
   width: 60vw;
 }
 tei-text {
-  font-size: 20pt;
+  font-size: 17pt;
   border-bottom: 1px solid #ccc; 
   padding-bottom: 10px; 
   line-height: 2.0;
