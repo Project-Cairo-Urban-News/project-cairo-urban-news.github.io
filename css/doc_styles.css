@@ -9403,6 +9403,15 @@ tei-head[lang=ar] {
   margin-bottom: 10px;
 }
 
+tei-teiheader[lang=ar] {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
 tei-hi[rend=italics] {
   font-style: italic;
 }
@@ -9488,14 +9497,6 @@ table {
   --bs-tooltip-font-size: 2rem;
   --bs-tooltip-bg: var(--bs-gray-800);
   --bs-tooltip-opacity: 1;
-}
-
-h1, .h1 {
-  text-align: center; /* Centers text horizontally */
-  font-size: 2.5rem; /* Adjust font size */
-  margin: 20px 0; /* Add spacing around the h1 */
-  border-bottom: 2px solid #ccc; /* Thin line under the h1 */
-  padding-bottom: 10px; /* Some space between text and the line */
 }
 
 .two-columns {
