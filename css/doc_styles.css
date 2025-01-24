@@ -9394,18 +9394,13 @@ tei-head[lang=en] {
   margin-bottom: 10px;
 }
 
-tei-head[lang=ar] {
-  font-size: 2rem;
-  text-align: right;
+tei-date[lang=ar] {
   font-weight: bold;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 
-tei-teiheader[lang=ar] {
+tei-head {
   font-size: 2rem;
-  text-align: center;
+  text-align: right;
   font-weight: bold;
   border-bottom: 1px solid #ccc;
   padding-bottom: 5px;
@@ -9453,7 +9448,7 @@ tei-text {
   font-size: 20pt;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
-  line-height: 1.6;
+  line-height: 2;
 }
 
 *[lang=ar] {
