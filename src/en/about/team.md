@@ -12,6 +12,10 @@ layout: doc_en.njk
 ### Project co-directors:  Hugh Cayless (Duke University), Mercedes Volait (CNRS, INHA)
 
 
+<div class="two-columns">
+  <div class="column">
+
+
 ## Researchers:
 
 
@@ -37,8 +41,9 @@ layout: doc_en.njk
 
 
 ### Abram Smith (Duke U, graduate student)
+  </div>
 
-
+  <div class="column">
 ### Hüseyin Sağlam (Istanbul U, graduate student)
 
 
@@ -61,6 +66,9 @@ layout: doc_en.njk
 
 
 ### Vishal Jammulapati (Duke, undergraduate student)
+  </div>
+</div>
+
 
 ## External reviewers:
 
