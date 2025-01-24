@@ -3,6 +3,10 @@ title: Technical Description
 layout: doc_en.njk
 ---
 
+# Technical Description
+
+<br>
+
 The “Digital Cairo” project involved creating a vocabulary of mark-up (a minimal set of elements and attributes, better known as a “schema”) and a partially automated workflow for the XML transformation and TEI mark-up of Arabic-character-based texts from Microsoft Word documents. The workflow utilizes the Oxygen editing software and GitHub for collaborative mark-up, automation, and storage. Hugh Cayless undertook the bulk of the coding and design, with Adam Mestyan assisting with lower-level coding tasks. Once the editors declared a marked-up file finalized, further automated transformations assigned IDs to groups of data. Indexes were then created using XSLT transformations. Finally, Hugh Cayless and Adam Mestyan developed this website using GitHub. We believe that one of the major contributions of this project to (Arabic-script-based) digital humanities is its workflow.
 
 This document outlines the workflow, including details about automated GitHub actions and other technical processes, such as creating the timeline on this website. Beginners in using Oxygen software for TEI mark-up of Arabic-character-based documents can visit our website for a crash course with basic definitions: https://arabic-tei-workshop.github.io/index.html. For more technical details, see the paper by Cayless and Mestyan HERE.
