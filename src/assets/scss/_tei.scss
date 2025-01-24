@@ -117,8 +117,11 @@ tei-text {
   width: 60vw;
 }
 tei-text {
-  font-size: 20pt;
+  font-size: 30pt;
 } 
+*[lang=ar] {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
 *[lang=ar],*[lang=ota] {
   direction: rtl;
 } 
