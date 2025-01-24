@@ -9444,6 +9444,7 @@ tei-text {
   font-size: 20pt;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
+  line-height: 1.6;
 }
 
 *[lang=ar] {
