@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
 main[dir="rtl"] {
   text-align: right;
   --bs-body-text-align: right;
@@ -77,14 +79,24 @@ tei-div {
 tei-div > a {
   color: black;
   text-decoration: none;
+  padding-top: 30px;
 }
 tei-head {
   display:block;
   font-size: larger;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;  
+  padding-bottom: 5px;  
+  margin-bottom: 10px;
 }
 tei-head[lang=en] {
   font-size: 1.5rem;
   text-align: left;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 5px; 
+  margin-bottom: 10px;
 }
 tei-hi[rend=italics] {
   font-style: italic;
@@ -116,8 +128,14 @@ tei-text {
   width: 60vw;
 }
 tei-text {
-  font-size: 20pt;
+  font-size: 17pt;
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 10px; 
+  line-height: 2.0;
 } 
+*[lang=ar] {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
 *[lang=ar],*[lang=ota] {
   direction: rtl;
 } 

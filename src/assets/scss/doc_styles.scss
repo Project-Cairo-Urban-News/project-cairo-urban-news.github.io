@@ -97,12 +97,13 @@ $success: #7952b3;
 
 body {
   background-color: #e8dfd5;
+  font-size: large;
 }
 
 nav {
   background-color: #507F93;
   span.h1 {
-    line-height: 1.5;
+    line-height: 2.0;
   }
 }
 
@@ -118,4 +119,24 @@ table {
   --bs-tooltip-font-size: 2rem;
   --bs-tooltip-bg: var(--bs-gray-800);
   --bs-tooltip-opacity: 1;
+}
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  width: 48%; /* Make each column roughly 48% of the container width */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column; /* Stack the columns on smaller screens */
+  }
+
+  .column {
+    width: 100%; /* Full width for each column */
+  }
 }

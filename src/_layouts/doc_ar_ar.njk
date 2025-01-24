@@ -11,7 +11,7 @@
     <main dir="rtl">
       {% set previous = collections.page_ar_ar_sorted | getPreviousCollectionItem(page) %}
       {% set next = collections.page_ar_ar_sorted | getNextCollectionItem(page) %}
-      <div class="container">
+      <div class="container" pt-4>
         <div class="row">
           <div class="col fs-5">
             {% if previous %}
@@ -37,6 +37,7 @@
       </div>
     </main>
     {% include 'wm_logo.html' %}
+    {% include 'footer_ar.njk' %}
     <script src="/js/main.js"></script>
     <script src="/js/doc.js"></script>
     <script>
