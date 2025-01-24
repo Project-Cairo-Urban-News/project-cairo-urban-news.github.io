@@ -89,16 +89,16 @@ tei-head[lang=en] {
   font-size: 1.5rem;
   text-align: left;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;  /* Thin line with light gray color */
-  padding-bottom: 5px;  /* Optional: some space between the heading and the line */
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 5px; 
   margin-bottom: 10px;
 }
 tei-head[lang=ar] {
   font-size: 2.0rem;
   text-align: right;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;  /* Thin line with light gray color */
-  padding-bottom: 5px;  /* Optional: some space between the heading and the line */
+  border-bottom: 1px solid #ccc;  
+  padding-bottom: 5px;  
   margin-bottom: 10px;
 }
 tei-hi[rend=italics] {
@@ -132,6 +132,8 @@ tei-text {
 }
 tei-text {
   font-size: 20pt;
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 10px; 
 } 
 *[lang=ar] {
   font-family: 'IBM Plex Sans Arabic', sans-serif;
