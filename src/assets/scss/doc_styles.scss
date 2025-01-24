@@ -120,3 +120,13 @@ table {
   --bs-tooltip-bg: var(--bs-gray-800);
   --bs-tooltip-opacity: 1;
 }
+article h1 {
+  display: flex;
+  justify-content: center;  
+  text-align: center;      
+  font-size: 2.5rem;        /* Optional: adjust font size */
+  margin: 20px 0;           /* Optional: add spacing around the h1 */
+
+  border-bottom: 2px solid #ccc; /* Thin line with light gray color */
+  padding-bottom: 10px;          /* Optional: some space between text and the line */
+}
