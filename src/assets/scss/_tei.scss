@@ -83,7 +83,12 @@ tei-div > a {
 }
 tei-head {
   display:block;
-  font-size: larger;
+  font-size: larger
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;  
+  padding-bottom: 5px;  
+  margin-bottom: 10px;;
 }
 tei-head[lang=en] {
   font-size: 1.5rem;
@@ -95,14 +100,6 @@ tei-head[lang=en] {
 }
 tei-date[lang=ar] {
   font-weight: bold;
-}
-tei-head {
-  font-size: 2.0rem;
-  text-align: right;
-  font-weight: bold;
-  border-bottom: 1px solid #ccc;  
-  padding-bottom: 5px;  
-  margin-bottom: 10px;
 }
 tei-hi[rend=italics] {
   font-style: italic;
