@@ -101,6 +101,14 @@ tei-head[lang=ar] {
   padding-bottom: 5px;  
   margin-bottom: 10px;
 }
+tei-teiheader[lang=ar] {
+  font-size: 2.0rem;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;  
+  padding-bottom: 5px;  
+  margin-bottom: 10px;
+{
 tei-hi[rend=italics] {
   font-style: italic;
 }
