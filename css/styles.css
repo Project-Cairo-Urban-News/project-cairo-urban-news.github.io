@@ -9298,6 +9298,10 @@ li.nav-item {
   font-size: large;
 }
 
+.container {
+  padding-top: 20px;
+}
+
 table {
   table-layout: fixed;
 }
