@@ -50,9 +50,8 @@
         font-size: 3rem;
       }
 
-      .navbar-brand {
-        margin-top: 50 px;
-        margin-bottom: 50 px;
+      .navbar-brand svg {
+        margin-bottom: 30 px;
       }
       .bi {
         transform: scale(3); /* Scale the logo by a factor of 2 */
@@ -67,26 +66,20 @@
     <div class="background-image"></div>
     <div class="overlay"></div>
 
-    <div class="content">
-      <br>
-       <a class="navbar-brand" href="/">
-        <svg class="bi me-2" width="100" viewBox="0 0 150 100">
-          <use xlink:href="#wm_logo" />
-        </svg>
-      </a>
-      <br>
-      <span class="navbar-text display-3">News of Cairo</span>
-      <span class="navbar-text display-3">أخبار القاهرة</span>
-       <div class="container-lg px-4 pt-5 my-5 text-center border-bottom" style="position: relative; z-index: 1;">
-      <div class="col-lg mx-auto display-5">
+      <div class="content">
+        <br>
+         <a class="navbar-brand" href="/">
+          <svg class="bi me-2" width="100" viewBox="0 0 150 100">
+            <use xlink:href="#wm_logo" />
+          </svg>
+        </a>
+        <br>
+        <span class="navbar-text display-3">News of Cairo</span>
+        <span class="navbar-text display-3">أخبار القاهرة</span>
+        <div class="container-lg px-4 pt-5 my-5 text-center" style="position: relative; z-index: 1;">
+        <div class="col-lg mx-auto display-5">
         {{ content | safe }}
-      </div>
-    </div>
-    </div>
-
-    <div class="container-lg px-4 pt-5 my-5 text-center border-bottom" style="position: relative; z-index: 1;">
-      <div class="col-lg mx-auto display-5">
-        {{ content | safe }}
+        </div>
       </div>
     </div>
 
