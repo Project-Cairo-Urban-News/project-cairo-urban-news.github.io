@@ -13,9 +13,7 @@ layout: page_en.njk
 #### 2) check the index of organizations, roles, locations
 #### 3) check the timeline page and click according to year.
 
-<div style="padding: 0; margin: 0; position: relative; width: 100%; height: 100vh;">
-  <iframe style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%; border: 0;" src="https://gallica.bnf.fr/ark:/12148/btv1b53099635v/f1.item.mini"></iframe>
-</div>
+<img src="/images/GallicaCairoMap.jpeg" alt="Plan général de la Ville du Caire (1874)" style="width: 100%; height: auto; display: block; border: none; margin: 0;">
 
 Plan général de la Ville du Caire (1874)
 Dressé et publié avec l'autorisation de S.A. Ismail Pacha Khédive d'Egypte par Pierre Grand Bey
