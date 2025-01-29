@@ -51,7 +51,7 @@
       }
 
       .navbar-brand {
-        padding-bottom: 80 px;
+        padding-bottom: 80px;
       }
       .bi {
         transform: scale(3); /* Scale the logo by a factor of 2 */
@@ -59,12 +59,19 @@
       }
       .navbar-text.display-3 {
       padding-top: 50px;  /* Adds space above the text */
+      display: block;
       }
-      .container-lg .col-lg .markdown-content {
-    font-family: 'Arial', sans-serif; /* Change font family */
-    color: #FFFFFF; /* Set text color */
-    line-height: 1.7; /* Increase line height for better readability */
-  }
+      .navbar-text.display-3 + .navbar-text.display-3 {
+      margin-top: 10px;  /* Adds 10px of space between the English and Arabic text */
+      }
+      .col-lg .markdown-content {
+      font-family: 'Arial', sans-serif; 
+      color: #FFFFFF; 
+      line-height: 1.7;
+      }
+      .col-lg a:hover {
+      color: #507f93; /* Change text color to #507f93 on hover */
+      }
     </style>
   </head>
   <body>
@@ -72,13 +79,11 @@
     <div class="overlay"></div>
 
       <div class="content">
-        <br>
          <a class="navbar-brand" href="/">
-          <svg class="bi me-2 my-2" width="100" viewBox="0 0 150 100">
+          <svg class="bi me-2" width="100" viewBox="0 0 150 100">
             <use xlink:href="#wm_logo" />
           </svg>
         </a>
-        <br>
         <span class="navbar-text display-3">News of Cairo</span>
         <span class="navbar-text display-3">أخبار القاهرة</span>
         <div class="container-lg px-4 pt-5 my-5 text-center" style="position: relative; z-index: 1;">
