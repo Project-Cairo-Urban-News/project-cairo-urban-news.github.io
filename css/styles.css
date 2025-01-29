@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -9285,6 +9286,7 @@ progress {
 
 body {
   background-color: #e8dfd5;
+  font-family: "Fustat", serif;
 }
 
 nav {
