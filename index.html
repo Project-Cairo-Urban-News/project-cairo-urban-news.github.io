@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/styles.css">
+    ##<link rel="stylesheet" href="css/styles.css">
     <title>Digital Cairo</title>
     <style>
       /* Full-screen background image */
@@ -51,12 +51,12 @@
       }
 
       .bi {
-        transform: scale(2.5); 
+        transform: scale(3.5); 
         transform-origin: center center; 
       }
 
       .navbar-text.display-3 {
-        ## padding-top: 60px;  /* Adds space above the text */
+        ## padding-top: 85px;  /* Adds space above the text */
         display: block;
       }
 
@@ -71,8 +71,24 @@
       font-family: 'Arial', sans-serif;
       color: #FFFFFF;
       line-height: 1.8;
-      font-size: 1rem;
+      font-size: 5rem;
       margin-top: 20px;
+    }
+      .col-lg a {
+      color: #507f93;  /* Default color */
+      text-decoration: none;  /* Remove underline */
+      transition: color 0.3s ease, text-decoration 0.3s ease;  /* Transition time and effect */
+    }
+
+      /* Change color on hover */
+      .col-lg a:hover {
+      color: #f0f0f0;  /* Hover color */
+      text-decoration: underline;  /* Underline text on hover */
+    }
+      .dot {
+      font-size: 3rem;        /* Size of the dot, adjust as needed */
+      margin: 20px;         /* Space on either side of the dot */
+      color: white;           /* Dot color, you can change it to match the design */
     }
     </style>
   </head>
@@ -89,6 +105,7 @@
 
       <div class="title-container">
         <span class="navbar-text display-3">News of Cairo</span>
+        <span class="dot">•</span>
         <span class="navbar-text display-3">أخبار القاهرة</span>
       </div>
 
