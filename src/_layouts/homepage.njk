@@ -83,12 +83,12 @@
       .col-lg a {
       color: #FFFFFF;  /* Default color */
       text-decoration: none;  /* Remove underline */
-      transition: color 0.3s ease, text-decoration 0.5s ease;  /* Transition time and effect */
+      transition: color 0.5s ease, text-decoration 0.5s ease;  /* Transition time and effect */
     }
       /* Change color on hover */
       .col-lg a:hover {
-      color: #507f93;  /* Hover color */
-      text-decoration: none;  /* Underline text on hover */
+      color: #507f93; 
+      text-decoration: none;  
     }
       .dot {
       font-size: 1.5rem;        /* Size of the dot, adjust as needed */
@@ -114,7 +114,7 @@
         <span class="navbar-text display-3">أخبار القاهرة</span>
       </div>
 
-      <div class="container-lg pt-1 text-center" style="position: relative; z-index: 1;">
+      <div class="container-lg text-center" style="position: relative; z-index: 1;">
         <div class="col-lg mx-auto display-5">
           {{ content | safe }}
         </div>
