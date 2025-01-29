@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -9463,6 +9464,7 @@ tei-standoff {
 body {
   background-color: #e8dfd5;
   font-size: large;
+  font-family: "Fustat", serif;
 }
 
 nav {
