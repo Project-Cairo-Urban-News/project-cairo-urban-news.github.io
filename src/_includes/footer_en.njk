@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>{{ title }}</title>
+  </head>
+  <body dir="ltr">
+    {% include 'navbar_en.njk' %}
+    <main>
+      <div class="container">
+            {{ content | safe }}
+      </div>
+    </main>
+    <script src="/js/main.js"></script>
+    {% include 'wm_logo.html' %}
+    {% include 'footer_en.njk' %}
+  </body>
+</html>
