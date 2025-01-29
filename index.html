@@ -49,32 +49,44 @@
       .display-3 {
         font-size: 3rem;
       }
+
       .bi {
         transform: scale(2.5); 
         transform-origin: center center; 
       }
+
       .navbar-text.display-3 {
-      padding-top: 60px;  /* Adds space above the text */
-      display: block;
+        padding-top: 60px;  /* Adds space above the text */
+        display: block;
       }
 
+      .title-container {
+        display: flex;          /* Aligns both spans horizontally */
+        align-items: center;    /* Vertically centers the spans */
+        justify-content: center; /* Centers them within the parent container */
+        gap: 20px;              /* Adds space between the English and Arabic text */
+      }
     </style>
   </head>
   <body>
     <div class="background-image"></div>
     <div class="overlay"></div>
 
-      <div class="content">
-         <a class="navbar-brand" href="/">
-          <svg class="bi me-2" width="100" viewBox="0 0 150 100">
-            <use xlink:href="#wm_logo" />
-          </svg>
-        </a>
+    <div class="content">
+      <a class="navbar-brand" href="/">
+        <svg class="bi me-2" width="100" viewBox="0 0 150 100">
+          <use xlink:href="#wm_logo" />
+        </svg>
+      </a>
+
+      <div class="title-container">
         <span class="navbar-text display-3">News of Cairo</span>
         <span class="navbar-text display-3">أخبار القاهرة</span>
-        <div class="container-lg px-4 pt-5 my-5 text-center" style="position: relative; z-index: 1;">
+      </div>
+
+      <div class="container-lg px-4 pt-5 my-1 text-center" style="position: relative; z-index: 1;">
         <div class="col-lg mx-auto display-5">
-        <p><a href="en/">en</a> | <a href="ar/">عربي</a></p>
+          <p><a href="en/">en</a> | <a href="ar/">عربي</a></p>
 
         </div>
       </div>
