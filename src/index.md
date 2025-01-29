@@ -2,4 +2,4 @@
 layout: homepage.njk
 title: Digital Cairo
 ---
-[en](en/) | [عربي](ar/)
+[en](en/) [عربي](ar/)
