@@ -92,9 +92,12 @@ $success: #7952b3;
 
 @import "icon-list";
 
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+
 
 body {
   background-color: #e8dfd5;
+  font-family: "Fustat", serif;
 }
 
 nav {
