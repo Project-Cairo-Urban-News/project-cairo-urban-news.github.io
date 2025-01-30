@@ -104,18 +104,17 @@ body:lang(en) {
   font-size: 14;
 }
 body:lang(ar) {
-  font-family: "Fustat", serif;
+  font-family: "Noto Sans Arabic", serif;
   font-size: 16px; 
   font-weight: 300
 }
 h1 {
   padding-bottom: .5rem;
 }
-h1:lang(en) {
+/* h1:lang(en) {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-h1:lang(ar) {
+  font-weight: 400 */
+h1 {
   font-family: "Fustat", serif;
   font-weight: 400;
 }
