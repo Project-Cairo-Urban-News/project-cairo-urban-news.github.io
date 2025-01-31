@@ -9389,8 +9389,8 @@ tei-head {
   padding-bottom: 5px;
   margin-bottom: 10px;
   border: none;
-  /* border-bottom: 10px solid transparent;
-  border-image: url('src/assets/images/border.svg') 30 stretch; */
+  border-bottom: 10px solid transparent;
+  border-image: url("src/assets/images/border.svg") 30 stretch;
 }
 
 tei-hi[rend=italics] {
