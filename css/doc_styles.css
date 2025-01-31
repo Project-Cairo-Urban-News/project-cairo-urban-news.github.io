@@ -9467,7 +9467,17 @@ nav span.h1 {
   line-height: 2;
 }
 
+.navbar-brand span {
+  font-family: "Fustat";
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Fustat";
+}
+
 li.nav-item {
+  font-family: "Fustat";
   font-size: large;
 }
 
