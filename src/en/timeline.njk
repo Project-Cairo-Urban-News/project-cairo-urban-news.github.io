@@ -1,84 +1,34 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/doc_styles.css">
-    <title>{{ title }}</title>
-    <style>
-      .previous-button, .next-button, .year-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: white; /* White background */
-        color: #007bff; /* Blue text */
-        text-align: center;
-        border-radius: 5px;
-        cursor: pointer;
-        text-decoration: none; /* Remove underline from links */
-        border: 2px solid #007bff; /* Blue border */
-      }
+---
+title: Digital Cairo
+layout: page_en.njk
+---
+<div class="container">
+  <div style="text-align: center;">
+        <img src="/images/vaseheadernoborder.svg" alt="Vase Header No Border" class="wmheader" style="height: 200px; width: auto; margin-bottom: 30px;">
+  </div>
+  <div style="text-align: center; margin-bottom: 30px;">
+    <p class="under-image-text">Search through the articles by Hijri year and language.</p>
+  </div>
 
-      .previous-button:hover, .next-button:hover, .year-button:hover {
-        background-color: #507f93; /* Hover color */
-        color: white; /* White text on hover */
-      }
-
-      .container {
-        padding-top: 20px;
-      }
-
-      .row {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .row .col {
-        flex: 1;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    {% include 'navbar_ar.njk' %}
-    <main dir="rtl">
-      {% set previous = collections.page_ar_ar_sorted | getPreviousCollectionItem(page) %}
-      {% set next = collections.page_ar_ar_sorted | getNextCollectionItem(page) %}
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            {% if previous %}
-              <a href="{{ previous.url }}" class="previous-button">Previous</a>
+<div class="wrapper">
+    {% set years = collections.year_en | getYears %}
+    {% for year in years %}
+      {% set col = year.substr(3, 1) %}
+      {% set row = year.substr(1, 2) %}
+      <div class="col{{col}} row{{row}}">
+        <h2 class="h4">{{year}}</h2>
+        <ul class="list-unstyled">
+          {% for page in collections.years_en | pagesByYear(year) %}
+            {% if page.url != false %}
+            <li>
+              <seg><a href="{{page.url}}">{{page.data.title}}</a></seg> 
+              <seg class="text-body-secondary"><em>{{page.data.doc_lang}}</em></seg>
+            </li>
             {% endif %}
-          </div>
-          <div class="col">
-            <a href="{{ parent }}" class="year-button">{{ date | toArabicNumerals }}</a>
-          </div>
-          <div class="col">
-            {% if next %}
-              <a href="{{ next.url }}" class="next-button">Next</a>
-            {% endif %}
-          </div>
-        </div>
+
+          {% endfor %}
+        </ul>
       </div>
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col col-8 mt-4">
-            <img src="/images/vaseheadernoborder.svg" alt="Vase Header No Border" class="wmheader">
-            {{ content | safe }}
-          </div>
-        </div>
-      </div>
-    </main>
-    {% include 'wm_logo.html' %}
-    {% include 'footer_ar.njk' %}
-    <script src="/js/main.js"></script>
-    <script src="/js/doc.js"></script>
-    <script>
-      const c = new CETEI();
-      c.addBehaviors(doc_behaviors);
-      c.processPage();
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
-    </script>
-  </body>
-</html>
+    {% endfor %}    
+  </div>  
+</div>
