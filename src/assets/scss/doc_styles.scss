@@ -132,6 +132,12 @@ table {
   width: 48%; /* Make each column roughly 48% of the container width */
   box-sizing: border-box;
 }
+.vase-header {
+  display: block;            /* Makes the SVG behave like a block element (like <img>) */
+  margin: 0 auto;            /* Horizontally centers the SVG */
+  width: 150px;              /* Adjust width as needed */
+  height: auto;              /* Maintain the aspect ratio */
+}
 
 @media (max-width: 768px) {
   .two-columns {
