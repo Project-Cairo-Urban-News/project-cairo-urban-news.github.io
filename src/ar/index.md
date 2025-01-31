@@ -1,6 +1,7 @@
 ---
 title: Digital Cairo
 layout: page_ar.njk
+permalink: /ar/index-md/
 ---
 # مرحباً بكم بموقع أخبار القاهرة! الخ...
 
