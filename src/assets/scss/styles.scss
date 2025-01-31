@@ -139,10 +139,16 @@ nav {
     line-height: 1.5;
   }
 }
-.navbar {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 500;
-  position: relative;
+.navbar-brand span {
+    font-family: "Fustat";
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    font-family: "Fustat";
+}
+li.nav-item {
+  font-family: "Fustat";
+  font-size: large;
 }
 img.wmheader {
     border: none; /* Example: removing any border */
@@ -156,9 +162,6 @@ img.wmheader {
   font-size: 18px; /* Example: Set font size */
   margin-top: 8px; /* Example: Add some top margin */
   margin-bottom: 15px;
-}
-li.nav-item {
-  font-size: large;
 }
 .container {
   padding-top: 25px; 
