@@ -9496,7 +9496,7 @@ img.wmheader {
   display: block; /* Makes the image a block-level element */
   margin-left: auto; /* Centers the image horizontally */
   margin-right: auto; /* Centers the image horizontally */
-  height: 200px; /* Sets the height to 150px */
+  height: 200px; /* Sets the height to 200px */
   width: auto; /* Maintains the aspect ratio */
   padding-bottom: 20px;
 }
