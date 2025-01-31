@@ -72,7 +72,7 @@
       background-image: url('/images/GallicaCairoMap.jpeg');
       background-size: cover;
       background-position: center;
-      filter: brightness(50%);
+      filter: brightness(30%);
       z-index: -1;
     }
 
@@ -88,10 +88,11 @@
       font-weight: bold;
       letter-spacing: 2px;
       margin-bottom: 10px;
+      font-family: "Fustat";
     }
 
    .border-svg {
-      height: 50px; /* Set height to 10px */
+      height: 30px; /* Set height to 10px */
       width: auto; /* Maintain aspect ratio */
       padding-top: 5px;
     }
@@ -115,6 +116,7 @@
     .search-bar {
       margin-top: 30px;
       text-align: center;
+      padding-bottom: 50px;
     }
 
     .search-bar input {
@@ -155,51 +157,6 @@
 </head>
   
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
-  <div class="container-fluid justify-content-start">
-    <a class="navbar-brand" href="/">
-      <svg class="bi me-2 mb-2" width="100" viewBox="0 0 150 100"><use xlink:href="#wm_logo"/></svg>
-      <span class="display-4" style="font-size: 2rem;">News of Cairo</span>
-    </a>
-    <ul class="navbar-nav d-flex w-100 ">
-      <li class="nav-item me-3">
-        <a class="nav-link active" href="/en/">Home</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="/en/timeline/">Timeline</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="#">Indexes</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="/en/WMOnlineEN/">WM Online</a>
-      </li>
-      <li class="nav-item dropdown me-3">
-        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="aboutMenu">
-            <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
-            <a class="dropdown-item" href="/en/about/team/">Team</a>
-            <a class="dropdown-item" href="/en/about/sponsors/">Sponsors</a>
-            <a class="dropdown-item" href="/en/about/technical-description/">Technical Description</a>
-            <a class="dropdown-item" href="/en/about/credits/">Credits/Copyright</a>
-            <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
-            <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
-          </div>
-      </li>
-    </ul>
-    <form class="d-flex">
-  <input class="form-control me-3" type="search" placeholder="people, places..." aria-label="Search" style="padding: 12px 10px;">
-  <button class="btn btn-outline-light me" type="submit" style="padding-right: 20px;">Search</button>
-</form>
-</div>
-</nav>
-
-
   <!-- Background Image -->
   <div class="background"></div>
 
