@@ -9499,7 +9499,7 @@ table {
   box-sizing: border-box;
 }
 
-.vase-header {
+#vaseheadernoborder {
   display: block; /* Makes the SVG behave like a block element (like <img>) */
   margin: 0 auto; /* Horizontally centers the SVG */
   width: 150px; /* Adjust width as needed */
