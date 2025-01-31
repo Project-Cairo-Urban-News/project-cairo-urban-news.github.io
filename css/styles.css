@@ -9325,10 +9325,9 @@ nav span.h1 {
   position: relative;
 }
 
-img.wm.header {
-  border: none; /* Example: removing any border */
-  width: auto; /* Example: making the image full width */
-  height: 40px; /* Example: maintaining aspect ratio */
+svg {
+  height: 100px; /* Set the height to 100px */
+  width: auto; /* Set the width to auto to maintain the aspect ratio */
 }
 
 li.nav-item {
