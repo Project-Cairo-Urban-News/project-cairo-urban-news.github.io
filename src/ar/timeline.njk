@@ -3,7 +3,7 @@ title: Digital Cairo
 layout: page_ar.njk
 ---
 <div class="container">
-  <h1 class="display-4 text-center">الوقائع المصريّة</h1>
+  {% include 'vaseheadernoborder.html' %}
   <div class="wrapper">
     {% set years = collections.year_en | getYears %}
     {% for year in years %}
