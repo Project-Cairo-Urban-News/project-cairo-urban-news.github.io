@@ -132,14 +132,11 @@ table {
   width: 48%; /* Make each column roughly 48% of the container width */
   box-sizing: border-box;
 }
-#svg {
-  display: block;            /* Makes the SVG behave like a block element (like <img>) */
-  margin: 0 auto;            /* Horizontally centers the SVG */
-  width: auto;              /* Adjust width as needed */
-  height: 100;              /* Maintain the aspect ratio */
-  fill: black;
+img.wm.header {
+    border: none; /* Example: removing any border */
+    width: auto; /* Example: making the image full width */
+    height: 60%; /* Example: maintaining aspect ratio */
 }
-
 @media (max-width: 768px) {
   .two-columns {
     flex-direction: column; /* Stack the columns on smaller screens */
