@@ -9492,10 +9492,12 @@ table {
   box-sizing: border-box;
 }
 
-img.wm.header {
-  border: none; /* Example: removing any border */
-  width: auto; /* Example: making the image full width */
-  height: 40px; /* Example: maintaining aspect ratio */
+img.wmheader {
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+  height: 150px; /* Sets the height to 150px */
+  width: auto; /* Maintains the aspect ratio */
 }
 
 @media (max-width: 768px) {
