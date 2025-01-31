@@ -9494,7 +9494,7 @@ table {
 img.wm.header {
   border: none; /* Example: removing any border */
   width: auto; /* Example: making the image full width */
-  height: 60%; /* Example: maintaining aspect ratio */
+  height: 40px; /* Example: maintaining aspect ratio */
 }
 
 @media (max-width: 768px) {
