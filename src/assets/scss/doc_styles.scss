@@ -140,6 +140,34 @@ img.wmheader {
   height: 150px;           /* Sets the height to 150px */
   width: auto;             /* Maintains the aspect ratio */
 }
+.container {
+  display: flex;
+  justify-content: space-between; /* Space out the items to the left and right */
+  padding: 10px 20px; /* Optional: add padding for spacing */
+}
+
+.col.fs-5 {
+  display: flex;
+  justify-content: center; /* Center content in the columns */
+}
+
+/* Position Previous button on the left */
+.col.fs-5 > a:first-of-type {
+  order: -1; /* Move the previous button to the left side */
+}
+
+/* Optional: style buttons */
+a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #0056b3;
+}
 @media (max-width: 768px) {
   .two-columns {
     flex-direction: column; /* Stack the columns on smaller screens */
