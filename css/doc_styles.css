@@ -9390,7 +9390,7 @@ tei-head {
   margin-bottom: 10px;
   border: none;
   border-bottom: 10px solid transparent;
-  border-image: url("src/assets/images/border.svg") 30 stretch;
+  border-image: url("/src/assets/images/border.svg") 30 stretch;
 }
 
 tei-hi[rend=italics] {
