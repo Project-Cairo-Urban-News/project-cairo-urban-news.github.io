@@ -38,7 +38,13 @@
       font-size: 4rem;
       font-weight: bold;
       letter-spacing: 2px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+    }
+
+    /* SVG border under H1 */
+    .border-svg {
+      width: 50px;
+      margin-top: 10px;
     }
 
     /* Intro Section */
@@ -100,12 +106,15 @@
 </head>
 <body>
 
+  {% include 'navbar_en.njk' %}
+
   <!-- Background Image -->
   <div class="background"></div>
 
   <!-- Header Section -->
   <header>
     <h1>Welcome to the News of Cairo!</h1>
+    <img src="/images/border.svg" alt="border" class="border-svg" />
   </header>
 
   <!-- Introduction Section -->
