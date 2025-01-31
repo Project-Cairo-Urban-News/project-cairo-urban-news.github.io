@@ -9318,95 +9318,122 @@ nav {
 nav span.h1 {
   line-height: 1.5;
 }
-nav navbar {
+
+navbar {
   font-family: "Noto Sans Arabic", sans-serif;
   font-weight: 500;
 }
-nav li.nav-item {
+
+li.nav-item {
   font-size: large;
 }
-nav .container {
+
+.container {
   padding-top: 25px;
 }
-nav table {
+
+table {
   table-layout: fixed;
 }
-nav .custom-tooltip {
+
+.custom-tooltip {
   --bs-tooltip-font-size: 2rem;
   --bs-tooltip-bg: var(--bs-gray-800);
   --bs-tooltip-opacity: 1;
 }
-nav .wrapper {
+
+.wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: 10px;
 }
-nav .wrapper > div {
+
+.wrapper > div {
   background-color: #f8f9fa;
   border: thin solid gray;
   padding: 20px;
   border-radius: 5px;
   width: 6rem;
 }
-nav .wrapper seg {
+
+.wrapper seg {
   display: block;
   line-height: 1em;
 }
-nav .wrapper li {
+
+.wrapper li {
   margin-bottom: 0.3em;
 }
-nav .col0 {
+
+.col0 {
   grid-column: 1/10;
 }
-nav .col1 {
+
+.col1 {
   grid-column: 2/10;
 }
-nav .col2 {
+
+.col2 {
   grid-column: 3/10;
 }
-nav .col3 {
+
+.col3 {
   grid-column: 4/10;
 }
-nav .col4 {
+
+.col4 {
   grid-column: 5/10;
 }
-nav .col5 {
+
+.col5 {
   grid-column: 6/10;
 }
-nav .col6 {
+
+.col6 {
   grid-column: 7/10;
 }
-nav .col7 {
+
+.col7 {
   grid-column: 8/10;
 }
-nav .col8 {
+
+.col8 {
   grid-column: 9/10;
 }
-nav .col9 {
+
+.col9 {
   grid-column: 10/10;
 }
-nav .row24 {
+
+.row24 {
   grid-row: 1;
 }
-nav .row25 {
+
+.row25 {
   grid-row: 2;
 }
-nav .row26 {
+
+.row26 {
   grid-row: 3;
 }
-nav .row27 {
+
+.row27 {
   grid-row: 4;
 }
-nav .row28 {
+
+.row28 {
   grid-row: 5;
 }
-nav .row29 {
+
+.row29 {
   grid-row: 6;
 }
-nav .row30 {
+
+.row30 {
   grid-row: 7;
 }
-nav .row31 {
+
+.row31 {
   grid-row: 8;
 }
