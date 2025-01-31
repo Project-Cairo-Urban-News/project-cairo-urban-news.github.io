@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Cairo</title>
+    <style>
+        /* Set the background image for the whole page */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('/images/GallicaCairoMap.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
 
+        /* Style for the floating search bar */
+        .search-bar {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid white; /* White underline */
+            padding: 10px;
+            width: 80%;
+            max-width: 500px; /* Optional: Max width for the search bar */
+        }
+
+        .search-bar input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            font-size: 20px;
+            width: 100%;
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        .search-bar input::placeholder {
+            color: white;
+            opacity: 0.7;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" placeholder="اشخاص، اماكن، إلخ...">
+    </div>
+</body>
+</html>
