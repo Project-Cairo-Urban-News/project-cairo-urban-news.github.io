@@ -9312,19 +9312,6 @@ h1, .h1 {
   font-weight: 400;
 }
 
-nav {
-  background-color: #507F93;
-}
-nav span.h1 {
-  line-height: 1.5;
-}
-
-.navbar {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 500;
-  position: relative;
-}
-
 img.wmheader {
   border: none; /* Example: removing any border */
   width: auto; /* Example: making the image full width */
