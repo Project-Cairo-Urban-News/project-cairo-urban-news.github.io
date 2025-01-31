@@ -20,7 +20,7 @@ layout: landing_en.njk
       background-image: url('/images/GallicaCairoMap.jpeg');
       background-size: cover;
       background-position: center;
-      filter: brightness(50%);
+      filter: brightness(30%);
       z-index: -1;
     }
 
@@ -36,10 +36,11 @@ layout: landing_en.njk
       font-weight: bold;
       letter-spacing: 2px;
       margin-bottom: 10px;
+      font-family: "Fustat";
     }
 
    .border-svg {
-      height: 50px; /* Set height to 10px */
+      height: 30px; /* Set height to 10px */
       width: auto; /* Maintain aspect ratio */
       padding-top: 5px;
     }
@@ -63,6 +64,7 @@ layout: landing_en.njk
     .search-bar {
       margin-top: 30px;
       text-align: center;
+      padding-bottom: 50px;
     }
 
     .search-bar input {
@@ -103,7 +105,6 @@ layout: landing_en.njk
 </head>
   
 <body>
-  {% include 'navbar_en.njk' %}
   <!-- Background Image -->
   <div class="background"></div>
 
