@@ -9319,12 +9319,9 @@ nav span.h1 {
   line-height: 1.5;
 }
 
-navbar {
+.navbar {
   font-family: "Noto Sans Arabic", sans-serif;
   font-weight: 500;
-}
-
-.navbar {
   position: relative;
   background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
   background-size: cover; /* To ensure the image scales properly */
