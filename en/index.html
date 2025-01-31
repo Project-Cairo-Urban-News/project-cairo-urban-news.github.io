@@ -55,21 +55,128 @@
     <main>
       <div class="container">
             
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Cairo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Montserrat', sans-serif;
+      height: 100%;
+    }
 
-# Welcome to the News of Cairo! 
+    /* Background and Overlay */
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('/images/GallicaCairoMap.jpeg');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(50%);
+      z-index: -1;
+    }
 
+    /* Header */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      color: white;
+    }
 
-### On this site, you can access a textual database of selected Arabic (and some Ottoman Turkish) articles about Cairo's urban development from al-Waqāʾiʿ al-Miṣriyyah, the official Egyptian government journal, between 1828 and 1914. You can use this dataset in three ways: 
+    h1 {
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
 
-#### 1) search in the searchbox
-#### 2) check the index of organizations, roles, locations
-#### 3) check the timeline page and click according to year.
+    /* Intro Section */
+    .intro {
+      color: white;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin: 0 10%;
+    }
 
-<img src="/images/GallicaCairoMap.jpeg" alt="Plan général de la Ville du Caire (1874)" style="width: 100%; height: auto; display: block; border: none; margin: 0;">
+    /* Search Bar */
+    .search-bar {
+      margin-top: 30px;
+      text-align: center;
+    }
 
-Plan général de la Ville du Caire (1874)
-Dressé et publié avec l'autorisation de S.A. Ismail Pacha Khédive d'Egypte par Pierre Grand Bey
-(from the Bibliotheque national de France - the French National Library)
+    .search-bar input {
+      font-size: 1.1rem;
+      padding: 10px;
+      width: 60%;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      color: white;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .search-bar input:focus {
+      border-color: #ff6600;
+    }
+
+    .search-bar input::placeholder {
+      color: white;
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+      }
+
+      .search-bar input {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Image -->
+  <div class="background"></div>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to the News of Cairo!</h1>
+  </header>
+
+  <!-- Introduction Section -->
+  <section class="intro">
+    <p>On this site, you can access a textual database of selected Arabic (and some Ottoman Turkish) articles about Cairo's urban development from al-Waqāʾiʿ al-Miṣriyyah, the official Egyptian government journal, between 1828 and 1914. You can use this dataset in three ways:</p>
+
+    <ul>
+      <li>1) Search using the searchbar below.</li>
+      <li>2) Check the index of organizations, roles, locations.</li>
+      <li>3) Check the timeline page and click according to year.</li>
+    </ul>
+  </section>
+
+  <!-- Search Bar Section -->
+  <section class="search-bar">
+    <input type="text" placeholder="Search articles, topics, or keywords..." />
+  </section>
+
+</body>
+</html>
 
       </div>
     </main>
