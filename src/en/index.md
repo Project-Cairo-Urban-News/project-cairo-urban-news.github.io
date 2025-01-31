@@ -1,6 +1,7 @@
 ---
 title: Digital Cairo
 layout: page_en.njk
+permalink: /index.html
 ---
 
 
