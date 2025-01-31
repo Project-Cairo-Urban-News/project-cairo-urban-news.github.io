@@ -86,21 +86,12 @@ tei-head {
   font-size: larger;
   text-align: center;
   font-weight: bold;
-  border-bottom: 1px solid #ccc;  
-  padding-bottom: 5px;  
+  padding-bottom: 5px;
   margin-bottom: 10px;
-  background-image: url('src/assets/images/border.svg');
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto 10px;
-}
-tei-head[lang=en] {
-  font-size: 1.5rem;
-  text-align: left;
-  font-weight: bold;
-  border-bottom: 1px solid #ccc; 
-  padding-bottom: 5px; 
-  margin-bottom: 10px;
+  /* Set the SVG as the border */
+  border: none;  /* Remove the default border */
+  border-bottom: 10px solid transparent;  /* Add a transparent bottom border to define the space */
+  border-image: url('src/assets/images/border.svg') 30 stretch;  /* Use the SVG image as the border */
 }
 tei-hi[rend=italics] {
   font-style: italic;
