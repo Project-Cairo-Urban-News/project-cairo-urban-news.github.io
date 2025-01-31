@@ -141,21 +141,6 @@ img.wmheader {
   width: auto;             /* Maintains the aspect ratio */
   padding-bottom: 20px;
 }
-.container {
-  display: flex;
-  justify-content: space-between; /* Space out the items to the left and right */
-  padding: 10px 20px; /* Optional: add padding for spacing */
-}
-
-.col.fs-5 {
-  display: flex;
-  justify-content: center; /* Center content in the columns */
-}
-
-/* Position Previous button on the left */
-.col.fs-5 > a:first-of-type {
-  order: -1; /* Move the previous button to the left side */
-}
 @media (max-width: 768px) {
   .two-columns {
     flex-direction: column; /* Stack the columns on smaller screens */
