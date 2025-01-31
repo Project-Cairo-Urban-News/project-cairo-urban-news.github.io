@@ -9352,6 +9352,18 @@ table {
   table-layout: fixed;
 }
 
+th[lang=ar] {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+th[lang=en] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
 .custom-tooltip {
   --bs-tooltip-font-size: 2rem;
   --bs-tooltip-bg: var(--bs-gray-800);
