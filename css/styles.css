@@ -9289,6 +9289,24 @@ body {
   background-color: #e9ded5;
 }
 
+th[lang=ar] {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+th[lang=en] {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month_7, td.month_8, td.month_9, td.month_10, td.month_11, td.month_12 {
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
 body:lang(en) {
   font-family: "Montserrat", sans-serif;
   font-size: 14;
@@ -9350,18 +9368,6 @@ li.nav-item {
 
 table {
   table-layout: fixed;
-}
-
-th[lang=ar] {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-th[lang=en] {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
 }
 
 .custom-tooltip {
