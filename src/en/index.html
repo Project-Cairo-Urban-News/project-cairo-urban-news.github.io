@@ -32,7 +32,7 @@ layout: landing_en.njk
 
     h1 {
       font-size: 4rem;
-      font-weight: bold;
+      font-weight: 400;
       letter-spacing: 2px;
       font-family: "Fustat";
       padding-top: 10px;
@@ -52,14 +52,15 @@ layout: landing_en.njk
       color: white;
       text-align: center;
       font-size: 1.2rem;
-      line-height: 1.6;
+      line-height: 1.8;
       margin: 0 10%;
+      font-weight: 300;
     }
     /* Search Bar */
     .search-bar {
       margin-top: 30px;
       text-align: center;
-      padding-bottom: 50px;
+      padding-bottom: 40px;
     }
 
     .search-bar input {
@@ -80,6 +81,10 @@ layout: landing_en.njk
 
     .search-bar input::placeholder {
       color: white;
+    }
+    .under-bar {
+      padding-bottom: 20px;
+      font-style: italic;
     }
     .explore-buttons {
       display: flex;
@@ -146,8 +151,10 @@ layout: landing_en.njk
     <p>A textual database of Arabic and Ottoman Turkish articles about Cairo's urban development from the official Egyptian government journal, al-Waqāʾiʿal-Miṣriyyah, between 1828 and 1914</p>
   <section class="search-bar">
     <input type="text" placeholder="Search articles, topics, or keywords..." />
-  </section>
+  <section class="under-bar">
   <p>Or explore by</p>
+  </section>
+  </section>
   <div class="explore-buttons">
       <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">Index</button>
       <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">Year</button>
