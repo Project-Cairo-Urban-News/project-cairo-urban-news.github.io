@@ -109,14 +109,6 @@
       line-height: 1.6;
       margin: 0 10%;
     }
-
-    /* Remove Bullet Points from List */
-    ul {
-      list-style-type: none;
-      padding-left: 0;
-      font-size: 1.5rem;
-    }
-
     /* Search Bar */
     .search-bar {
       margin-top: 30px;
@@ -143,7 +135,27 @@
     .search-bar input::placeholder {
       color: white;
     }
+    .explore-buttons {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
 
+    .explore-buttons button {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      font-size: 1.5rem;
+      padding: 10px 30px;
+      margin: 0 15px;
+      cursor: pointer;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+
+    .nav-buttons button:hover {
+      background-color: #507f93;
+      color: #fff;
+    }
     /* Responsive design */
     @media (max-width: 768px) {
       h1 {
@@ -188,20 +200,18 @@
     <h1>Welcome to the News of Cairo!</h1>
   </header>
    
-  <!-- Search Bar Section -->
+<section class="intro">
+    <p>A textual database of Arabic and Ottoman Turkish articles about Cairo's urban development from the official Egyptian government journal, al-Waqāʾiʿal-Miṣriyyah, between 1828 and 1914</p>
+
   <section class="search-bar">
     <input type="text" placeholder="Search articles, topics, or keywords..." />
+    <p>Or explore by</p>
   </section>
 
- <!-- Introduction Section -->
-  <section class="intro">
-    <p>This site his home to a textual database of selected Arabic (and some Ottoman Turkish) articles about Cairo's urban development from al-Waqāʾiʿal-Miṣriyyah, the official Egyptian government journal between 1828 and 1914. You can search this dataset in three ways:</p>
-
-    <ul>
-      <li>1) Use the searchbar above</li>
-      <li>2) Search the index[link] by organization, role, or location .</li>
-      <li>3) Explore the timeline[link] page by year.</li>
-    </ul>
+    <div class="explore-buttons">
+      <button onclick="window.location.href='https://example.com/index'">Index</button>
+      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">Year</button>
+    </div>
   </section>
 
  
