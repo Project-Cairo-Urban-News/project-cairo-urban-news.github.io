@@ -182,6 +182,7 @@ table {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: 10px;
+  margin-bottom: 20px;
 }
 .wrapper > div {
   background-color: #f8f9fa;
@@ -252,3 +253,4 @@ table {
 .row31 {
   grid-row: 8;
 }
+
