@@ -9384,6 +9384,7 @@ table {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .wrapper > div {
