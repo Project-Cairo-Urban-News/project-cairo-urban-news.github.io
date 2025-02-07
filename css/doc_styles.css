@@ -9481,7 +9481,7 @@ li.nav-item {
   font-size: large;
 }
 
-li[class^=month] {
+td {
   font-family: "Noto Sans Arabic", sans-serif;
 }
 
