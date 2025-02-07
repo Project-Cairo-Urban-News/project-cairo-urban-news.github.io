@@ -121,6 +121,9 @@ li.nav-item {
   font-family: "Fustat";
   font-size: large;
 }
+li[class^="month"] {
+    font-family: 'Noto Sans Arabic', sans-serif;
+}
 table {
   table-layout: fixed;
 }
