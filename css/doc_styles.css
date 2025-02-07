@@ -9469,6 +9469,10 @@ nav span.h1 {
   line-height: 1;
 }
 
+.border-svg {
+  padding-bottom: 20px;
+}
+
 .navbar-brand span {
   font-family: "Fustat";
   font-weight: bold;
