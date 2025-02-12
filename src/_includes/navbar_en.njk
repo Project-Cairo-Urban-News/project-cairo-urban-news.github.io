@@ -17,9 +17,14 @@
 
   .navbar-nav {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 800px; /* Limit the navbar width */
+    justify-content: center;
+    width: auto; /* Allow the width to be based on the buttons */
+  }
+
+  .navbar-nav-left, .navbar-nav-right {
+    display: flex;
+    justify-content: space-between; /* Keep buttons spaced out */
+    width: auto;
   }
 
   .navbar-nav .nav-item {
@@ -48,8 +53,13 @@
   .navbar-nav .nav-item button:focus {
     outline: none; /* Remove focus outline */
   }
+
+  .navbar-nav-left, .navbar-nav-right {
+    gap: 10px; /* Adjust the gap between the buttons */
+  }
 </style>
 </head>
+
 <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
   <div class="container-fluid justify-content-start">
     <!-- Centered logo -->
@@ -58,39 +68,45 @@
         <use xlink:href="#wm_logo" />
       </svg>
     </a>
-    <!-- Navbar buttons (3 on each side of logo) -->
-    <ul class="navbar-nav d-flex w-100 me-2">
-      <li class="nav-item">
-        <button class="nav-link active" href="/en/">Home</button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" href="/en/timeline/">Timeline</button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" href="#">Indexes</button>
-      </li>
-    </ul>
-    <ul class="navbar-nav d-flex w-100 me-2">
-      <li class="nav-item">
-        <button class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" href="/en/WMOnlineEN/">WM Online</button>
-      </li>
-      <li class="nav-item dropdown">
-        <button class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          About
-        </button>
-        <div class="dropdown-menu" aria-labelledby="aboutMenu">
-          <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
-          <a class="dropdown-item" href="/en/about/team/">Team</a>
-          <a class="dropdown-item" href="/en/about/sponsors/">Sponsors</a>
-          <a class="dropdown-item" href="/en/about/technical-description/">Technical Description</a>
-          <a class="dropdown-item" href="/en/about/credits/">Credits/Copyright</a>
-          <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
-          <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
-        </div>
-      </li>
-    </ul>
+
+    <!-- Navbar buttons (2 sets: one left, one right of the logo) -->
+    <div class="navbar-nav-left">
+      <ul class="navbar-nav d-flex">
+        <li class="nav-item">
+          <button class="nav-link active" href="/en/">Home</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" href="/en/timeline/">Timeline</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" href="#">Indexes</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-nav-right">
+      <ul class="navbar-nav d-flex">
+        <li class="nav-item">
+          <button class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" href="/en/WMOnlineEN/">WM Online</button>
+        </li>
+        <li class="nav-item dropdown">
+          <button class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </button>
+          <div class="dropdown-menu" aria-labelledby="aboutMenu">
+            <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
+            <a class="dropdown-item" href="/en/about/team/">Team</a>
+            <a class="dropdown-item" href="/en/about/sponsors/">Sponsors</a>
+            <a class="dropdown-item" href="/en/about/technical-description/">Technical Description</a>
+            <a class="dropdown-item" href="/en/about/credits/">Credits/Copyright</a>
+            <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
+            <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
