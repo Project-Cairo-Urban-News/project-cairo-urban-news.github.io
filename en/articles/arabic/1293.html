@@ -42,14 +42,20 @@
 
   .navbar-nav .nav-item button {
     padding: 8px 16px;
-    background-color: #ff6347; /* Example button color */
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: transparent; /* Remove background */
+    color: lightgray; /* Set initial text color to light gray */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
   }
 
   .navbar-nav .nav-item button:hover {
-    background-color: #ff4500; /* Change color on hover */
+    background-color: transparent; /* No change on hover */
+    color: white; /* Change text color to white on hover */
+  }
+
+  .navbar-nav .nav-item button:focus {
+    outline: none; /* Remove focus outline */
   }
 </style>
 
