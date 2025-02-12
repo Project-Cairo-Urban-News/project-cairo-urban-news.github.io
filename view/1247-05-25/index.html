@@ -8,69 +8,88 @@
   </head>
   <body dir="ltr">
     <head>
-<link rel="icon" href="src/assets/images/favicon.ico" type="image/x-icon">
-<style>
-  nav {
-    background-color: #507F93;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
+  <link rel="icon" href="src/assets/images/favicon.ico" type="image/x-icon">
+  <style>
+    nav {
+      background-color: #507F93;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 100%;
+      padding-top: 10px;  /* Adds extra 10px to the top */
+      padding-bottom: 10px;  /* Adds extra 10px to the bottom */
+    }
 
-  .navbar-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+    .container-fluid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
 
-  .navbar-nav {
-    display: flex;
-    justify-content: center;
-    width: auto; /* Allow the width to be based on the buttons */
-  }
+    /* Center the logo */
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-  .navbar-nav-left, .navbar-nav-right {
-    display: flex;
-    justify-content: space-between; /* Keep buttons spaced out */
-    width: auto;
-  }
+    /* Style for the left and right nav sections */
+    .navbar-nav-left,
+    .navbar-nav-right {
+      display: flex;
+      gap: 10px; /* Adjust the gap between buttons */
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
-  .navbar-nav .nav-item {
-    font-family: "Fustat";
-    font-size: large;
-  }
+    /* Left-aligned group next to the logo */
+    .navbar-nav-left {
+      left: 10%;
+      justify-content: flex-end; /* Align left group to the right */
+    }
 
-  .navbar-nav .nav-link {
-    font-family: "Fustat";
-  }
+    /* Right-aligned group next to the logo */
+    .navbar-nav-right {
+      right: 10%;
+      justify-content: flex-start; /* Align right group to the left */
+    }
 
-  .navbar-nav .nav-item button {
-    padding: 8px 16px;
-    background-color: transparent; /* Remove background */
-    color: lightgray; /* Set initial text color to light gray */
-    border: none; /* Remove border */
-    outline: none; /* Remove outline */
-    cursor: pointer; /* Change cursor to pointer */
-  }
+    .navbar-nav .nav-item {
+      font-family: "Fustat";
+      font-size: large;
+    }
 
-  .navbar-nav .nav-item button:hover {
-    background-color: transparent; /* No change on hover */
-    color: white; /* Change text color to white on hover */
-  }
+    .navbar-nav .nav-link {
+      font-family: "Fustat";
+    }
 
-  .navbar-nav .nav-item button:focus {
-    outline: none; /* Remove focus outline */
-  }
+    .navbar-nav .nav-item button {
+      padding: 8px 16px;
+      background-color: transparent; /* Remove background */
+      color: lightgray; /* Set initial text color to light gray */
+      border: none; /* Remove border */
+      outline: none; /* Remove outline */
+      cursor: pointer; /* Change cursor to pointer */
+    }
 
-  .navbar-nav-left, .navbar-nav-right {
-    gap: 10px; /* Adjust the gap between the buttons */
-  }
-</style>
+    .navbar-nav .nav-item button:hover {
+      background-color: transparent; /* No change on hover */
+      color: white; /* Change text color to white on hover */
+    }
+
+    .navbar-nav .nav-item button:focus {
+      outline: none; /* Remove focus outline */
+    }
+  </style>
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
-  <div class="container-fluid justify-content-start">
+  <div class="container-fluid">
     <!-- Centered logo -->
     <a class="navbar-brand" href="/">
       <svg class="bi me-3 mb-2" width="100" viewBox="0 0 150 100">
@@ -78,7 +97,7 @@
       </svg>
     </a>
 
-    <!-- Navbar buttons (2 sets: one left, one right of the logo) -->
+    <!-- Navbar buttons (3 left-aligned next to the logo, 3 right-aligned next to the logo) -->
     <div class="navbar-nav-left">
       <ul class="navbar-nav d-flex">
         <li class="nav-item">
