@@ -7,48 +7,93 @@
     <title>1294-1</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
+    <style>
+  nav {
+    background-color: #507F93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px; /* Limit the navbar width */
+  }
+
+  .navbar-nav .nav-item {
+    font-family: "Fustat";
+    font-size: large;
+  }
+
+  .navbar-nav .nav-link {
+    font-family: "Fustat";
+  }
+
+  .navbar-nav .nav-item button {
+    padding: 8px 16px;
+    background-color: #ff6347; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .navbar-nav .nav-item button:hover {
+    background-color: #ff4500; /* Change color on hover */
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
   <div class="container-fluid justify-content-start">
+    <!-- Centered logo -->
     <a class="navbar-brand" href="/">
-      <svg class="bi me-3 mb-2" width="100" viewBox="0 0 150 100"><use xlink:href="#wm_logo"/></svg>
-      <span class="display-4" style="font-size: 2rem" font-weight: 400";>News of Cairo</span>
+      <svg class="bi me-3 mb-2" width="100" viewBox="0 0 150 100">
+        <use xlink:href="#wm_logo" />
+      </svg>
     </a>
+    <!-- Navbar buttons (3 on each side of logo) -->
     <ul class="navbar-nav d-flex w-100 me-2">
-      <li class="nav-item me-3">
-        <a class="nav-link active" href="/en/">Home</a>
+      <li class="nav-item">
+        <button class="nav-link active" href="/en/">Home</button>
       </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="/en/timeline/">Timeline</a>
+      <li class="nav-item">
+        <button class="nav-link" href="/en/timeline/">Timeline</button>
       </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="#">Indexes</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</a>
-      </li>
-      <li class="nav-item me-3">
-        <a class="nav-link" href="/en/WMOnlineEN/">WM Online</a>
-      </li>
-      <li class="nav-item dropdown me-3">
-        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            About
-          </a>
-          <div class="dropdown-menu" aria-labelledby="aboutMenu">
-            <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
-            <a class="dropdown-item" href="/en/about/team/">Team</a>
-            <a class="dropdown-item" href="/en/about/sponsors/">Sponsors</a>
-            <a class="dropdown-item" href="/en/about/technical-description/">Technical Description</a>
-            <a class="dropdown-item" href="/en/about/credits/">Credits/Copyright</a>
-            <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
-            <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
-          </div>
+      <li class="nav-item">
+        <button class="nav-link" href="#">Indexes</button>
       </li>
     </ul>
-   <!-- <form class="d-flex">
-  <input class="form-control me-3" type="search" placeholder="people, places..." aria-label="Search" style="border: none; border-bottom: 2px solid white; background-color: transparent; color: white; padding: 12px 10px;">
-      <button class="btn btn-outline-light me" type="submit" style="padding-right: 20px;">Search</button>
-</form> -->
-</div>
+    <ul class="navbar-nav d-flex w-100 me-2">
+      <li class="nav-item">
+        <button class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" href="/en/WMOnlineEN/">WM Online</button>
+      </li>
+      <li class="nav-item dropdown">
+        <button class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          About
+        </button>
+        <div class="dropdown-menu" aria-labelledby="aboutMenu">
+          <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
+          <a class="dropdown-item" href="/en/about/team/">Team</a>
+          <a class="dropdown-item" href="/en/about/sponsors/">Sponsors</a>
+          <a class="dropdown-item" href="/en/about/technical-description/">Technical Description</a>
+          <a class="dropdown-item" href="/en/about/credits/">Credits/Copyright</a>
+          <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
+          <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
+        </div>
+      </li>
+    </ul>
+  </div>
 </nav>
 
     <main dir="ltr">
