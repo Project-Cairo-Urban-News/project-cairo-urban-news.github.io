@@ -1,0 +1,1706 @@
+[
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150259/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150259",
+    "Gregorian_Date": "1829-01-05",
+    "Hijri_Date": "1244-06-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215026q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215026q",
+    "Gregorian_Date": "1829-01-20",
+    "Hijri_Date": "1244-07-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150274/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150274",
+    "Gregorian_Date": "1829-01-31",
+    "Hijri_Date": "1244-07-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215028j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215028j",
+    "Gregorian_Date": "1829-02-08",
+    "Hijri_Date": "1244-08-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215029z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215029z",
+    "Gregorian_Date": "1829-02-15",
+    "Hijri_Date": "1244-08-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215030m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215030m",
+    "Gregorian_Date": "1829-02-18",
+    "Hijri_Date": "1244-08-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150311/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150311",
+    "Gregorian_Date": "1829-02-24",
+    "Hijri_Date": "1244-08-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215032f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215032f",
+    "Gregorian_Date": "1829-03-05",
+    "Hijri_Date": "1244-08-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215033v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215033v",
+    "Gregorian_Date": "1829-03-12",
+    "Hijri_Date": "1244-09-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150348/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150348",
+    "Gregorian_Date": "1829-03-16",
+    "Hijri_Date": "1244-09-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215035p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215035p",
+    "Gregorian_Date": "1829-03-18",
+    "Hijri_Date": "1244-09-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150363/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150363",
+    "Gregorian_Date": "1829-03-23",
+    "Hijri_Date": "1244-09-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215037h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215037h",
+    "Gregorian_Date": "1829-03-26",
+    "Hijri_Date": "1244-09-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215038x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215038x",
+    "Gregorian_Date": "1829-04-03",
+    "Hijri_Date": "1244-09-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215039b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215039b",
+    "Gregorian_Date": "1829-04-12",
+    "Hijri_Date": "1244-10-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150400/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150400",
+    "Gregorian_Date": "1829-04-17",
+    "Hijri_Date": "1244-10-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215041d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215041d",
+    "Gregorian_Date": "1829-04-20",
+    "Hijri_Date": "1244-10-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215042t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215042t",
+    "Gregorian_Date": "1829-04-25",
+    "Hijri_Date": "1244-10-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150437/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150437",
+    "Gregorian_Date": "1829-04-28",
+    "Hijri_Date": "1244-10-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215044n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215044n",
+    "Gregorian_Date": "1829-05-01",
+    "Hijri_Date": "1244-10-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150452/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150452",
+    "Gregorian_Date": "1829-05-05",
+    "Hijri_Date": "1244-11-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215046g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215046g",
+    "Gregorian_Date": "1829-05-07",
+    "Hijri_Date": "1244-11-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215047w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215047w",
+    "Gregorian_Date": "1829-05-16",
+    "Hijri_Date": "1244-11-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150489/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150489",
+    "Gregorian_Date": "1829-05-18",
+    "Hijri_Date": "1244-11-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215049q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215049q",
+    "Gregorian_Date": "1829-05-20",
+    "Hijri_Date": "1244-11-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215050c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215050c",
+    "Gregorian_Date": "1829-05-24",
+    "Hijri_Date": "1244-11-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215051s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215051s",
+    "Gregorian_Date": "1829-05-26",
+    "Hijri_Date": "1244-11-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150526/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150526",
+    "Gregorian_Date": "1829-05-30",
+    "Hijri_Date": "1244-11-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215053m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215053m",
+    "Gregorian_Date": "1829-06-02",
+    "Hijri_Date": "1244-11-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150541/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150541",
+    "Gregorian_Date": "1829-06-04",
+    "Hijri_Date": "1244-12-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215055f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215055f",
+    "Gregorian_Date": "1829-06-07",
+    "Hijri_Date": "1244-12-04"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215056v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215056v",
+    "Gregorian_Date": "1829-06-09",
+    "Hijri_Date": "1244-12-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150578/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150578",
+    "Gregorian_Date": "1829-06-10",
+    "Hijri_Date": "1244-12-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215058p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215058p",
+    "Gregorian_Date": "1829-06-21",
+    "Hijri_Date": "1244-12-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150682/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150682",
+    "Gregorian_Date": "1829-07-08",
+    "Hijri_Date": "1245-01-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215069g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215069g",
+    "Gregorian_Date": "1829-07-20",
+    "Hijri_Date": "1245-01-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150704/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150704",
+    "Gregorian_Date": "1829-07-25",
+    "Hijri_Date": "1245-01-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215071j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215071j",
+    "Gregorian_Date": "1829-07-29",
+    "Hijri_Date": "1245-01-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215072z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215072z",
+    "Gregorian_Date": "1829-08-03",
+    "Hijri_Date": "1245-02-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150771/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150771",
+    "Gregorian_Date": "1829-08-17",
+    "Hijri_Date": "1245-02-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215076m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215076m",
+    "Gregorian_Date": "1829-08-24",
+    "Hijri_Date": "1245-02-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150756/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150756",
+    "Gregorian_Date": "1829-08-27",
+    "Hijri_Date": "1245-02-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215074s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215074s",
+    "Gregorian_Date": "1829-09-01",
+    "Hijri_Date": "1245-03-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215073c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215073c",
+    "Gregorian_Date": "1829-09-07",
+    "Hijri_Date": "1245-03-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215078f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215078f",
+    "Gregorian_Date": "1829-09-08",
+    "Hijri_Date": "1245-03-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215079v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215079v",
+    "Gregorian_Date": "1829-09-15",
+    "Hijri_Date": "1245-03-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215080h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215080h",
+    "Gregorian_Date": "1829-09-23",
+    "Hijri_Date": "1245-03-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215081x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215081x",
+    "Gregorian_Date": "1829-09-24",
+    "Hijri_Date": "1245-03-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215082b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215082b",
+    "Gregorian_Date": "1829-09-26",
+    "Hijri_Date": "1245-03-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215083r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215083r",
+    "Gregorian_Date": "1829-09-27",
+    "Hijri_Date": "1245-03-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150845/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150845",
+    "Gregorian_Date": "1829-09-28",
+    "Hijri_Date": "1245-03-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215085k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215085k",
+    "Gregorian_Date": "1829-09-29",
+    "Hijri_Date": "1245-03-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150860/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150860",
+    "Gregorian_Date": "1829-09-30",
+    "Hijri_Date": "1245-04-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215087d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215087d",
+    "Gregorian_Date": "1829-10-01",
+    "Hijri_Date": "1245-04-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215088t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215088t",
+    "Gregorian_Date": "1829-10-03",
+    "Hijri_Date": "1245-04-04"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150897/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150897",
+    "Gregorian_Date": "1829-10-04",
+    "Hijri_Date": "1245-04-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215090w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215090w",
+    "Gregorian_Date": "1829-10-06",
+    "Hijri_Date": "1245-04-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150919/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150919",
+    "Gregorian_Date": "1829-10-07",
+    "Hijri_Date": "1245-04-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215092q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215092q",
+    "Gregorian_Date": "1829-10-08",
+    "Hijri_Date": "1245-04-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150934/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150934",
+    "Gregorian_Date": "1829-10-10",
+    "Hijri_Date": "1245-04-11"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215094j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215094j",
+    "Gregorian_Date": "1829-10-15",
+    "Hijri_Date": "1245-04-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215095z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215095z",
+    "Gregorian_Date": "1829-10-17",
+    "Hijri_Date": "1245-04-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215096c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215096c",
+    "Gregorian_Date": "1829-10-19",
+    "Hijri_Date": "1245-04-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215097s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215097s",
+    "Gregorian_Date": "1829-10-21",
+    "Hijri_Date": "1245-04-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150986/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150986",
+    "Gregorian_Date": "1829-10-22",
+    "Hijri_Date": "1245-04-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215099m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215099m",
+    "Gregorian_Date": "1829-10-24",
+    "Hijri_Date": "1245-04-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215100t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215100t",
+    "Gregorian_Date": "1829-10-27",
+    "Hijri_Date": "1245-04-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151017/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151017",
+    "Gregorian_Date": "1829-10-28",
+    "Hijri_Date": "1245-04-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215102n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215102n",
+    "Gregorian_Date": "1829-10-31",
+    "Hijri_Date": "1245-05-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151032/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151032",
+    "Gregorian_Date": "1829-11-02",
+    "Hijri_Date": "1245-05-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215104g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215104g",
+    "Gregorian_Date": "1829-11-04",
+    "Hijri_Date": "1245-05-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215105w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215105w",
+    "Gregorian_Date": "1829-11-05",
+    "Hijri_Date": "1245-05-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151069/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151069",
+    "Gregorian_Date": "1829-11-07",
+    "Hijri_Date": "1245-05-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215107q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215107q",
+    "Gregorian_Date": "1829-11-09",
+    "Hijri_Date": "1245-05-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151084/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151084",
+    "Gregorian_Date": "1829-11-11",
+    "Hijri_Date": "1245-05-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215109j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215109j",
+    "Gregorian_Date": "1829-11-14",
+    "Hijri_Date": "1245-05-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151106/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151106",
+    "Gregorian_Date": "1829-11-15",
+    "Hijri_Date": "1245-05-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215111m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215111m",
+    "Gregorian_Date": "1829-11-17",
+    "Hijri_Date": "1245-05-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151121/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151121",
+    "Gregorian_Date": "1829-11-19",
+    "Hijri_Date": "1245-05-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215113f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215113f",
+    "Gregorian_Date": "1829-11-23",
+    "Hijri_Date": "1245-05-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215114v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215114v",
+    "Gregorian_Date": "1829-11-26",
+    "Hijri_Date": "1245-05-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151158/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151158",
+    "Gregorian_Date": "1829-11-30",
+    "Hijri_Date": "1245-06-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215116p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215116p",
+    "Gregorian_Date": "1829-12-03",
+    "Hijri_Date": "1245-06-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151173/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151173",
+    "Gregorian_Date": "1829-12-06",
+    "Hijri_Date": "1245-06-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215118h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215118h",
+    "Gregorian_Date": "1829-12-10",
+    "Hijri_Date": "1245-06-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215119x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215119x",
+    "Gregorian_Date": "1829-12-16",
+    "Hijri_Date": "1245-06-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215120k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215120k",
+    "Gregorian_Date": "1829-12-19",
+    "Hijri_Date": "1245-06-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151210/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151210",
+    "Gregorian_Date": "1829-12-21",
+    "Hijri_Date": "1245-06-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215122d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215122d",
+    "Gregorian_Date": "1829-12-24",
+    "Hijri_Date": "1245-06-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215123t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215123t",
+    "Gregorian_Date": "1830-01-02",
+    "Hijri_Date": "1245-07-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151247/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151247",
+    "Gregorian_Date": "1830-01-05",
+    "Hijri_Date": "1245-07-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215125n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215125n",
+    "Gregorian_Date": "1830-01-17",
+    "Hijri_Date": "1245-07-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151262/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151262",
+    "Gregorian_Date": "1830-01-19",
+    "Hijri_Date": "1245-07-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215127g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215127g",
+    "Gregorian_Date": "1830-02-11",
+    "Hijri_Date": "1245-08-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215128w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215128w",
+    "Gregorian_Date": "1830-02-13",
+    "Hijri_Date": "1245-08-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151299/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151299",
+    "Gregorian_Date": "1830-02-17",
+    "Hijri_Date": "1245-08-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215130z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215130z",
+    "Gregorian_Date": "1830-02-21",
+    "Hijri_Date": "1245-08-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215131c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215131c",
+    "Gregorian_Date": "1830-02-22",
+    "Hijri_Date": "1245-08-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215132s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215132s",
+    "Gregorian_Date": "1830-02-25",
+    "Hijri_Date": "1245-09-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151336/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151336",
+    "Gregorian_Date": "1830-02-27",
+    "Hijri_Date": "1245-09-04"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215134m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215134m",
+    "Gregorian_Date": "1830-03-01",
+    "Hijri_Date": "1245-09-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151351/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151351",
+    "Gregorian_Date": "1830-03-02",
+    "Hijri_Date": "1245-09-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215136f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215136f",
+    "Gregorian_Date": "1830-03-03",
+    "Hijri_Date": "1245-09-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215137v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215137v",
+    "Gregorian_Date": "1830-03-04",
+    "Hijri_Date": "1245-09-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151388/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151388",
+    "Gregorian_Date": "1830-03-07",
+    "Hijri_Date": "1245-09-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215139p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215139p",
+    "Gregorian_Date": "1830-03-10",
+    "Hijri_Date": "1245-09-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215140b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215140b",
+    "Gregorian_Date": "1830-03-14",
+    "Hijri_Date": "1245-09-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215141r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215141r",
+    "Gregorian_Date": "1830-03-15",
+    "Hijri_Date": "1245-09-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151425/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151425",
+    "Gregorian_Date": "1830-03-16",
+    "Hijri_Date": "1245-09-21"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215143k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215143k",
+    "Gregorian_Date": "1830-03-17",
+    "Hijri_Date": "1245-09-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151440/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151440",
+    "Gregorian_Date": "1830-03-18",
+    "Hijri_Date": "1245-09-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215145d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215145d",
+    "Gregorian_Date": "1830-03-20",
+    "Hijri_Date": "1245-09-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215146t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215146t",
+    "Gregorian_Date": "1830-03-22",
+    "Hijri_Date": "1245-09-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151477/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151477",
+    "Gregorian_Date": "1830-04-01",
+    "Hijri_Date": "1245-10-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215148n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215148n",
+    "Gregorian_Date": "1830-04-03",
+    "Hijri_Date": "1245-10-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151492/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151492",
+    "Gregorian_Date": "1830-04-06",
+    "Hijri_Date": "1245-10-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215150q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215150q",
+    "Gregorian_Date": "1830-04-08",
+    "Hijri_Date": "1245-10-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151514/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151514",
+    "Gregorian_Date": "1830-04-12",
+    "Hijri_Date": "1245-10-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215152j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215152j",
+    "Gregorian_Date": "1830-04-14",
+    "Hijri_Date": "1245-10-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215153z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215153z",
+    "Gregorian_Date": "1830-04-19",
+    "Hijri_Date": "1245-10-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215154c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215154c",
+    "Gregorian_Date": "1830-04-21",
+    "Hijri_Date": "1245-10-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215155s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215155s",
+    "Gregorian_Date": "1830-04-22",
+    "Hijri_Date": "1245-10-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151566/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151566",
+    "Gregorian_Date": "1830-04-26",
+    "Hijri_Date": "1245-11-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215157m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215157m",
+    "Gregorian_Date": "1830-04-29",
+    "Hijri_Date": "1245-11-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151581/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151581",
+    "Gregorian_Date": "1830-05-01",
+    "Hijri_Date": "1245-11-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215159f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215159f",
+    "Gregorian_Date": "1830-05-04",
+    "Hijri_Date": "1245-11-11"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151603/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151603",
+    "Gregorian_Date": "1830-05-05",
+    "Hijri_Date": "1245-11-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215161h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215161h",
+    "Gregorian_Date": "1830-05-09",
+    "Hijri_Date": "1245-11-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215162x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215162x",
+    "Gregorian_Date": "1830-05-11",
+    "Hijri_Date": "1245-11-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215163b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215163b",
+    "Gregorian_Date": "1830-05-12",
+    "Hijri_Date": "1245-11-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215164r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215164r",
+    "Gregorian_Date": "1830-05-15",
+    "Hijri_Date": "1245-11-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151655/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151655",
+    "Gregorian_Date": "1830-05-25",
+    "Hijri_Date": "1245-12-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215166k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215166k",
+    "Gregorian_Date": "1830-05-27",
+    "Hijri_Date": "1245-12-04"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151670/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151670",
+    "Gregorian_Date": "1830-05-30",
+    "Hijri_Date": "1245-11-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215168d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215168d",
+    "Gregorian_Date": "1830-06-01",
+    "Hijri_Date": "1245-12-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215169t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215169t",
+    "Gregorian_Date": "1830-06-08",
+    "Hijri_Date": "1245-12-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215170g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215170g",
+    "Gregorian_Date": "1830-06-10",
+    "Hijri_Date": "1245-12-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215171w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215171w",
+    "Gregorian_Date": "1830-06-14",
+    "Hijri_Date": "1245-12-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151729/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151729",
+    "Gregorian_Date": "1830-06-16",
+    "Hijri_Date": "1245-12-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215173q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215173q",
+    "Gregorian_Date": "1830-06-21",
+    "Hijri_Date": "1245-12-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214992h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214992h",
+    "Gregorian_Date": "1831-01-14",
+    "Hijri_Date": "1246-07-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149416/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149416",
+    "Gregorian_Date": "1831-07-03",
+    "Hijri_Date": "1247-01-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214942m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214942m",
+    "Gregorian_Date": "1831-07-05",
+    "Hijri_Date": "1247-01-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149431/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149431",
+    "Gregorian_Date": "1831-07-07",
+    "Hijri_Date": "1247-01-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214944f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214944f",
+    "Gregorian_Date": "1831-07-10",
+    "Hijri_Date": "1247-01-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214945v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214945v",
+    "Gregorian_Date": "1831-07-12",
+    "Hijri_Date": "1247-02-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149468/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149468",
+    "Gregorian_Date": "1831-07-14",
+    "Hijri_Date": "1247-02-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214947p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214947p",
+    "Gregorian_Date": "1831-07-17",
+    "Hijri_Date": "1247-02-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149483/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149483",
+    "Gregorian_Date": "1831-07-19",
+    "Hijri_Date": "1247-02-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214949h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214949h",
+    "Gregorian_Date": "1831-07-26",
+    "Hijri_Date": "1247-02-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149505/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149505",
+    "Gregorian_Date": "1831-07-28",
+    "Hijri_Date": "1247-02-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214951k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214951k",
+    "Gregorian_Date": "1831-07-31",
+    "Hijri_Date": "1247-02-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149520/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149520",
+    "Gregorian_Date": "1831-08-02",
+    "Hijri_Date": "1247-02-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214953d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214953d",
+    "Gregorian_Date": "1831-08-04",
+    "Hijri_Date": "1247-02-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214954t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214954t",
+    "Gregorian_Date": "1831-08-07",
+    "Hijri_Date": "1247-02-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149557/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149557",
+    "Gregorian_Date": "1831-08-09",
+    "Hijri_Date": "1247-02-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214956n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214956n",
+    "Gregorian_Date": "1831-08-15",
+    "Hijri_Date": "1247-03-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149572/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149572",
+    "Gregorian_Date": "1831-09-28",
+    "Hijri_Date": "1247-04-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214958g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214958g",
+    "Gregorian_Date": "1831-10-02",
+    "Hijri_Date": "1247-04-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214959w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214959w",
+    "Gregorian_Date": "1831-10-08",
+    "Hijri_Date": "1247-05-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214960j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214960j",
+    "Gregorian_Date": "1831-10-10",
+    "Hijri_Date": "1247-05-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214961z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214961z",
+    "Gregorian_Date": "1831-10-13",
+    "Hijri_Date": "1247-05-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214962c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214962c",
+    "Gregorian_Date": "1831-10-16",
+    "Hijri_Date": "1247-05-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214963s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214963s",
+    "Gregorian_Date": "1831-10-18",
+    "Hijri_Date": "1247-05-11"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149646/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149646",
+    "Gregorian_Date": "1831-10-22",
+    "Hijri_Date": "1247-05-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214965m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214965m",
+    "Gregorian_Date": "1831-10-24",
+    "Hijri_Date": "1247-05-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149661/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149661",
+    "Gregorian_Date": "1831-10-27",
+    "Hijri_Date": "1247-05-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214967f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214967f",
+    "Gregorian_Date": "1831-10-30",
+    "Hijri_Date": "1247-05-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214968v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214968v",
+    "Gregorian_Date": "1831-11-01",
+    "Hijri_Date": "1247-05-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149698/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149698",
+    "Gregorian_Date": "1831-11-03",
+    "Hijri_Date": "1247-05-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214970x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214970x",
+    "Gregorian_Date": "1831-11-07",
+    "Hijri_Date": "1247-06-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214971b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214971b",
+    "Gregorian_Date": "1831-11-10",
+    "Hijri_Date": "1247-06-04"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214972r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214972r",
+    "Gregorian_Date": "1831-11-23",
+    "Hijri_Date": "1247-06-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149735/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149735",
+    "Gregorian_Date": "1831-11-26",
+    "Hijri_Date": "1247-06-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214974k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214974k",
+    "Gregorian_Date": "1831-11-28",
+    "Hijri_Date": "1247-06-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149750/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149750",
+    "Gregorian_Date": "1831-12-01",
+    "Hijri_Date": "1247-06-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214976d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214976d",
+    "Gregorian_Date": "1831-12-04",
+    "Hijri_Date": "1247-06-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214977t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214977t",
+    "Gregorian_Date": "1831-12-06",
+    "Hijri_Date": "1247-07-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149787/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149787",
+    "Gregorian_Date": "1831-12-10",
+    "Hijri_Date": "1247-07-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214979n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214979n",
+    "Gregorian_Date": "1831-12-12",
+    "Hijri_Date": "1247-07-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149809/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149809",
+    "Gregorian_Date": "1831-12-13",
+    "Hijri_Date": "1247-07-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214981q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214981q",
+    "Gregorian_Date": "1831-12-18",
+    "Hijri_Date": "1247-07-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149824/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149824",
+    "Gregorian_Date": "1831-12-19",
+    "Hijri_Date": "1247-07-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214983j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214983j",
+    "Gregorian_Date": "1831-12-21",
+    "Hijri_Date": "1247-07-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214984z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214984z",
+    "Gregorian_Date": "1831-12-24",
+    "Hijri_Date": "1247-07-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214985c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214985c",
+    "Gregorian_Date": "1831-12-26",
+    "Hijri_Date": "1247-07-21"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214986s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214986s",
+    "Gregorian_Date": "1831-12-28",
+    "Hijri_Date": "1247-07-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214988m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214988m",
+    "Gregorian_Date": "1832-01-02",
+    "Hijri_Date": "1247-07-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149891/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149891",
+    "Gregorian_Date": "1832-01-04",
+    "Hijri_Date": "1247-07-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214990p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214990p",
+    "Gregorian_Date": "1832-01-07",
+    "Hijri_Date": "1247-08-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149913/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149913",
+    "Gregorian_Date": "1832-01-10",
+    "Hijri_Date": "1247-08-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214993x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214993x",
+    "Gregorian_Date": "1832-01-19",
+    "Hijri_Date": "1247-08-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214994b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214994b",
+    "Gregorian_Date": "1832-01-22",
+    "Hijri_Date": "1247-08-18"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214995r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214995r",
+    "Gregorian_Date": "1832-01-24",
+    "Hijri_Date": "1247-08-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149965/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149965",
+    "Gregorian_Date": "1832-01-26",
+    "Hijri_Date": "1247-08-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214997k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214997k",
+    "Gregorian_Date": "1832-01-29",
+    "Hijri_Date": "1247-08-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12149980/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12149980",
+    "Gregorian_Date": "1832-01-31",
+    "Hijri_Date": "1247-08-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1214999d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1214999d",
+    "Gregorian_Date": "1832-02-02",
+    "Hijri_Date": "1247-08-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215000g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215000g",
+    "Gregorian_Date": "1832-02-05",
+    "Hijri_Date": "1247-09-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215001w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215001w",
+    "Gregorian_Date": "1832-02-13",
+    "Hijri_Date": "1247-09-11"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150029/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150029",
+    "Gregorian_Date": "1832-02-16",
+    "Hijri_Date": "1247-09-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215003q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215003q",
+    "Gregorian_Date": "1832-02-19",
+    "Hijri_Date": "1247-09-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150044/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150044",
+    "Gregorian_Date": "1832-02-28",
+    "Hijri_Date": "1247-09-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215005j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215005j",
+    "Gregorian_Date": "1832-03-01",
+    "Hijri_Date": "1247-09-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215006z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215006z",
+    "Gregorian_Date": "1832-03-14",
+    "Hijri_Date": "1247-10-11"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215007c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215007c",
+    "Gregorian_Date": "1832-03-18",
+    "Hijri_Date": "1247-10-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215008s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215008s",
+    "Gregorian_Date": "1832-03-20",
+    "Hijri_Date": "1247-10-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150096/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150096",
+    "Gregorian_Date": "1832-03-22",
+    "Hijri_Date": "1247-10-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215010v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215010v",
+    "Gregorian_Date": "1832-03-25",
+    "Hijri_Date": "1247-10-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150118/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150118",
+    "Gregorian_Date": "1832-03-27",
+    "Hijri_Date": "1247-10-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215012p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215012p",
+    "Gregorian_Date": "1832-03-31",
+    "Hijri_Date": "1247-10-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150133/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150133",
+    "Gregorian_Date": "1832-04-02",
+    "Hijri_Date": "1247-11-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215014h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215014h",
+    "Gregorian_Date": "1832-04-04",
+    "Hijri_Date": "1247-11-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215015x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215015x",
+    "Gregorian_Date": "1832-04-07",
+    "Hijri_Date": "1247-11-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215016b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215016b",
+    "Gregorian_Date": "1832-04-09",
+    "Hijri_Date": "1247-11-08"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215017r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215017r",
+    "Gregorian_Date": "1832-04-11",
+    "Hijri_Date": "1247-11-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150185/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150185",
+    "Gregorian_Date": "1832-04-14",
+    "Hijri_Date": "1247-11-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215019k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215019k",
+    "Gregorian_Date": "1832-04-16",
+    "Hijri_Date": "1247-11-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150207/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150207",
+    "Gregorian_Date": "1832-04-21",
+    "Hijri_Date": "1247-11-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215021n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215021n",
+    "Gregorian_Date": "1832-04-23",
+    "Hijri_Date": "1247-11-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150222/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150222",
+    "Gregorian_Date": "1832-04-26",
+    "Hijri_Date": "1247-11-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215023g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215023g",
+    "Gregorian_Date": "1832-04-29",
+    "Hijri_Date": "1247-11-28"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215024w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215024w",
+    "Gregorian_Date": "1832-05-01",
+    "Hijri_Date": "1247-11-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12150667/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12150667",
+    "Gregorian_Date": "1833-04-02",
+    "Hijri_Date": "1248-11-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215176z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215176z",
+    "Gregorian_Date": "1833-04-04",
+    "Hijri_Date": "1248-11-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215177c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215177c",
+    "Gregorian_Date": "1833-04-07",
+    "Hijri_Date": "1248-11-17"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215178s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215178s",
+    "Gregorian_Date": "1833-04-09",
+    "Hijri_Date": "1248-11-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151796/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151796",
+    "Gregorian_Date": "1833-04-11",
+    "Hijri_Date": "1248-11-21"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215180v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215180v",
+    "Gregorian_Date": "1833-04-14",
+    "Hijri_Date": "1248-11-24"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151818/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151818",
+    "Gregorian_Date": "1833-04-17",
+    "Hijri_Date": "1248-11-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215182p/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215182p",
+    "Gregorian_Date": "1833-04-20",
+    "Hijri_Date": "1248-11-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151833/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151833",
+    "Gregorian_Date": "1833-04-25",
+    "Hijri_Date": "1248-12-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215184h/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215184h",
+    "Gregorian_Date": "1833-04-27",
+    "Hijri_Date": "1248-12-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215185x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215185x",
+    "Gregorian_Date": "1833-05-05",
+    "Hijri_Date": "1248-12-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215186b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215186b",
+    "Gregorian_Date": "1833-05-11",
+    "Hijri_Date": "1248-12-21"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215187r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215187r",
+    "Gregorian_Date": "1833-05-13",
+    "Hijri_Date": "1248-12-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151885/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151885",
+    "Gregorian_Date": "1833-05-16",
+    "Hijri_Date": "1248-12-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215189k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215189k",
+    "Gregorian_Date": "1833-05-19",
+    "Hijri_Date": "1248-12-29"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151907/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151907",
+    "Gregorian_Date": "1833-05-25",
+    "Hijri_Date": "1249-01-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215191n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215191n",
+    "Gregorian_Date": "1833-05-27",
+    "Hijri_Date": "1249-01-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151922/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151922",
+    "Gregorian_Date": "1833-05-29",
+    "Hijri_Date": "1249-01-09"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215193g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215193g",
+    "Gregorian_Date": "1833-06-01",
+    "Hijri_Date": "1249-01-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215194w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215194w",
+    "Gregorian_Date": "1833-06-04",
+    "Hijri_Date": "1249-01-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151959/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151959",
+    "Gregorian_Date": "1833-06-08",
+    "Hijri_Date": "1249-01-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215196q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215196q",
+    "Gregorian_Date": "1833-06-09",
+    "Hijri_Date": "1249-01-20"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12151974/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12151974",
+    "Gregorian_Date": "1833-06-11",
+    "Hijri_Date": "1249-01-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215198j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215198j",
+    "Gregorian_Date": "1833-06-15",
+    "Hijri_Date": "1249-01-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215199z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215199z",
+    "Gregorian_Date": "1833-06-19",
+    "Hijri_Date": "1249-01-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152005/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152005",
+    "Gregorian_Date": "1833-06-29",
+    "Hijri_Date": "1249-02-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215201k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215201k",
+    "Gregorian_Date": "1833-07-02",
+    "Hijri_Date": "1249-02-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152020/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152020",
+    "Gregorian_Date": "1833-07-04",
+    "Hijri_Date": "1249-02-15"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215203d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215203d",
+    "Gregorian_Date": "1833-07-14",
+    "Hijri_Date": "1249-02-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215204t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215204t",
+    "Gregorian_Date": "1833-07-16",
+    "Hijri_Date": "1249-02-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152057/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152057",
+    "Gregorian_Date": "1833-07-21",
+    "Hijri_Date": "1249-03-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215206n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215206n",
+    "Gregorian_Date": "1833-07-25",
+    "Hijri_Date": "1249-03-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152072/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152072",
+    "Gregorian_Date": "1833-07-29",
+    "Hijri_Date": "1249-03-11"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215208g/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215208g",
+    "Gregorian_Date": "1833-08-01",
+    "Hijri_Date": "1249-03-14"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215209w/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215209w",
+    "Gregorian_Date": "1833-08-08",
+    "Hijri_Date": "1249-03-21"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215210j/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215210j",
+    "Gregorian_Date": "1833-08-14",
+    "Hijri_Date": "1249-03-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215211z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215211z",
+    "Gregorian_Date": "1833-08-19",
+    "Hijri_Date": "1249-04-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215212c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215212c",
+    "Gregorian_Date": "1833-08-24",
+    "Hijri_Date": "1249-04-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215213s/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215213s",
+    "Gregorian_Date": "1833-08-29",
+    "Hijri_Date": "1249-04-12"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152146/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152146",
+    "Gregorian_Date": "1833-09-05",
+    "Hijri_Date": "1249-04-19"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215215m/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215215m",
+    "Gregorian_Date": "1833-09-12",
+    "Hijri_Date": "1249-04-26"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152161/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152161",
+    "Gregorian_Date": "1833-09-19",
+    "Hijri_Date": "1249-05-04"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215067n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215067n",
+    "Gregorian_Date": "1835-07-18",
+    "Hijri_Date": "1251-03-22"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215217f/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215217f",
+    "Gregorian_Date": "1835-07-26",
+    "Hijri_Date": "1251-03-30"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215218v/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215218v",
+    "Gregorian_Date": "1835-08-02",
+    "Hijri_Date": "1251-04-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152198/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152198",
+    "Gregorian_Date": "1835-08-08",
+    "Hijri_Date": "1251-04-13"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215220x/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215220x",
+    "Gregorian_Date": "1835-08-26",
+    "Hijri_Date": "1251-05-02"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215221b/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215221b",
+    "Gregorian_Date": "1835-08-31",
+    "Hijri_Date": "1251-05-07"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215222r/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215222r",
+    "Gregorian_Date": "1835-09-28",
+    "Hijri_Date": "1251-06-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152235/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152235",
+    "Gregorian_Date": "1835-10-25",
+    "Hijri_Date": "1251-07-03"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215224k/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215224k",
+    "Gregorian_Date": "1835-11-16",
+    "Hijri_Date": "1251-07-25"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152250/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152250",
+    "Gregorian_Date": "1835-12-14",
+    "Hijri_Date": "1251-08-23"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215226d/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215226d",
+    "Gregorian_Date": "1835-12-26",
+    "Hijri_Date": "1251-09-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215227t/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215227t",
+    "Gregorian_Date": "1836-02-18",
+    "Hijri_Date": "1251-11-01"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152287/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152287",
+    "Gregorian_Date": "1836-04-14",
+    "Hijri_Date": "1251-12-27"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215229n/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215229n",
+    "Gregorian_Date": "1836-07-20",
+    "Hijri_Date": "1252-04-05"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152309/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152309",
+    "Gregorian_Date": "1836-08-29",
+    "Hijri_Date": "1252-05-16"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215231q/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215231q",
+    "Gregorian_Date": "1836-09-22",
+    "Hijri_Date": "1252-06-10"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k12152324/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k12152324",
+    "Gregorian_Date": "1837-03-14",
+    "Hijri_Date": "1252-12-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215234z/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215234z",
+    "Gregorian_Date": "1838-01-03",
+    "Hijri_Date": "1253-10-06"
+  },
+  {
+    "Manifest": "https://gallica.bnf.fr/iiif/ark:/12148/bpt6k1215235c/manifest.json",
+    "Gallica_Page": "https://gallica.bnf.fr/ark:/12148/bpt6k1215235c",
+    "Gregorian_Date": "1839-04-21",
+    "Hijri_Date": "1255-02-06"
+  }
+]

@@ -3,11 +3,12 @@ import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import * as sass from 'sass';
 import CETEI from 'CETEIcean';
-import { title } from 'node:process';
+import esbuild from 'esbuild';
 
 export default function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/js/*.map": "js" });
 
   eleventyConfig.addFilter("getYears",
     function(pages) {
@@ -98,8 +99,35 @@ export default function(eleventyConfig) {
     });
   });
 
+  eleventyConfig.addTemplateFormats("mjs");
   eleventyConfig.addTemplateFormats("scss");
   eleventyConfig.addTemplateFormats("xml");
+
+  eleventyConfig.addExtension("mjs", {
+
+    compileOptions: {
+      permalink: function(contents, inputPath) {
+        return (data) => {
+          return inputPath.replace("src/assets/js", "js").replace(".mjs", ".js");
+        }
+      }
+    },
+
+    compile: async (content, path) => {
+  
+      return async () => {
+        let output = await esbuild.build({
+          target: 'es2020',
+          entryPoints: [path],
+          minify: true,
+          bundle: true,
+          write: false,
+        });
+  
+        return output.outputFiles[0].text;
+      }
+    }
+  });
 
   eleventyConfig.addExtension("scss", {
 
