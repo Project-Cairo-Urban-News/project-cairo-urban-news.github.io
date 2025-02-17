@@ -114,7 +114,9 @@ nav {
   margin-bottom: 20px;
 }
 .border-svg {
-  padding-bottom: 20px;
+  height: 150px;
+  width: auto;
+  padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 .navbar-brand span {
     font-family: "Fustat";
