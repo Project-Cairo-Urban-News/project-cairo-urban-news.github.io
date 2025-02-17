@@ -2104,7 +2104,6 @@ progress {
   border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
   border-radius: var(--bs-btn-border-radius);
   background-color: var(--bs-btn-bg);
-  background-image: var(--bs-gradient);
   box-shadow: var(--bs-btn-box-shadow);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -2126,7 +2125,6 @@ progress {
 .btn:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
-  background-image: var(--bs-gradient);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-box-shadow), var(--bs-btn-focus-box-shadow);
@@ -2139,7 +2137,6 @@ progress {
 .btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
-  background-image: none;
   border-color: var(--bs-btn-active-border-color);
   box-shadow: var(--bs-btn-active-shadow);
 }
@@ -2153,7 +2150,6 @@ progress {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
-  background-image: none;
   border-color: var(--bs-btn-disabled-border-color);
   opacity: var(--bs-btn-disabled-opacity);
   box-shadow: none;
@@ -2445,7 +2441,6 @@ progress {
   --bs-btn-box-shadow: 0 0 0 #000;
   --bs-btn-focus-shadow-rgb: 68, 108, 125;
   text-decoration: underline;
-  background-image: none;
 }
 .btn-link:focus-visible {
   color: var(--bs-btn-color);
@@ -2777,19 +2772,16 @@ progress {
 .dropdown-item:hover, .dropdown-item:focus {
   color: var(--bs-dropdown-link-hover-color);
   background-color: var(--bs-dropdown-link-hover-bg);
-  background-image: var(--bs-gradient);
 }
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
   text-decoration: none;
   background-color: var(--bs-dropdown-link-active-bg);
-  background-image: var(--bs-gradient);
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: var(--bs-dropdown-link-disabled-color);
   pointer-events: none;
   background-color: transparent;
-  background-image: none;
 }
 
 .dropdown-menu.show {
@@ -2913,7 +2905,6 @@ progress {
 .nav-pills .show > .nav-link {
   color: var(--bs-nav-pills-link-active-color);
   background-color: var(--bs-nav-pills-link-active-bg);
-  background-image: var(--bs-gradient);
 }
 
 .nav-underline {
@@ -2989,7 +2980,6 @@ progress {
   align-items: center;
   justify-content: space-between;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
-  background-image: var(--bs-gradient);
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -9336,10 +9326,18 @@ nav span.h1 {
   line-height: 1.5;
 }
 
-.navbar {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 500;
-  position: relative;
+.navbar-brand span {
+  font-family: "Fustat";
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Fustat";
+}
+
+li.nav-item {
+  font-family: "Fustat";
+  font-size: large;
 }
 
 img.wmheader {
@@ -9355,10 +9353,6 @@ img.wmheader {
   font-size: 18px; /* Example: Set font size */
   margin-top: 8px; /* Example: Add some top margin */
   margin-bottom: 15px;
-}
-
-li.nav-item {
-  font-size: large;
 }
 
 .container {
@@ -9380,6 +9374,7 @@ table {
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   gap: 10px;
+  margin-bottom: 20px;
 }
 
 .wrapper > div {
