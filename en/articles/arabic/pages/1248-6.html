@@ -7,123 +7,32 @@
     <title>1248-6</title>
   </head>
   <body>
-    <head>
-  <link rel="icon" href="src/assets/images/favicon.ico" type="image/x-icon">
-  <style>
-    nav {
-      background-color: #507F93;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      width: 100%;
-      padding-top: 10px;  /* Adds extra 10px to the top */
-      padding-bottom: 10px;  /* Adds extra 10px to the bottom */
-    }
-
-    .container-fluid {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-
-    /* Center the logo */
-    .navbar-brand {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    /* Style for the left and right nav sections */
-    .navbar-nav-left,
-    .navbar-nav-right {
-      display: flex;
-      gap: 10px; /* Adjust the gap between buttons */
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-
-    /* Left-aligned group next to the logo */
-    .navbar-nav-left {
-      left: 10%;
-      justify-content: flex-end; /* Align left group to the right */
-    }
-
-    /* Right-aligned group next to the logo */
-    .navbar-nav-right {
-      right: 10%;
-      justify-content: flex-start; /* Align right group to the left */
-    }
-
-    .navbar-nav .nav-item {
-      font-family: "Fustat";
-      font-size: large;
-    }
-
-    .navbar-nav .nav-link {
-      font-family: "Fustat";
-    }
-
-    .navbar-nav .nav-item button {
-      padding: 8px 16px;
-      background-color: transparent; /* Remove background */
-      color: lightgray; /* Set initial text color to light gray */
-      border: none; /* Remove border */
-      outline: none; /* Remove outline */
-      cursor: pointer; /* Change cursor to pointer */
-    }
-
-    .navbar-nav .nav-item button:hover {
-      background-color: transparent; /* No change on hover */
-      color: white; /* Change text color to white on hover */
-    }
-
-    .navbar-nav .nav-item button:focus {
-      outline: none; /* Remove focus outline */
-    }
-  </style>
-</head>
-
-<nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
-  <div class="container-fluid">
-    <!-- Centered logo -->
+    <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
+  <div class="container-fluid justify-content-start">
     <a class="navbar-brand" href="/">
-      <svg class="bi me-3 mb-2" width="100" viewBox="0 0 150 100">
-        <use xlink:href="#wm_logo" />
-      </svg>
+      <svg class="bi me-3 mb-2" width="100" viewBox="0 0 150 100"><use xlink:href="#wm_logo"/></svg>
+      <span class="display-4" style="font-size: 2rem" font-weight: 400";>News of Cairo</span>
     </a>
-
-    <!-- Navbar buttons (3 left-aligned next to the logo, 3 right-aligned next to the logo) -->
-    <div class="navbar-nav-left">
-      <ul class="navbar-nav d-flex">
-        <li class="nav-item">
-          <button class="nav-link active" href="/en/">Home</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" href="/en/timeline/">Timeline</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" href="#">Indexes</button>
-        </li>
-      </ul>
-    </div>
-
-    <div class="navbar-nav-right">
-      <ul class="navbar-nav d-flex">
-        <li class="nav-item">
-          <button class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" href="/en/WMOnlineEN/">WM Online</button>
-        </li>
-        <li class="nav-item dropdown">
-          <button class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <ul class="navbar-nav d-flex w-100 me-2">
+      <li class="nav-item me-3">
+        <a class="nav-link active" href="/en/">Home</a>
+      </li>
+      <li class="nav-item me-3">
+        <a class="nav-link" href="/en/timeline/">Timeline</a>
+      </li>
+      <li class="nav-item me-3">
+        <a class="nav-link" href="#">Indexes</a>
+      </li>
+      <li class="nav-item me-3">
+        <a class="nav-link" href="/en/historyWM/">Publication History, 1828-1914</a>
+      </li>
+      <li class="nav-item me-3">
+        <a class="nav-link" href="/en/WMOnlineEN/">WM Online</a>
+      </li>
+      <li class="nav-item dropdown me-3">
+        <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About
-          </button>
+          </a>
           <div class="dropdown-menu" aria-labelledby="aboutMenu">
             <a class="dropdown-item" href="/en/about/history/">History of the Project</a>
             <a class="dropdown-item" href="/en/about/team/">Team</a>
@@ -133,10 +42,13 @@
             <a class="dropdown-item" href="/en/about/refer">How to Refer to This Website/Dataset</a>
             <a class="dropdown-item" href="/en/about/bibliography/">Bibliography</a>
           </div>
-        </li>
-      </ul>
-    </div>
-  </div>
+      </li>
+    </ul>
+   <!-- <form class="d-flex">
+  <input class="form-control me-3" type="search" placeholder="people, places..." aria-label="Search" style="border: none; border-bottom: 2px solid white; background-color: transparent; color: white; padding: 12px 10px;">
+      <button class="btn btn-outline-light me" type="submit" style="padding-right: 20px;">Search</button>
+    </form> -->
+</div>
 </nav>
 
     <main dir="ltr">
