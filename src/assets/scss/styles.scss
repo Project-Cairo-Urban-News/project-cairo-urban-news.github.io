@@ -100,6 +100,12 @@ $navbar-bg-gradient: false;
 body {
   background-color: #e9ded5;
 }
+}
+.border-svg {
+  height: 140px;
+  width: auto;
+  padding-bottom: 20px; /* This will still apply padding to the bottom */
+}
 th[lang="ar"] {
   font-family: "Noto Sans Arabic", sans-serif;
   font-size: 16px;
