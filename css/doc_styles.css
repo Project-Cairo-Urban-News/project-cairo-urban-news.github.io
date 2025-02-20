@@ -9527,12 +9527,15 @@ table {
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 img.wmheader {
-  display: block; /* Makes the image a block-level element */
-  margin-left: auto; /* Centers the image horizontally */
-  margin-right: auto; /* Centers the image horizontally */
-  height: 200px; /* Sets the height to 200px */
-  width: auto; /* Maintains the aspect ratio */
+  height: 200px;
+  width: auto;
   padding-bottom: 20px;
 }
 
