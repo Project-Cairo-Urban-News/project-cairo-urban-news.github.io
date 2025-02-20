@@ -9475,6 +9475,14 @@ nav span.h1 {
   line-height: 1;
 }
 
+.previous-button {
+  color: red;
+}
+
+.next-button {
+  color: blue;
+}
+
 .border-svg {
   height: 140px;
   width: auto;
