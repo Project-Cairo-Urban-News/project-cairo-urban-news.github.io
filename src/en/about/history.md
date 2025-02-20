@@ -3,6 +3,8 @@ title: History of the Project
 layout: doc_en.njk
 ---
 
+## Project History 
+
 This website and its database is the result of the “Digital Cairo: Studying Urban Transformation through a TEI XML Database, 1828-1914” project, led by Adam Mestyan (Duke University), with co-directors Hugh Cayless (Duke University) and Mercedes Volait (CNRS, INHA). It was financed by the National Endowment for the Humanities grant RZ-286808-22, between 2022 and 2025.
 
 The “Digital Cairo” project was part of the general research program “The Making of Modern Cairo, 1800-1914” (La fabrique du Caire moderne, صناعة القاهرة الحديثة ), hosted by the French Institute for Oriental Archeology (Institut français d’archéologie orientale, Ifao, Cairo), between 2018 and 2026, led by Mercedes Volait and Adam Mestyan. This program has been jointly supported by Ifao, the Visual and Textual Information unit at the French National Art History Institute (L’information visuelle et textuelle en histoire de l’art : nouveaux terrains, corpus, outils – InVisu, CNRS, INHA, Paris), the Hungarian Cultural Institute in Cairo, the History Department of Duke University (Durham NC, USA), and the Franklin Humanities Institute and the Office of Global Affairs’ Andrew W. Mellon Endowment for Global Studies at Duke University between 2018 and 2021. It had been conceived in two workshops on digital humanities and the urban history of the Middle East at the INHA in Paris and at Duke University in 2017. 
