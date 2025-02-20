@@ -168,7 +168,7 @@ img.wmheader {
   }
   .tei-head {
     border-bottom: 10px solid transparent; /* Transparent base border */
-    border-image: url('/images/border.svg') 30 stretch; /* Use the SVG file as the border image */
+    border-image: url('/assets/images/border.svg') 30 stretch; /* Use the SVG file as the border image */
     border-image-slice: 1; /* Ensures the full SVG is applied along the border */
   }
   .column {
