@@ -9483,8 +9483,8 @@ nav span.h1 {
 
 .separator {
   display: block;
-  padding-bottom: 10px auto;
-  height: 50;
+  padding-bottom: 10px;
+  height: 50px;
   width: auto;
 }
 
