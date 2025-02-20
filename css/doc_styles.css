@@ -9475,14 +9475,6 @@ nav span.h1 {
   line-height: 1;
 }
 
-.previous-button {
-  color: red;
-}
-
-.next-button {
-  color: blue;
-}
-
 .border-svg {
   height: 140px;
   width: auto;
@@ -9492,7 +9484,7 @@ nav span.h1 {
 .separator {
   display: block;
   padding-bottom: 10px;
-  height: 10px;
+  height: 50px;
   width: auto;
 }
 
@@ -9535,15 +9527,12 @@ table {
   box-sizing: border-box;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 img.wmheader {
-  height: 200px;
-  width: auto;
+  display: block; /* Makes the image a block-level element */
+  margin-left: auto; /* Centers the image horizontally */
+  margin-right: auto; /* Centers the image horizontally */
+  height: 200px; /* Sets the height to 200px */
+  width: auto; /* Maintains the aspect ratio */
   padding-bottom: 20px;
 }
 
