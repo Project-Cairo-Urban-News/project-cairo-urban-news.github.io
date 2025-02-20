@@ -9380,9 +9380,10 @@ tei-head {
   font-weight: bold;
   padding-bottom: 5px;
   margin-bottom: 10px;
-  border: none;
-  border-bottom: 10px solid transparent;
-  border-image: url(https://github.com/Project-Cairo-Urban-News/project-cairo-urban-news.github.io/blob/main/src/assets/images/border.svg) 30 stretch;
+}
+
+tei-text > tei-div > tei-head:last-of-type::after {
+  content: url("/assets/images/border.svg");
 }
 
 tei-hi[rend=italics] {
