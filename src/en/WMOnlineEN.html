@@ -1,6 +1,6 @@
 ---
-title: Digital Cairo
-layout: page_en.njk
+title: WM Online
+layout: doc_en.njk
 ---
 <div class="container">
   <svg id="uuid-34032e8c-7cca-4aa7-bd51-86a354364103" data-name="uuid-ed2af052-f058-430c-8ccb-5c32d1229be9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1515.04 202.38" fill="white" class="border-svg">
@@ -24,26 +24,3 @@ layout: page_en.njk
   <div style="text-align: center; margin-bottom: 30px;">
     <p class="under-image-text">Search articles by Hijri year and language.</p>
   </div>
-
-<div class="wrapper">
-    {% set years = collections.year_en | getYears %}
-    {% for year in years %}
-      {% set col = year.substr(3, 1) %}
-      {% set row = year.substr(1, 2) %}
-      <div class="col{{col}} row{{row}}">
-        <h2 class="h4">{{year}}</h2>
-        <ul class="list-unstyled">
-          {% for page in collections.years_en | pagesByYear(year) %}
-            {% if page.url != false %}
-            <li>
-              <seg><a href="{{page.url}}">{{page.data.title}}</a></seg> 
-              <seg class="text-body-secondary"><em>{{page.data.doc_lang}}</em></seg>
-            </li>
-            {% endif %}
-
-          {% endfor %}
-        </ul>
-      </div>
-    {% endfor %}    
-  </div>  
-</div>

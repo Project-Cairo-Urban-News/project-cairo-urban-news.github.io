@@ -1,0 +1,119 @@
+---
+title: Team
+layout: doc_en.njk
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Members</title>
+  <style>
+    
+    /* Centering the Director and Co-Directors */
+    .centered-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 40px; /* Space between the centered section and the rest */
+    }
+
+    /* Container for team sections */
+    .team-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .team-category {
+      padding: 10px;
+    }
+
+    .team-category h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .team-list {
+      list-style-type: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+      gap: 10px;
+    }
+
+    .team-list li {
+      margin: 5px 0;
+    }
+
+    .team-member {
+      font-size: 1em;
+      color: #555;
+    }
+
+    .external-reviewers {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Team Members</h1>
+
+  <!-- Centered Director and Co-Directors -->
+  <div class="centered-container">
+    <h2>Project Director:</h2>
+    <p class="team-member">Adam Mestyan (Duke University)</p>
+
+    <h2>Project Co-Directors:</h2>
+    <p class="team-member">Hugh Cayless (Duke University)</p>
+    <p class="team-member">Mercedes Volait (CNRS, INHA)</p>
+  </div>
+
+  <!-- Team Container -->
+  <div class="team-container">
+
+    <!-- Researchers -->
+    <div class="team-category">
+      <h3>Researchers:</h3>
+      <ul class="team-list">
+        <li class="team-member">Dr. Sarah Fathallah Garaa (‘Ayn Shams University)</li>
+        <li class="team-member">Dr. Karima Nasr</li>
+        <li class="team-member">Dr. Rezk Nori (Center for Contemporary Egyptian History)</li>
+        <li class="team-member">Dr. Ahmed Kamal (Centre of Documentation of Islamic and Coptic Antiquities)</li>
+        <li class="team-member">Nour Kanaan (Duke U, undergraduate student)</li>
+        <li class="team-member">Clara Harms (Duke U, undergraduate student)</li>
+        <li class="team-member">Arif Erbil (Duke U, graduate student)</li>
+        <li class="team-member">Abram Smith (Duke U, graduate student)</li>
+        <li class="team-member">Hüseyin Sağlam (Istanbul U, graduate student)</li>
+        <li class="team-member">Abdulrahman El Taliawi (independent researcher, Cairo)</li>
+        <li class="team-member">Othmane Echchabi (Duke U, undergraduate student)</li>
+        <li class="team-member">Fatemah Almahana (Duke U, graduate student)</li>
+        <li class="team-member">Hiba Laabadli (Duke U, undergraduate student)</li>
+        <li class="team-member">Mahmoud Zaki (Duke U, undergraduate student)</li>
+        <li class="team-member">Nehal al-Shamy (AUC, graduate student)</li>
+        <li class="team-member">Vishal Jammulapati (Duke, undergraduate student)</li>
+      </ul>
+    </div>
+
+    <!-- External Reviewers -->
+    <div class="team-category">
+      <h3>External Reviewers:</h3>
+      <div class="external-reviewers">
+        <div class="team-list">
+          <div class="team-member">Will Hanley (Florida University)</div>
+        </div>
+        <div class="team-list">
+          <div class="team-member">Till Grallert (Humboldt-Universität zu Berlin)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
+
