@@ -113,13 +113,6 @@ nav {
   }
   margin-bottom: 20px;
 }
-.previous-button {
-  color: red;
-}
-.next-button {
-  color: blue;
-}
-
 .border-svg {
   height: 140px;
   width: auto;
@@ -128,7 +121,7 @@ nav {
 .separator {
   display: block;
   padding-bottom: 10px;
-  height: 10px; 
+  height: 50px; 
   width: auto;
 }
 .navbar-brand span {
@@ -165,17 +158,15 @@ table {
   width: 48%; /* Make each column roughly 48% of the container width */
   box-sizing: border-box;
 }
-.container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
 
-    img.wmheader {
-      height: 200px;
-      width: auto;
-      padding-bottom: 20px;
-    }
+img.wmheader {
+  display: block;          /* Makes the image a block-level element */
+  margin-left: auto;       /* Centers the image horizontally */
+  margin-right: auto;      /* Centers the image horizontally */
+  height: 200px;           /* Sets the height to 200px */
+  width: auto;             /* Maintains the aspect ratio */
+  padding-bottom: 20px;
+}
 
 @media (max-width: 768px) {
   .two-columns {
