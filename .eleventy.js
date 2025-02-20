@@ -196,35 +196,42 @@ export default function(eleventyConfig) {
       };
     },
     getData: async function(inputPath) {
-      const file = fs.readFileSync(inputPath, 'utf8');
-      const jdom = new JSDOM(file, { contentType: "text/xml" });
-      const dateElements = Array.from(jdom.window.document.querySelectorAll('TEI > text > body > div > head > date[when]'));
-      const dates = dateElements.map(date => {
-        return date.getAttribute('when').replace(/^(\d{4})-.*$/, "$1");
-      }).reduce((acc, date) => {
-        if (acc.includes(date)) {
-          return acc;
+      if (inputPath.includes("articles")) {
+        const file = fs.readFileSync(inputPath, 'utf8');
+        const jdom = new JSDOM(file, { contentType: "text/xml" });
+        const dateElements = Array.from(jdom.window.document.querySelectorAll('TEI > text > body > div > head > date[when]'));
+        const dates = dateElements.map(date => {
+          return date.getAttribute('when').replace(/^(\d{4})-.*$/, "$1");
+        }).reduce((acc, date) => {
+          if (acc.includes(date)) {
+            return acc;
+          }
+          return acc.concat(date);
+        }, []).join('/');
+        const lang = jdom.window.document.querySelectorAll('TEI > text')[0].getAttribute('xml:lang');
+        const year = inputPath.replace(/.*\/([^-.]+).*\.xml$/, "$1").substr(0, 4);
+        const css_class = `col${year.substr(3, 1)}`;
+        let parent;
+        if (inputPath.includes('-')) {
+          parent = inputPath.replace(/.*\/pages\/([^-]+)-.*\.xml$/, "../$1.html");
+        } else {
+          parent = inputPath.replace(/(.*)\/articles\/.*/, "$1");
         }
-        return acc.concat(date);
-      }, []).join('/');
-      const lang = jdom.window.document.querySelectorAll('TEI > text')[0].getAttribute('xml:lang');
-      const year = inputPath.replace(/.*\/([^-.]+).*\.xml$/, "$1").substr(0, 4);
-      const css_class = `col${year.substr(3, 1)}`;
-      let parent;
-      if (inputPath.includes('-')) {
-        parent = inputPath.replace(/.*\/pages\/([^-]+)-.*\.xml$/, "../$1.html");
+        return {
+          title: inputPath.replace(/.*\/([^.]+)\.xml$/, "$1"),
+          gregorian_dates: dates,
+          date: year,
+          class: css_class,
+          doc_lang: lang,
+          jdom: jdom,
+          parent: parent
+        };
       } else {
-        parent = inputPath.replace(/(.*)\/articles\/.*/, "$1");
+        return {
+          title: inputPath.replace(/.*\/([^.]+)\.xml$/, "$1"),
+          jdom: new JSDOM(fs.readFileSync(inputPath, 'utf8'), { contentType: "text/xml" })
+        };
       }
-      return {
-        title: inputPath.replace(/.*\/([^.]+)\.xml$/, "$1"),
-        gregorian_dates: dates,
-        date: year,
-        class: css_class,
-        doc_lang: lang,
-        jdom: jdom,
-        parent: parent
-      };
     }    
   });
   return {
