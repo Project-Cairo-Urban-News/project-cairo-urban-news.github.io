@@ -7,10 +7,13 @@ const doc_behaviors = {
       corr.setAttribute("data-bs-toggle", "tooltip");
       corr.setAttribute("data-bs-custom-class", "custom-tooltip");
     },
-    "date": ['',' '],
+
+    "date": ['', ' '],
+
     "sic": [
-      [":not(tei-choice) tei-sic", ['','(!)']],
+      [":not(tei-choice) tei-sic", ['', '(!)']],
     ],
+
     "table": function(elt) {
       const table = document.createElement("table");
       if (elt.firstElementChild.localName == "tei-head") {
@@ -43,6 +46,9 @@ const doc_behaviors = {
       }
       this.hideContent(elt, true);
       elt.appendChild(table);
-    }
+    },
+    "p": [
+      ["tei-text>tei-div>tei-head + tei-p", ['<img class="separator" src="/assets/images/border.svg"/>', '']]
+    ]
   }
-}
+};
