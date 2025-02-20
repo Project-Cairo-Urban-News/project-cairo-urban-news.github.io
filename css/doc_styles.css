@@ -9386,6 +9386,24 @@ tei-text > tei-div > tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
 }
 
+.wmheader {
+  position: relative; /* To make it the reference for the absolute positioning of the child elements */
+}
+
+.tei-when {
+  position: absolute;
+  left: 20px; /* Move 20px to the inside from the left */
+  top: calc(50% + 20px); /* Move 20px down from the vertical center */
+  transform: translateY(-50%); /* Vertically center and then apply the 20px offset */
+}
+
+.tei-when-custom {
+  position: absolute;
+  right: 20px; /* Move 20px to the inside from the right */
+  top: calc(50% + 20px); /* Move 20px down from the vertical center */
+  transform: translateY(-50%); /* Vertically center and then apply the 20px offset */
+}
+
 tei-hi[rend=italics] {
   font-style: italic;
 }
@@ -9421,9 +9439,6 @@ tei-text {
   display: block;
   margin: auto;
   width: 60vw;
-}
-
-tei-text {
   font-size: 17pt;
   padding-bottom: 10px;
   line-height: 2;
