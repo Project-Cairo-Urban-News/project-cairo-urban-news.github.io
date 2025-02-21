@@ -73,16 +73,12 @@ table.summary ul {
   font-size: 16px;
   vertical-align: middle; /* Align both elements vertically */
 }
-
 .date-when {
   color: #888;  /* Lighter shade of gray */
 }
-
 .date-when-custom {
   color: #333;  /* Default darker color */
 }
-
-/* Add the dot between the two elements */
 .date-when + .date-when-custom::before {
   content: "•";  /* Unicode character for a dot */
   margin: 0 8px;  /* Space out the dot from the surrounding elements */
@@ -113,17 +109,12 @@ tei-head {
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
 }
-.wmheader {
-    position: relative; /* To make it the reference for the absolute positioning of the child elements */
-}
-
 .tei-when {
     position: absolute;
     left: 20px; /* Move 20px to the inside from the left */
     top: calc(50% + 20px); /* Move 20px down from the vertical center */
     transform: translateY(-50%); /* Vertically center and then apply the 20px offset */
 }
-
 .tei-when-custom {
     position: absolute;
     right: 20px; /* Move 20px to the inside from the right */
