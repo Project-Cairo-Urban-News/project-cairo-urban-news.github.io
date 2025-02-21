@@ -9355,6 +9355,28 @@ table.summary ul {
 }
 
 /* TEI elements */
+.date-when,
+.date-when-custom {
+  display: inline-block; /* Ensure elements are displayed inline, but can still be styled independently */
+  font-size: 16px;
+  vertical-align: middle; /* Align both elements vertically */
+}
+
+.date-when {
+  color: #888; /* Lighter shade of gray */
+}
+
+.date-when-custom {
+  color: #333; /* Default darker color */
+}
+
+/* Add the dot between the two elements */
+.date-when + .date-when-custom::before {
+  content: "•"; /* Unicode character for a dot */
+  margin: 0 8px; /* Space out the dot from the surrounding elements */
+  color: #333; /* Set the color of the dot (can adjust this if you need a lighter or darker shade) */
+}
+
 tei-choice tei-sic {
   display: none;
 }
