@@ -9501,12 +9501,10 @@ nav span.h1 {
 }
 
 .separator {
-  display: block;
   margin-left: auto; /* Center the element horizontally */
   margin-right: auto; /* Center the element horizontally */
-  padding-bottom: 10px;
-  height: 20px;
-  width: 80%; /* Set a percentage or fixed width as required */
+  padding-bottom: 20px;
+  height: 150px;
 }
 
 .navbar-brand span {
