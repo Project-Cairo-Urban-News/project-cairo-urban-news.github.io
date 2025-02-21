@@ -9484,6 +9484,14 @@ body {
   font-family: "Fustat", serif;
 }
 
+p[lang=en] {
+  font-family: "Fustat";
+}
+
+p[lang=ar] {
+  font-family: "Noto Sans Arabic";
+}
+
 html, body {
   height: 100%; /* Ensure the body takes up the full height of the page */
   margin: 0; /* Remove any default margin */
