@@ -105,7 +105,21 @@ body {
   font-size: large;
   font-family: 'Fustat', serif;
 }
-
+html, body {
+  height: 100%; /* Ensure the body takes up the full height of the page */
+  margin: 0;    /* Remove any default margin */
+}
+body {
+  display: flex;
+  flex-direction: column; /* Make the body a flex container */
+}
+main {
+  flex: 1; /* Allow the content to grow and fill the available space */
+}
+footer {
+  padding: 15px;
+  position: relative;
+}
 nav {
   background-color: #507F93;
   span.h1 {
