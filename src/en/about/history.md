@@ -3,7 +3,9 @@ title: History of the Project
 layout: doc_en.njk
 ---
 
-## Project History 
+# Project History 
+
+<br>
 
 This website and its database is the result of the “Digital Cairo: Studying Urban Transformation through a TEI XML Database, 1828-1914” project, led by Adam Mestyan (Duke University), with co-directors Hugh Cayless (Duke University) and Mercedes Volait (CNRS, INHA). It was financed by the National Endowment for the Humanities grant RZ-286808-22, between 2022 and 2025.
 
