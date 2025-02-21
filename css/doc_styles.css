@@ -9370,7 +9370,6 @@ table.summary ul {
   color: #333; /* Default darker color */
 }
 
-/* Add the dot between the two elements */
 .date-when + .date-when-custom::before {
   content: "•"; /* Unicode character for a dot */
   margin: 0 8px; /* Space out the dot from the surrounding elements */
@@ -9406,10 +9405,6 @@ tei-head {
 
 tei-text > tei-div > tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
-}
-
-.wmheader {
-  position: relative; /* To make it the reference for the absolute positioning of the child elements */
 }
 
 .tei-when {
