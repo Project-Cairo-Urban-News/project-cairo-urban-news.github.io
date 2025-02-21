@@ -3,6 +3,10 @@ title: Credits
 layout: doc_en.njk
 ---
 
+# Credits
+
+<br>
+
 Website concept: Hugh Cayless and Adam Mestyan
 
 Codes and design: Hugh Cayless
