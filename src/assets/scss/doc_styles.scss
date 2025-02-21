@@ -134,9 +134,11 @@ nav {
 }
 .separator {
   display: block;
+  margin-left: auto;  /* Center the element horizontally */
+  margin-right: auto; /* Center the element horizontally */
   padding-bottom: 10px;
-  height: 20px; 
-  width: auto;
+  height: 20px;
+  width: 80%;  /* Set a percentage or fixed width as required */
 }
 .navbar-brand span {
     font-family: "Fustat";
