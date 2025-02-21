@@ -9355,6 +9355,28 @@ table.summary ul {
 }
 
 /* TEI elements */
+.date-when,
+.date-when-custom {
+  display: inline-block; /* Ensure elements are displayed inline, but can still be styled independently */
+  font-size: 16px;
+  vertical-align: middle; /* Align both elements vertically */
+}
+
+.date-when {
+  color: #888; /* Lighter shade of gray */
+}
+
+.date-when-custom {
+  color: #333; /* Default darker color */
+}
+
+/* Add the dot between the two elements */
+.date-when + .date-when-custom::before {
+  content: "•"; /* Unicode character for a dot */
+  margin: 0 8px; /* Space out the dot from the surrounding elements */
+  color: #333; /* Set the color of the dot (can adjust this if you need a lighter or darker shade) */
+}
+
 tei-choice tei-sic {
   display: none;
 }
@@ -9465,14 +9487,7 @@ body {
   background-color: #e9ded5;
   font-size: large;
   font-family: "Fustat", serif;
-}
-
-html, body {
-  height: 100%; /* Ensure the body takes up the full height of the page */
-  margin: 0; /* Remove any default margin */
-}
-
-body {
+  height: 100%;
   display: flex;
   flex-direction: column; /* Make the body a flex container */
 }
@@ -9482,7 +9497,6 @@ main {
 }
 
 footer {
-  padding: 15px;
   position: relative;
 }
 
@@ -9500,13 +9514,43 @@ nav span.h1 {
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 
+.wmheader {
+  display: block; /* Make the image a block-level element */
+  margin-left: auto; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  width: 100%; /* Ensure the image is responsive */
+  max-width: 100%; /* Prevent the image from exceeding its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+.date-when,
+.date-when-custom {
+  display: inline-block; /* Ensure elements are displayed inline, but can still be styled independently */
+  font-size: 16px;
+  vertical-align: middle; /* Align both elements vertically */
+}
+
+.date-when {
+  color: #888; /* Lighter shade of gray */
+}
+
+.date-when-custom {
+  color: #333; /* Default darker color */
+}
+
+/* Add the dot between the two elements */
+.date-when + .date-when-custom::before {
+  content: "•"; /* Unicode character for a dot */
+  margin: 0 8px; /* Space out the dot from the surrounding elements */
+  color: #333; /* Set the color of the dot (can adjust this if you need a lighter or darker shade) */
+}
+
 .separator {
-  display: block;
   margin-left: auto; /* Center the element horizontally */
   margin-right: auto; /* Center the element horizontally */
-  padding-bottom: 10px;
-  height: 20px;
-  width: 80%; /* Set a percentage or fixed width as required */
+  padding-bottom: 20px;
+  height: 15px;
+  width: auto;
 }
 
 .navbar-brand span {
