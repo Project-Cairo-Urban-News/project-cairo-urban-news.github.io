@@ -126,6 +126,14 @@ nav {
   width: auto;
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
+.wmheader {
+  display: block;        /* Make the image a block-level element */
+  margin-left: auto;     /* Center horizontally */
+  margin-right: auto;    /* Center horizontally */
+  width: 100%;           /* Ensure the image is responsive */
+  max-width: 100%;       /* Prevent the image from exceeding its container's width */
+  height: auto;          /* Maintain the image's aspect ratio */
+}
 .date-when,
 .date-when-custom {
   display: inline-block;  /* Ensure elements are displayed inline, but can still be styled independently */
