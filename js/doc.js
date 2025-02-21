@@ -49,23 +49,9 @@ const doc_behaviors = {
       this.hideContent(elt, true);
       elt.appendChild(table);
     },
-
     "p": [
       ["tei-text>tei-div>tei-head + tei-p", ['<img class="separator" src="/images/border.svg"/>', '']]
-    ],
-    "date-when": function(elt) {
-      const dateWhenElement = document.createElement("span");
-      dateWhenElement.classList.add("date-when"); // Adds a class for styling
-      dateWhenElement.textContent = "Date When: "; // Example text
-      elt.appendChild(dateWhenElement);
-    },
-
-    "date-when-custom": function(elt) {
-      const dateWhenCustomElement = document.createElement("span");
-      dateWhenCustomElement.classList.add("date-when-custom"); // Adds a class for styling
-      dateWhenCustomElement.textContent = "Custom Date When: "; // Example text
-      elt.appendChild(dateWhenCustomElement);
-    }
+    ]
   }
 };
 
