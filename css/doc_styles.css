@@ -9478,6 +9478,30 @@ tei-standoff {
   display: none;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* This makes sure content expands to fill available space */
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  background-color: #f1f1f1; /* Add your footer background color */
+  text-align: center;
+  padding: 20px;
+}
+
 body {
   background-color: #e9ded5;
   font-size: large;
@@ -9490,25 +9514,6 @@ p[lang=en] {
 
 p[lang=ar] {
   font-family: "Noto Sans Arabic";
-}
-
-html, body {
-  height: 100%; /* Ensure the body takes up the full height of the page */
-  margin: 0; /* Remove any default margin */
-}
-
-body {
-  display: flex;
-  flex-direction: column; /* Make the body a flex container */
-}
-
-main {
-  flex: 1; /* Allow the content to grow and fill the available space */
-}
-
-footer {
-  padding: 15px;
-  position: relative;
 }
 
 nav {
@@ -9561,11 +9566,11 @@ li.nav-item {
 }
 
 .previous-button {
-  left: 15px; /* Position left button */
+  left: 10px; /* Position left button */
 }
 
 .next-button {
-  right: 15px; /* Position right button */
+  right: 10px; /* Position right button */
 }
 
 .year-button {
