@@ -9493,10 +9493,6 @@ html, body {
   flex: 1; /* This makes sure content expands to fill available space */
 }
 
-footer {
-  position: relative;
-}
-
 body {
   background-color: #e9ded5;
   font-size: large;
@@ -9561,11 +9557,11 @@ li.nav-item {
 }
 
 .previous-button {
-  left: 10px; /* Position left button */
+  left: 100px; /* Position left button */
 }
 
 .next-button {
-  right: 10px; /* Position right button */
+  right: 100px; /* Position right button */
 }
 
 .year-button {
