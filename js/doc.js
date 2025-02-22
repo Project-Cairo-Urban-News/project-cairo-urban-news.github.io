@@ -50,7 +50,7 @@ const doc_behaviors = {
       elt.appendChild(table);
     },
     "p": [
-      ["tei-text>tei-div>tei-head + tei-p", ['<img class="separator" src="/images/border.svg"/>', '']]
+      ["tei-text>tei-div>tei-head + tei-p", ['<img class="separator-svg" src="/images/border.svg"/>', '']]
     ]
   }
 };
