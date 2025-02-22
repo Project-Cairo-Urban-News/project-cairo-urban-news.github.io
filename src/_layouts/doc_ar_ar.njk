@@ -13,7 +13,7 @@
       {% set next = collections.page_ar_ar_sorted | getNextCollectionItem(page) %}
       <div class="container" pt-4>
         <div class="row">
-          <div class="col fs-5">
+          <div class="col fs-5 text-center">
             {% if previous %}
               <a href="{{ previous.url }}" class="link-primary link-opacity-75 link-opacity-100-hover previous-button">Previous</a>
             {% endif %}
@@ -21,15 +21,17 @@
           <div class="col text-center fs-5">
               <a href="{{ parent }}" class="link-primary link-opacity-75 link-opacity-100-hover year">{{ date | toArabicNumerals }}</a>
           </div>
-          <div class="col fs-5">
+          <div class="col fs-5 text-center">
             {% if next %}
               <a href="{{ next.url }}" class="link-primary link-opacity-75 link-opacity-100-hover next-button">Next</a>
             {% endif %}
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container button-container">
           <img src="/images/vaseheadernoborder.svg" alt="Vase Header No Border" class="wmheader">
+      </div>
+      <div class="container">
           {{ content | safe }}
       </div>
     </main>
