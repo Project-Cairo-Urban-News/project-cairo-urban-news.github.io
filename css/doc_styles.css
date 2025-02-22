@@ -9494,12 +9494,7 @@ html, body {
 }
 
 footer {
-  position: sticky;
-  bottom: 0;
-  width: 100%;
-  background-color: #f1f1f1; /* Add your footer background color */
-  text-align: center;
-  padding: 20px;
+  position: relative;
 }
 
 body {
