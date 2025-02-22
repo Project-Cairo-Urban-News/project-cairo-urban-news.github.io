@@ -162,8 +162,8 @@ h1 {
 }
 h1:lang(en) {
   font-family: "Fustat", sans-serif;
-  font-weight: 400
-  ]
+  font-weight: 400;
+]
 h1:lang(ar) {
   font-family: "Fustat", serif;
   font-weight: 400;
@@ -197,7 +197,7 @@ img.wmheader {
     height: 40px; /* Example: maintaining aspect ratio */
 }
 .under-image-text {
-  color: "black"; /* Example: Set text color */
+  color: black; /* Example: Set text color */
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 18px; /* Example: Set font size */
