@@ -9530,7 +9530,7 @@ nav span.h1 {
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 
-.separator {
+.separator-svg {
   display: flex;
   justify-content: center;
   align-items: center;
