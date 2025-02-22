@@ -9482,6 +9482,11 @@ body {
   background-color: #e9ded5;
   font-size: large;
   font-family: "Fustat", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 p[lang=en] {
@@ -9490,25 +9495,6 @@ p[lang=en] {
 
 p[lang=ar] {
   font-family: "Noto Sans Arabic";
-}
-
-html, body {
-  height: 100%; /* Ensure the body takes up the full height of the page */
-  margin: 0; /* Remove any default margin */
-}
-
-body {
-  display: flex;
-  flex-direction: column; /* Make the body a flex container */
-}
-
-main {
-  flex: 1; /* Allow the content to grow and fill the available space */
-}
-
-footer {
-  padding: 15px;
-  position: relative;
 }
 
 nav {
@@ -9522,10 +9508,14 @@ nav span.h1 {
 .border-svg {
   height: 140px;
   width: auto;
-  padding-bottom: 20px; /* This will still apply padding to the bottom */
+  padding-bottom: 20px;
 }
 
 .separator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: block;
   padding-bottom: 10px;
   height: 20px;
