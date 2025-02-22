@@ -155,6 +155,29 @@ li.nav-item {
   font-family: "Fustat";
   font-size: large;
 }
+.button-container {
+        position: relative;
+        text-align: center;
+      }
+
+      .previous-button, .next-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.25rem; /* Adjust button font size if needed */
+      }
+
+      .previous-button {
+        left: 15px; /* Position left button */
+      }
+
+      .next-button {
+        right: 15px; /* Position right button */
+      }
+
+      .year {
+        font-size: 1rem; /* Adjust font size for the year */
+      }
 td {
     font-family: 'Noto Sans Arabic', sans-serif;
 }
@@ -191,11 +214,6 @@ img.wmheader {
 @media (max-width: 768px) {
   .two-columns {
     flex-direction: column; /* Stack the columns on smaller screens */
-  }
-  .tei-head {
-    border-bottom: 10px solid transparent; /* Transparent base border */
-    border-image: url('/assets/images/border.svg') 30 stretch; /* Use the SVG file as the border image */
-    border-image-slice: 1; /* Ensures the full SVG is applied along the border */
   }
   .column {
     width: 100%; /* Full width for each column */
