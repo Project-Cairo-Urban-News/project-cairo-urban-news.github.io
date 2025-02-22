@@ -155,27 +155,31 @@ li.nav-item {
   font-size: large;
 }
 .button-container {
-        position: relative;
-        text-align: center;
-      }
-      .previous-button, .next-button {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 1.25rem; /* Adjust button font size if needed */
-      }
-
-      .previous-button {
-        left: 100px; /* Position left button */
-      }
-
-      .next-button {
-        right: 100px; /* Position right button */
-      }
-
-      .year-button {
-        font-size: 1rem; /* Adjust font size for the year */
-      }
+  position: relative;
+  text-align: center;
+}
+.previous-button, .next-button {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  text-decoration: none;
+  transition: opacity 0.8s ease; /* Smooth opacity transition for hover effect */
+}
+.previous-button {
+  left: 150px; /* Position left button */
+}
+.next-button {
+  right: 150px; /* Position right button */
+}
+.year-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+.previous-button:hover, .next-button:hover {
+  opacity: 0.8; /* Add the hover effect with reduced opacity */
+}
 td {
     font-family: 'Noto Sans Arabic', sans-serif;
 }
