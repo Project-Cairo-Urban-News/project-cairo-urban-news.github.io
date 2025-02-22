@@ -151,13 +151,13 @@ body:lang(ar) {
 h1 {
   padding-bottom: .5rem;
 }
-/* h1:lang(en) {
-  font-family: "Montserrat", sans-serif;
+h1:lang(en) {
+  font-family: "Fustat", sans-serif;
   font-weight: 400 */
-/*h1 {
+h1:lang(ar) {
   font-family: "Fustat", serif;
   font-weight: 400;
-}*/
+}
 nav {
   background-color: #507F93;
   span.h1 {
