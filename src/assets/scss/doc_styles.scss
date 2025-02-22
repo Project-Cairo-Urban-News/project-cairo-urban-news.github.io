@@ -139,10 +139,12 @@ nav {
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 .separator {
-  display: block;
+  display: flex;           
+  justify-content: center;
+  align-items: center; 
   padding-bottom: 10px;
   height: 20px; 
-  width: auto;
+  width: auto;           
 }
 .navbar-brand span {
     font-family: "Fustat";
