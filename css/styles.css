@@ -9308,42 +9308,13 @@ footer {
   margin: 0 auto;
 }
 
-th[lang=ar] {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-}
-
-th[lang=en] {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-}
-
-td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month_7, td.month_8, td.month_9, td.month_10, td.month_11, td.month_12 {
-  font-family: "Noto Sans Arabic", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-}
-
-body:lang(en) {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-}
-
-body:lang(ar) {
-  font-family: "Noto Sans Arabic", serif;
-  font-size: 16px;
-  font-weight: 300;
-}
-
 p:lang(en) {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-size: 14px;
 }
 
 p:lang(ar) {
-  font-family: "Noto Sans Arabic", serif;
+  font-family: "Noto Sans Arabic";
   font-size: 16px;
   font-weight: 300;
 }
@@ -9353,21 +9324,43 @@ h1, .h1 {
 }
 
 h1:lang(en), .h1:lang(en) {
-  font-family: "Fustat", sans-serif;
+  font-family: "Fustat";
   font-weight: 400;
 }
 
 h1:lang(ar), .h1:lang(ar) {
-  font-family: "Fustat", serif;
+  font-family: "Fustat";
   font-weight: 400;
 }
 
+.h4 {
+  font-family: "Noto Sans Arabic";
+}
+
 h2:lang(ar), .h2:lang(ar) {
-  font-family: "Noto Sans Arabic", serif;
+  font-family: "Noto Sans Arabic";
 }
 
 ul:lang(ar) {
-  font-family: "Noto Sans Arabic", serif;
+  font-family: "Noto Sans Arabic";
+}
+
+th[lang=ar] {
+  font-family: "Noto Sans Arabic";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+th[lang=en] {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month_7, td.month_8, td.month_9, td.month_10, td.month_11, td.month_12 {
+  font-family: "Noto Sans Arabic";
+  font-weight: 300;
+  font-size: 16px;
 }
 
 nav {
@@ -9434,6 +9427,7 @@ table {
   grid-template-rows: repeat(auto, 1fr);
   gap: 10px;
   margin-bottom: 20px;
+  font-family: "Noto Sans Arabic";
 }
 
 .wrapper > div {
@@ -9450,7 +9444,7 @@ table {
 }
 
 .wrapper li {
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
 }
 
 .col0 {
