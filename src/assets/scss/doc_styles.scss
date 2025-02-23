@@ -135,12 +135,18 @@ nav {
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 .separator-svg {
-  display: flex;           
+  display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   padding-bottom: 10px;
   height: 20px; 
-  width: auto;           
+  width: 100%;
+}
+.separator-svg img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
 }
 .navbar-brand span {
     font-family: "Fustat";
