@@ -9527,6 +9527,13 @@ nav span.h1 {
   align-items: center;
   padding-bottom: 10px;
   height: 20px;
+  width: 100%;
+}
+
+.separator-svg img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
   width: auto;
 }
 
