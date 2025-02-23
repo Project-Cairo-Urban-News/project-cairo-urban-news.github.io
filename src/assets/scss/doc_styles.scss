@@ -156,34 +156,33 @@ li.nav-item {
 
 /* New container for navigation buttons */
 .navigation-buttons-container {
-  background-color: #ADD8E6; /* Light blue background */
-  padding: 10px 0; /* Padding around the buttons */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  margin-top: 0; /* Ensure no gap between navbar and this container */
+  background-color: #d9cfc7;
+  padding: 10px 0;
+  margin-top: 0;
   z-index: 10;
   display: flex;
   justify-content: center;
+  width: 100vw;
+  position: relative;
 }
 
 .previous-button, .next-button {
-  font-size: 1.25rem;
+  font-size: 1.23rem;
   text-decoration: none;
   transition: opacity 0.8s ease; /* Smooth opacity transition for hover effect */
   color: #333;
 }
 
 .previous-button:hover, .next-button:hover {
-  opacity: 0.8; /* Add the hover effect with reduced opacity */
+  opacity: 0.4; /* Add the hover effect with reduced opacity */
 }
 
 .previous-button {
-  padding: 10px 20px; /* Add some padding to the button */
-  border-radius: 5px; /* Optional: rounded corners */
+  padding: 10px 10px; /* Add some padding to the button */
 }
 
 .next-button {
-  padding: 10px 20px; /* Add some padding to the button */
-  border-radius: 5px; /* Optional: rounded corners */
+  padding: 10px 10px; /* Add some padding to the button */
 }
 
 .year-button {
@@ -198,7 +197,7 @@ li.nav-item {
 }
 
 .previous-button {
-  margin-right: 30px; /* Add some margin between previous and next button */
+  margin-right: 10px; /* Add some margin between previous and next button */
 }
 
 td {
