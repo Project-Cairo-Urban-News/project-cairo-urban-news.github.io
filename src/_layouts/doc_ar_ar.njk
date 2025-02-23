@@ -12,7 +12,6 @@
       {% set previous = collections.page_ar_ar_sorted | getPreviousCollectionItem(page) %}
       {% set next = collections.page_ar_ar_sorted | getNextCollectionItem(page) %}
 
-      <div class="container pt-4">
         <div class="row navigation-buttons-container">
           <div class="col fs-5 text-center">
             {% if previous %}
@@ -28,7 +27,6 @@
             {% endif %}
           </div>
         </div>
-      </div>
 
       <div class="container button-container">
         <img src="/images/vaseheadernoborder.svg" alt="Vase Header No Border" class="wmheader">
