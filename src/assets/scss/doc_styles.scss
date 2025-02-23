@@ -98,9 +98,9 @@ $navbar-bg-gradient: false;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
 
-
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 .container {
@@ -159,41 +159,36 @@ li.nav-item {
   font-family: "Fustat";
   font-size: large;
 }
-
-/* New container for navigation buttons */
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Remove padding from the container */
+}
 .navigation-buttons-container {
   background-color: #d9cfc7;
   padding: 10px 0;
-  margin-top: -44px;
-  margin-right: 0px;
-  margin-left: 0px;
-  margin-bottom: 20px;
+  margin-top: -44px;  /* Adjust if needed */
+  margin: 0;          /* Remove any other margin */
   z-index: 10;
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: center; /* Ensure buttons are vertically centered */
+  width: 100%;        /* Take full width of viewport */
   position: relative;
 }
-
 .previous-button, .next-button {
   font-size: 1.23rem;
   text-decoration: none;
   transition: opacity 0.8s ease; /* Smooth opacity transition for hover effect */
   color: #333;
 }
-
-.previous-button:hover, .next-button:hover {
-  opacity: 0.4; /* Add the hover effect with reduced opacity */
+.previous-button:hover, .next-button:hover, .year-button:hover {
+  opacity: 0.4; /* Hover effect */
 }
-
-.previous-button {
-  padding: 10px 10px; /* Add some padding to the button */
+.previous-button, .next-button {
+  padding: 10px 10px; /* Add padding */
 }
-
-.next-button {
-  padding: 10px 10px; /* Add some padding to the button */
-}
-
 .year-button {
   font-size: 1.5rem;
   text-decoration: none;
@@ -201,14 +196,21 @@ li.nav-item {
   color: #333;
   font-weight: bold;
   margin-top: 10px;
-  z-index: 10;
   text-align: center;
 }
-
 .previous-button {
-  margin-right: 10px; /* Add some margin between previous and next button */
+  margin-right: 10px; /* Adjust spacing between previous and next buttons */
+}
+.previous-button, .next-button {
+  margin-right: 10px;  /* Ensure only small space between them */
+  margin-left: 10px;   /* Small space between the buttons and year button */
 }
 
+@media (max-width: 768px) {
+  .previous-button, .next-button {
+    font-size: 1rem; /* Smaller button font size for mobile */
+  }
+}
 td {
     font-family: 'Noto Sans Arabic', sans-serif;
 }
