@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -154,32 +153,54 @@ li.nav-item {
   font-family: "Fustat";
   font-size: large;
 }
-.button-container {
-  position: relative;
-  text-align: center;
+
+/* New container for navigation buttons */
+.navigation-buttons-container {
+  background-color: #ADD8E6; /* Light blue background */
+  padding: 10px 0; /* Padding around the buttons */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin-top: 0; /* Ensure no gap between navbar and this container */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
 }
+
 .previous-button, .next-button {
-  position: absolute;
-  top: 20%;
-  transform: translateY(-50%);
   font-size: 1.25rem;
   text-decoration: none;
   transition: opacity 0.8s ease; /* Smooth opacity transition for hover effect */
+  color: #333;
 }
+
+.previous-button:hover, .next-button:hover {
+  opacity: 0.8; /* Add the hover effect with reduced opacity */
+}
+
 .previous-button {
-  left: 150px; /* Position left button */
+  padding: 10px 20px; /* Add some padding to the button */
+  border-radius: 5px; /* Optional: rounded corners */
 }
+
 .next-button {
-  right: 150px; /* Position right button */
+  padding: 10px 20px; /* Add some padding to the button */
+  border-radius: 5px; /* Optional: rounded corners */
 }
+
 .year-button {
   font-size: 1.5rem;
   text-decoration: none;
   padding-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  z-index: 10;
+  text-align: center;
 }
-.previous-button:hover, .next-button:hover {
-  opacity: 0.8; /* Add the hover effect with reduced opacity */
+
+.previous-button {
+  margin-right: 30px; /* Add some margin between previous and next button */
 }
+
 td {
     font-family: 'Noto Sans Arabic', sans-serif;
 }
@@ -219,5 +240,10 @@ img.wmheader {
   }
   .column {
     width: 100%; /* Full width for each column */
+  }
+
+  /* Adjust the navigation buttons for small screens */
+  .previous-button, .next-button {
+    font-size: 1rem; /* Smaller button font size for mobile */
   }
 }
