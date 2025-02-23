@@ -9613,6 +9613,7 @@ li.nav-item {
 }
 td {
   font-family: "Noto Sans Arabic", sans-serif;
+  font-weight: 300;
 }
 
 table {
