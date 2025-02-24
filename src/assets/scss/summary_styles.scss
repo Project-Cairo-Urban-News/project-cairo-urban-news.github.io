@@ -1,1 +1,305 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
 
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Include functions first
+@import "../../../node_modules/bootstrap/scss/functions";
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$link-color: #507F93;
+$success: #7952b3;
+$navbar-bg-gradient: false;
+
+
+
+// Required
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/maps";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/utilities";
+@import "../../../node_modules/bootstrap/scss/root";
+@import "../../../node_modules/bootstrap/scss/reboot";
+
+@import "../../../node_modules/bootstrap/scss/type";
+@import "../../../node_modules/bootstrap/scss/images";
+@import "../../../node_modules/bootstrap/scss/containers";
+@import "../../../node_modules/bootstrap/scss/grid";
+@import "../../../node_modules/bootstrap/scss/tables";
+// @import "../../../node_modules/bootstrap/scss/forms";
+@import "../../../node_modules/bootstrap/scss/buttons";
+@import "../../../node_modules/bootstrap/scss/transitions";
+@import "../../../node_modules/bootstrap/scss/dropdown";
+// @import "../../../node_modules/bootstrap/scss/button-group";
+@import "../../../node_modules/bootstrap/scss/nav";
+@import "../../../node_modules/bootstrap/scss/navbar"; // Requires nav
+// @import "../../../node_modules/bootstrap/scss/card";
+// @import "../../../node_modules/bootstrap/scss/breadcrumb";
+// @import "../../../node_modules/bootstrap/scss/accordion";
+// @import "../../../node_modules/bootstrap/scss/pagination";
+// @import "../../../node_modules/bootstrap/scss/badge";
+// @import "../../../node_modules/bootstrap/scss/alert";
+// @import "../../../node_modules/bootstrap/scss/progress";
+// @import "../../../node_modules/bootstrap/scss/list-group";
+@import "../../../node_modules/bootstrap/scss/close";
+// @import "../../../node_modules/bootstrap/scss/toasts";
+@import "../../../node_modules/bootstrap/scss/modal"; // Requires transitions
+@import "../../../node_modules/bootstrap/scss/tooltip";
+@import "../../../node_modules/bootstrap/scss/popover";
+// @import "../../../node_modules/bootstrap/scss/carousel";
+// @import "../../../node_modules/bootstrap/scss/spinners";
+@import "../../../node_modules/bootstrap/scss/offcanvas"; // Requires transitions
+// @import "../../../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+// @import "../../../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../../../node_modules/bootstrap/scss/utilities/api";
+
+
+//
+// Custom styles
+//
+
+@import "icon-list";
+@import "tei";
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  flex: 1; /* This makes sure content expands to fill available space */
+}
+body {
+  background-color: #e9ded5;
+  font-size: large;
+  font-family: 'Fustat', serif;
+}
+p[lang="en"] {
+  font-family: 'Fustat';
+}
+p[lang="ar"] {
+  font-family: 'Noto Sans Arabic';
+}
+nav {
+  background-color: #507F93;
+  span.h1 {
+    line-height: 1.0;
+  }
+  margin-bottom: 20px;
+}
+.border-svg {
+  height: 140px;
+  width: auto;
+  padding-bottom: 20px; /* This will still apply padding to the bottom */
+}
+.separator-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  height: 20px; 
+  width: 100%;
+}
+.separator-svg img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+.navbar-brand span {
+    font-family: "Fustat";
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    font-family: "Fustat";
+}
+li.nav-item {
+  font-family: "Fustat";
+  font-size: large;
+}
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0; /* Remove padding from the container */
+}
+.navigation-buttons-container {
+  background-color: #d9cfc7;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure buttons are vertically centered */
+  width: 100%;        /* Take full width of viewport */
+  position: relative;
+}
+.previous-button, .next-button, .year-button {
+  font-size: 1.23rem;
+  text-decoration: none;
+  transition: opacity 0.8s ease; /* Smooth opacity transition for hover effect */
+  color: #333;
+}
+.previous-button:hover, .next-button:hover, .year-button:hover {
+  opacity: 0.4; /* Hover effect */
+}
+.previous-button, .next-button {
+  padding: 10px 10px; /* Add padding */
+}
+.year-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.previous-button {
+  margin-right: 40px; 
+}
+.next-button {
+  margin-left: 40px; 
+}
+
+@media (max-width: 768px) {
+  .previous-button, .next-button {
+    font-size: 1rem; /* Smaller button font size for mobile */
+  }
+}
+td {
+    font-family: 'Noto Sans Arabic', sans-serif;
+    font-weight: 300;
+}
+table {
+  table-layout: fixed;
+}
+
+.custom-tooltip {
+  --bs-tooltip-font-size: 2rem;
+  --bs-tooltip-bg: var(--bs-gray-800);
+  --bs-tooltip-opacity: 1;
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.column {
+  width: 48%; /* Make each column roughly 48% of the container width */
+  box-sizing: border-box;
+}
+
+img.wmheader {
+  display: block;          /* Makes the image a block-level element */
+  margin-left: auto;       /* Centers the image horizontally */
+  margin-right: auto;      /* Centers the image horizontally */
+  height: 200px;           /* Sets the height to 200px */
+  width: auto;             /* Maintains the aspect ratio */
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .two-columns {
+    flex-direction: column; /* Stack the columns on smaller screens */
+  }
+  .column {
+    width: 100%; /* Full width for each column */
+  }
+
+  /* Adjust the navigation buttons for small screens */
+  .previous-button, .next-button {
+    font-size: 1rem; /* Smaller button font size for mobile */
+  }
+}
+*\ TEI stuff \*
+.wrapper {
+  display: flex;           /* Use flexbox to align items horizontally */
+  justify-content: space-between; /* Distribute space between the elements */
+  align-items: center;     /* Vertically center the elements */
+  width: 100%;             /* Full width of the page */
+}
+
+tei-date[when], tei-date[when-custom], 
+tei-biblscope, tei-head, tei-title {
+  display: inline-block;    /* Make them sit on the same line */
+  font-size: 16px;          /* Same font size */
+  font-weight: 400;         /* Same font weight */
+  vertical-align: middle;   /* Vertically align in the middle */
+  text-align: center;       /* Center-align text (for most of them) */
+}
+
+
+/* Style for tei-date[when] */
+tei-date[when] {
+  text-align: left; /* Align to the left */
+}
+
+/* Style for tei-date[when-custom] */
+tei-date[when-custom] {
+  text-align: right; /* Align to the right */
+}
+
+/* Style for tei-biblscope */
+tei-biblscope {
+  text-align: center; /* Center-align the text */
+}
+
+tei-head {
+  font-size: 16px; /* Same font size as the other elements */
+  font-weight: 400; /* Same font weight */
+  text-align: center; /* Center-align the text */
+}
+
+tei-title {
+  font-size: 16px; /* Same font size as the other elements */
+  font-weight: 400; /* Same font weight */
+  text-align: center; /* Center-align the text */
+}
