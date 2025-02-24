@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
+body {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Full height of the viewport */
+  margin: 0;               /* Remove default margin */
+}
 main[dir="rtl"] {
   text-align: right;
   --bs-body-text-align: right;
@@ -76,24 +83,17 @@ tei-date[when], tei-date[when-custom] {
 
 tei-date[when] {
   text-align: left;
-  margin-left: 30px;
+  margin-left: 200px;
 }
 
 tei-date[when-custom] {
   text-align: right;
-  margin-right: 30px;
 }
 
 tei-biblscope {
   font-size: 20px;
   margin-top: -30px;
   font-weight: 200;
-}
-tei-title {
-  font-weight: bold;
-  font-size: larger;
-  text-align: center;
-  margin-bottom: 10px;
 }
 tei-choice tei-sic {
   display: none;
@@ -109,14 +109,22 @@ tei-div > a {
   text-decoration: none;
   padding-top: 30px;
 }
-/*tei-head {
+tei-head {
   display: block;
   font-size: larger;
   text-align: center;
   font-weight: bold;
   padding-bottom: 5px;
   margin-bottom: 10px;
-}*/
+}
+tei-title {
+  display: block;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
 }
