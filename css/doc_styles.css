@@ -9526,7 +9526,7 @@ nav span.h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding-bottom: 10px;
   height: 20px;
   width: 100%;
 }
