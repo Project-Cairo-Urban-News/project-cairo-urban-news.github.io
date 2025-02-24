@@ -7,15 +7,8 @@ const doc_behaviors = {
       corr.setAttribute("data-bs-toggle", "tooltip");
       corr.setAttribute("data-bs-custom-class", "custom-tooltip");
     },
-    "date": function(elt) {
-      if (elt.classList.contains("date-when")) {
-        // Ensure the date-when class is applied if it's present in the element
-        elt.classList.add("date-when");
-      } else if (elt.classList.contains("date-when-custom")) {
-        // Ensure the date-when-custom class is applied if it's present in the element
-        elt.classList.add("date-when-custom");
-      }
-    },
+
+    "date": ['', ' '],
 
     "sic": [
       [":not(tei-choice) tei-sic", ['', '(!)']],
