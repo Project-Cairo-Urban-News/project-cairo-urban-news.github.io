@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
-body {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center;     /* Center vertically */
-  height: 100vh;           /* Full height of the viewport */
-  margin: 0;               /* Remove default margin */
-}
 main[dir="rtl"] {
   text-align: right;
   --bs-body-text-align: right;
