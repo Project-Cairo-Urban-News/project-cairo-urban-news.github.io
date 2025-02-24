@@ -9355,22 +9355,21 @@ table.summary ul {
 }
 
 /* TEI elements */
-.date-when,
-.date-when-custom {
-  display: inline-block; /* Ensure elements are displayed inline, but can still be styled independently */
+tei-date[when] {
+  display: block; /* Make sure each element appears on a new line */
   font-size: 16px;
   vertical-align: middle; /* Align both elements vertically */
+  text-align: left; /* Align 'when' element to the left */
 }
 
-.date-when {
-  color: #888; /* Lighter shade of gray */
+tei-date[when-custom] {
+  display: block; /* Make sure each element appears on a new line */
+  font-size: 16px;
+  vertical-align: middle; /* Align both elements vertically */
+  text-align: right; /* Align 'when-custom' element to the right */
 }
 
-.date-when-custom {
-  color: #333; /* Default darker color */
-}
-
-.date-when + .date-when-custom::before {
+tei-date[when] + tei-date[when-custom]::before {
   content: "•"; /* Unicode character for a dot */
   margin: 0 8px; /* Space out the dot from the surrounding elements */
   color: #333; /* Set the color of the dot (can adjust this if you need a lighter or darker shade) */
