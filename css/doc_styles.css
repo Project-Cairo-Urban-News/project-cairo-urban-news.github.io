@@ -9561,9 +9561,8 @@ li.nav-item {
 
 .navigation-buttons-container {
   background-color: #d9cfc7;
-  padding-bottom: 20px;
-  margin-top: -44px; /* Adjust if needed */
-  margin: 0; /* Remove any other margin */
+  padding: 10px;
+  margin: 0px;
   z-index: 10;
   display: flex;
   justify-content: center;
