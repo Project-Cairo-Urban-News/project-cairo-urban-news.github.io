@@ -9537,22 +9537,20 @@ nav span.h1 {
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 
-.separator-svg {
+/* .separator-svg {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-  height: 20px;
+  height: 20px; 
   width: 100%;
 }
-
 .separator-svg img {
   display: block;
   margin: 0 auto;
   height: 100%;
   width: auto;
-}
-
+} */
 .navbar-brand span {
   font-family: "Fustat";
   font-weight: bold;
