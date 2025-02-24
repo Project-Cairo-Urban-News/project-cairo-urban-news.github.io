@@ -9355,24 +9355,34 @@ table.summary ul {
 }
 
 /* TEI elements */
+tei-date[when], tei-date[when-custom] {
+  display: inline-block; /* Makes them sit next to each other */
+  font-size: 18px;
+  vertical-align: middle;
+  margin-top: -20px;
+}
+
 tei-date[when] {
-  display: block; /* Make sure each element appears on a new line */
-  font-size: 16px;
-  vertical-align: middle; /* Align both elements vertically */
-  text-align: left; /* Align 'when' element to the left */
+  text-align: left;
+  margin-left: 30px;
 }
 
 tei-date[when-custom] {
-  display: block; /* Make sure each element appears on a new line */
-  font-size: 16px;
-  vertical-align: middle; /* Align both elements vertically */
-  text-align: right; /* Align 'when-custom' element to the right */
+  text-align: right;
+  margin-right: 30px;
 }
 
-tei-date[when] + tei-date[when-custom]::before {
-  content: "•"; /* Unicode character for a dot */
-  margin: 0 8px; /* Space out the dot from the surrounding elements */
-  color: #333; /* Set the color of the dot (can adjust this if you need a lighter or darker shade) */
+tei-biblscope {
+  font-size: 20px;
+  margin-top: -30px;
+  font-weight: 200;
+}
+
+tei-title {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 tei-choice tei-sic {
@@ -9393,15 +9403,14 @@ tei-div > a {
   padding-top: 30px;
 }
 
-tei-head {
+/*tei-head {
   display: block;
   font-size: larger;
   text-align: center;
   font-weight: bold;
   padding-bottom: 5px;
   margin-bottom: 10px;
-}
-
+}*/
 tei-text > tei-div > tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
 }
@@ -9420,20 +9429,6 @@ tei-text > tei-div > tei-head:last-of-type::after {
   margin: 0 auto;
   height: 100%;
   width: auto;
-}
-
-.tei-when {
-  position: absolute;
-  left: 20px; /* Move 20px to the inside from the left */
-  top: calc(50% + 20px); /* Move 20px down from the vertical center */
-  transform: translateY(-50%); /* Vertically center and then apply the 20px offset */
-}
-
-.tei-when-custom {
-  position: absolute;
-  right: 20px; /* Move 20px to the inside from the right */
-  top: calc(50% + 20px); /* Move 20px down from the vertical center */
-  transform: translateY(-50%); /* Vertically center and then apply the 20px offset */
 }
 
 tei-hi[rend=italics] {
@@ -9537,20 +9532,22 @@ nav span.h1 {
   padding-bottom: 20px; /* This will still apply padding to the bottom */
 }
 
-/* .separator-svg {
+.separator-svg {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
-  height: 20px; 
+  height: 20px;
   width: 100%;
 }
+
 .separator-svg img {
   display: block;
   margin: 0 auto;
   height: 100%;
   width: auto;
-} */
+}
+
 .navbar-brand span {
   font-family: "Fustat";
   font-weight: bold;
@@ -9577,6 +9574,8 @@ li.nav-item {
   padding: 10px;
   margin-top: 0px;
   margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -9611,12 +9610,11 @@ li.nav-item {
 }
 
 .previous-button {
-  margin-right: 10px; /* Adjust spacing between previous and next buttons */
+  margin-right: 40px;
 }
 
-.previous-button, .next-button {
-  margin-right: 10px; /* Ensure only small space between them */
-  margin-left: 10px; /* Small space between the buttons and year button */
+.next-button {
+  margin-left: 40px;
 }
 
 @media (max-width: 768px) {
