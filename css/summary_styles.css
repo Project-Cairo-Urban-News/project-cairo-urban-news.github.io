@@ -9661,9 +9661,9 @@ img.wmheader {
 }
 
 tei-date[when], tei-date[when-custom],
-tei-biblscope, tei-head, tei-title {
+tei-biblscope {
   display: inline-block; /* Make them sit on the same line */
-  font-size: 16px; /* Same font size */
+  font-size: 18px; /* Same font size */
   font-weight: 400; /* Same font weight */
   vertical-align: middle; /* Vertically align in the middle */
   text-align: center; /* Center-align text (for most of them) */
@@ -9677,21 +9677,4 @@ tei-date[when] {
 /* Style for tei-date[when-custom] */
 tei-date[when-custom] {
   text-align: right; /* Align to the right */
-}
-
-/* Style for tei-biblscope */
-tei-biblscope {
-  text-align: center; /* Center-align the text */
-}
-
-tei-head {
-  font-size: 16px; /* Same font size as the other elements */
-  font-weight: 400; /* Same font weight */
-  text-align: center; /* Center-align the text */
-}
-
-tei-title {
-  font-size: 16px; /* Same font size as the other elements */
-  font-weight: 400; /* Same font weight */
-  text-align: center; /* Center-align the text */
 }
