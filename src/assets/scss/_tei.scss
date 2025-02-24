@@ -112,6 +112,20 @@ tei-head {
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
 }
+.separator-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  height: 10px; 
+  width: 100%;
+}
+.separator-svg img {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
 .tei-when {
     position: absolute;
     left: 20px; /* Move 20px to the inside from the left */
