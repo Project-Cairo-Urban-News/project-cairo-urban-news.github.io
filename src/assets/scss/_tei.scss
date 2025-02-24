@@ -67,26 +67,26 @@ table.summary ul {
   margin: 0;}
 
 /* TEI elements */
-tei-date[when], tei-date[when-custom] {
-  display: inline-block; /* Makes them sit next to each other */
-  font-size: 18px;
-  vertical-align: middle;
-  margin-top: -20px;
-}
-
 tei-date[when] {
-  text-align: left;
-  margin-left: 200px;
+  display: block;
+  font-size: 16px;
+  vertical-align: middle;
+  text-align: left; 
 }
 
 tei-date[when-custom] {
-  text-align: right;
+  display: block;  /* Make sure each element appears on a new line */
+  font-size: 16px;
+  vertical-align: middle; /* Align both elements vertically */
+  text-align: right;  /* Align 'when-custom' element to the right */
 }
-
 tei-biblscope {
+  display: block;
   font-size: 20px;
   margin-top: -30px;
-  font-weight: 200;
+  vertical-align: middle;
+  font-weight: 400;
+  text-align: center;
 }
 tei-choice tei-sic {
   display: none;
@@ -107,7 +107,6 @@ tei-head {
   font-size: larger;
   text-align: center;
   font-weight: bold;
-  padding-bottom: 5px;
   margin-bottom: 10px;
 }
 tei-title {
@@ -115,25 +114,9 @@ tei-title {
   font-weight: bold;
   font-size: larger;
   text-align: center;
-  padding-bottom: 5px;
-  margin-bottom: 10px;
 }
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
-}
-.separator-svg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10px;
-  height: 10px; 
-  width: 100%;
-}
-.separator-svg img {
-  display: block;
-  margin: 0 auto;
-  height: 100%;
-  width: auto;
 }
 tei-hi[rend=italics] {
   font-style: italic;
