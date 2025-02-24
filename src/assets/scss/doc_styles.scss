@@ -170,6 +170,8 @@ li.nav-item {
   padding: 10px;
   margin-top: 0px;
   margin-bottom: 30px;
+  margin-left; 0px;
+  margin-right: 0px;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -199,11 +201,10 @@ li.nav-item {
   text-align: center;
 }
 .previous-button {
-  margin-right: 10px; /* Adjust spacing between previous and next buttons */
+  margin-right: 40px; 
 }
-.previous-button, .next-button {
-  margin-right: 10px;  /* Ensure only small space between them */
-  margin-left: 10px;   /* Small space between the buttons and year button */
+.next-button {
+  margin-left: 40px; 
 }
 
 @media (max-width: 768px) {
