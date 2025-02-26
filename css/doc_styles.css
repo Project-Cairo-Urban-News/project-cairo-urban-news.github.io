@@ -9360,7 +9360,8 @@ tei-date[when] {
   font-size: 16px;
   vertical-align: middle;
   text-align: left;
-  margin-top: -20px;
+  margin-top: -30px;
+  margin-left: 40px;
 }
 
 tei-date[when-custom] {
@@ -9368,14 +9369,15 @@ tei-date[when-custom] {
   font-size: 16px;
   vertical-align: middle; /* Align both elements vertically */
   text-align: right; /* Align 'when-custom' element to the right */
+  margin-right: 40px;
 }
 
 tei-biblscope {
-  display: block;
+  display: inline-block; /* Allows elements to sit on the same line */
   font-size: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  vertical-align: middle;
+  margin-top: 10px; /* Adjusts space above each element */
+  margin-right: 20px; /* Adds space between the elements horizontally */
+  vertical-align: middle; /* Aligns the elements vertically */
   font-weight: 400;
   text-align: center;
 }
