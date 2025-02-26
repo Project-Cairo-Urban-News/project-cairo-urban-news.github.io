@@ -9361,7 +9361,7 @@ tei-date[when] {
   vertical-align: middle;
   text-align: left;
   margin-top: -30px;
-  margin-left: 40px;
+  margin-left: 60px;
 }
 
 tei-date[when-custom] {
@@ -9369,7 +9369,7 @@ tei-date[when-custom] {
   font-size: 16px;
   vertical-align: middle; /* Align both elements vertically */
   text-align: right; /* Align 'when-custom' element to the right */
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 tei-biblscope {
