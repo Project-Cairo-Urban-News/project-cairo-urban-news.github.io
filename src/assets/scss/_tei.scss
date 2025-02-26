@@ -70,7 +70,6 @@ table.summary ul {
 tei-date[when] {
   display: block;
   font-size: 16px;
-  vertical-align: middle;
   text-align: left;
   margin-top: -30px;
   margin-left: 60px;
@@ -79,16 +78,15 @@ tei-date[when] {
 tei-date[when-custom] {
   display: block;  /* Make sure each element appears on a new line */
   font-size: 16px;
-  vertical-align: middle; /* Align both elements vertically */
+
   text-align: right;  /* Align 'when-custom' element to the right */
   margin-right: 60px;
 }
 tei-biblscope {
   display: inline-block; /* Allows elements to sit on the same line */
   font-size: 20px;
-  margin-top: 10px; /* Adjusts space above each element */
-  margin-right: 20px; /* Adds space between the elements horizontally */
-  vertical-align: middle; /* Aligns the elements vertically */
+  margin-top: -20px;
+  margin-right: 20px; 
   font-weight: 400;
   text-align: center;
 }
@@ -112,7 +110,6 @@ tei-head {
   font-size: larger;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 tei-title {
   display: block;
