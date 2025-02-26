@@ -71,7 +71,8 @@ tei-date[when] {
   display: block;
   font-size: 16px;
   vertical-align: middle;
-  text-align: left; 
+  text-align: left;
+  margin-top: -20px;
 }
 
 tei-date[when-custom] {
@@ -81,9 +82,10 @@ tei-date[when-custom] {
   text-align: right;  /* Align 'when-custom' element to the right */
 }
 tei-biblscope {
-  display: block;
+  display: block; 
   font-size: 20px;
-  margin-top: -30px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
   vertical-align: middle;
   font-weight: 400;
   text-align: center;
