@@ -78,7 +78,6 @@ tei-date[when] {
 tei-date[when-custom] {
   display: block;  /* Make sure each element appears on a new line */
   font-size: 16px;
-
   text-align: right;  /* Align 'when-custom' element to the right */
   margin-right: 60px;
 }
@@ -90,7 +89,18 @@ tei-biblscope {
   font-weight: 400;
   text-align: center;
 }
-
+tei-head {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+tei-title {
+  display: block;
+  font-weight: 500;
+  font-size: 25px;
+  text-align: center;
+}
 tei-choice tei-sic {
   display: none;
 }
@@ -104,18 +114,6 @@ tei-div > a {
   color: black;
   text-decoration: none;
   padding-top: 30px;
-}
-tei-head {
-  display: block;
-  font-size: larger;
-  text-align: center;
-  font-weight: bold;
-}
-tei-title {
-  display: block;
-  font-weight: bold;
-  font-size: larger;
-  text-align: center;
 }
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
