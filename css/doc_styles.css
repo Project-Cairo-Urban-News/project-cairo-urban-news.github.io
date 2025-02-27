@@ -9355,16 +9355,6 @@ table.summary ul {
 }
 
 /* TEI elements */
-tei-head {
-  margin-bottom: 0px;
-}
-
-tei-title {
-  display: block;
-  font-size: 25px;
-  text-align: center;
-}
-
 tei-date[when] {
   display: block;
   font-size: 18px;
@@ -9384,9 +9374,25 @@ tei-biblscope {
   display: inline-block;
   font-size: 20px;
   margin-top: -20px;
-  margin-right: 20px;
+  margin-right: 10px;
   font-weight: 400;
   text-align: center;
+}
+
+tei-title {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+tei-head {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 tei-choice tei-sic {
