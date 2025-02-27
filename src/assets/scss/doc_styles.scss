@@ -143,7 +143,11 @@ li.nav-item {
 .border-svg {
   height: 140px;
   width: auto;
-  padding-bottom: 20px; /* This will still apply padding to the bottom */
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 .separator-svg {
   display: flex;
