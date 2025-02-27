@@ -1,0 +1,122 @@
+---
+title: فريق العمل
+layout: doc_ar.njk
+---
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Centering the Director and Co-Directors */
+    .centered-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    /* Container for team sections */
+    .team-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .team-category {
+      padding: 10px;
+    }
+
+    .team-category h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .team-list {
+      list-style-type: none;
+      padding-left: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+      gap: 10px;
+    }
+
+    .team-list li {
+      margin: 5px 0;
+    }
+
+    .team-member {
+      font-size: 1em;
+      color: #555;
+    }
+
+    .external-reviewers {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+      gap: 10px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>فريق العمل</h1>
+
+  <br>
+
+  <!-- Centered Director and Co-Directors -->
+  <div class="centered-container">
+    <h2>مدير المشروع:</h2>
+    <p class="team-member"><a href="https://orcid.org/0000-0002-5945-6147">آدم مستيان</a></p>
+
+    <h2>مديران مشاركان:</h2>
+    <p class="team-member"><a href="https://orcid.org/0000-0003-0060-9396">هيوغ كايليس</a></p>
+    <p class="team-member"><a href="https://orcid.org/0000-0001-5239-7909">مرسيدس فوليه</a></p>
+  </div>
+
+  <!-- Team Container -->
+  <div class="team-container">
+
+    <!-- Researchers -->
+    <div class="team-category">
+      <h3>باحثون:</h3>
+      <ul class="team-list">
+        <li class="team-member"><a href="https://orcid.org/0000-0002-1977-5530">سارة فتح الله عبدالفتاح محمد فتح الله جعارة</a></li>
+        <li class="team-member"><a href="https://orcid.org/0000-0003-1216-3686">كريمة نصر</a></li>
+        <li class="team-member"><a href="https://orcid.org/0000-0003-1721-1050">أحمد كمال</a></li>
+        <li class="team-member">رزق نوري</li>
+        <li class="team-member"><a href="https://orcid.org/0009-0008-0409-7328">نور كنعان</a></li>
+        <li class="team-member">دانه يونس</li>
+        <li class="team-member"><a href="https://orcid.org/0000-0001-9369-3034">عارف اربل</a></li>
+        <li class="team-member"><a href="https://orcid.org/0009-0004-9778-6632">آبرم سمس</a></li>
+        <li class="team-member">كلارا هرمس</li>
+        <li class="team-member"><a href="https://orcid.org/0000-0003-3003-1986">حسين سيلم</a></li>
+        <li class="team-member"><a href="https://orcid.org/0009-0002-2083-9199">عبد الرحمان الطلياوي</a></li>
+        <li class="team-member">هبة لعبدلي</li>
+        <li class="team-member"><a href="https://orcid.org/0009-0002-9543-2617">عثمان الشابي</a></li>
+        <li class="team-member">فاطمة المحانة</li>
+        <li class="team-member">محمود زكي</li>
+        <li class="team-member"><a href="https://orcid.org/0009-0006-8785-0228">نهال الشامي</a></li>
+        <li class="team-member"><a href="https://orcid.org/0009-0004-4472-4120">فيشال جملاباتي</a></li>
+      </ul>
+    </div>
+
+    <!-- External Reviewers -->
+    <div class="team-category">
+      <h3>المراجعين الخارجيين:</h3>
+      <div class="external-reviewers">
+        <div class="team-list">
+          <div class="team-member">Will Hanley (Florida University)</div>
+        </div>
+        <div class="team-list">
+          <div class="team-member">Till Grallert (Humboldt-Universität zu Berlin)</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
