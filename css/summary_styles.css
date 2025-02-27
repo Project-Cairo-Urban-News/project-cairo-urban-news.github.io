@@ -9370,32 +9370,29 @@ tei-date[when-custom] {
   margin-right: 60px;
 }
 
-tei-biblscope[unit=issue],
-tei-biblscope[unit=page] {
+tei-biblscope {
   display: inline-block;
   font-size: 20px;
+  margin-top: -20px;
+  margin-right: 10px;
   font-weight: 400;
   text-align: center;
-  margin-right: 10px;
 }
 
-tei-biblscope[unit=page] {
-  margin-right: 0; /* Ensure there's no extra space after the "page" element */
-}
-
-tei-head,
 tei-title {
-  display: inline-block; /* Ensure both elements appear on the same line */
+  display: inline-block;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 0px;
 }
 
-tei-biblscope {
-  clear: both;
-  display: block;
-  margin-bottom: 10px;
+tei-head {
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
 tei-choice tei-sic {
