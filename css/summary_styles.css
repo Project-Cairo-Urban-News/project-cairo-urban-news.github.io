@@ -9613,6 +9613,10 @@ td {
   font-weight: 300;
 }
 
+td a {
+  display: inline-block;
+}
+
 table {
   table-layout: fixed;
 }
@@ -9654,29 +9658,4 @@ img.wmheader {
   .previous-button, .next-button {
     font-size: 1rem; /* Smaller button font size for mobile */
   }
-}
-* \ TEI stuff \* .wrapper {
-  display: flex; /* Use flexbox to align items horizontally */
-  justify-content: space-between; /* Distribute space between the elements */
-  align-items: center; /* Vertically center the elements */
-  width: 100%; /* Full width of the page */
-}
-
-tei-date[when], tei-date[when-custom],
-tei-biblscope {
-  display: inline-block; /* Make them sit on the same line */
-  font-size: 18px; /* Same font size */
-  font-weight: 400; /* Same font weight */
-  vertical-align: middle; /* Vertically align in the middle */
-  text-align: center; /* Center-align text (for most of them) */
-}
-
-/* Style for tei-date[when] */
-tei-date[when] {
-  text-align: left; /* Align to the left */
-}
-
-/* Style for tei-date[when-custom] */
-tei-date[when-custom] {
-  text-align: right; /* Align to the right */
 }
