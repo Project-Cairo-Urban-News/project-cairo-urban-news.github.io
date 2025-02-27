@@ -71,8 +71,8 @@ tei-date[when] {
   display: block;
   font-size: 16px;
   text-align: left;
-  margin-top: -30px;
-  margin-left: 60px;
+  margin-top: -35px;
+  margin-left: 100px;
 }
 
 tei-date[when-custom] {
@@ -80,17 +80,16 @@ tei-date[when-custom] {
   font-size: 16px;
 
   text-align: right;  /* Align 'when-custom' element to the right */
-  margin-right: 60px;
+  margin-right: 100px;
 }
 tei-biblscope {
   display: inline-block; /* Allows elements to sit on the same line */
   font-size: 20px;
-  margin-top: -20px;
-  margin-right: 20px; 
-  font-weight: 400;
+  margin-top: -40px;
+  margin-right: 10px; 
+  font-weight: 500;
   text-align: center;
 }
-
 tei-choice tei-sic {
   display: none;
 }
@@ -105,17 +104,12 @@ tei-div > a {
   text-decoration: none;
   padding-top: 30px;
 }
-tei-head {
-  display: block;
-  font-size: larger;
-  text-align: center;
-  font-weight: bold;
-}
 tei-title {
   display: block;
   font-weight: bold;
   font-size: larger;
   text-align: center;
+  margin-bottom: 0px;
 }
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
