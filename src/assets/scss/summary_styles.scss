@@ -111,6 +111,24 @@ html, body {
 .main-content {
   flex: 1; /* This makes sure content expands to fill available space */
 }
+nav {
+  background-color: #507F93;
+  span.h1 {
+    line-height: 1.0;
+  }
+  margin-bottom: 20px;
+}
+.navbar-brand span {
+    font-family: "Fustat";
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    font-family: "Fustat";
+}
+li.nav-item {
+  font-family: "Fustat";
+  font-size: large;
+}
 body {
   background-color: #e9ded5;
   font-size: large;
@@ -121,13 +139,6 @@ p[lang="en"] {
 }
 p[lang="ar"] {
   font-family: 'Noto Sans Arabic';
-}
-nav {
-  background-color: #507F93;
-  span.h1 {
-    line-height: 1.0;
-  }
-  margin-bottom: 20px;
 }
 .border-svg {
   height: 140px;
@@ -147,17 +158,6 @@ nav {
   margin: 0 auto;
   height: 100%;
   width: auto;
-}
-.navbar-brand span {
-    font-family: "Fustat";
-    font-weight: bold;
-}
-.navbar-nav .nav-link {
-    font-family: "Fustat";
-}
-li.nav-item {
-  font-family: "Fustat";
-  font-size: large;
 }
 .container {
   min-height: 100%;
