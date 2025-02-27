@@ -9504,6 +9504,20 @@ nav span.h1 {
   line-height: 1;
 }
 
+.navbar-brand span {
+  font-family: "Fustat";
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Fustat";
+}
+
+li.nav-item {
+  font-family: "Fustat";
+  font-size: large;
+}
+
 .border-svg {
   height: 140px;
   width: auto;
@@ -9524,20 +9538,6 @@ nav span.h1 {
   margin: 0 auto;
   height: 100%;
   width: auto;
-}
-
-.navbar-brand span {
-  font-family: "Fustat";
-  font-weight: bold;
-}
-
-.navbar-nav .nav-link {
-  font-family: "Fustat";
-}
-
-li.nav-item {
-  font-family: "Fustat";
-  font-size: large;
 }
 
 .container {
