@@ -77,14 +77,14 @@ tei-title {
 }
 tei-date[when] {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   text-align: left;
   margin-top: -30px;
   margin-left: 60px;
 }
 tei-date[when-custom] {
   display: block;  /* Make sure each element appears on a new line */
-  font-size: 16px;
+  font-size: 18px;
   text-align: right;  /* Align 'when-custom' element to the right */
   margin-right: 60px;
 }
