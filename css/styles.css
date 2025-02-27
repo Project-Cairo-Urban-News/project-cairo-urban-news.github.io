@@ -9299,6 +9299,28 @@ footer {
   position: relative;
 }
 
+nav {
+  background-color: #507F93;
+  margin-bottom: 20px;
+}
+nav span.h1 {
+  line-height: 1;
+}
+
+.navbar-brand span {
+  font-family: "Fustat";
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Fustat";
+}
+
+li.nav-item {
+  font-family: "Fustat";
+  font-size: large;
+}
+
 .border-svg {
   height: 140px;
   width: auto;
@@ -9362,27 +9384,6 @@ td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month
   font-family: "Noto Sans Arabic";
   font-weight: 300;
   font-size: 16px;
-}
-
-nav {
-  background-color: #507F93;
-}
-nav span.h1 {
-  line-height: 1.5;
-}
-
-.navbar-brand span {
-  font-family: "Fustat";
-  font-weight: 500;
-}
-
-.navbar-nav .nav-link {
-  font-family: "Fustat";
-}
-
-li.nav-item {
-  font-family: "Fustat";
-  font-size: large;
 }
 
 img.wmheader {
