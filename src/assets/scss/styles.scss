@@ -152,16 +152,14 @@ p:lang(ar) {
   font-size: 16px; 
   font-weight: 300;
 }
-h1 {
-  padding-bottom: .5rem;
-}
-h1:lang(en) {
-  font-family: "Fustat";
-  font-weight: 400;
-}
-h1:lang(ar) {
-  font-family: "Fustat";
-  font-weight: 400;
+ h1 {
+      font-size: 4rem;
+      font-family: "Fustat"
+      font-weight: 400;
+      letter-spacing: 2px;
+      font-family: "Fustat";
+      padding-top: 10px;
+     padding-bottom: .5rem;
 }
 .h4 {
   font-family: "Noto Sans Arabic";
