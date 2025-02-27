@@ -9299,6 +9299,16 @@ footer {
   position: relative;
 }
 
+.border-svg {
+  height: 140px;
+  width: auto;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
 nav {
   background-color: #507F93;
   margin-bottom: 20px;
@@ -9319,16 +9329,6 @@ nav span.h1 {
 li.nav-item {
   font-family: "Fustat";
   font-size: large;
-}
-
-.border-svg {
-  height: 140px;
-  width: auto;
-  padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 p:lang(en) {
