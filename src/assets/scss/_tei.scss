@@ -69,39 +69,28 @@ table.summary ul {
 /* TEI elements */
 tei-date[when] {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   text-align: left;
   margin-top: -30px;
   margin-left: 60px;
 }
+
 tei-date[when-custom] {
   display: block;  /* Make sure each element appears on a new line */
-  font-size: 18px;
+  font-size: 16px;
+
   text-align: right;  /* Align 'when-custom' element to the right */
   margin-right: 60px;
 }
 tei-biblscope {
-  display: inline-block;
+  display: inline-block; /* Allows elements to sit on the same line */
   font-size: 20px;
   margin-top: -20px;
-  margin-right: 10px; 
+  margin-right: 20px; 
   font-weight: 400;
   text-align: center;
 }
-tei-title {
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 0px;
-}
-tei-head {
-  display: inline-block;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 0px;
-}
+
 tei-choice tei-sic {
   display: none;
 }
@@ -115,6 +104,18 @@ tei-div > a {
   color: black;
   text-decoration: none;
   padding-top: 30px;
+}
+tei-head {
+  display: block;
+  font-size: larger;
+  text-align: center;
+  font-weight: bold;
+}
+tei-title {
+  display: block;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
 }
 tei-text>tei-div>tei-head:last-of-type::after {
   content: url("/assets/images/border.svg");
@@ -162,5 +163,5 @@ tei-text {
   text-align: left;
 }
 tei-standoff {
-  display: none;
+  display: none
 }
