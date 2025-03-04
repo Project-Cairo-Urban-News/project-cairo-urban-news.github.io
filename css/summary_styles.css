@@ -9422,6 +9422,12 @@ td a {
   font-weight: 400;
 }
 
+tei-date[when],
+tei-date[when-custom],
+tei-biblscope {
+  display: none;
+}
+
 table {
   table-layout: fixed;
 }
