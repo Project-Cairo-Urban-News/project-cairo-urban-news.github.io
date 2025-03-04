@@ -9360,8 +9360,8 @@ tei-date[when] {
   font-size: 21px;
   font-weight: 500;
   text-align: left;
-  margin-top: -30px;
-  margin-left: 60px;
+  margin-top: -50px;
+  margin-left: 80px;
 }
 
 tei-date[when-custom] {
@@ -9369,7 +9369,7 @@ tei-date[when-custom] {
   font-size: 21px;
   font-weight: 500;
   text-align: right;
-  margin-right: 60px;
+  margin-right: 80px;
 }
 
 tei-biblscope {
