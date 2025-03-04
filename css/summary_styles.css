@@ -9422,7 +9422,7 @@ td a {
   font-weight: 400;
 }
 
-tei-date[when-custom],
+tei-date[when],
 tei-biblscope {
   display: none;
 }
