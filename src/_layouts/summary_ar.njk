@@ -9,7 +9,8 @@
     <script src="/js/doc.js"></script>
   </head>
   <body>
-      {% set previous = collections.years_ar | getPreviousCollectionItem(page) %}
+    {% include 'navbar_ar.njk' %}
+    {% set previous = collections.years_ar | getPreviousCollectionItem(page) %}
       {% set next = collections.years_ar | getNextCollectionItem(page) %}
         <div class="row navigation-buttons-container">
           <div class="col fs-5 text-center">
@@ -26,7 +27,6 @@
             {% endif %}
           </div>
         </div>
-    {% include 'navbar_ar.njk' %}
     <main dir="rtl">
       <div class="container">
         <h1 style="text-align:center;" lang="ar">{{ title | toArabicNumerals}}</h1>
