@@ -9372,6 +9372,21 @@ td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month
   font-size: 16px;
 }
 
+seg a {
+  text-align: right;
+  float: right;
+  display: inline-block; /* Makes sure the <a> behaves like a block element */
+}
+
+.text-body-secondary {
+  text-align: right;
+  float: right;
+}
+
+li {
+  clear: both; /* Clears float inside the <li> element */
+}
+
 img.wmheader {
   border: none; /* Example: removing any border */
   width: auto; /* Example: making the image full width */
