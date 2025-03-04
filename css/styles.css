@@ -9391,6 +9391,8 @@ img.wmheader {
   border: none; /* Example: removing any border */
   width: auto; /* Example: making the image full width */
   height: 40px; /* Example: maintaining aspect ratio */
+  padding-bottom: 0;
+  margin: 0;
 }
 
 .under-image-text {
