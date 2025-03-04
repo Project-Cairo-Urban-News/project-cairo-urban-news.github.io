@@ -9389,11 +9389,11 @@ p[lang=ar] {
 }
 
 .year-button {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-decoration: none;
   padding-bottom: 15px;
   color: #333;
-  font-weight: bold;
+  font-weight: 400;
   margin-top: 10px;
   text-align: center;
 }
