@@ -9373,6 +9373,14 @@ p[lang=ar] {
   position: relative;
 }
 
+.previous-button {
+  margin-right: 40px;
+}
+
+.next-button {
+  margin-left: 40px;
+}
+
 .previous-button, .next-button, .year-button {
   font-size: 1.23rem;
   text-decoration: none;
@@ -9396,14 +9404,6 @@ p[lang=ar] {
   font-weight: 400;
   margin-top: 10px;
   text-align: center;
-}
-
-.previous-button {
-  margin-right: 40px;
-}
-
-.next-button {
-  margin-left: 40px;
 }
 
 @media (max-width: 768px) {
