@@ -9422,11 +9422,6 @@ td a {
   font-weight: 400;
 }
 
-tei-date[when-custom] {
-  font-size: 20px;
-  font-weight: 500;
-}
-
 table {
   table-layout: fixed;
 }
