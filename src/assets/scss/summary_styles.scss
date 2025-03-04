@@ -222,6 +222,25 @@ td a {
 table {
   table-layout: fixed;
 }
+table {
+  border: thin solid black;
+}
+td,th {
+  border: thin solid silver;
+  padding: .25em;
+}
+
+table.summary {
+  margin: auto;
+}
+
+table.summary th, table.summary td {
+  border: thin solid silver;
+  padding: 1em;
+}
+
+table.summary ul {
+  margin: 0;}
 
 .custom-tooltip {
   --bs-tooltip-font-size: 2rem;
