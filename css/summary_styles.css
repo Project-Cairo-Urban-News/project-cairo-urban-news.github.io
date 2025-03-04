@@ -9418,6 +9418,13 @@ td {
 
 td a {
   display: inline-block;
+  font-size: 18;
+  font-weight: 400;
+}
+
+tei-date[when-custom] {
+  font-size: 20px;
+  font-weight: 500;
 }
 
 table {
