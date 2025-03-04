@@ -180,6 +180,12 @@ p[lang="ar"] {
   width: 100%;        /* Take full width of viewport */
   position: relative;
 }
+.previous-button {
+  margin-right: 40px; 
+}
+.next-button {
+  margin-left: 40px; 
+}
 .previous-button, .next-button, .year-button {
   font-size: 1.23rem;
   text-decoration: none;
@@ -201,13 +207,6 @@ p[lang="ar"] {
   margin-top: 10px;
   text-align: center;
 }
-.previous-button {
-  margin-right: 40px; 
-}
-.next-button {
-  margin-left: 40px; 
-}
-
 @media (max-width: 768px) {
   .previous-button, .next-button {
     font-size: 1rem; /* Smaller button font size for mobile */
