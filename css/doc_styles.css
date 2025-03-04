@@ -9644,7 +9644,7 @@ img.wmheader {
   margin-right: auto; /* Centers the image horizontally */
   height: 200px; /* Sets the height to 200px */
   width: auto; /* Maintains the aspect ratio */
-  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
