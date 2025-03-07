@@ -9455,6 +9455,7 @@ table.summary th, table.summary td {
 
 table.summary ul {
   margin: 0;
+  list-style-type: none;
 }
 
 .custom-tooltip {
