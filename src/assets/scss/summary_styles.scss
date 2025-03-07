@@ -246,10 +246,10 @@ table.summary th, table.summary td {
   border: thin solid silver;
   padding: 1em;
 }
-
 table.summary ul {
-  margin: 0;}
-
+  margin: 0;
+  list-style-type: none;  
+}
 .custom-tooltip {
   --bs-tooltip-font-size: 2rem;
   --bs-tooltip-bg: var(--bs-gray-800);
