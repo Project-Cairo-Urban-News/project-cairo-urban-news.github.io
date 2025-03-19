@@ -27,6 +27,8 @@ jobs:
       - run: cp ar_ota_pages.json ./src/CairoUrbanNews-ar/articles/ottoman/pages/pages.json
       - run: cp en_ar_pages.json ./src/CairoUrbanNews/articles/arabic/pages/pages.json
       - run: cp en_ota_pages.json ./src/CairoUrbanNews/articles/ottoman/pages/pages.json
+      - run: cp ar_indexes.json ./src/CairoUrbanNews-ar/indexes/indexes.json
+      - run: cp en_indexes.json ./src/CairoUrbanNews/indexes/indexes.json
       - name: Build
         run: npx --node-options='--max-old-space-size=15360' @11ty/eleventy
       - name: Deploy

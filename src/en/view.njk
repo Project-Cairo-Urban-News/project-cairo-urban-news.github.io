@@ -4,7 +4,10 @@ pagination:
   data: manifests
   size: 1
   alias: view
-permalink: "/view/{{ view.Hijri_Date }}/"
+permalink: "/en/view/{{ view.Hijri_Date }}/"
+eleventyComputed:
+  title: "{{ view.Hijri_Date }}"
+  date: "{{ view.Hijri_Date }}"
 ---
 <div class="container">
   <h1>{{ view.Hijri_Date }}</h1>

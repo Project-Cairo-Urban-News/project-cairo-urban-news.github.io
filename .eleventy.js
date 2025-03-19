@@ -24,6 +24,17 @@ export default function(eleventyConfig) {
     }
   );
 
+  eleventyConfig.addFilter("getManifestYears",
+    function(manifests) {
+      return Array.from(new Set(manifests.filter(item => {
+        return item.url != false;
+      }).map(item => {
+        let date = item.Hijri_Date;
+        return date.replace(/-.*$/, "");
+      })));
+    }
+  );
+
   eleventyConfig.addFilter("pagesByYear",
     function(pages, year) {
       return pages.filter(item => {
@@ -36,12 +47,28 @@ export default function(eleventyConfig) {
     }
   );
 
+  eleventyConfig.addFilter("manifestsByYear",
+    function(manifests, year) {
+      return manifests.filter(item => {
+        return item.Hijri_Date.startsWith(year);
+      });
+    }
+  );
+
   eleventyConfig.addFilter("toArabicNumerals", function(num) {
     const arabicNumerals = ["٠", "١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩"];
     return num.toString().split("").map(digit => {
       return arabicNumerals[digit];
     }).join("");
   });
+
+  eleventyConfig.addFilter("yearFromDate", function(date) {
+    if (date instanceof Date) {
+      date = date.toISOString().replace(/:.*$/, "").replace(/T.*$/, "");
+    }
+    return date.replace(/-.*$/, "");
+  }
+  );
 
   eleventyConfig.addCollection("years_en", function(collectionsApi) {
     return collectionsApi.getFilteredByGlob("src/CairoUrbanNews/articles/*/*.xml");
@@ -170,7 +197,7 @@ export default function(eleventyConfig) {
           if (!data.jdom.window.document.querySelector("TEI")) {
             return false;
           }
-          const finalized = data.jdom.window.document.querySelector('revisionDesc[status="cleared"]');
+          const finalized = data.jdom.window.document.querySelector('revisionDesc[status="cleared"]') || inputPath.includes("indexes");
           if (!finalized) {
             return false;
           }
@@ -187,15 +214,17 @@ export default function(eleventyConfig) {
         if (!data.jdom.window.document.querySelector("TEI")) {
           return;
         }
-        const finalized = data.jdom.window.document.querySelector('revisionDesc[status="cleared"]');
+        const finalized = data.jdom.window.document.querySelector('revisionDesc[status="cleared"]') || inputPath.includes("indexes");
         if (!finalized) {
           return;
         }
+        console.log(`compiling: ${inputPath}`);
         const doc = await cetei.domToHTML5(data.jdom.window.document);
         return cetei.utilities.serializeHTML(doc, true);
       };
     },
     getData: async function(inputPath) {
+      console.log(inputPath);
       if (inputPath.includes("articles")) {
         const file = fs.readFileSync(inputPath, 'utf8');
         const jdom = new JSDOM(file, { contentType: "text/xml" });
