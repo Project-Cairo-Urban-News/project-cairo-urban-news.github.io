@@ -54,5 +54,9 @@ Once a document was marked as “cleared” by Mestyan, a GitHub Action assigned
 ## 4. Creating the Website Timeline
 Website files are organized by hijrī year and month using the article header data. A GitHub Action manages the publishing process, splitting articles into separate files and converting TEI XML into HTML Custom Elements using CETEIcean. These elements are styled with CSS and JavaScript.
 
+## 5. Displaying Marked-Up XML Text
+Text from each selected article is displayed as a webpage formatted by Vishal Jammulapati based on a [January 1829 edition](https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.image) of al-Waqāʾiʿ al-Miṣriyyah using HTML and CSS. Each page includes the hijrī and Gregorian dates, edition and page number, and original article titles or section headings. Words marked misspelled in the TEI markup process have been corrected 
+and marked with an underline and tooltip containing the original spelling. 
 
+<br>
 
