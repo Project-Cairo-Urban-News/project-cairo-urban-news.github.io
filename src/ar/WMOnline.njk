@@ -1,0 +1,20 @@
+---
+title: الوقائع المصرية في الانترنت
+layout: page_ar.njk
+---
+
+<div style="text-align: center; margin-bottom: 30px;">
+  <h3 class="under-image-text">الوقائع المصرية في الانترنت</h1>
+</div>
+
+<div class="wrapper">
+    {% set years = manifests | getManifestYears %}
+    {% for year in years %}
+      {% set col = year.substr(3, 1) %}
+      {% set row = year.substr(1, 2) %}
+      <div class="col{{col}} row{{row}}">
+        <h2 class="h4"><a href="/en/view/{{year}}">{{ year }}</a></h2>
+      </div>
+    {% endfor %}    
+  </div>  
+</div>
