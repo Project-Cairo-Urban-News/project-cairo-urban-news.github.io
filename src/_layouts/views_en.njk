@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/summary_styles.css">
+    <title>{{ title }}</title>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    {% include 'navbar_en.njk' %}
+    <main>
+      {{ content | safe }}
+    </main>
+    {% include 'wm_logo.html' %}
+    {% include 'footer_en.njk' %}
+  </body>
+</html>

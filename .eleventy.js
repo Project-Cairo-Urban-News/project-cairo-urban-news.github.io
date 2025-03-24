@@ -47,10 +47,10 @@ export default function(eleventyConfig) {
     }
   );
 
-  eleventyConfig.addFilter("manifestsByYear",
-    function(manifests, year) {
+  eleventyConfig.addFilter("manifestsByYearAndMonth",
+    function(manifests, year, month) {
       return manifests.filter(item => {
-        return item.Hijri_Date.startsWith(year);
+        return item.Hijri_Date.startsWith(`${year}-${month < 10 ? '0' : ''}${month}`);  
       });
     }
   );
@@ -67,8 +67,27 @@ export default function(eleventyConfig) {
       date = date.toISOString().replace(/:.*$/, "").replace(/T.*$/, "");
     }
     return date.replace(/-.*$/, "");
-  }
-  );
+  });
+
+  eleventyConfig.addFilter("getPreviousView", function(manifestYears, date, field) {
+    for (let index = 0; index < manifestYears.length; index++) {
+      const element = manifestYears[index];
+      if (element[field] == date && index > 0) {
+        return manifestYears[index - 1][field];
+      } 
+    }
+    return false;
+  });
+
+  eleventyConfig.addFilter("getNextView", function(manifestYears, date, field) {
+    for (let index = 0; index < manifestYears.length; index++) {
+      const element = manifestYears[index];
+      if (element[field] == date && index < manifestYears.length - 1) {
+        return manifestYears[index + 1][field];
+      } 
+    }
+    return false;
+  });
 
   eleventyConfig.addCollection("years_en", function(collectionsApi) {
     return collectionsApi.getFilteredByGlob("src/CairoUrbanNews/articles/*/*.xml");
@@ -191,7 +210,6 @@ export default function(eleventyConfig) {
     read: false,
 
     compileOptions: {
-    
       permalink: function(contents, inputPath) {
         return async (data) => {
           if (!data.jdom.window.document.querySelector("TEI")) {
@@ -218,13 +236,11 @@ export default function(eleventyConfig) {
         if (!finalized) {
           return;
         }
-        console.log(`compiling: ${inputPath}`);
         const doc = await cetei.domToHTML5(data.jdom.window.document);
         return cetei.utilities.serializeHTML(doc, true);
       };
     },
     getData: async function(inputPath) {
-      console.log(inputPath);
       if (inputPath.includes("articles")) {
         const file = fs.readFileSync(inputPath, 'utf8');
         const jdom = new JSDOM(file, { contentType: "text/xml" });

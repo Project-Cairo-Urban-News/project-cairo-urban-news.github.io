@@ -9,6 +9,24 @@ eleventyComputed:
   title: "{{ view.Hijri_Date }}"
   date: "{{ view.Hijri_Date }}"
 ---
+{% set previous = manifests | getPreviousView(view.Hijri_Date, "Hijri_Date") %}
+{% set next = manifests | getNextView(view.Hijri_Date, "Hijri_Date") %}
+{% set year = view.Hijri_Date.split('-')[0] %}
+<div class="row navigation-buttons-container">
+    <div class="col fs-5 text-center">
+      {% if previous %}
+        <a href="../{{ previous }}" class="link-primary link-opacity-75 link-opacity-100-hover previous-button">Previous</a>
+      {% endif %}
+    </div>
+    <div class="col text-center fs-5">
+        <a href="/en/view/{{ year }}" class="link-primary link-opacity-75 link-opacity-100-hover year-button">Return to {{ year }}</a>
+    </div>
+    <div class="col fs-5 text-center">
+      {% if next %}
+        <a href="../{{ next }}" class="link-primary link-opacity-75 link-opacity-100-hover next-button">Next</a>
+      {% endif %}
+    </div>
+</div>
 <div class="container">
   <h1>{{ view.Hijri_Date }}</h1>
   <div class="row">
