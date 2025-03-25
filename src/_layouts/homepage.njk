@@ -102,11 +102,11 @@
     <div class="overlay"></div>
 
     <div class="content">
-    <a class="navbar-brand" href="/assets/images/al-waqai-al-misriyah.svg">
-    <img src="/assets/images/al-waqai-al-misriyah.svg" alt="Logo" width="100" />
-    </a>
-    </div>
-
+      <a class="navbar-brand" href="/">
+        <svg class="bi me-2" width="100" viewBox="0 0 150 100">
+          <use xlink:href="#wm_logo" />
+        </svg>
+      </a>
 
       <div class="title-container">
         <span class="navbar-text display-3">News of Cairo</span>
@@ -121,6 +121,7 @@
       </div>
     </div>
 
+     {% include 'wm_logo.html' %}
     <script type="module" src="js/main.js"></script>
   </body>
 </html>
