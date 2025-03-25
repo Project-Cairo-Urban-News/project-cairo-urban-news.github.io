@@ -102,15 +102,16 @@ body {
   background-color: #e9ded5;
 }
 html, body {
-  height: 100%; /* Ensure the body takes up the full height of the page */
-  margin: 0;    /* Remove any default margin */
+  height: 100%;
+  margin: 0;
 }
 body {
   display: flex;
-  flex-direction: column; /* Make the body a flex container */
+  flex-direction: column;
 }
 main {
-  flex: 1; /* Allow the content to grow and fill the available space */
+  flex: 1;
+  height: 100%;
 }
 footer {
   padding: 15px;
