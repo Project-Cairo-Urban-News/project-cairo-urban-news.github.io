@@ -1,6 +1,6 @@
 ---
 title: Indexes
-layout: index_en.njk
+layout: doc_en.njk
 ---
 # Indexes
 
