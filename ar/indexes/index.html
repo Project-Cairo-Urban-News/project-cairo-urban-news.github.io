@@ -72,15 +72,61 @@
             <path d="M752.38,136.48c.52-3.86,1.28-7.22-.01-11.08,6.82-2.19,2.2,13.6.01,11.08Z"/>
             <path d="M745.21,137.21c-.42.36-2.55-.06-2.7-1.05,1.52-3.63.97-6.67.57-10.41,4.43-.87,2.74,10.94,2.13,11.45h0Z"/>
             </svg>
-            <h1>فهارس</h1>
-<ul>
-<li><a href="/ar/indexes/orgTypesAr.html">أنواع المنظمات</a> (عربي)</li>
-<li><a href="/ar/indexes/orgTypesOta.html">أنواع المنظمات</a> (التركية العثمانية)</li>
-<li><a href="/ar/indexes/placeTypesAr.html">أنواع الأماكن</a> (عربي)</li>
-<li><a href="/ar/indexes/placeTypesOta.html">أنواع الأماكن</a> (التركية العثمانية)</li>
-<li><a href="/ar/indexes/rolesAr.html">أدوار الأشخاص</a> (عربي)</li>
-<li><a href="/ar/indexes/rolesOta.html">أدوار الأشخاص</a> (التركية العثمانية)</li>
-</ul>
+            <style>
+  .explore-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .index-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    margin: 5px 0;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+
+  .index-button:hover {
+    background-color: #507f93;
+    color: white;
+  }
+</style>
+<h1>فهارس</h1>
+<div class="explore-buttons">
+  <div class="column">
+    <h2>أنواع المنظمات</h2>
+    <button class="index-button" data-language="ar" data-type="orgTypes">عربي</button>
+    <button class="index-button" data-language="ota" data-type="orgTypes">التركية العثمانية</button>
+  </div>
+  <div class="column">
+    <h2>أنواع الأماكن</h2>
+    <button class="index-button" data-language="ar" data-type="placeTypes">عربي</button>
+    <button class="index-button" data-language="ota" data-type="placeTypes">التركية العثمانية</button>
+  </div>
+  <div class="column">
+    <h2>أدوار الأشخاص</h2>
+    <button class="index-button" data-language="ar" data-type="roles">عربي</button>
+    <button class="index-button" data-language="ota" data-type="roles">التركية العثمانية</button>
+  </div>
+</div>
 
           </div>
         </div>
