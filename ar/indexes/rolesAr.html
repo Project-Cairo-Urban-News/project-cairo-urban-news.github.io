@@ -6804,22 +6804,25 @@
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
     <script>
-      // JavaScript to filter content based on the selected letter
-      document.querySelectorAll('.alphabet-bar button').forEach(button => {
-        button.addEventListener('click', function() {
-          const letter = this.getAttribute('data-letter');
-
-          // Hide all content items
-          document.querySelectorAll('.content-item').forEach(item => {
-            if (item.getAttribute('data-letter') === letter) {
-              item.style.display = 'block';  // Show matching item
-            } else {
-              item.style.display = 'none';   // Hide non-matching items
-            }
-          });
+  // Wait for the DOM to be fully loaded before attaching event listeners
+  document.addEventListener('DOMContentLoaded', function() {
+    // Add event listeners to the buttons
+    document.querySelectorAll('.alphabet-bar button').forEach(button => {
+      button.addEventListener('click', function() {
+        const letter = this.getAttribute('data-letter');
+        
+        // Hide all content items
+        document.querySelectorAll('.content-item').forEach(item => {
+          if (item.getAttribute('data-letter') === letter) {
+            item.style.display = 'block';  // Show matching item
+          } else {
+            item.style.display = 'none';   // Hide non-matching items
+          }
         });
       });
-    </script>
+    });
+  });
+</script>
     <script>
       const c = new CETEI();
       c.addBehaviors(index_behaviors);
