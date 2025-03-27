@@ -4,9 +4,9 @@ layout: doc_ar.njk
 ---
 # فهارس
 
-* [أنواع المنظمات](/en/indexes/orgTypesAr.html) (عربي)
-* [أنواع المنظمات](/en/indexes/orgTypesOta.html) (التركية العثمانية)
-* [أنواع الأماكن](/en/indexes/placeTypesAr.html) (عربي)
-* [أنواع الأماكن](/en/indexes/placeTypesOta.html) (التركية العثمانية)
-* [أدوار الأشخاص](/en/indexes/rolesAr.html) (عربي)
-* [أدوار الأشخاص](/en/indexes/rolesOta.html) (التركية العثمانية)
+* [أنواع المنظمات](/ar/indexes/orgTypesAr.html) (عربي)
+* [أنواع المنظمات](/ar/indexes/orgTypesOta.html) (التركية العثمانية)
+* [أنواع الأماكن](/ar/indexes/placeTypesAr.html) (عربي)
+* [أنواع الأماكن](/ar/indexes/placeTypesOta.html) (التركية العثمانية)
+* [أدوار الأشخاص](/ar/indexes/rolesAr.html) (عربي)
+* [أدوار الأشخاص](/ar/indexes/rolesOta.html) (التركية العثمانية)
