@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="/css/index_styles.css">
     <title>placeTypesAr</title>
     <style>
-            .mininavbar {
+      .alphabet-bar {
         display: flex;
         justify-content: center;
-        background-color: #333;
-        padding: 10px;
-        overflow-x: auto;
-      }
-      
-      .nav-button {
-        background-color: #555;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        margin: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 5px;
         font-size: 18px;
-        cursor: pointer;
-        border-radius: 5px;
       }
-      
-      .nav-button:hover {
-        background-color: #888;
+      .alphabet-bar button {
+        padding: 10px;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-size: 18px;
+      }
+      .alphabet-bar button:hover {
+        background-color: #ddd;
       }
     </style>
   </head>
@@ -99,36 +95,37 @@
             </svg>
           </div>
         </div>
-        <div class="mininavbar">
-                  <button class="nav-button" onclick="filterItems('أ')">أ</button>
-                  <button class="nav-button" onclick="filterItems('ب')">ب</button>
-                  <button class="nav-button" onclick="filterItems('ت')">ت</button>
-                  <button class="nav-button" onclick="filterItems('ث')">ث</button>
-                  <button class="nav-button" onclick="filterItems('ج')">ج</button>
-                  <button class="nav-button" onclick="filterItems('ح')">ح</button>
-                  <button class="nav-button" onclick="filterItems('خ')">خ</button>
-                  <button class="nav-button" onclick="filterItems('د')">د</button>
-                  <button class="nav-button" onclick="filterItems('ذ')">ذ</button>
-                  <button class="nav-button" onclick="filterItems('ر')">ر</button>
-                  <button class="nav-button" onclick="filterItems('ز')">ز</button>
-                  <button class="nav-button" onclick="filterItems('س')">س</button>
-                  <button class="nav-button" onclick="filterItems('ش')">ش</button>
-                  <button class="nav-button" onclick="filterItems('ص')">ص</button>
-                  <button class="nav-button" onclick="filterItems('ض')">ض</button>
-                  <button class="nav-button" onclick="filterItems('ط')">ط</button>
-                  <button class="nav-button" onclick="filterItems('ظ')">ظ</button>
-                  <button class="nav-button" onclick="filterItems('ع')">ع</button>
-                  <button class="nav-button" onclick="filterItems('غ')">غ</button>
-                  <button class="nav-button" onclick="filterItems('ف')">ف</button>
-                  <button class="nav-button" onclick="filterItems('ق')">ق</button>
-                  <button class="nav-button" onclick="filterItems('ك')">ك</button>
-                  <button class="nav-button" onclick="filterItems('ل')">ل</button>
-                  <button class="nav-button" onclick="filterItems('م')">م</button>
-                  <button class="nav-button" onclick="filterItems('ن')">ن</button>
-                  <button class="nav-button" onclick="filterItems('هـ')">هـ</button>
-                  <button class="nav-button" onclick="filterItems('و')">و</button>
-                  <button class="nav-button" onclick="filterItems('ي')">ي</button>
-              </div>
+        <div class="alphabet-bar">
+              <!-- Arabic letters as buttons -->
+              <button data-letter="ا">ا</button>
+              <button data-letter="ب">ب</button>
+              <button data-letter="ت">ت</button>
+              <button data-letter="ث">ث</button>
+              <button data-letter="ج">ج</button>
+              <button data-letter="ح">ح</button>
+              <button data-letter="خ">خ</button>
+              <button data-letter="د">د</button>
+              <button data-letter="ذ">ذ</button>
+              <button data-letter="ر">ر</button>
+              <button data-letter="ز">ز</button>
+              <button data-letter="س">س</button>
+              <button data-letter="ش">ش</button>
+              <button data-letter="ص">ص</button>
+              <button data-letter="ض">ض</button>
+              <button data-letter="ط">ط</button>
+              <button data-letter="ظ">ظ</button>
+              <button data-letter="ع">ع</button>
+              <button data-letter="غ">غ</button>
+              <button data-letter="ف">ف</button>
+              <button data-letter="ق">ق</button>
+              <button data-letter="ك">ك</button>
+              <button data-letter="ل">ل</button>
+              <button data-letter="م">م</button>
+              <button data-letter="ن">ن</button>
+              <button data-letter="هـ">هـ</button>
+              <button data-letter="و">و</button>
+              <button data-letter="ي">ي</button>
+            </div>
             <TEI-TEI data-xmlns="http://www.tei-c.org/ns/1.0" data-origname="TEI" data-origatts="xmlns">
    <TEI-TEIHEADER data-origname="teiHeader">
       <TEI-FILEDESC data-origname="fileDesc">
@@ -13504,17 +13501,21 @@
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
     <script>
-      function filterItems(letter) {
-        const teiItems = document.querySelectorAll('.tei-item'); // Select all tei-item elements
-        teiItems.forEach(item => {
-          const itemLetter = item.getAttribute('data-letter'); // Get the data-letter attribute
-          if (itemLetter === letter) {
-            item.style.display = ''; // Show the item if it matches the selected letter
-          } else {
-            item.style.display = 'none'; // Hide the item if it doesn't match
-          }
+      // JavaScript to filter content based on the selected letter
+      document.querySelectorAll('.alphabet-bar button').forEach(button => {
+        button.addEventListener('click', function() {
+          const letter = this.getAttribute('data-letter');
+
+          // Hide all content items
+          document.querySelectorAll('.content-item').forEach(item => {
+            if (item.getAttribute('data-letter') === letter) {
+              item.style.display = 'block';  // Show matching item
+            } else {
+              item.style.display = 'none';   // Hide non-matching items
+            }
+          });
         });
-      }
+      });
     </script>
     <script>
       const c = new CETEI();
