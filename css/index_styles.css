@@ -9488,13 +9488,9 @@ tei-standoff {
   display: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -9502,6 +9498,10 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.main-content {
+  flex: 1; /* This makes sure content expands to fill available space */
 }
 
 body {
@@ -9518,10 +9518,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-}
-
-p {
-  font-family: "Noto Sans Arabic";
 }
 
 p[lang=en] {
