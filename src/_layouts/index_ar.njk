@@ -12,6 +12,7 @@
         background-color: #333;
         padding: 10px;
         overflow-x: auto;
+        height: 15px;
       }
       
       .nav-button {
@@ -89,40 +90,9 @@
           </div>
         </div>
       </div>
-
     {% include 'wm_logo.html' %}
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
-    <script>
-  // Function to update the data-letter for all tei-items with data-origatts="xml:id"
-  function updateTeiItems() {
-    const teiItems = document.querySelectorAll('.tei-item[data-origatts="xml:id"]');
-    
-    teiItems.forEach(item => {
-      // Check if the data-letter already exists to prevent unnecessary updates
-      if (!item.hasAttribute('data-letter')) {
-        const teiName = item.querySelector('tei-name');
-        if (teiName) {
-          const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter of the name
-          item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
-        }
-      }
-    });
-  }
-
-  // Wait for 2 seconds and then run the updateTeiItems function
-  document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(function() {
-      updateTeiItems(); // Run after 2 seconds
-    }, 2000); // 2000 milliseconds = 2 seconds
-  });
-</script>
-
-    <script>
-      const c = new CETEI();
-      c.addBehaviors(index_behaviors);
-      c.processPage();
-    </script>
   {% include 'footer_ar.njk' %}
   </body>
 </html>
