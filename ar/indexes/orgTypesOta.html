@@ -96,6 +96,36 @@
             <path d="M752.38,136.48c.52-3.86,1.28-7.22-.01-11.08,6.82-2.19,2.2,13.6.01,11.08Z"/>
             <path d="M745.21,137.21c-.42.36-2.55-.06-2.7-1.05,1.52-3.63.97-6.67.57-10.41,4.43-.87,2.74,10.94,2.13,11.45h0Z"/>
             </svg>
+          <div class="mininavbar">
+                  <button class="nav-button" onclick="filterItems('أ')">أ</button>
+                  <button class="nav-button" onclick="filterItems('ب')">ب</button>
+                  <button class="nav-button" onclick="filterItems('ت')">ت</button>
+                  <button class="nav-button" onclick="filterItems('ث')">ث</button>
+                  <button class="nav-button" onclick="filterItems('ج')">ج</button>
+                  <button class="nav-button" onclick="filterItems('ح')">ح</button>
+                  <button class="nav-button" onclick="filterItems('خ')">خ</button>
+                  <button class="nav-button" onclick="filterItems('د')">د</button>
+                  <button class="nav-button" onclick="filterItems('ذ')">ذ</button>
+                  <button class="nav-button" onclick="filterItems('ر')">ر</button>
+                  <button class="nav-button" onclick="filterItems('ز')">ز</button>
+                  <button class="nav-button" onclick="filterItems('س')">س</button>
+                  <button class="nav-button" onclick="filterItems('ش')">ش</button>
+                  <button class="nav-button" onclick="filterItems('ص')">ص</button>
+                  <button class="nav-button" onclick="filterItems('ض')">ض</button>
+                  <button class="nav-button" onclick="filterItems('ط')">ط</button>
+                  <button class="nav-button" onclick="filterItems('ظ')">ظ</button>
+                  <button class="nav-button" onclick="filterItems('ع')">ع</button>
+                  <button class="nav-button" onclick="filterItems('غ')">غ</button>
+                  <button class="nav-button" onclick="filterItems('ف')">ف</button>
+                  <button class="nav-button" onclick="filterItems('ق')">ق</button>
+                  <button class="nav-button" onclick="filterItems('ك')">ك</button>
+                  <button class="nav-button" onclick="filterItems('ل')">ل</button>
+                  <button class="nav-button" onclick="filterItems('م')">م</button>
+                  <button class="nav-button" onclick="filterItems('ن')">ن</button>
+                  <button class="nav-button" onclick="filterItems('هـ')">هـ</button>
+                  <button class="nav-button" onclick="filterItems('و')">و</button>
+                  <button class="nav-button" onclick="filterItems('ي')">ي</button>
+              </div>
             <TEI-TEI data-xmlns="http://www.tei-c.org/ns/1.0" data-origname="TEI" data-origatts="xmlns">
    <TEI-TEIHEADER data-origname="teiHeader">
       <TEI-FILEDESC data-origname="fileDesc">
@@ -864,36 +894,6 @@
           </div>
         </div>
       </div>
-     <div class="mininavbar">
-      <button class="nav-button" onclick="filterItems('أ')">أ</button>
-      <button class="nav-button" onclick="filterItems('ب')">ب</button>
-      <button class="nav-button" onclick="filterItems('ت')">ت</button>
-      <button class="nav-button" onclick="filterItems('ث')">ث</button>
-      <button class="nav-button" onclick="filterItems('ج')">ج</button>
-      <button class="nav-button" onclick="filterItems('ح')">ح</button>
-      <button class="nav-button" onclick="filterItems('خ')">خ</button>
-      <button class="nav-button" onclick="filterItems('د')">د</button>
-      <button class="nav-button" onclick="filterItems('ذ')">ذ</button>
-      <button class="nav-button" onclick="filterItems('ر')">ر</button>
-      <button class="nav-button" onclick="filterItems('ز')">ز</button>
-      <button class="nav-button" onclick="filterItems('س')">س</button>
-      <button class="nav-button" onclick="filterItems('ش')">ش</button>
-      <button class="nav-button" onclick="filterItems('ص')">ص</button>
-      <button class="nav-button" onclick="filterItems('ض')">ض</button>
-      <button class="nav-button" onclick="filterItems('ط')">ط</button>
-      <button class="nav-button" onclick="filterItems('ظ')">ظ</button>
-      <button class="nav-button" onclick="filterItems('ع')">ع</button>
-      <button class="nav-button" onclick="filterItems('غ')">غ</button>
-      <button class="nav-button" onclick="filterItems('ف')">ف</button>
-      <button class="nav-button" onclick="filterItems('ق')">ق</button>
-      <button class="nav-button" onclick="filterItems('ك')">ك</button>
-      <button class="nav-button" onclick="filterItems('ل')">ل</button>
-      <button class="nav-button" onclick="filterItems('م')">م</button>
-      <button class="nav-button" onclick="filterItems('ن')">ن</button>
-      <button class="nav-button" onclick="filterItems('هـ')">هـ</button>
-      <button class="nav-button" onclick="filterItems('و')">و</button>
-      <button class="nav-button" onclick="filterItems('ي')">ي</button>
-  </div>
 
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <g id="wm_logo">
@@ -910,35 +910,43 @@
       c.addBehaviors(index_behaviors);
       c.processPage();
     </script>
-    <script>
+   <script>
   document.addEventListener('DOMContentLoaded', function() {
-        // Dynamically assign the `data-letter` to each tei-item based on the first letter of the tei-name.
-        const teiItems = document.querySelectorAll('.tei-item');
-        
-        teiItems.forEach(item => {
-          const teiName = item.querySelector('tei-name');
-          if (teiName) {
-            const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter of the name
-            item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
-          }
-        });
-      });
+    // After the page is fully loaded, re-assign the `data-letter` to each tei-item
+    updateTeiItems();
 
-      // Function to filter items based on the selected letter
-      function filterItems(letter) {
-        const teiItems = document.querySelectorAll('.tei-item');
-        
-        teiItems.forEach(item => {
-          const itemLetter = item.getAttribute('data-letter'); // Get the stored data-letter attribute
-          
-          if (itemLetter === letter) {
-            item.style.display = ''; // Show the item
-          } else {
-            item.style.display = 'none'; // Hide the item
-          }
-        });
+    // If you need to recheck periodically, you can uncomment the following line
+    // setInterval(updateTeiItems, 5000); // Optional: Reapply every 5 seconds
+  });
+
+  // Function to update the data-letter for all tei-items
+  function updateTeiItems() {
+    const teiItems = document.querySelectorAll('.tei-item');
+    
+    teiItems.forEach(item => {
+      const teiName = item.querySelector('tei-name');
+      if (teiName) {
+        const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter of the name
+        item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
       }
-    </script>
+    });
+  }
+
+  // Function to filter items based on the selected letter
+  function filterItems(letter) {
+    const teiItems = document.querySelectorAll('.tei-item');
+    
+    teiItems.forEach(item => {
+      const itemLetter = item.getAttribute('data-letter'); // Get the stored data-letter attribute
+      
+      if (itemLetter === letter) {
+        item.style.display = ''; // Show the item
+      } else {
+        item.style.display = 'none'; // Hide the item
+      }
+    });
+  }
+</script>
   <footer style="background-color: #5e889b; width: 100vw; margin: 0; color: white;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 10px; text-align: center;">
     <p style="font-size: 16px;">&copy; ٢٠٢٥ مشروع أخبار القاهرة - القاهرة الرقمية 2025. All rights reserved</p>
