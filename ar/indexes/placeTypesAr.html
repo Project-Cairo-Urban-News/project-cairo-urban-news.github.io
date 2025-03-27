@@ -13503,14 +13503,9 @@
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
     <script>
-      const c = new CETEI();
-      c.addBehaviors(index_behaviors);
-      c.processPage();
-    </script>
-    <script>
-  // Function to update the data-letter for all tei-items
+  // Function to update the data-letter for all tei-items with data-origatts="xml:id"
   function updateTeiItems() {
-    const teiItems = document.querySelectorAll('.tei-item');
+    const teiItems = document.querySelectorAll('.tei-item[data-origatts="xml:id"]');
     
     teiItems.forEach(item => {
       // Check if the data-letter already exists to prevent unnecessary updates
@@ -13524,37 +13519,19 @@
     });
   }
 
+  // Wait for 2 seconds and then run the updateTeiItems function
   document.addEventListener('DOMContentLoaded', function() {
-    // Initially update all tei-items after the page loads
-    updateTeiItems();
-
-    // Set up an interval to run the update every second (1000 milliseconds)
-    setInterval(updateTeiItems, 1000);
-
-    // Set up a MutationObserver to watch for dynamically added tei-items
-    const observer = new MutationObserver(() => {
-      updateTeiItems(); // Re-run the function whenever new items are added
-    });
-
-    // Start observing changes in the DOM (specifically within the container where tei-items are added)
-    observer.observe(document.querySelector('.container'), { childList: true, subtree: true });
+    setTimeout(function() {
+      updateTeiItems(); // Run after 2 seconds
+    }, 2000); // 2000 milliseconds = 2 seconds
   });
-
-  // Function to filter items based on the selected letter
-  function filterItems(letter) {
-    const teiItems = document.querySelectorAll('.tei-item');
-    
-    teiItems.forEach(item => {
-      const itemLetter = item.getAttribute('data-letter'); // Get the stored data-letter attribute
-      
-      if (itemLetter === letter) {
-        item.style.display = ''; // Show the item
-      } else {
-        item.style.display = 'none'; // Hide the item
-      }
-    });
-  }
 </script>
+
+    <script>
+      const c = new CETEI();
+      c.addBehaviors(index_behaviors);
+      c.processPage();
+    </script>
   <footer style="background-color: #5e889b; width: 100vw; margin: 0; color: white;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 10px; text-align: center;">
     <p style="font-size: 16px;">&copy; ٢٠٢٥ مشروع أخبار القاهرة - القاهرة الرقمية 2025. All rights reserved</p>
