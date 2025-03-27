@@ -96,13 +96,21 @@
       c.addBehaviors(index_behaviors);
       c.processPage();
     </script>
-   <script>
+    <script>
   document.addEventListener('DOMContentLoaded', function() {
-    // After the page is fully loaded, re-assign the `data-letter` to each tei-item
+    // Initially update all tei-items after the page loads
     updateTeiItems();
 
-    // If you need to recheck periodically, you can uncomment the following line
-    // setInterval(updateTeiItems, 5000); // Optional: Reapply every 5 seconds
+    // Set up an interval to run the update every second (1000 milliseconds)
+    setInterval(updateTeiItems, 1000);
+
+    // Set up a MutationObserver to watch for dynamically added tei-items
+    const observer = new MutationObserver(() => {
+      updateTeiItems(); // Re-run the function whenever new items are added
+    });
+
+    // Start observing changes in the DOM (specifically within the container where tei-items are added)
+    observer.observe(document.querySelector('.container'), { childList: true, subtree: true });
   });
 
   // Function to update the data-letter for all tei-items
@@ -110,10 +118,13 @@
     const teiItems = document.querySelectorAll('.tei-item');
     
     teiItems.forEach(item => {
-      const teiName = item.querySelector('tei-name');
-      if (teiName) {
-        const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter of the name
-        item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+      // Check if the data-letter already exists to prevent unnecessary updates
+      if (!item.hasAttribute('data-letter')) {
+        const teiName = item.querySelector('tei-name');
+        if (teiName) {
+          const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter of the name
+          item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+        }
       }
     });
   }
