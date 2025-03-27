@@ -10,22 +10,6 @@ const index_behaviors = {
       ref.setAttribute("href", target);
       ref.innerHTML = elt.innerHTML;
       return ref;
-    },
-
-    "addDataLetter": function() {
-      const teiItems = document.querySelectorAll('.tei-item[data-origatts="xml:id"]');
-      teiItems.forEach(item => {
-        if (!item.hasAttribute('data-letter')) {
-          const teiName = item.querySelector('tei-name');
-          if (teiName) {
-            const firstLetter = teiName.textContent.trim().charAt(0);
-            item.setAttribute('data-letter', firstLetter);
-          }
-        }
-      });
     }
   }
-};
-
-// Automatically run addDataLetter when the script is executed
-index_behaviors["tei"].addDataLetter();
+}
