@@ -95,6 +95,19 @@
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
     <script>
+      function filterItems(letter) {
+        const teiItems = document.querySelectorAll('.tei-item'); // Select all tei-item elements
+        teiItems.forEach(item => {
+          const itemLetter = item.getAttribute('data-letter'); // Get the data-letter attribute
+          if (itemLetter === letter) {
+            item.style.display = ''; // Show the item if it matches the selected letter
+          } else {
+            item.style.display = 'none'; // Hide the item if it doesn't match
+          }
+        });
+      }
+    </script>
+    <script>
       const c = new CETEI();
       c.addBehaviors(index_behaviors);
       c.processPage();
