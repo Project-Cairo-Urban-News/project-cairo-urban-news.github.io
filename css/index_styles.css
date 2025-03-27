@@ -9520,6 +9520,10 @@ body {
   margin: 0 auto;
 }
 
+p {
+  font-family: "Noto Sans Arabic";
+}
+
 p[lang=en] {
   font-family: "Fustat";
 }
