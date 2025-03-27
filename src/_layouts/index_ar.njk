@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/index_styles.css">
     <title>{{ title }}</title>
+    <style>
+      .mininavbar {
+        background-color: #333;  /* Dark background for the navbar */
+        overflow: hidden;        /* Ensures that the content is contained within the navbar */
+        position: fixed;         /* Keeps the navbar fixed at the top of the page */
+        top: 0;
+        width: 100%;             /* Full width of the screen */
+        z-index: 1000;           /* Ensures the navbar is always on top */
+      }
+      
+      .mininavbar a {
+        float: left;             /* Aligns links horizontally */
+        display: block;
+        color: #f2f2f2;          /* White text color */
+        text-align: center;      /* Centers the text inside the links */
+        padding: 14px 20px;      /* Adds padding around the links */
+        text-decoration: none;   /* Removes underlines from links */
+        font-size: 17px;         /* Sets the font size */
+      }
+      
+      .mininavbar a:hover {
+        background-color: #ddd;  /* Light background color when hovering */
+        color: black;            /* Changes text color to black on hover */
+      }
+      
+      .mininavbar a.active {
+        background-color: #4CAF50; /* Adds a green background color for the active link */
+        color: white;               /* Changes text color to white for active link */
+      }
+      
+      .mininavbar .mininavbar-right {
+        float: right;             /* Aligns the right side of the navbar (like a "login" button) */
+      }
+      
+      @media screen and (max-width: 600px) {
+        .mininavbar a {
+          float: none;            /* Stacks the navbar links vertically on smaller screens */
+          display: block;
+          text-align: left;
+          padding: 12px 16px;     /* Adjust padding for mobile */
+        }
+    }
+    </style>
   </head>
   <body>
     {% include 'navbar_ar.njk' %}
@@ -33,6 +76,38 @@
           </div>
         </div>
       </div>
+<div class="mininavbar">
+  <ul id="arabic-letters">
+    <li data-letter="ا">ا</li>
+    <li data-letter="ب">ب</li>
+    <li data-letter="ت">ت</li>
+    <li data-letter="ث">ث</li>
+    <li data-letter="ج">ج</li>
+    <li data-letter="ح">ح</li>
+    <li data-letter="خ">خ</li>
+    <li data-letter="د">د</li>
+    <li data-letter="ذ">ذ</li>
+    <li data-letter="ر">ر</li>
+    <li data-letter="ز">ز</li>
+    <li data-letter="س">س</li>
+    <li data-letter="ش">ش</li>
+    <li data-letter="ص">ص</li>
+    <li data-letter="ض">ض</li>
+    <li data-letter="ط">ط</li>
+    <li data-letter="ظ">ظ</li>
+    <li data-letter="ع">ع</li>
+    <li data-letter="غ">غ</li>
+    <li data-letter="ف">ف</li>
+    <li data-letter="ق">ق</li>
+    <li data-letter="ك">ك</li>
+    <li data-letter="ل">ل</li>
+    <li data-letter="م">م</li>
+    <li data-letter="ن">ن</li>
+    <li data-letter="هـ">هـ</li>
+    <li data-letter="و">و</li>
+    <li data-letter="ي">ي</li>
+  </ul>
+</div>
     {% include 'wm_logo.html' %}
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
@@ -40,6 +115,40 @@
       const c = new CETEI();
       c.addBehaviors(index_behaviors);
       c.processPage();
+    </script>
+    <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 1. Dynamically assign the `data-letter` to each tei-item based on the first letter of the tei-name.
+    const teiItems = document.querySelectorAll('.tei-item');
+    
+    teiItems.forEach(item => {
+      const teiName = item.querySelector('tei-name');
+      if (teiName) {
+        const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter of the name
+        item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+      }
+    });
+
+    // 2. Setup the letter navbar to filter items based on the selected letter.
+    const letters = document.querySelectorAll('#arabic-letters li');
+    
+    letters.forEach(letter => {
+      letter.addEventListener('click', function() {
+        const selectedLetter = letter.getAttribute('data-letter');
+        
+        // Loop through all tei-items and show/hide based on the selected letter
+        teiItems.forEach(item => {
+          const itemLetter = item.getAttribute('data-letter'); // Get the stored data-letter attribute
+
+          if (itemLetter === selectedLetter) {
+            item.style.display = ''; // Show the item
+          } else {
+            item.style.display = 'none'; // Hide the item
+          }
+        });
+      });
+    });
+  });
     </script>
   {% include 'footer_ar.njk' %}
   </body>
