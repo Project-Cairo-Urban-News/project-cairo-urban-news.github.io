@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -12,7 +13,6 @@
         background-color: #333;
         padding: 10px;
         overflow-x: auto;
-        height: 15px;
       }
       
       .nav-button {
@@ -90,9 +90,15 @@
           </div>
         </div>
       </div>
+
     {% include 'wm_logo.html' %}
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
+    <script>
+      const c = new CETEI();
+      c.addBehaviors(index_behaviors);
+      c.processPage();
+    </script>
   {% include 'footer_ar.njk' %}
   </body>
 </html>
