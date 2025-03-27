@@ -10,6 +10,18 @@ const index_behaviors = {
       ref.setAttribute("href", target);
       ref.innerHTML = elt.innerHTML;
       return ref;
+    },
+    "addDataLetterToTeiItems": function() {
+      const teiItems = document.querySelectorAll('tei-item');
+      
+      teiItems.forEach(item => {
+        const teiName = item.querySelector('tei-name');
+        if (teiName) {
+          const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter
+          item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+        }
+      });
     }
   }
-}
+};
+index_behaviors["tei"].addDataLetterToTeiItems();
