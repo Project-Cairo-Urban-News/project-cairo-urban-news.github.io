@@ -109,9 +109,6 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-.main-content {
-  flex: 1; /* This makes sure content expands to fill available space */
-}
 nav {
   background-color: #507F93;
   span.h1 {
