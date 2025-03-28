@@ -185,6 +185,53 @@ td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month
   margin-top: 8px; /* Example: Add some top margin */
   margin-bottom: 15px;
 }
+.navigation-buttons-container {
+  background-color: #d9cfc7;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure buttons are vertically centered */
+  width: 100%;        /* Take full width of viewport */
+  position: relative;
+}
+.previous-button, .next-button, .year-button {
+  font-size: 1.23rem;
+  text-decoration: none;
+  transition: opacity 0.8s ease; /* Smooth opacity transition for hover effect */
+  color: #333;
+}
+.previous-button:hover, .next-button:hover, .year-button:hover {
+  opacity: 0.4; /* Hover effect */
+}
+.previous-button, .next-button {
+  padding: 10px 10px; /* Add padding */
+}
+.year-button {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding-bottom: 15px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.previous-button {
+  margin-right: 40px; 
+}
+.next-button {
+  margin-left: 40px; 
+}
+
+@media (max-width: 768px) {
+  .previous-button, .next-button {
+    font-size: 1rem; /* Smaller button font size for mobile */
+  }
+}
 footer[lang="ar"] {
   font-family: "Noto Sans Arabic", serif;
 }
