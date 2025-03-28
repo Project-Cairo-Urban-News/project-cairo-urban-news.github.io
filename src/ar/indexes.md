@@ -57,19 +57,19 @@ layout: doc_ar.njk
 <div class="explore-buttons">
   <div class="column">
     <h2>أنواع المنظمات</h2>
-    <a href="/en/indexes/orgTypesAr.html" class="index-button">عربي</a>
-    <a href="/en/indexes/orgTypesOta.html" class="index-button">التركية العثمانية</a>
+    <a href="/ar/indexes/orgTypesAr.html" class="index-button">عربي</a>
+    <a href="/ar/indexes/orgTypesOta.html" class="index-button">التركية العثمانية</a>
   </div>
 
   <div class="column">
     <h2>أنواع الأماكن</h2>
-    <a href="/en/indexes/placeTypesAr.html" class="index-button">عربي</a>
-    <a href="/en/indexes/placeTypesOta.html" class="index-button">التركية العثمانية</a>
+    <a href="/ar/indexes/placeTypesAr.html" class="index-button">عربي</a>
+    <a href="/ar/indexes/placeTypesOta.html" class="index-button">التركية العثمانية</a>
   </div>
 
   <div class="column">
     <h2>أدوار الأشخاص</h2>
-    <a href="/en/indexes/rolesAr.html" class="index-button">عربي</a>
-    <a href="/en/indexes/rolesOta.html" class="index-button">التركية العثمانية</a>
+    <a href="/ar/indexes/rolesAr.html" class="index-button">عربي</a>
+    <a href="/ar/indexes/rolesOta.html" class="index-button">التركية العثمانية</a>
   </div>
 </div>
