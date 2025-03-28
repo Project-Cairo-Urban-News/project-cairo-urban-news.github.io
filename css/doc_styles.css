@@ -9500,10 +9500,6 @@ html, body {
   flex-direction: column;
 }
 
-.main-content {
-  flex: 1; /* This makes sure content expands to fill available space */
-}
-
 body {
   background-color: #e9ded5;
   font-size: large;
