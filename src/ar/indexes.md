@@ -52,9 +52,9 @@ layout: doc_ar.njk
   }
 </style>
 
-<h1>فهارس</h1>
+<h1 class="col col-8 mt-4">فهارس</h1>
 
-<div class="explore-buttons">
+<div class="explore-buttons col col-8 mt-4">
   <div class="column">
     <h2>أنواع المنظمات</h2>
     <a href="/ar/indexes/orgTypesAr.html" class="index-button">عربي</a>
