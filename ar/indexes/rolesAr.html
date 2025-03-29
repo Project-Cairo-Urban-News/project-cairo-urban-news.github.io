@@ -6,27 +6,30 @@
     <link rel="stylesheet" href="/css/index_styles.css">
     <title>rolesAr</title>
     <style>
-        .alphabet-bar button {
-          width: 40px; /* Fixed width for uniformity */
-          height: 40px; /* Fixed height for uniformity */
-          font-family: "Noto Sans Arabic", sans-serif; /* Ensures Arabic font */
-          font-size: 18px;
-          font-weight: bold;
-          color: #333333; /* Dark gray text */
-          background-color: #d9cec7; /* Light beige background */
-          border: none;
-          border-radius: 5px;
-          cursor: pointer;
-          transition: background-color 0.3s ease; /* Smooth hover effect */
-      }
-      
-      .alphabet-bar button:hover {
-          background-color: #c4b7af; /* Slightly darker shade of beige */
-      }
-      
-      .alphabet-bar button:focus {
-          outline: none; /* Removes the default focus outline */
-      }
+            .alphabet-bar button {
+        width: 40px;
+        height: 40px;
+        font-family: "Noto Sans Arabic", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+        background-color: #d9cec7;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-bottom: 15px;
+    }
+    
+    .alphabet-bar button:hover,
+    .alphabet-bar button.active { /* Applies same style for hover and active button */
+        background-color: #c4b7af;
+    }
+    
+    .alphabet-bar button:focus {
+        outline: none;
+    }
+
             .filtered-item {
               display: none;
             }
@@ -37,6 +40,12 @@
             .filtered-item {
               display: none;
             }
+        tei-body tei-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* or in pixels: 309.094px 309.102px */
+      grid-column-gap: 10px;
+      position: static;
+    }
     </style>
   </head>
   <body>
@@ -6826,6 +6835,12 @@
           button.addEventListener("click", function () {
               const letter = this.getAttribute("data-letter");
 
+              // Remove "active" class from all buttons
+              buttons.forEach(btn => btn.classList.remove("active"));
+
+              // Add "active" class to the clicked button
+              this.classList.add("active");
+
               if (letter === "all") {
                   // Show all tei-items and their children
                   items.forEach(item => {
@@ -6861,6 +6876,7 @@
       });
   });
 </script>
+
 
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>  
