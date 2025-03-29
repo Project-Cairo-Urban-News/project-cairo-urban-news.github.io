@@ -1420,28 +1420,41 @@
           button.addEventListener("click", function () {
               const letter = this.getAttribute("data-letter");
 
-              // Hide all items and their children
-              items.forEach(item => {
-                  item.style.display = "none";
-                  item.querySelectorAll("*").forEach(child => {
-                      child.style.display = "none";
-                  });
-              });
-
-              // Show only matching items and all their nested elements
-              items.forEach(item => {
-                  if (item.getAttribute("data-letter") === letter) {
+              if (letter === "all") {
+                  // Show all tei-items and their children
+                  items.forEach(item => {
                       item.style.display = "block";
                       item.querySelectorAll("*").forEach(child => {
-                          child.style.display = "block";
+                          if (!child.matches("tei-idno")) {
+                              child.style.display = "block";
+                          }
                       });
-                  }
-              });
+                  });
+              } else {
+                  // Hide all items and their children
+                  items.forEach(item => {
+                      item.style.display = "none";
+                      item.querySelectorAll("*").forEach(child => {
+                          child.style.display = "none";
+                      });
+                  });
+
+                  // Show only matching items and all their nested elements
+                  items.forEach(item => {
+                      if (item.getAttribute("data-letter") === letter) {
+                          item.style.display = "block";
+                          item.querySelectorAll("*").forEach(child => {
+                              if (!child.matches("tei-idno")) {
+                                  child.style.display = "block";
+                              }
+                          });
+                      }
+                  });
+              }
           });
       });
   });
 </script>
-
 
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>  
