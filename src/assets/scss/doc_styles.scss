@@ -113,14 +113,13 @@ body {
   font-size: large;
   font-family: 'Fustat', serif;
 }
-  .border-svg {
+.border-svg {
   height: 140px;
   width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 p[lang="en"] {
   font-family: 'Fustat';
