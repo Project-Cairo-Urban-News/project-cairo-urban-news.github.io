@@ -9375,14 +9375,9 @@ tei-date[when-custom] {
 tei-biblscope {
   display: inline-block;
   font-size: 20px;
-  margin-top: -20px;
-  margin-right: 20px;
+  margin-right: 5px;
   font-weight: 400;
   text-align: center;
-}
-
-tei-biblscope[unit=issue] {
-  margin-right: 10px;
 }
 
 tei-biblscope[unit=issue]::after {
