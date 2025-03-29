@@ -9433,7 +9433,9 @@ footer[lang=en] {
 }
 
 .container {
-  padding-top: 25px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 table {
