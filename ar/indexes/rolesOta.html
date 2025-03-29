@@ -97,34 +97,34 @@
           </div>
         </div>
           <div class="alphabet-bar">
-          <button data-letter="ي">ي</button>
-          <button data-letter="و">و</button>
-          <button data-letter="هـ">هـ</button>
-          <button data-letter="ن">ن</button>
-          <button data-letter="م">م</button>
-          <button data-letter="ل">ل</button>
-          <button data-letter="ك">ك</button>
-          <button data-letter="ق">ق</button>
-          <button data-letter="ف">ف</button>
-          <button data-letter="غ">غ</button>
-          <button data-letter="ع">ع</button>
-          <button data-letter="ظ">ظ</button>
-          <button data-letter="ط">ط</button>
-          <button data-letter="ض">ض</button>
-          <button data-letter="ص">ص</button>
-          <button data-letter="ش">ش</button>
-          <button data-letter="س">س</button>
-          <button data-letter="ز">ز</button>
-          <button data-letter="ر">ر</button>
-          <button data-letter="ذ">ذ</button>
-          <button data-letter="د">د</button>
-          <button data-letter="خ">خ</button>
-          <button data-letter="ح">ح</button>
-          <button data-letter="ج">ج</button>
-          <button data-letter="ث">ث</button>
-          <button data-letter="ت">ت</button>
-          <button data-letter="ب">ب</button>
-          <button data-letter="ا">ا</button>
+          <button data-letter="ي" onclick="filterItems('ي')">ي</button>
+            <button data-letter="و" onclick="filterItems('و')">و</button>
+            <button data-letter="هـ" onclick="filterItems('هـ')">هـ</button>
+            <button data-letter="ن" onclick="filterItems('ن')">ن</button>
+            <button data-letter="م" onclick="filterItems('م')">م</button>
+            <button data-letter="ل" onclick="filterItems('ل')">ل</button>
+            <button data-letter="ك" onclick="filterItems('ك')">ك</button>
+            <button data-letter="ق" onclick="filterItems('ق')">ق</button>
+            <button data-letter="ف" onclick="filterItems('ف')">ف</button>
+            <button data-letter="غ" onclick="filterItems('غ')">غ</button>
+            <button data-letter="ع" onclick="filterItems('ع')">ع</button>
+            <button data-letter="ظ" onclick="filterItems('ظ')">ظ</button>
+            <button data-letter="ط" onclick="filterItems('ط')">ط</button>
+            <button data-letter="ض" onclick="filterItems('ض')">ض</button>
+            <button data-letter="ص" onclick="filterItems('ص')">ص</button>
+            <button data-letter="ش" onclick="filterItems('ش')">ش</button>
+            <button data-letter="س" onclick="filterItems('س')">س</button>
+            <button data-letter="ز" onclick="filterItems('ز')">ز</button>
+            <button data-letter="ر" onclick="filterItems('ر')">ر</button>
+            <button data-letter="ذ" onclick="filterItems('ذ')">ذ</button>
+            <button data-letter="د" onclick="filterItems('د')">د</button>
+            <button data-letter="خ" onclick="filterItems('خ')">خ</button>
+            <button data-letter="ح" onclick="filterItems('ح')">ح</button>
+            <button data-letter="ج" onclick="filterItems('ج')">ج</button>
+            <button data-letter="ث" onclick="filterItems('ث')">ث</button>
+            <button data-letter="ت" onclick="filterItems('ت')">ت</button>
+            <button data-letter="ب" onclick="filterItems('ب')">ب</button>
+            <button data-letter="ا" onclick="filterItems('ا')">ا</button>
         </div>
             <TEI-TEI data-xmlns="http://www.tei-c.org/ns/1.0" data-origname="TEI" data-origatts="xmlns">
    <TEI-TEIHEADER data-origname="teiHeader">
@@ -829,18 +829,21 @@
     document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.querySelectorAll(".alphabet-bar button");
         const items = document.querySelectorAll(".tei-item");
-    
+
+        function filterItems(letter) {
+            items.forEach(item => {
+                if (item.getAttribute("data-letter") === letter || letter === "all") {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+
         buttons.forEach(button => {
             button.addEventListener("click", function () {
                 const letter = this.getAttribute("data-letter");
-    
-                items.forEach(item => {
-                    if (item.getAttribute("data-letter") === letter || letter === "all") {
-                        item.style.display = "block";
-                    } else {
-                        item.style.display = "none";
-                    }
-                });
+                filterItems(letter);
             });
         });
     });
