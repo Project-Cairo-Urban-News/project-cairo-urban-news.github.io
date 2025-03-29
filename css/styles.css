@@ -9290,11 +9290,6 @@ body {
   flex-direction: column;
 }
 
-footer {
-  padding: 15px;
-  position: relative;
-}
-
 .border-svg {
   height: 140px;
   width: auto;
