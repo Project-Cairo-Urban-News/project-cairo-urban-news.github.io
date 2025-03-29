@@ -3,14 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
     <title>{{ title }}</title>
     <style>
-      
+      /* Same styles as before */
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
 
-      /* Full-screen background image */
       body, html {
         height: 100%;
         margin: 0;
@@ -27,7 +25,6 @@
         z-index: -1;
       }
 
-      /* Dark overlay for readability */
       .overlay {
         position: fixed;
         top: 0;
@@ -38,7 +35,6 @@
         z-index: 0;
       }
 
-      /* Centered content */
       .content {
         position: absolute;
         top: 50%;
@@ -49,14 +45,8 @@
         z-index: 1;
       }
 
-      /* Large text styles */
       .display-3 {
         font-size: 3rem;
-      }
-
-      .bi {
-        transform: scale(3.5); 
-        transform-origin: center center; 
       }
 
       .navbar-text.display-3 {
@@ -66,35 +56,37 @@
       }
 
       .title-container {
-        display: flex;          /* Aligns both spans horizontally */
-        align-items: center;    /* Vertically centers the spans */
-        justify-content: center; /* Centers them within the parent container */
+        display: flex;          
+        align-items: center;    
+        justify-content: center; 
         gap: 20px;
         padding-top: 120px
-    }
+      }
+
       .col-lg {
-      font-family: 'Fustat';
-      font-weight: 400; 
-      line-height: 1.8;
-      font-size: 2rem;
-      margin-top: 20px;
-      
-    }
+        font-family: 'Fustat';
+        font-weight: 400; 
+        line-height: 1.8;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+
       .col-lg a {
-      color: #FFFFFF;  /* Default color */
-      text-decoration: none;  /* Remove underline */
-      transition: color 0.5s ease, text-decoration 0.5s ease;  /* Transition time and effect */
-    }
-      /* Change color on hover */
+        color: #FFFFFF;  
+        text-decoration: none;  
+        transition: color 0.5s ease, text-decoration 0.5s ease;
+      }
+
       .col-lg a:hover {
-      color: #507f93; 
-      text-decoration: none;  
-    }
+        color: #507f93; 
+        text-decoration: none;  
+      }
+
       .dot {
-      font-size: 1.5rem;        /* Size of the dot, adjust as needed */
-      margin: 10px;         /* Space on either side of the dot */
-      color: white;           /* Dot color, you can change it to match the design */
-    }
+        font-size: 1.5rem;        
+        margin: 10px;         
+        color: white;           
+      }
     </style>
   </head>
   <body>
@@ -121,7 +113,26 @@
       </div>
     </div>
 
-     {% include 'wm_logo.html' %}
-    <script type="module" src="js/main.js"></script>
+    {% include 'wm_logo.html' %}
+    <script>
+      // Get all language links
+      const languageLinks = document.querySelectorAll('.language-link');
+      
+      // Add event listeners to each language link
+      languageLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent the default link behavior (navigation)
+
+          // Add fade-out effect
+          document.body.style.transition = "opacity 0.3s ease";
+          document.body.style.opacity = "0"; // Fade out the whole page
+
+          // After 0.3s (time for fade-out), navigate to the new page
+          setTimeout(() => {
+            window.location.href = link.href; // Go to the new language page
+          }, 300); // Wait for the fade-out to complete
+        });
+      });
+    </script>
   </body>
 </html>
