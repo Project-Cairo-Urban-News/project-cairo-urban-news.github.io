@@ -9508,11 +9508,10 @@ body {
 .border-svg {
   height: 140px;
   width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
 }
 
 .backbutton-container {
