@@ -250,10 +250,16 @@ table {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
+  grid-auto-rows: auto; 
   gap: 10px;
   margin-bottom: 20px;
-  font-family: "Noto Sans Arabic";
+  font-family: "Fustat";
+  width: 100%;
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
 .wrapper > div {
   background-color: #d9cdc7;
@@ -268,7 +274,7 @@ table {
 }
 .wrapper li {
   margin-bottom: .5em;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .col0 {
