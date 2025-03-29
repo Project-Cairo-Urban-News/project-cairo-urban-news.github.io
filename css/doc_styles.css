@@ -9493,6 +9493,7 @@ html, body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  max-width: 60%;
 }
 
 body {
@@ -9554,13 +9555,6 @@ li.nav-item {
   margin: 0 auto;
   height: 100%;
   width: auto;
-}
-
-.container {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 0; /* Remove padding from the container */
 }
 
 .navigation-buttons-container {
