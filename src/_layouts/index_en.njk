@@ -13,7 +13,7 @@
   </head>
   <body>
   <main>
-    {% include 'navbar_ar.njk' %}
+    {% include 'navbar_en.njk' %}
     <div class="container">
         <div class="row justify-content-md-center">
           <div class="col col-8 mt-4">
@@ -37,11 +37,16 @@
             </svg>
           </div>
         <div>
-<p style="font-size: 26px; font-family: 'Fustat', sans-serif; text-align: center;">
+<p style="font-size: 20px; font-family: 'Fustat', sans-serif; text-align: center;">
     Browse items by letter and select a link to visit the source article.
 </p>
         </div>
-        </div>
+    <div>
+        <a href="en/indexes/">
+            <button class="backbutton">العودة إلى الفهارس</button>
+        </a>
+    </div>
+
                   <div class="alphabet-bar">
             <button data-letter="all">الكل</button>
             <button data-letter="ي">ي</button>
@@ -132,7 +137,7 @@
       c.addBehaviors(index_behaviors);
       c.processPage();
     </script>
-  {% include 'footer_ar.njk' %}
+  {% include 'footer_en.njk' %}
   </main>
   </body>
 </html>
