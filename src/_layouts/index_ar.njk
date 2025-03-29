@@ -87,13 +87,7 @@
           </div>
         </div>
       </div>
-    </main>
-
-    {% include 'wm_logo.html' %}
-    <script src="/js/main.js"></script>
-    <script src="/js/index.js"></script>
-    
-<script>
+      <script>
     document.addEventListener("DOMContentLoaded", function () {
         const buttons = document.querySelectorAll(".alphabet-bar button");
         const items = document.querySelectorAll(".tei-item");
@@ -116,8 +110,12 @@
         });
     });
 </script>
-    
-<script>
+    </main>
+
+    {% include 'wm_logo.html' %}
+    <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>  
+    <script>
       const c = new CETEI();
       c.addBehaviors(index_behaviors);
       c.processPage();
