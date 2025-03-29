@@ -9520,6 +9520,26 @@ body {
   margin: 0 auto;
 }
 
+.backbutton {
+  width: 120px; /* Slightly wider for better readability */
+  height: 40px;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  background-color: #d9cec7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.backbutton:hover,
+.backbutton:focus {
+  background-color: #c4b7af;
+  outline: none;
+}
+
 .alphabet-bar {
   margin-top: 20px;
   margin-bottom: 20px;
