@@ -18,7 +18,13 @@ const index_behaviors = {
         const teiName = item.querySelector('tei-name');
         if (teiName) {
           const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter
-          item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+          if (firstLetter) {
+            item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+          } else {
+            item.removeAttribute('data-letter'); // Remove if empty
+          }
+        } else {
+          item.removeAttribute('data-letter'); // Remove if no tei-name exists
         }
       });
     },
