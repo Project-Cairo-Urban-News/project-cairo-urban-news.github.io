@@ -18,7 +18,7 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s ease;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     
     .alphabet-bar button:hover,
@@ -37,18 +37,13 @@
           display: none !important;
       }
       
-            .filtered-item {
-              display: none;
-            }
-        tei-body tei-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* or in pixels: 309.094px 309.102px */
-      grid-column-gap: 10px;
-      position: static;
-    }
+      .filtered-item {
+       display: none;
+       }
     </style>
   </head>
   <body>
+  <main>
     {% include 'navbar_ar.njk' %}
     <div class="container">
         <div class="row justify-content-md-center">
@@ -172,5 +167,6 @@
       c.processPage();
     </script>
   {% include 'footer_ar.njk' %}
+  </main>
   </body>
 </html>
