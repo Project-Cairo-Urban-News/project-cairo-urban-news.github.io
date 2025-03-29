@@ -6813,17 +6813,28 @@
           button.addEventListener("click", function () {
               const letter = this.getAttribute("data-letter");
 
-              items.forEach(item => item.style.display = "none");
+              // Hide all items and their children
+              items.forEach(item => {
+                  item.style.display = "none";
+                  item.querySelectorAll("*").forEach(child => {
+                      child.style.display = "none";
+                  });
+              });
 
+              // Show only matching items and all their nested elements
               items.forEach(item => {
                   if (item.getAttribute("data-letter") === letter) {
                       item.style.display = "block";
+                      item.querySelectorAll("*").forEach(child => {
+                          child.style.display = "block";
+                      });
                   }
               });
           });
       });
   });
 </script>
+
 
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>  
