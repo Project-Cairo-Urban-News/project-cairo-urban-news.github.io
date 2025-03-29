@@ -15,21 +15,23 @@ const index_behaviors = {
       teiItems.forEach(item => {
         const teiName = item.querySelector('tei-name');
         if (teiName) {
-          const firstLetter = teiName.textContent.trim().charAt(0); // Get the first letter
+          const firstLetter = teiName.textContent.trim().charAt(0);
           if (firstLetter) {
-            item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
+            item.setAttribute('data-letter', firstLetter);
           } else {
-            item.removeAttribute('data-letter'); // Remove if empty
+            item.removeAttribute('data-letter');
           }
         } else {
-          item.removeAttribute('data-letter'); // Remove if no tei-name exists
+          item.removeAttribute('data-letter');
         }
       });
     },
     "filterItems": function(letter) {
-      const items = document.querySelectorAll(".tei-item");
+      const items = document.querySelectorAll(".tei-item[data-letter]"); // Only select elements with a valid data-letter
+
       items.forEach(item => {
-        if (item.getAttribute("data-letter") === letter || letter === "all") {
+        const dataLetter = item.getAttribute("data-letter");
+        if (dataLetter && (dataLetter === letter || letter === "all")) {
           item.style.display = "block";
         } else {
           item.style.display = "none";
