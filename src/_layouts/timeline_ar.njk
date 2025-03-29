@@ -6,6 +6,14 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>{{ title }}</title>
   </head>
+  <style>
+     .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      max-width: 90%;
+    }
+  </style>
   <body dir="ltr">
     {% include 'navbar_ar.njk' %}
     <main>
@@ -28,8 +36,8 @@
             <path d="M752.38,136.48c.52-3.86,1.28-7.22-.01-11.08,6.82-2.19,2.2,13.6.01,11.08Z"/>
             <path d="M745.21,137.21c-.42.36-2.55-.06-2.7-1.05,1.52-3.63.97-6.67.57-10.41,4.43-.87,2.74,10.94,2.13,11.45h0Z"/>
             </svg>
-        </div>
           {{ content | safe }}
+        </div>
     </main>
     <script src="/js/main.js"></script>
     {% include 'wm_logo.html' %}
