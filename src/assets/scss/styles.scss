@@ -256,8 +256,8 @@ table {
   font-family: "Noto Sans Arabic";
 }
 .wrapper > div {
-  background-color: #f8f9fa;
-  border: thin solid gray;
+  background-color: #d9cdc7;
+  border: none;
   padding: 20px;
   border-radius: 5px;
   width: 6rem;
@@ -268,6 +268,7 @@ table {
 }
 .wrapper li {
   margin-bottom: .5em;
+  margin-left: 10px;
 }
 
 .col0 {
