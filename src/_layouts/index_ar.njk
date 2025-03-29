@@ -92,30 +92,58 @@
     {% include 'wm_logo.html' %}
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
-    <script>
-  // Get all buttons
-  const buttons = document.querySelectorAll('.alphabet-bar button');
+    // Function to add the filtering script to the page
+function addFilteringScript() {
+  const script = document.createElement('script');
+  script.textContent = `
+    // Get all buttons
+    const buttons = document.querySelectorAll('.alphabet-bar button');
 
-  // Add event listener to each button
-  buttons.forEach(button => {
-    button.addEventListener('click', function() {
-      // Get the letter from the button's data-letter attribute
-      const letter = button.getAttribute('data-letter');
+    // Add event listener to each button
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Get the letter from the button's data-letter attribute
+        const letter = button.getAttribute('data-letter');
 
-      // Get all tei items
-      const teiItems = document.querySelectorAll('.tei-item');
+        // Get all tei items
+        const teiItems = document.querySelectorAll('.tei-item');
 
-      // Loop through tei items and show/hide based on data-letter
-      teiItems.forEach(item => {
-        if (item.getAttribute('data-letter') === letter) {
-          item.style.display = "block"; // Show matching items
-        } else {
-          item.style.display = "none"; // Hide non-matching items
-        }
+        // Loop through tei items and show/hide based on data-letter
+        teiItems.forEach(item => {
+          if (item.getAttribute('data-letter') === letter) {
+            item.style.display = "block"; // Show matching items
+          } else {
+            item.style.display = "none"; // Hide non-matching items
+          }
+        });
       });
     });
+  `;
+  document.body.appendChild(script);
+}
+
+// Create a new MutationObserver
+const observer = new MutationObserver((mutations) => {
+  let teiItemsAdded = false;
+  mutations.forEach((mutation) => {
+    if (mutation.type === 'childList') {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('tei-item')) {
+          teiItemsAdded = true;
+        }
+      });
+    }
   });
-</script>
+
+  // If tei-item elements were added, run the filtering script
+  if (teiItemsAdded) {
+    addFilteringScript();
+    observer.disconnect(); // Stop observing after running the script
+  }
+});
+
+// Start observing the document body for changes
+observer.observe(document.body, { childList: true, subtree: true });
 
 
     <script>
