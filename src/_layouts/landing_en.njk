@@ -5,40 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>{{ title }}</title>
-    <script>
-      // Ensure the background loads instantly while the rest stays hidden
-      document.addEventListener("DOMContentLoaded", function () {
-          const background = document.querySelector(".background");
-          const body = document.body;
-
-          // Ensure the background is instantly visible
-          if (background) {
-              background.style.opacity = "1";
-          }
-
-          // Set the body background to black and start the body content fully hidden
-          body.style.backgroundColor = "black";
-          body.style.opacity = "0";  // Initially hidden
-
-          // Transition for fade-in effect
-          body.style.transition = "opacity 0.2s ease-in-out, background-color 0.2s ease";
-
-          // Delay the fade-in effect for everything else
-          setTimeout(() => {
-              body.style.opacity = "1";  // Fade in content
-              body.style.backgroundColor = "transparent";  // Make background transparent for content
-          }, 200);  // 200ms delay before fading in the rest
-      });
-    </script>
   </head>
   <body dir="ltr">
-    <div class="background"></div> <!-- Background loads first -->
     {% include 'navbar_en.njk' %}
     <main>
       <div class="container">
             {{ content | safe }}
       </div>
     </main>
+    <script src="/js/main.js"></script>
     {% include 'wm_logo.html' %} 
   </body>
 </html>
