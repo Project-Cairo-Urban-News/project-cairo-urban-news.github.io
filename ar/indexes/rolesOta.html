@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -24,6 +23,9 @@
       }
       .alphabet-bar button:hover {
         background-color: #ddd;
+      }
+      .filtered-item {
+        display: none;
       }
     </style>
   </head>
@@ -823,17 +825,28 @@
   </g>
 </svg>
     <script>
-            document.addEventListener("DOMContentLoaded", function () {
-            const buttons = document.querySelectorAll(".alphabet-bar button");
-        
-            buttons.forEach(button => {
-                button.addEventListener("click", function () {
-                    const letter = this.getAttribute("data-letter");
-                    filterItems(letter); // Assuming filterItems is defined in an external file
-                });
-            });
-        });
-    </script>
+          document.addEventListener("DOMContentLoaded", function () {
+          const buttons = document.querySelectorAll(".alphabet-bar button");
+          const items = document.querySelectorAll(".item");
+      
+          function filterItems(letter) {
+              items.forEach(item => {
+                  if (item.getAttribute("data-letter") === letter) {
+                      item.style.display = "block";
+                  } else {
+                      item.style.display = "none";
+                  }
+              });
+          }
+      
+          buttons.forEach(button => {
+              button.addEventListener("click", function () {
+                  const letter = this.getAttribute("data-letter");
+                  filterItems(letter);
+              });
+          });
+      });
+  </script>
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>  
     <script>
