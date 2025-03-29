@@ -825,28 +825,26 @@
   </g>
 </svg>
     <script>
-          document.addEventListener("DOMContentLoaded", function () {
-          const buttons = document.querySelectorAll(".alphabet-bar button");
-          const items = document.querySelectorAll(".item");
-      
-          function filterItems(letter) {
+  document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".alphabet-bar button");
+      const items = document.querySelectorAll("tei-item");
+
+      buttons.forEach(button => {
+          button.addEventListener("click", function () {
+              const letter = this.getAttribute("data-letter");
+
+              items.forEach(item => item.style.display = "none");
+
               items.forEach(item => {
                   if (item.getAttribute("data-letter") === letter) {
                       item.style.display = "block";
-                  } else {
-                      item.style.display = "none";
                   }
-              });
-          }
-      
-          buttons.forEach(button => {
-              button.addEventListener("click", function () {
-                  const letter = this.getAttribute("data-letter");
-                  filterItems(letter);
               });
           });
       });
-  </script>
+  });
+</script>
+
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>  
     <script>
