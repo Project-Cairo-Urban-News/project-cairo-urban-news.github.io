@@ -907,29 +907,30 @@
     <script src="/js/main.js"></script>
     <script src="/js/index.js"></script>
     <script>
-      // Get all buttons
-      const buttons = document.querySelectorAll('.alphabet-bar button');
+  // Get all buttons
+  const buttons = document.querySelectorAll('.alphabet-bar button');
 
-      // Add event listener to each button
-      buttons.forEach(button => {
-        button.addEventListener('click', function() {
-          // Get the letter from the button's data-letter attribute
-          const letter = button.getAttribute('data-letter');
+  // Add event listener to each button
+  buttons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Get the letter from the button's data-letter attribute
+      const letter = button.getAttribute('data-letter');
 
-          // Get all content items
-          const contentItems = document.querySelectorAll('.content-item');
+      // Get all content items
+      const contentItems = document.querySelectorAll('.content-item');
 
-          // Loop through content items and show/hide based on data-letter
-          contentItems.forEach(item => {
-            if (item.getAttribute('data-letter') === letter) {
-              item.classList.add('show');
-            } else {
-              item.classList.remove('show');
-            }
-          });
-        });
+      // Loop through content items and show/hide based on data-letter
+      contentItems.forEach(item => {
+        if (item.getAttribute('data-letter') === letter) {
+          item.style.display = "block"; // Show matching items
+        } else {
+          item.style.display = "none"; // Hide non-matching items
+        }
       });
-    </script>
+    });
+  });
+</script>
+
     <script>
       const c = new CETEI();
       c.addBehaviors(index_behaviors);
