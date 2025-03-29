@@ -9515,11 +9515,18 @@ body {
   margin: 0 auto;
 }
 
+.backbutton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height to center vertically */
+}
+
 .backbutton {
-  width: 120px; /* Slightly wider for better readability */
+  width: 120px;
   height: 40px;
   font-family: "Noto Sans Arabic", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   color: #333333;
   background-color: #d9cec7;
