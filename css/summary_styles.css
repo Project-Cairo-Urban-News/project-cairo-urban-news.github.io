@@ -9401,6 +9401,32 @@ p[lang=ar] {
     font-size: 1rem; /* Smaller button font size for mobile */
   }
 }
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-auto-rows: auto;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: "Fustat";
+  width: 100%;
+  max-width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper > div {
+  background-color: #d9cdc7;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  width: 6rem;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color: inherit; /* Optional: Keeps the text color consistent */
+}
+
 td {
   font-family: "Noto Sans Arabic", sans-serif;
   font-weight: 300;
