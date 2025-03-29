@@ -125,22 +125,23 @@ body {
   align-items: center;
   margin: 0 auto;
 }
-  .alphabet-bar button {
-        width: 40px;
-        height: 40px;
-        font-family: "Noto Sans Arabic", sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        color: #333333;
-        background-color: #d9cec7;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        margin-bottom: 20px;
-        margin-top: 20px;
+.alphabet-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.alphabet-bar button {
+  width: 40px;
+  height: 40px;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  background-color: #d9cec7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
     }
-    
     .alphabet-bar button:hover,
     .alphabet-bar button.active { /* Applies same style for hover and active button */
         background-color: #c4b7af;
