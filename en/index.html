@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Cairo Urban News</title>
+    <script>
+      // Ensure the background loads instantly while the rest stays hidden
+      document.addEventListener("DOMContentLoaded", function () {
+          const background = document.querySelector(".background");
+          const body = document.body;
+
+          // Ensure the background is instantly visible
+          if (background) {
+              background.style.opacity = "1";
+          }
+
+          // Start body content fully hidden
+          body.style.opacity = "0";
+          body.style.transition = "opacity 0.6s ease-in-out";
+
+          // Delay the fade-in effect for everything else
+          setTimeout(() => {
+              body.style.opacity = "1";
+          }, 200); // 200ms delay before fading in the rest
+      });
+    </script>
   </head>
   <body dir="ltr">
+    <div class="background"></div> <!-- Background loads first -->
     <nav class="navbar navbar-expand-lg navbar-dark" data-bs-theme="light">
   <div class="container-fluid justify-content-start">
     <a class="navbar-brand" href="/">
@@ -216,7 +238,6 @@
 
       </div>
     </main>
-    <script src="/js/main.js"></script>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <g id="wm_logo">
     <path
