@@ -21,7 +21,31 @@ const index_behaviors = {
           item.setAttribute('data-letter', firstLetter); // Set the data-letter attribute
         }
       });
+    },
+    "filterItems": function(letter) {
+      const items = document.querySelectorAll(".tei-item");
+      items.forEach(item => {
+        if (item.getAttribute("data-letter") === letter || letter === "all") {
+          item.style.display = "block";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    },
+    "setupAlphabetFilter": function() {
+      const buttons = document.querySelectorAll(".alphabet-bar button");
+      buttons.forEach(button => {
+        button.addEventListener("click", function() {
+          const letter = this.getAttribute("data-letter");
+          index_behaviors["tei"].filterItems(letter);
+        });
+      });
     }
   }
 };
-index_behaviors["tei"].addDataLetterToTeiItems();
+
+// Run functions on page load
+document.addEventListener("DOMContentLoaded", function() {
+  index_behaviors["tei"].addDataLetterToTeiItems();
+  index_behaviors["tei"].setupAlphabetFilter();
+});
