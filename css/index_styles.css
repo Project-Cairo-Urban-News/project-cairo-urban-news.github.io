@@ -9520,8 +9520,41 @@ body {
   margin: 0 auto;
 }
 
-p {
-  font-family: "Noto Sans Arabic";
+.alphabet-bar button {
+  width: 40px;
+  height: 40px;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+  background-color: #d9cec7;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.alphabet-bar button:hover,
+.alphabet-bar button.active { /* Applies same style for hover and active button */
+  background-color: #c4b7af;
+}
+
+.alphabet-bar button:focus {
+  outline: none;
+}
+
+.filtered-item {
+  display: none;
+}
+
+tei-idno {
+  display: none !important;
+}
+
+.filtered-item {
+  display: none;
 }
 
 p[lang=en] {
@@ -9551,10 +9584,6 @@ tei-item tei-date {
 tei-item a {
   display: block;
   margin-right: 4em;
-}
-
-tei-idno {
-  display: none;
 }
 
 nav {
