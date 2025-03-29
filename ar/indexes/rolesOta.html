@@ -6,47 +6,39 @@
     <link rel="stylesheet" href="/css/index_styles.css">
     <title>rolesOta</title>
     <style>
-      .alphabet-bar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
-    margin: 20px 0;
-    gap: 5px;
-}
+              .alphabet-bar {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Ensures buttons wrap on smaller screens */
+            margin: 20px 0;
+            gap: 5px;
+        }
+        
+        .alphabet-bar button {
+            width: 40px; /* Fixed width for uniformity */
+            height: 40px; /* Fixed height for uniformity */
+            font-family: "Noto Sans Arabic", sans-serif; /* Ensures Arabic font */
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #507f93;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; 
+        }
+        
+        .alphabet-bar button:hover {
+            background-color: #3e6578; 
+        }
+        
+        .alphabet-bar button:focus {
+            outline: none; 
+        }
 
-.alphabet-bar button {
-    width: 40px; /* Fixed width for uniformity */
-    height: 40px; /* Fixed height for uniformity */
-    font-family: "Noto Sans Arabic", sans-serif; /* Ensures Arabic font */
-    font-size: 18px;
-    font-weight: bold;
-    color: #333333; /* Dark gray text */
-    background-color: #d9cec7; /* Light beige background */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.alphabet-bar button:hover {
-    background-color: #c4b7af; /* Slightly darker shade of beige */
-}
-
-.alphabet-bar button:focus {
-    outline: none; /* Removes the default focus outline */
-}
       .filtered-item {
         display: none;
       }
-tei-idno {
-    display: none !important;
-}
-tei-date, tei-ref {
-    display: inline;
-}
-tei-date::after {
-    content: " - "; /* Adds a separator between date and ref */
-}
     </style>
   </head>
   <body>
@@ -117,9 +109,15 @@ tei-date::after {
             <path d="M745.21,137.21c-.42.36-2.55-.06-2.7-1.05,1.52-3.63.97-6.67.57-10.41,4.43-.87,2.74,10.94,2.13,11.45h0Z"/>
             </svg>
           </div>
+        <div>
+<p style="font-size: 20px; font-family: 'Noto Sans Arabic', sans-serif; text-align: center;">
+    ابحث في الفهرس حسب الحرف وزر المقالات الأصلية المرتبطة بالعناصر
+</p>
         </div>
-          <div class="alphabet-bar">
-          <button data-letter="ي">ي</button>
+        </div>
+                  <div class="alphabet-bar">
+            <button data-letter="all">الكل</button>
+            <button data-letter="ي">ي</button>
             <button data-letter="و">و</button>
             <button data-letter="هـ">هـ</button>
             <button data-letter="ن">ن</button>
@@ -846,47 +844,33 @@ tei-date::after {
 </svg>
     <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".alphabet-bar button");
-    const items = document.querySelectorAll("tei-item");
+      const buttons = document.querySelectorAll(".alphabet-bar button");
+      const items = document.querySelectorAll("tei-item");
 
-    // Ensures tei-idno is always hidden
-    document.querySelectorAll("tei-idno").forEach(idno => {
-        idno.style.display = "none";
-    });
+      buttons.forEach(button => {
+          button.addEventListener("click", function () {
+              const letter = this.getAttribute("data-letter");
 
-    function filterItems(letter) {
-        // Hide all items and their children
-        items.forEach(item => {
-            item.style.display = "none";
-            item.querySelectorAll("*").forEach(child => {
-                child.style.display = "none";
-            });
-        });
+              // Hide all items and their children
+              items.forEach(item => {
+                  item.style.display = "none";
+                  item.querySelectorAll("*").forEach(child => {
+                      child.style.display = "none";
+                  });
+              });
 
-        // Show matching items and all their nested elements
-        items.forEach(item => {
-            if (letter === "all" || item.getAttribute("data-letter") === letter) {
-                item.style.display = "block";
-                item.querySelectorAll("*").forEach(child => {
-                    child.style.display = "block";
-                });
-
-                // Always keep tei-idno hidden
-                item.querySelectorAll("tei-idno").forEach(idno => {
-                    idno.style.display = "none";
-                });
-            }
-        });
-    }
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
-            const letter = this.getAttribute("data-letter");
-            filterItems(letter);
-        });
-    });
-});
-
+              // Show only matching items and all their nested elements
+              items.forEach(item => {
+                  if (item.getAttribute("data-letter") === letter) {
+                      item.style.display = "block";
+                      item.querySelectorAll("*").forEach(child => {
+                          child.style.display = "block";
+                      });
+                  }
+              });
+          });
+      });
+  });
 </script>
 
 
