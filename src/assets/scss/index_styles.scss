@@ -204,10 +204,12 @@ tei-item {
   display: block;
   margin: 0 auto;
 }
-tei-list& {
+tei-list {
+  &-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 15px;  }
+}
 }
 tei-name {
   display: block;
