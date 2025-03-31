@@ -9601,7 +9601,7 @@ tei-item {
   margin: 0 auto;
 }
 
-tei-list-item {
+div > tei-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15px;
