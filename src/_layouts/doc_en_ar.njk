@@ -16,7 +16,6 @@
     <main dir="ltr">
       {% set previous = collections.page_en_ar_sorted | getPreviousCollectionItem(page) %}
       {% set next = collections.page_en_ar_sorted | getNextCollectionItem(page) %}
-
       <div class="row navigation-buttons-container">
           <div class="col fs-5 text-center">
             {% if previous %}
@@ -34,12 +33,8 @@
       </div>
     
       <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col col-8 mt-4">
             <img src="/images/vaseheadernoborder.svg" alt="Vase Header No Border" class="wmheader">
             {{ content | safe }}
-          </div>
-        </div>
       </div>
     </main>
     {% include 'wm_logo.html' %}
