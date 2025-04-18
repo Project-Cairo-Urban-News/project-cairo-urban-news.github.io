@@ -9,6 +9,7 @@ export default function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/assets/images": "images" });
   eleventyConfig.addPassthroughCopy({ "src/assets/js/*.map": "js" });
+  eleventyConfig.addPassthroughCopy({ "src/assets/js/*.json": "js" });
 
   eleventyConfig.addFilter("getYears",
     function(pages) {
