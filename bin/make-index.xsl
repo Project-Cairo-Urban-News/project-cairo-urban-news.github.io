@@ -16,7 +16,7 @@
   </xsl:function>
   
   <xsl:template name="xsl:initial-template">
-    <xsl:variable name="articles" select="collection('../articles/arabic?select=*.xml')[TEI/teiHeader/revisionDesc[@status='cleared']]"/>
+    <xsl:variable name="articles" select="collection('../src/CairoUrbanNews/articles/arabic?select=*.xml')[TEI/teiHeader/revisionDesc[@status='cleared']]"/>
     <xsl:sequence select="array { tei:apply-templates($articles) }"/>
   </xsl:template>
   
