@@ -17,8 +17,9 @@ jobs:
           submodules: 'true'
           fetch-depth: 0
       - name: Update submodule
-        run:	git config --global --add safe.directory /__w/project-cairo-urban-news.github.io/project-cairo-urban-news.github.io
-        run: git submodule update --remote src/CairoUrbanNews
+        run:	|
+          git config --global --add safe.directory /__w/project-cairo-urban-news.github.io/project-cairo-urban-news.github.io
+          git submodule update --remote src/CairoUrbanNews
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
