@@ -20,7 +20,7 @@ jobs:
           node-version: '18'
       - run: npm install
       - run: npm run split
-      - run: sudo apt update && sudo apt install -y saxonhe
+      - run: sudo apt update && sudo apt install -y libsaxonhe-java
       - run: saxon -xsl:bin/make-index.xsl -it -o:src/assets/js/lunr.json 
       - run: jq '[. | unique_by(.Hijri_Date[:4]) | .[] | {"year":.Hijri_Date[:4]}]' ./src/_data/manifests.json > ./src/_data/manifest_years.json
       - run: cp -R ./src/CairoUrbanNews ./src/CairoUrbanNews-ar
