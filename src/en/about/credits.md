@@ -11,6 +11,8 @@ Website concept: Hugh Cayless and Adam Mestyan
 
 Codes and design: Hugh Cayless
 
+Website design: Vishal Jammulapati
+
 Content in English and Arabic: Adam Mestyan
 
 Arabic proofreading: Ahmed Kamal
