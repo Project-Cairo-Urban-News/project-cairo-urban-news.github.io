@@ -15,7 +15,7 @@ Ayalon, Ami. 1995. The Press in the Arab Middle East - A History. New York: Oxfo
 
 Mestyan, Adam. 2017. Arab Patriotism: The Ideology and Culture of Power in Late Ottoman Egypt. Princeton, NJ: Princeton University Press.
 
-Raḍwān, Abū al-Futūḥ. 1953. Tārīkh Maṭbaʿat Būlāq. Cairo: al-Maṭbaʿa al-Amīriyya.
+Raḍwān, Abū al-Futūḥ. 1953. Tārīkh Maṭbaʿat Būlāq. Cairo: al-Maṭbaʿah al-Amīriyyah.
 
 Al-Rifāʿī, ʿAbd al-Raḥmān. 1987.  ʿAṣr Ismāʿīl, vol. 1. Cairo: Dār al-Maʿārif, 1987. 
 
@@ -23,7 +23,7 @@ Al-Rifāʿī, ʿAbd al-Raḥmān. 1987.  ʿAṣr Ismāʿīl, vol. 1. Cairo: Dār
 
 Sadgrove, Philip C. 1983. “The Development of the Arabic periodical press and its role in the literary life of Egypt (1798–1882),” University of Edinburgh, unpublished Ph.D. thesis.
 
-Ṭarrāzī, Fīlīp dī (Philip de Tarrazi), Tāʾrīkh al-Ṣiḥāfah al-ʿArabiyyah, 2 vols. (Beirut: Maṭbaʿat al-Adabiyya, 1913, 1933).
+Ṭarrāzī, Fīlīp dī (Philip de Tarrazi). 1913, 1933. Tāʾrīkh al-Ṣiḥāfah al-ʿArabiyyah, 2 vols. Beirut: Maṭbaʿat al-Adabiyyah.
 
 
 
