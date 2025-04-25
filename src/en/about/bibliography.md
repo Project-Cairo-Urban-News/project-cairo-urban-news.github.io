@@ -23,7 +23,7 @@ Al-Rifāʿī, ʿAbd al-Raḥmān. 1987.  ʿAṣr Ismāʿīl, vol. 1. Cairo: Dār
 
 Sadgrove, Philip C. 1983. “The Development of the Arabic periodical press and its role in the literary life of Egypt (1798–1882),” University of Edinburgh, unpublished Ph.D. thesis.
 
-Ṭarrāzī, Fīlīp dī (Philip de Tarrazi). 1913, 1933. Tāʾrīkh al-Ṣiḥāfah al-ʿArabiyyah, 2 vols. Beirut: Maṭbaʿat al-Adabiyyah.
+Ṭarrāzī, Fīlīp dī (Philip de Tarrazi). 1913-1933. Tāʾrīkh al-Ṣiḥāfah al-ʿArabiyyah, 4 vols. Beirut: al-Maṭbaʿah al-Adabiyyah.
 
 
 
