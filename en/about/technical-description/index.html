@@ -72,7 +72,6 @@
             <path d="M745.21,137.21c-.42.36-2.55-.06-2.7-1.05,1.52-3.63.97-6.67.57-10.41,4.43-.87,2.74,10.94,2.13,11.45h0Z"/>
             </svg>
             <h1>Technical Description</h1>
-<br>
 <p>The “Digital Cairo” project involved creating a vocabulary of mark-up (a minimal set of elements and attributes, better known as a “schema”) and a partially automated workflow for the XML transformation and TEI mark-up of Arabic-character-based texts from Microsoft Word documents. The workflow utilizes the Oxygen editing software and GitHub for collaborative mark-up, automation, and storage. Hugh Cayless undertook the bulk of the coding and design, with Adam Mestyan assisting with lower-level coding tasks. Once the editors declared a marked-up file finalized, further automated transformations assigned IDs to groups of data. Indexes were then created using XSLT transformations. Finally, Hugh Cayless and Adam Mestyan developed this website using GitHub. We believe that one of the major contributions of this project to (Arabic-script-based) digital humanities is its workflow.</p>
 <p>This document outlines the workflow, including details about automated GitHub actions and other technical processes, such as creating the timeline on this website. Beginners in using Oxygen software for TEI mark-up of Arabic-character-based documents can visit our website for a crash course with basic definitions: https://arabic-tei-workshop.github.io/index.html. For more technical details, see the paper by Cayless and Mestyan HERE.</p>
 <h2>1. Our schema</h2>
@@ -100,11 +99,13 @@
 <h2>3. XSLT Transformation of Data for Indexes</h2>
 <p>[in progress] An XQuery program extracts marked personal names from the source documents, performs basic collation, and generates a TEI document listing person definitions with associated names and document locations. OpenRefine further refines this data, aligning it where possible with online gazetteers and Wikidata entries.</p>
 <h2>4. Creating the Website Timeline</h2>
-<p>Website files are organized by hijrī year and month using the article header data. A GitHub Action manages the publishing process, splitting articles into separate files and converting TEI XML into HTML Custom Elements using CETEIcean. These elements are styled with CSS and JavaScript.</p>
+<p>Website files are organized by hijrī year and month using the article header data. A GitHub Action manages the publishing process, splitting articles into separate files and converting TEI XML into HTML Custom Elements using <a href="https://github.com/TEIC/CETEIcean">CETEIcean</a>. These elements are styled with CSS and JavaScript.</p>
 <h2>5. Displaying Marked-Up XML Text</h2>
-<p>Text from each selected article is displayed as a webpage formatted by Vishal Jammulapati based on a <a href="https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.image">January 1829 edition</a> of al-Waqāʾiʿ al-Miṣriyyah using HTML and CSS. Each page includes the hijrī and Gregorian dates, edition and page number, and original article titles or section headings. Words marked misspelled in the TEI markup process have been corrected
-and marked with an underline and tooltip containing the original spelling.</p>
-<br>
+<p>Text from each selected article is displayed as a webpage formatted by Vishal Jammulapati based on a <a href="https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.image">January 1829 edition</a> of al-Waqāʾiʿ al-Miṣriyyah using HTML and CSS. Each page includes the hijrī and Gregorian dates, edition and page number, and original article titles or section headings. Words marked misspelled in the TEI markup process have been corrected and marked with an underline and tooltip containing the original spelling.</p>
+<h2>6. WM Online</h2>
+<p>Issues of al-Waqāʾiʿ al-Miṣriyyah that were scanned by the Bibliothèque Nationale de France and are hosted by <a href="https://gallica.bnf.fr">Gallica</a> are made available on the site via <a href="https://iiif.io/">IIIF</a> and the <a href="https://projectmirador.org/">Mirador</a> viewer. There are also a number of microfiche issues that were scanned by the Center for Research Libraries and we hope to present these also in the future.</p>
+<h2>7. Search</h2>
+<p>As part of the site generation process, the TEI XML files, for which there is one per year, are split up so that there is one file per article. These are processed into HTML files as described above and the plain text of those files are built into a data structure that will be used for searching using <a href="https://lunrjs.com/">Lunr.js</a>, a tool for searching static sites.</p>
 
         </div>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
