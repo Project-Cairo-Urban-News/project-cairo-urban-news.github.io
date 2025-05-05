@@ -2,10 +2,7 @@
 title: Technical Description
 layout: doc_en.njk
 ---
-
 # Technical Description
-
-<br>
 
 The “Digital Cairo” project involved creating a vocabulary of mark-up (a minimal set of elements and attributes, better known as a “schema”) and a partially automated workflow for the XML transformation and TEI mark-up of Arabic-character-based texts from Microsoft Word documents. The workflow utilizes the Oxygen editing software and GitHub for collaborative mark-up, automation, and storage. Hugh Cayless undertook the bulk of the coding and design, with Adam Mestyan assisting with lower-level coding tasks. Once the editors declared a marked-up file finalized, further automated transformations assigned IDs to groups of data. Indexes were then created using XSLT transformations. Finally, Hugh Cayless and Adam Mestyan developed this website using GitHub. We believe that one of the major contributions of this project to (Arabic-script-based) digital humanities is its workflow.
 
@@ -16,9 +13,9 @@ This document outlines the workflow, including details about automated GitHub ac
 We developed a TEI ODD schema focused on a basic document structure with support for marking names of persons, places, and organizations. Additional constraints were introduced, mainly to help editors identify errors involving misplaced spaces, which can be difficult to detect in Oxygen’s Author mode. As we gained insights into our data, we added new features to the schema, such as suggested values for the type attribute to aid editors in marking up the articles.
 
 ## 2. Our Workflow
-   
+
 ### 2.1 Creating Data in Microsoft Word Documents
-   
+
 Adam Mestyan and Mercedes Volait defined criteria for the research assistants tasked with reading, selecting, and transcribing articles from al-Waqāʾiʿ al-Miṣriyyah. These criteria encompassed articles about urban development in Cairo, including destruction and reconstruction, urban regulations and policies, auctions of urban property, pious endowments in Cairo, infrastructure changes (e.g., roads, bridges, trains, transportation), and natural catastrophes like earthquakes.
 
 Based on these criteria, Sarah Fathallah Garaah, Karima Nasr, and Rezk Nori read and manually transcribed articles from the microfilms of al-Waqāʾiʿ al-Miṣriyyah (1828–1914) stored at Dār al-Kutub al-Miṣriyyah. Similarly, Arif Erbil and Huseyin Sağlam manually transcribed articles from the Ottoman issues available at the Atatürk Kitaplığı. The output consisted of Arabic-script texts in Microsoft Word documents with varied formatting and date systems (hijrī and mīlādī), which caused initial inconsistency.
@@ -46,17 +43,25 @@ Control checks followed, involving:
 - Finally, Mestyan took over and compared every single file with the various versions, often requesting one of the researchers to go back (yet again!) to Dār al-Kutub. Once he was satisfied with a file’s content and mark-up he “cleared” the file – meaning he added the attribute status: cleared![
 
 ### 2.5 Second Automated Transformation: Adding IDs
+
 Once a document was marked as “cleared” by Mestyan, a GitHub Action assigned unique xml:id attributes to article divisions, person names, place names, and organization names. This ensured consistent identification within the dataset.
 
 ## 3. XSLT Transformation of Data for Indexes
+
 [in progress] An XQuery program extracts marked personal names from the source documents, performs basic collation, and generates a TEI document listing person definitions with associated names and document locations. OpenRefine further refines this data, aligning it where possible with online gazetteers and Wikidata entries.
 
 ## 4. Creating the Website Timeline
-Website files are organized by hijrī year and month using the article header data. A GitHub Action manages the publishing process, splitting articles into separate files and converting TEI XML into HTML Custom Elements using CETEIcean. These elements are styled with CSS and JavaScript.
+
+Website files are organized by hijrī year and month using the article header data. A GitHub Action manages the publishing process, splitting articles into separate files and converting TEI XML into HTML Custom Elements using [CETEIcean](https://github.com/TEIC/CETEIcean). These elements are styled with CSS and JavaScript.
 
 ## 5. Displaying Marked-Up XML Text
-Text from each selected article is displayed as a webpage formatted by Vishal Jammulapati based on a [January 1829 edition](https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.image) of al-Waqāʾiʿ al-Miṣriyyah using HTML and CSS. Each page includes the hijrī and Gregorian dates, edition and page number, and original article titles or section headings. Words marked misspelled in the TEI markup process have been corrected 
-and marked with an underline and tooltip containing the original spelling. 
 
-<br>
+Text from each selected article is displayed as a webpage formatted by Vishal Jammulapati based on a [January 1829 edition](https://gallica.bnf.fr/ark:/12148/bpt6k12150259/f1.image) of al-Waqāʾiʿ al-Miṣriyyah using HTML and CSS. Each page includes the hijrī and Gregorian dates, edition and page number, and original article titles or section headings. Words marked misspelled in the TEI markup process have been corrected and marked with an underline and tooltip containing the original spelling.
 
+## 6. WM Online
+
+Issues of al-Waqāʾiʿ al-Miṣriyyah that were scanned by the Bibliothèque Nationale de France and are hosted by [Gallica](https://gallica.bnf.fr) are made available on the site via [IIIF](https://iiif.io/) and the [Mirador](https://projectmirador.org/) viewer. There are also a number of microfiche issues that were scanned by the Center for Research Libraries and we hope to present these also in the future.
+
+## 7. Search
+
+As part of the site generation process, the TEI XML files, for which there is one per year, are split up so that there is one file per article. These are processed into HTML files as described above and the plain text of those files are built into a data structure that will be used for searching using [Lunr.js](https://lunrjs.com/), a tool for searching static sites.
