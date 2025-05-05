@@ -76,12 +76,12 @@ $navbar-bg-gradient: false;
 @import "../../../node_modules/bootstrap/scss/tooltip";
 @import "../../../node_modules/bootstrap/scss/popover";
 // @import "../../../node_modules/bootstrap/scss/carousel";
-// @import "../../../node_modules/bootstrap/scss/spinners";
+@import "../../../node_modules/bootstrap/scss/spinners";
 @import "../../../node_modules/bootstrap/scss/offcanvas"; // Requires transitions
 // @import "../../../node_modules/bootstrap/scss/placeholders";
 
 // Helpers
-// @import "../../../node_modules/bootstrap/scss/helpers";
+@import "../../../node_modules/bootstrap/scss/helpers";
 
 // Utilities
 @import "../../../node_modules/bootstrap/scss/utilities/api";
@@ -327,3 +327,67 @@ table {
   grid-row: 8;
 }
 
+/* Search Bar */
+.search-bar {
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.search-bar input {
+  font-size: 2rem;
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #5e889b;
+}
+
+
+.under-bar {
+  font-size: 1rem;
+  padding-top: 30px;
+  font-style: italic;
+}
+
+#results h1{
+  font-size: 2em;
+  margin-top: 1em;
+  text-align: center;
+}
+ul#results-list {
+  font-size: 1.2em;
+}
+ul#results-list li {
+  margin-bottom: 0.5em;
+}
+ul#results-list li a {
+  display: block;
+  font-size: 1.5em;
+}
+ul#results-list span {
+  display: block;
+}
+ul#results-list span em {
+  background-color: lemonchiffon;
+  display: inline-block;
+  font-weight: bold;
+}
+li.more-results {
+  display: none;
+}
+ul#results-list span.more-tokens {
+  display: none;
+}
+ul#results-list li a.more {
+  font-size: 1.2em;
+}
+ul#results-list li a.expand {
+  font-size: 1em;
+}

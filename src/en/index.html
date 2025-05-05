@@ -52,37 +52,7 @@ layout: landing_en.njk
       font-weight: 300;
       padding-top: 10px;
     }
-    /* Search Bar */
-    .search-bar {
-      margin-top: 30px;
-      text-align: center;
-      padding-bottom: 30px;
-    }
 
-    .search-bar input {
-      font-size: 2rem;
-      padding: 10px;
-      width: 60%;
-      border: none;
-      border-bottom: 2px solid white;
-      background: transparent;
-      color: white;
-      outline: none;
-      transition: border-color 0.3s;
-    }
-
-    .search-bar input:focus {
-      border-color: #5e889b;
-    }
-
-    .search-bar input::placeholder {
-      color: white;
-    }
-    .under-bar {
-      font-size: 1rem;
-      padding-top: 30px;
-      font-style: italic;
-    }
     .explore-buttons {
       display: flex;
       justify-content: center;
@@ -104,6 +74,16 @@ layout: landing_en.njk
       background-color: #507f93;
       color: #fff;
     }
+
+    .search-bar input {
+      border-bottom: 2px solid white;
+      color: white;
+    }
+
+    .search-bar input::placeholder {
+      color: white;
+    }
+
     nav form {
     display: none;
     }
@@ -150,14 +130,16 @@ layout: landing_en.njk
   <section class="intro">
     <p>A textual database of Arabic and Ottoman Turkish articles about Cairo's urban development from the official Egyptian government journal, al-Waqāʾiʿal-Miṣriyyah, between 1828 and 1914</p>
   <section class="search-bar">
-    <input type="text" placeholder="Search articles, topics, or keywords..." />
-  <section class="under-bar">
-  <p>Or explore by</p>
-  </section>
+    <form action="/en/search/" method="get">
+      <input type="text" placeholder="Search articles..." name="q" />
+    </form>
+    <section class="under-bar">
+      <p>Or explore by</p>
+    </section>
   </section>
   <div class="explore-buttons">
-      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/indexes/'">Index</button>
-      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">Year</button>
+      <button onclick="window.location.href='/en/indexes/'">Index</button>
+      <button onclick="window.location.href='/en/timeline/'">Year</button>
     </div>
   </section>
 </body>

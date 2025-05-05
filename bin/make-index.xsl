@@ -16,7 +16,9 @@
   </xsl:function>
   
   <xsl:template name="xsl:initial-template">
-    <xsl:variable name="articles" select="collection('../src/CairoUrbanNews/articles/arabic?select=*.xml')[TEI/teiHeader/revisionDesc[@status='cleared']]"/>
+    <xsl:variable name="articlesAr" select="collection('../src/CairoUrbanNews/articles/arabic?select=*.xml')[TEI/teiHeader/revisionDesc[@status='cleared']]"/>
+    <xsl:variable name="articlesOta" select="collection('../src/CairoUrbanNews/articles/ottoman?select=*.xml')[TEI/teiHeader/revisionDesc[@status='cleared']]"/>
+    <xsl:variable name="articles" select="$articlesAr | $articlesOta"/>
     <xsl:sequence select="array { tei:apply-templates($articles) }"/>
   </xsl:template>
   
@@ -25,6 +27,7 @@
       <xsl:map-entry key="'id'" select="xs:string(@xml:id)"/>
       <xsl:map-entry key="'title'" select="normalize-space(string-join(head[1]//text()))"/>
       <xsl:map-entry key="'body'" select="tei:get-text(.)"/>
+      <xsl:map-entry key="'lang'" select="string(ancestor::text/@xml:lang)"/>
     </xsl:map>
   </xsl:template>
   

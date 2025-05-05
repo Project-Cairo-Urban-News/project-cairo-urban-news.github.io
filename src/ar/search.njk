@@ -1,0 +1,118 @@
+---
+title: Search
+layout: page_ar.njk
+---
+<section class="search-bar">
+  <form action="/ar/search/" method="get" onsubmit="executeQuery(document.getElementById('query').value); return false;">
+    <input type="text" placeholder="البحث عن المقالات…" name="q" id="query"/>
+    <button onclick="executeQuery(document.getElementById('query').value); return false;" class="btn btn-dark btn-lg">البحث</button>
+  </form>
+</section>
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status" id="loading-spinner" style="width: 3rem; height: 3rem;">
+    <span class="visually-hidden">أبحث…</span>
+  </div>
+</div>
+<div id="results" class="container-fluid" hidden>
+  <h1>نتائج البحث <span id="result-count"></span></h1>
+  <div class="search-results" lang="ar">
+    <ul id="results-list" class="list-unstyled" dir="rtl"></ul>
+  </div>
+  <script src="/js/lunr.js"></script>
+  <script type="text/javascript">
+    const getContext = function (start, length, string) {
+      const startIndex = Math.max(start - 24, 0);
+      const endIndex = Math.min(start + length + 25, string.length - 1);
+      let result = string.substring(startIndex, endIndex);
+      if (startIndex == 0) { // Match starts at the beginning of the string
+        result = result.substring(0, start) + '<em>' + result.substr(start, length) + '</em>' + result.substr(start + length);
+      }
+      if (endIndex == string.length - 1) { // Match ends at the end of the string
+        result = result.substring(0, result.length - length - 1) + '<em>' + result.substr(result.length - length) + '</em>';
+      }
+      if (startIndex > 0 && endIndex < string.length - 1) { // Match is in the middle of the string
+        result = result.substring(0, 24) + '<em>' + result.substr(24, length) + '</em>' + result.substr(24 + length); 
+      }
+      if (startIndex > 0) {
+        if (result.substring(0, start - startIndex).includes(' ')) {
+          result = result.substring(result.indexOf(' ') + 1);
+        }
+        result = '…' + result;
+      }
+      if (endIndex < (string.length - 1)) {
+        if (result.substring(string.length - (start - startIndex + length)).includes(' ')) {
+          result = result.substring(0, result.lastIndexOf(' '));
+        }
+        result += '…';
+      }
+      return result;
+    }
+
+    const executeQuery = function (query) {
+      if (query) {
+        document.getElementById('loading-spinner').hidden = false;
+        document.getElementById('results').hidden = true;
+        const resultsList = document.getElementById('results-list');
+        const resultCount = document.getElementById('result-count');
+        resultsList.innerHTML = ''; // Clear previous results
+        resultCount.textContent = '';
+        const results = index.search(query);
+        resultCount.textContent = `(${results.length})`;
+        if (results.length > 0) {
+          results.forEach((result, index) => {
+            const item = document.createElement('li');
+            if (index > 30) {
+              item.setAttribute("class", "more-results");
+            }
+            const doc = lunrData.find(d => d.id === result.ref);
+            const lang = result.ref.startsWith('WA') ? 'arabic' : 'ottoman';
+            item.innerHTML = `<a href="/ar/articles/${lang}/pages/${result.ref.substr(2, 4)}${result.ref.substring(result.ref.indexOf("-"))}.html">${doc.title}</a>`;
+            for (const [token, metadata] of Object.entries(result.matchData.metadata)) {
+              for (const [key, value] of Object.entries(metadata)) {
+                if (key === 'body') {
+                  value.position.forEach((position, i) => {
+                    if (i < 2) {
+                      item.innerHTML += `<span>${getContext(position[0], position[1], doc.body)}</span>`;
+                    }
+                    if (i === 1 && value.position.length > 2) {
+                      item.innerHTML += `<a href="#" onclick="document.querySelectorAll('.more-tokens').forEach(el => el.removeAttribute('class')); document.querySelectorAll('a.expand').forEach(el => el.remove()); return false;" class="expand">…</a>`;
+                    }
+                    if (i > 1) {
+                      item.innerHTML += `<span class="more-tokens">${getContext(position[0], position[1], doc.body)}</span>`;
+                    }
+                  });
+                }
+              }
+            }
+            if (index == 30) {
+              item.innerHTML += `<a href="#" onclick="document.querySelectorAll('.more-results').forEach(el => el.removeAttribute('class')); this.remove(); return false;" class="more">Show more results</a>`;
+            }
+            resultsList.appendChild(item);
+          });
+        } else {
+          resultsList.innerHTML = '<li>لم يتم العثور على نتائج البحث.</li>';
+        }
+      }
+      document.getElementById('loading-spinner').hidden = true;
+      document.getElementById('results').hidden = false;
+    };
+      
+    let index, lunrData; 
+    fetch("/js/lunr.json").then(response => response.json()).then(data => {
+      lunrData = data;
+      index = lunr(function () {
+        this.use(lunr.multiLanguage('ar', 'en'));
+        this.field("body");
+        this.field("id");
+        this.metadataWhitelist = ['position']
+        data.forEach(function (doc) {
+          this.add(doc);
+        }, this);
+      });
+      const query = new URLSearchParams(window.location.search).get('q');
+      if (query) {
+        executeQuery(query);
+      }
+    });
+  </script>
+</div>
