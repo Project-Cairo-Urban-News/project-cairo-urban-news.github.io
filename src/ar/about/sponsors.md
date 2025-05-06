@@ -10,7 +10,7 @@ layout: doc_ar.njk
 </head>
 <body>
 
-  <h1>الرعاء</h1>
+  <h1>الرعاة</h1>
 
   <p lang="ar">حصل المشروع "القاهرة الرقمية" (Digital Cairo) ضمن برنامج "صناعة القاهرة الحديثة" (La fabrique du Caire moderne) (Ifao - InVisu - جامعة ديوك) على منحة للتعاون من المؤسسة الوطنية للعلوم الإنسانية (National Endowment for the Humanities) للفترة 1 أكتوبر 2022 - 30 سبتمبر 2024.</p>
 
