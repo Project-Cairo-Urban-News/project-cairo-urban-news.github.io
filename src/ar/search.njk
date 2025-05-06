@@ -56,6 +56,10 @@ layout: page_ar.njk
         const resultCount = document.getElementById('result-count');
         resultsList.innerHTML = ''; // Clear previous results
         resultCount.textContent = '';
+        while (!index || !lunrData) {
+          // Wait for index and lunrData to be ready
+          setTimeout(() => {}, 1000);
+        }
         const results = index.search(query);
         resultCount.textContent = `(${results.length})`;
         if (results.length > 0) {
@@ -112,6 +116,8 @@ layout: page_ar.njk
       const query = new URLSearchParams(window.location.search).get('q');
       if (query) {
         executeQuery(query);
+      } else {
+        document.getElementById('loading-spinner').hidden = true;
       }
     });
   </script>
