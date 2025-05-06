@@ -29,6 +29,9 @@
       <li class="nav-item me-3">
         <a class="nav-link" href="/en/WMOnline/">WM Online</a>
       </li>
+      <li class="nav-item me-3">
+        <a class="nav-link" href="/en/search/">Search</a>
+      </li>
       <li class="nav-item dropdown me-3">
         <a class="nav-link dropdown-toggle" href="#" id="aboutMenu" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             About
@@ -125,6 +128,10 @@
         const resultCount = document.getElementById('result-count');
         resultsList.innerHTML = ''; // Clear previous results
         resultCount.textContent = '';
+        while (!index || !lunrData) {
+          // Wait for index and lunrData to be ready
+          setTimeout(() => {}, 1000);
+        }
         const results = index.search(query);
         resultCount.textContent = `(${results.length} hits)`;
         if (results.length > 0) {
@@ -181,6 +188,8 @@
       const query = new URLSearchParams(window.location.search).get('q');
       if (query) {
         executeQuery(query);
+      } else {
+        document.getElementById('loading-spinner').hidden = true;
       }
     });
   </script>
