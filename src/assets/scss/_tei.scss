@@ -67,6 +67,11 @@ table.summary ul {
   margin: 0;}
 
 /* TEI elements */
+
+tei-ab {
+  display: block;
+}
+
 tei-date[when] {
   display: block;
   font-size: 21px;

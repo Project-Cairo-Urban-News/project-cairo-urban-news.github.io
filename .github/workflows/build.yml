@@ -39,6 +39,8 @@ jobs:
       - run: cp en_indexes.json ./src/CairoUrbanNews/indexes/indexes.json
       - name: Build
         run: npx --node-options='--max-old-space-size=15360' @11ty/eleventy
+      - name: Create CNAME file
+        run: echo "newsofcairo.org" > ./dist/CNAME
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
