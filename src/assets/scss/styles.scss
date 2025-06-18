@@ -190,8 +190,8 @@ td.month_1, td.month_2, td.month_3, td.month_4, td.month_5, td.month_6, td.month
   width: 100%;        /* Take full width of viewport */
   position: relative;
 }
-.navigation-buttons-container a {
-  color: black;
+.row.navigation-buttons-container a {
+  color: black !important; /* Use with caution, overrides more specific styles */
 }
 .previous-button, .next-button, .year-button {
   font-size: 1.23rem;
