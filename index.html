@@ -10,7 +10,6 @@
       @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
 
-      /* Full-screen background image */
       body, html {
         height: 100%;
         margin: 0;
@@ -26,8 +25,6 @@
         height: 100%;
         z-index: -1;
       }
-
-      /* Dark overlay for readability */
       .overlay {
         position: fixed;
         top: 0;
@@ -37,8 +34,6 @@
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 0;
       }
-
-      /* Centered content */
       .content {
         position: absolute;
         top: 50%;
@@ -49,7 +44,6 @@
         z-index: 1;
       }
 
-      /* Large text styles */
       .display-3 {
         font-size: 3rem;
       }
@@ -66,9 +60,9 @@
       }
 
       .title-container {
-        display: flex;          /* Aligns both spans horizontally */
-        align-items: center;    /* Vertically centers the spans */
-        justify-content: center; /* Centers them within the parent container */
+        display: flex;        
+        align-items: center;  
+        justify-content: center; 
         gap: 20px;
         padding-top: 120px
     }
@@ -81,19 +75,22 @@
       
     }
       .col-lg a {
-      color: #FFFFFF;  /* Default color */
-      text-decoration: none;  /* Remove underline */
-      transition: color 0.5s ease, text-decoration 0.5s ease;  /* Transition time and effect */
+      color: #FFFFFF;  
+      text-decoration: none;  
+      transition: color 0.5s ease, text-decoration 0.5s ease;  
     }
-      /* Change color on hover */
       .col-lg a:hover {
       color: #507f93; 
       text-decoration: none;  
     }
       .dot {
-      font-size: 1.5rem;        /* Size of the dot, adjust as needed */
-      margin: 10px;         /* Space on either side of the dot */
-      color: white;           /* Dot color, you can change it to match the design */
+      font-size: 1.5rem;        
+      margin: 10px;       
+      color: white;          
+    }
+
+    svg.d-none {
+    display: none;
     }
     </style>
   </head>
