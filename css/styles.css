@@ -10034,3 +10034,7 @@ ul#results-list li a.more {
 ul#results-list li a.expand {
   font-size: 1em;
 }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  text-align: center;
+}
