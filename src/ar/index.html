@@ -75,7 +75,7 @@ layout: landing_ar.njk
     .search-input {
       flex-grow: 1;
       padding: 10px 15px;
-      font-size: 1rem;
+      font-size: 1.2rem; /* Increased font size */
       border: none;
       border-bottom: 2px solid white;
       background-color: transparent;
@@ -99,7 +99,7 @@ layout: landing_ar.njk
       border: 2px solid white;
       color: white;
       font-size: 1rem;
-      padding: 10px 20px;
+      padding: 15px 25px; /* Added 5px padding around the button (10px -> 15px, 20px -> 25px) */
       margin-right: 10px;
       cursor: pointer;
       transition: background-color 0.5s ease, color 0.5s ease;
@@ -113,8 +113,10 @@ layout: landing_ar.njk
 
     .under-bar {
       padding-top: 30px;
-      font-style: italic;
+      font-style: normal; /* Changed from italic to normal */
       font-family: "Noto Sans Arabic";
+      color: white; /* Added white font color */
+      text-align: center; /* Centered the text */
     }
     .explore-buttons {
       display: flex;
@@ -157,10 +159,11 @@ layout: landing_ar.njk
       
       .search-input {
         width: 60%;
+        font-size: 1.1rem; /* Adjusted for mobile */
       }
       
       .search-button {
-        padding: 10px 15px;
+        padding: 15px 20px; /* Adjusted padding for mobile */
       }
     }
   </style>
