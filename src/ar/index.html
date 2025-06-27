@@ -58,23 +58,57 @@ layout: landing_ar.njk
       font-weight: 300;
       font-family: "Noto Sans Arabic";
     }
-    .search-bar {
+    .search-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 30px;
-      text-align: center;
       padding-bottom: 30px;
     }
 
-    .search-bar input:focus {
+    .search-form {
+      display: flex;
+      align-items: center;
+      width: 50%;
+    }
+
+    .search-input {
+      flex-grow: 1;
+      padding: 10px 15px;
+      font-size: 1rem;
+      border: none;
+      border-bottom: 2px solid white;
+      background-color: transparent;
+      color: white;
+      font-family: "Noto Sans Arabic";
+      text-align: right;
+    }
+
+    .search-input::placeholder {
+      color: white;
+      opacity: 0.8;
+    }
+
+    .search-input:focus {
+      outline: none;
       border-color: #5e889b;
     }
 
-    .search-bar input {
-      border-bottom: 2px solid white;
+    .search-button {
+      background-color: transparent;
+      border: 2px solid white;
       color: white;
+      font-size: 1rem;
+      padding: 10px 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      transition: background-color 0.5s ease, color 0.5s ease;
+      font-family: "Fustat";
     }
 
-    .search-bar input::placeholder {
-      color: white;
+    .search-button:hover {
+      background-color: #507f93;
+      color: #fff;
     }
 
     .under-bar {
@@ -117,8 +151,16 @@ layout: landing_ar.njk
         font-size: 1rem;
       }
 
-      .search-bar input {
+      .search-form {
         width: 80%;
+      }
+      
+      .search-input {
+        width: 60%;
+      }
+      
+      .search-button {
+        padding: 10px 15px;
       }
     }
   </style>
@@ -149,18 +191,19 @@ layout: landing_ar.njk
   </header>
   <section class="intro">
     <p>قاعدة بيانات نصية للمقالات باللغتين العربية والتركية العثمانية عن تطور القاهرة الحضري بين ١٨٢٨ و١٩١٤ من جريدة الوقائع المصرية الصحيفة الرسمية لحكومة مصر </p>
-  <section class="search-bar">
-    <form action="/ar/search/" method="get">
-      <input name="q" type="text" placeholder="...البحث في المقالات" />
-    </form>
-  <section class="under-bar">
-  <p>او البحث حسب</p>
   </section>
+  <section class="search-container">
+    <form class="search-form" action="/ar/search/" method="get">
+      <input class="search-input" name="q" type="text" placeholder="...البحث في المقالات" />
+      <button type="submit" class="search-button">بحث</button>
+    </form>
+  </section>
+  <section class="under-bar">
+    <p>او البحث حسب</p>
   </section>
   <div class="explore-buttons">
-      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/ar/indexes/'">فهرس</button>
-      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">سنة</button>
-    </div>
-  </section>
+    <button onclick="window.location.href='https://project-cairo-urban-news.github.io/ar/indexes/'">فهرس</button>
+    <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">سنة</button>
+  </div>
 </body>
 </html>
