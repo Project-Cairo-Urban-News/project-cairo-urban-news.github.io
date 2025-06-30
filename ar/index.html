@@ -88,6 +88,7 @@
       font-size: 4rem;
       font-family: "Fustat"
       font-weight: 400;
+      letter-spacing: 2px;
       font-family: "Fustat";
       padding-top: 10px;
       
@@ -112,65 +113,29 @@
       font-weight: 300;
       font-family: "Noto Sans Arabic";
     }
-    .search-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .search-bar {
       margin-top: 30px;
+      text-align: center;
       padding-bottom: 30px;
     }
 
-    .search-form {
-      display: flex;
-      align-items: center;
-      width: 50%;
-    }
-
-    .search-input {
-      flex-grow: 1;
-      padding: 10px 15px;
-      font-size: 1.2rem; /* Increased font size */
-      border: none;
-      border-bottom: 2px solid white;
-      background-color: transparent;
-      color: white;
-      font-family: "Noto Sans Arabic";
-      text-align: right;
-    }
-
-    .search-input::placeholder {
-      color: white;
-      opacity: 0.8;
-    }
-
-    .search-input:focus {
-      outline: none;
+    .search-bar input:focus {
       border-color: #5e889b;
     }
 
-    .search-button {
-      background-color: transparent;
-      border: 2px solid white;
+    .search-bar input {
+      border-bottom: 2px solid white;
       color: white;
-      font-size: 1rem;
-      padding: 15px 25px; /* Added 5px padding around the button (10px -> 15px, 20px -> 25px) */
-      margin-right: 10px;
-      cursor: pointer;
-      transition: background-color 0.5s ease, color 0.5s ease;
-      font-family: "Fustat";
     }
 
-    .search-button:hover {
-      background-color: #507f93;
-      color: #fff;
+    .search-bar input::placeholder {
+      color: white;
     }
 
     .under-bar {
       padding-top: 30px;
-      font-style: normal; /* Changed from italic to normal */
+      font-style: italic;
       font-family: "Noto Sans Arabic";
-      color: white; /* Added white font color */
-      text-align: center; /* Centered the text */
     }
     .explore-buttons {
       display: flex;
@@ -207,17 +172,8 @@
         font-size: 1rem;
       }
 
-      .search-form {
+      .search-bar input {
         width: 80%;
-      }
-      
-      .search-input {
-        width: 60%;
-        font-size: 1.1rem; /* Adjusted for mobile */
-      }
-      
-      .search-button {
-        padding: 15px 20px; /* Adjusted padding for mobile */
       }
     }
   </style>
@@ -248,20 +204,19 @@
   </header>
   <section class="intro">
     <p>قاعدة بيانات نصية للمقالات باللغتين العربية والتركية العثمانية عن تطور القاهرة الحضري بين ١٨٢٨ و١٩١٤ من جريدة الوقائع المصرية الصحيفة الرسمية لحكومة مصر </p>
-  </section>
-  <section class="search-container">
-    <form class="search-form" action="/ar/search/" method="get">
-      <input class="search-input" name="q" type="text" placeholder="...البحث في المقالات" />
-      <button type="submit" class="search-button">بحث</button>
+  <section class="search-bar">
+    <form action="/ar/search/" method="get">
+      <input name="q" type="text" placeholder="...البحث في المقالات" />
     </form>
-  </section>
   <section class="under-bar">
-    <p>او البحث حسب</p>
+  <p>او البحث حسب</p>
+  </section>
   </section>
   <div class="explore-buttons">
-    <button onclick="window.location.href='https://project-cairo-urban-news.github.io/ar/indexes/'">فهرس</button>
-    <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">سنة</button>
-  </div>
+      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/ar/indexes/'">فهرس</button>
+      <button onclick="window.location.href='https://project-cairo-urban-news.github.io/en/timeline/'">سنة</button>
+    </div>
+  </section>
 </body>
 </html>
 
